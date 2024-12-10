@@ -16,7 +16,6 @@
 package org.apache.xmlbeans.impl.common;
 
 import org.apache.xmlbeans.XmlCursor;
-
 import javax.xml.namespace.QName;
 import javax.xml.stream.Location;
 

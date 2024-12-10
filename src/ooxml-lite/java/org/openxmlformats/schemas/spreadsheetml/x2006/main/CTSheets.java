@@ -21,11 +21,6 @@ public interface CTSheets extends org.apache.xmlbeans.XmlObject {
 
 
     /**
-     * Gets a List of "sheet" elements
-     */
-    java.util.List<CTSheet> getSheetList();
-
-    /**
      * Gets array of all "sheet" elements
      */
     CTSheet[] getSheetArray();
@@ -34,26 +29,6 @@ public interface CTSheets extends org.apache.xmlbeans.XmlObject {
      * Gets ith "sheet" element
      */
     CTSheet getSheetArray(int i);
-
-    /**
-     * Returns number of "sheet" element
-     */
-    int sizeOfSheetArray();
-
-    /**
-     * Sets array of all "sheet" element
-     */
-    void setSheetArray(CTSheet[] sheetArray);
-
-    /**
-     * Sets ith "sheet" element
-     */
-    void setSheetArray(int i, CTSheet sheet);
-
-    /**
-     * Inserts and returns a new empty value (as xml) as the ith "sheet" element
-     */
-    CTSheet insertNewSheet(int i);
 
     /**
      * Appends and returns a new empty value (as xml) as the last "sheet" element

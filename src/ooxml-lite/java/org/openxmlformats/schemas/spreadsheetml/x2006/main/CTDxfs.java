@@ -21,49 +21,14 @@ public interface CTDxfs extends org.apache.xmlbeans.XmlObject {
 
 
     /**
-     * Gets a List of "dxf" elements
-     */
-    java.util.List<CTDxf> getDxfList();
-
-    /**
      * Gets array of all "dxf" elements
      */
     CTDxf[] getDxfArray();
-
-    /**
-     * Gets ith "dxf" element
-     */
-    CTDxf getDxfArray(int i);
-
-    /**
-     * Returns number of "dxf" element
-     */
-    int sizeOfDxfArray();
-
     /**
      * Sets array of all "dxf" element
      */
     void setDxfArray(CTDxf[] dxfArray);
 
-    /**
-     * Sets ith "dxf" element
-     */
-    void setDxfArray(int i, CTDxf dxf);
-
-    /**
-     * Inserts and returns a new empty value (as xml) as the ith "dxf" element
-     */
-    CTDxf insertNewDxf(int i);
-
-    /**
-     * Appends and returns a new empty value (as xml) as the last "dxf" element
-     */
-    CTDxf addNewDxf();
-
-    /**
-     * Removes the ith "dxf" element
-     */
-    void removeDxf(int i);
 
     /**
      * Gets the "count" attribute

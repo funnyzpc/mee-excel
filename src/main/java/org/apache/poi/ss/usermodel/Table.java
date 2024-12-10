@@ -107,11 +107,11 @@ public interface Table {
      */
     int getHeaderRowCount();
 
-    /**
-     * @return TableStyleInfo for this instance
-     * @since 3.17 beta 1
-     */
-    TableStyleInfo getStyle();
+//    /**
+//     * @return TableStyleInfo for this instance
+//     * @since 3.17 beta 1
+//     */
+//    TableStyleInfo getStyle();
 
     /**
      * checks if the given cell is part of the table.  Includes checking that they are on the same sheet.

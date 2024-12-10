@@ -21,11 +21,7 @@ import org.xml.sax.XMLReader;
 
 import javax.xml.namespace.QName;
 import java.net.URI;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Used to supply options for loading, saving, and compiling, and validating.
@@ -959,7 +955,7 @@ public class XmlOptions implements java.io.Serializable {
      * source; otherwise, for example, when parsing a String,
      * you can use this option to specify the source name yourself.
      *
-     * @see org.apache.xmlbeans.impl.schema.XmlObjectFactory#parse(String, XmlOptions)
+     * @see org.apache.xmlbeans.impl.schema.XmlObjectFactory#parse(java.lang.String, XmlOptions)
      */
     public XmlOptions setDocumentSourceName(String documentSourceName) {
         return set(XmlOptionsKeys.DOCUMENT_SOURCE_NAME, documentSourceName);

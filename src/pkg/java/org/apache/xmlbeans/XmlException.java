@@ -35,22 +35,22 @@ public class XmlException extends Exception
     /**
      * Constructs an XmlException from a message.
      */
-    public XmlException(String m              ) { super( m );    }
+    public XmlException ( String m              ) { super( m );    }
 
     /**
      * Constructs an XmlException from a message and a cause.
      */
-    public XmlException(String m, Throwable t ) { super( m, t ); }
+    public XmlException ( String m, Throwable t ) { super( m, t ); }
 
     /**
      * Constructs an XmlException from a cause.
      */
-    public XmlException(Throwable t ) { super( t );    }
+    public XmlException ( Throwable t ) { super( t );    }
 
     /**
      * Constructs an XmlException from an {@link XmlError}.
      */
-    public XmlException(XmlError error )
+    public XmlException ( XmlError error )
     {
         this( error.toString(), null, error );
     }
@@ -58,7 +58,7 @@ public class XmlException extends Exception
     /**
      * Constructs an XmlException from a message, a cause, and an {@link XmlError}.
      */
-    public XmlException(String m, Throwable t, XmlError error )
+    public XmlException ( String m, Throwable t, XmlError error )
     {
         this( m, t, Collections.singletonList( error ) );
     }
@@ -66,7 +66,7 @@ public class XmlException extends Exception
     /**
      * Constructs an XmlException from a message, a cause, and a collection of {@link XmlError XmlErrors}.
      */
-    public XmlException(String m, Throwable t, Collection<XmlError> errors )
+    public XmlException ( String m, Throwable t, Collection<XmlError> errors )
     {
         super( m, t );
 
@@ -77,7 +77,7 @@ public class XmlException extends Exception
     /**
      * Constructs an XmlException from an {@link XmlRuntimeException}.
      */
-    public XmlException(XmlRuntimeException xmlRuntimeException )
+    public XmlException ( XmlRuntimeException xmlRuntimeException )
     {
         super(
             xmlRuntimeException.getMessage(), xmlRuntimeException.getCause() );

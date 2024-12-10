@@ -26,32 +26,6 @@ public class CTTablePartsImpl extends org.apache.xmlbeans.impl.values.XmlComplex
         new QName("", "count"),
     };
 
-
-    /**
-     * Gets a List of "tablePart" elements
-     */
-    @Override
-    public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTablePart> getTablePartList() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
-                this::getTablePartArray,
-                this::setTablePartArray,
-                this::insertNewTablePart,
-                this::removeTablePart,
-                this::sizeOfTablePartArray
-            );
-        }
-    }
-
-    /**
-     * Gets array of all "tablePart" elements
-     */
-    @Override
-    public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTablePart[] getTablePartArray() {
-        return getXmlObjectArray(PROPERTY_QNAME[0], new org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTablePart[0]);
-    }
-
     /**
      * Gets ith "tablePart" element
      */
@@ -76,49 +50,6 @@ public class CTTablePartsImpl extends org.apache.xmlbeans.impl.values.XmlComplex
         synchronized (monitor()) {
             check_orphaned();
             return get_store().count_elements(PROPERTY_QNAME[0]);
-        }
-    }
-
-    /**
-     * Sets array of all "tablePart" element  WARNING: This method is not atomicaly synchronized.
-     */
-    @Override
-    public void setTablePartArray(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTablePart[] tablePartArray) {
-        check_orphaned();
-        arraySetterHelper(tablePartArray, PROPERTY_QNAME[0]);
-    }
-
-    /**
-     * Sets ith "tablePart" element
-     */
-    @Override
-    public void setTablePartArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTablePart tablePart) {
-        generatedSetterHelperImpl(tablePart, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
-    }
-
-    /**
-     * Inserts and returns a new empty value (as xml) as the ith "tablePart" element
-     */
-    @Override
-    public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTablePart insertNewTablePart(int i) {
-        synchronized (monitor()) {
-            check_orphaned();
-            org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTablePart target = null;
-            target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTablePart)get_store().insert_element_user(PROPERTY_QNAME[0], i);
-            return target;
-        }
-    }
-
-    /**
-     * Appends and returns a new empty value (as xml) as the last "tablePart" element
-     */
-    @Override
-    public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTablePart addNewTablePart() {
-        synchronized (monitor()) {
-            check_orphaned();
-            org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTablePart target = null;
-            target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTablePart)get_store().add_element_user(PROPERTY_QNAME[0]);
-            return target;
         }
     }
 

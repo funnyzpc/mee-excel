@@ -21,51 +21,6 @@ public interface CTRowItems extends org.apache.xmlbeans.XmlObject {
 
 
     /**
-     * Gets a List of "i" elements
-     */
-    java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTI> getIList();
-
-    /**
-     * Gets array of all "i" elements
-     */
-    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTI[] getIArray();
-
-    /**
-     * Gets ith "i" element
-     */
-    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTI getIArray(int i);
-
-    /**
-     * Returns number of "i" element
-     */
-    int sizeOfIArray();
-
-    /**
-     * Sets array of all "i" element
-     */
-    void setIArray(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTI[] iValueArray);
-
-    /**
-     * Sets ith "i" element
-     */
-    void setIArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTI iValue);
-
-    /**
-     * Inserts and returns a new empty value (as xml) as the ith "i" element
-     */
-    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTI insertNewI(int i);
-
-    /**
-     * Appends and returns a new empty value (as xml) as the last "i" element
-     */
-    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTI addNewI();
-
-    /**
-     * Removes the ith "i" element
-     */
-    void removeI(int i);
-
-    /**
      * Gets the "count" attribute
      */
     long getCount();

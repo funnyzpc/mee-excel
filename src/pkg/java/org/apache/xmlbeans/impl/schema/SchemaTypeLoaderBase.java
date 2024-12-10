@@ -15,9 +15,16 @@
 
 package org.apache.xmlbeans.impl.schema;
 
+import org.apache.xmlbeans.SchemaAttributeGroup;
 import org.apache.xmlbeans.SchemaField;
+import org.apache.xmlbeans.SchemaGlobalAttribute;
+import org.apache.xmlbeans.SchemaGlobalElement;
+import org.apache.xmlbeans.SchemaModelGroup;
 import org.apache.xmlbeans.SchemaType;
+import org.apache.xmlbeans.SchemaTypeLoader;
 import org.apache.xmlbeans.XmlBeans;
+import org.apache.xmlbeans.XmlException;
+import org.apache.xmlbeans.XmlFactoryHook;
 import org.apache.xmlbeans.XmlObject;
 import org.apache.xmlbeans.XmlOptions;
 import org.apache.xmlbeans.XmlSaxHandler;
@@ -46,13 +53,6 @@ import java.util.List;
 public abstract class SchemaTypeLoaderBase implements SchemaTypeLoader {
     private static final String USER_AGENT = "XMLBeans/" + XmlBeans.getVersion() + " (" + XmlBeans.getTitle() + ")";
 
-    private static String doCompilePath(String pathExpr, XmlOptions options) {
-        return XPathFactory.compilePath(pathExpr, options);
-    }
-
-    private static String doCompileQuery(String queryExpr, XmlOptions options) {
-        return XPathFactory.compileQuery(queryExpr, options);
-    }
 
     public SchemaType findType(QName name) {
         SchemaType.Ref ref = findTypeRef(name);
@@ -282,25 +282,7 @@ public abstract class SchemaTypeLoaderBase implements SchemaTypeLoader {
         return Locale.newDomImplementation(this, options);
     }
 
-    //
-    //
-    //
 
-    public String compilePath(String pathExpr) {
-        return compilePath(pathExpr, null);
-    }
-
-    public String compilePath(String pathExpr, XmlOptions options) {
-        return doCompilePath(pathExpr, options);
-    }
-
-    public String compileQuery(String queryExpr) {
-        return compileQuery(queryExpr, null);
-    }
-
-    public String compileQuery(String queryExpr, XmlOptions options) {
-        return doCompileQuery(queryExpr, options);
-    }
 
     /**
      * Utility function to load a type from a signature.

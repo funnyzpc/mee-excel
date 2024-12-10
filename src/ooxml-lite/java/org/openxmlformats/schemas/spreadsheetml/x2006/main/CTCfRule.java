@@ -19,31 +19,10 @@ public interface CTCfRule extends org.apache.xmlbeans.XmlObject {
     DocumentFactory<CTCfRule> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctcfrule3548type");
     org.apache.xmlbeans.SchemaType type = Factory.getType();
 
-
-    /**
-     * Gets a List of "formula" elements
-     */
-    java.util.List<String> getFormulaList();
-
-    /**
-     * Gets array of all "formula" elements
-     */
-    String[] getFormulaArray();
-
     /**
      * Gets ith "formula" element
      */
     String getFormulaArray(int i);
-
-    /**
-     * Gets (as xml) a List of "formula" elements
-     */
-    java.util.List<STFormula> xgetFormulaList();
-
-    /**
-     * Gets (as xml) array of all "formula" elements
-     */
-    STFormula[] xgetFormulaArray();
 
     /**
      * Gets (as xml) ith "formula" element

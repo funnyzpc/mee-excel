@@ -133,15 +133,15 @@ public interface XmlTokenSource {
      * an attribute).
      */
     Reader newReader();
-
-    /**
-     * Returns a W3C DOM Node containing the XML
-     * represented by this source.  This is a copy of the XML, it is
-     * not a live with the underlying store of this token source.
-     * If this is the document node, then a Document is returned, else
-     * a DocumentFragment is returned.
-     */
-    Node newDomNode();
+//
+//    /**
+//     * Returns a W3C DOM Node containing the XML
+//     * represented by this source.  This is a copy of the XML, it is
+//     * not a live with the underlying store of this token source.
+//     * If this is the document node, then a Document is returned, else
+//     * a DocumentFragment is returned.
+//     */
+//    Node newDomNode();
 
     /**
      * Returns a W3C DOM Node containing the XML represented by this source.
@@ -309,14 +309,14 @@ public interface XmlTokenSource {
      */
     Reader newReader(XmlOptions options);
 
-    /**
-     * Just like newDomNode() but with options.
-     * Options map may be null.
-     *
-     * @see XmlOptions
-     */
-
-    Node newDomNode(XmlOptions options);
+//    /**
+//     * Just like newDomNode() but with options.
+//     * Options map may be null.
+//     *
+//     * @see XmlOptions
+//     */
+//
+//    Node newDomNode(XmlOptions options);
 
     /**
      * Writes the XML represented by this source to the given SAX content and

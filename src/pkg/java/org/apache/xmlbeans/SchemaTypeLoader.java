@@ -29,7 +29,7 @@ import java.net.URL;
 /**
  * Represents a searchable set of XML Schema component definitions.
  * <p>
- * SchemaTypeLoader is somewhat analogous to {@link ClassLoader},
+ * SchemaTypeLoader is somewhat analogous to {@link java.lang.ClassLoader},
  * because it is responsible for finding {@link SchemaComponent} definitions
  * by name, yet it is not responsible for being able to enumerate all the
  * component definitons available. (If you wish to enumerate component
@@ -161,15 +161,15 @@ public interface SchemaTypeLoader {
      */
     InputStream getSourceAsStream(String sourceName);
 
-    /**
-     * Compiles an XPath
-     */
-    String compilePath(String pathExpr, XmlOptions options) throws XmlException;
+//    /**
+//     * Compiles an XPath
+//     */
+//    String compilePath(String pathExpr, XmlOptions options) throws XmlException;
 
-    /**
-     * Compiles an XQuery
-     */
-    String compileQuery(String queryExpr, XmlOptions options) throws XmlException;
+//    /**
+//     * Compiles an XQuery
+//     */
+//    String compileQuery(String queryExpr, XmlOptions options) throws XmlException;
 
     /**
      * Creates an instance of the given type.

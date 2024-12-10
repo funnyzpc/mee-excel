@@ -21,49 +21,21 @@ public interface CTIconSet extends org.apache.xmlbeans.XmlObject {
 
 
     /**
-     * Gets a List of "cfvo" elements
-     */
-    java.util.List<CTCfvo> getCfvoList();
-
-    /**
      * Gets array of all "cfvo" elements
      */
     CTCfvo[] getCfvoArray();
-
-    /**
-     * Gets ith "cfvo" element
-     */
-    CTCfvo getCfvoArray(int i);
-
-    /**
-     * Returns number of "cfvo" element
-     */
-    int sizeOfCfvoArray();
 
     /**
      * Sets array of all "cfvo" element
      */
     void setCfvoArray(CTCfvo[] cfvoArray);
 
-    /**
-     * Sets ith "cfvo" element
-     */
-    void setCfvoArray(int i, CTCfvo cfvo);
-
-    /**
-     * Inserts and returns a new empty value (as xml) as the ith "cfvo" element
-     */
-    CTCfvo insertNewCfvo(int i);
 
     /**
      * Appends and returns a new empty value (as xml) as the last "cfvo" element
      */
     CTCfvo addNewCfvo();
 
-    /**
-     * Removes the ith "cfvo" element
-     */
-    void removeCfvo(int i);
 
     /**
      * Gets the "iconSet" attribute
@@ -71,29 +43,10 @@ public interface CTIconSet extends org.apache.xmlbeans.XmlObject {
     org.openxmlformats.schemas.spreadsheetml.x2006.main.STIconSetType.Enum getIconSet();
 
     /**
-     * Gets (as xml) the "iconSet" attribute
-     */
-    org.openxmlformats.schemas.spreadsheetml.x2006.main.STIconSetType xgetIconSet();
-
-    /**
-     * True if has "iconSet" attribute
-     */
-    boolean isSetIconSet();
-
-    /**
      * Sets the "iconSet" attribute
      */
     void setIconSet(org.openxmlformats.schemas.spreadsheetml.x2006.main.STIconSetType.Enum iconSet);
 
-    /**
-     * Sets (as xml) the "iconSet" attribute
-     */
-    void xsetIconSet(org.openxmlformats.schemas.spreadsheetml.x2006.main.STIconSetType iconSet);
-
-    /**
-     * Unsets the "iconSet" attribute
-     */
-    void unsetIconSet();
 
     /**
      * Gets the "showValue" attribute
@@ -116,16 +69,6 @@ public interface CTIconSet extends org.apache.xmlbeans.XmlObject {
     void setShowValue(boolean showValue);
 
     /**
-     * Sets (as xml) the "showValue" attribute
-     */
-    void xsetShowValue(org.apache.xmlbeans.XmlBoolean showValue);
-
-    /**
-     * Unsets the "showValue" attribute
-     */
-    void unsetShowValue();
-
-    /**
      * Gets the "percent" attribute
      */
     boolean getPercent();
@@ -146,25 +89,9 @@ public interface CTIconSet extends org.apache.xmlbeans.XmlObject {
     void setPercent(boolean percent);
 
     /**
-     * Sets (as xml) the "percent" attribute
-     */
-    void xsetPercent(org.apache.xmlbeans.XmlBoolean percent);
-
-    /**
-     * Unsets the "percent" attribute
-     */
-    void unsetPercent();
-
-    /**
      * Gets the "reverse" attribute
      */
     boolean getReverse();
-
-    /**
-     * Gets (as xml) the "reverse" attribute
-     */
-    org.apache.xmlbeans.XmlBoolean xgetReverse();
-
     /**
      * True if has "reverse" attribute
      */
@@ -175,13 +102,4 @@ public interface CTIconSet extends org.apache.xmlbeans.XmlObject {
      */
     void setReverse(boolean reverse);
 
-    /**
-     * Sets (as xml) the "reverse" attribute
-     */
-    void xsetReverse(org.apache.xmlbeans.XmlBoolean reverse);
-
-    /**
-     * Unsets the "reverse" attribute
-     */
-    void unsetReverse();
 }

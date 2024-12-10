@@ -21,16 +21,6 @@ public interface CTTableParts extends org.apache.xmlbeans.XmlObject {
 
 
     /**
-     * Gets a List of "tablePart" elements
-     */
-    java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTablePart> getTablePartList();
-
-    /**
-     * Gets array of all "tablePart" elements
-     */
-    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTablePart[] getTablePartArray();
-
-    /**
      * Gets ith "tablePart" element
      */
     org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTablePart getTablePartArray(int i);
@@ -40,25 +30,6 @@ public interface CTTableParts extends org.apache.xmlbeans.XmlObject {
      */
     int sizeOfTablePartArray();
 
-    /**
-     * Sets array of all "tablePart" element
-     */
-    void setTablePartArray(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTablePart[] tablePartArray);
-
-    /**
-     * Sets ith "tablePart" element
-     */
-    void setTablePartArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTablePart tablePart);
-
-    /**
-     * Inserts and returns a new empty value (as xml) as the ith "tablePart" element
-     */
-    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTablePart insertNewTablePart(int i);
-
-    /**
-     * Appends and returns a new empty value (as xml) as the last "tablePart" element
-     */
-    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTablePart addNewTablePart();
 
     /**
      * Removes the ith "tablePart" element

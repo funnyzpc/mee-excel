@@ -15,9 +15,8 @@
 
 package org.apache.xmlbeans.impl.values;
 
-import org.apache.xmlbeans.SchemaField;
-
 import javax.xml.namespace.QName;
+import org.apache.xmlbeans.SchemaField;
 
 /**
  * This interface is used by the TypeStore to visit every element in order

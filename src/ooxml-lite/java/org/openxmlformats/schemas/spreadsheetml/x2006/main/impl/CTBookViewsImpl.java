@@ -25,24 +25,6 @@ public class CTBookViewsImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
         new QName("http://schemas.openxmlformats.org/spreadsheetml/2006/main", "workbookView"),
     };
 
-
-    /**
-     * Gets a List of "workbookView" elements
-     */
-    @Override
-    public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBookView> getWorkbookViewList() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
-                this::getWorkbookViewArray,
-                this::setWorkbookViewArray,
-                this::insertNewWorkbookView,
-                this::removeWorkbookView,
-                this::sizeOfWorkbookViewArray
-            );
-        }
-    }
-
     /**
      * Gets array of all "workbookView" elements
      */
@@ -68,47 +50,6 @@ public class CTBookViewsImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     }
 
     /**
-     * Returns number of "workbookView" element
-     */
-    @Override
-    public int sizeOfWorkbookViewArray() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return get_store().count_elements(PROPERTY_QNAME[0]);
-        }
-    }
-
-    /**
-     * Sets array of all "workbookView" element  WARNING: This method is not atomicaly synchronized.
-     */
-    @Override
-    public void setWorkbookViewArray(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBookView[] workbookViewArray) {
-        check_orphaned();
-        arraySetterHelper(workbookViewArray, PROPERTY_QNAME[0]);
-    }
-
-    /**
-     * Sets ith "workbookView" element
-     */
-    @Override
-    public void setWorkbookViewArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBookView workbookView) {
-        generatedSetterHelperImpl(workbookView, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
-    }
-
-    /**
-     * Inserts and returns a new empty value (as xml) as the ith "workbookView" element
-     */
-    @Override
-    public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBookView insertNewWorkbookView(int i) {
-        synchronized (monitor()) {
-            check_orphaned();
-            org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBookView target = null;
-            target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBookView)get_store().insert_element_user(PROPERTY_QNAME[0], i);
-            return target;
-        }
-    }
-
-    /**
      * Appends and returns a new empty value (as xml) as the last "workbookView" element
      */
     @Override
@@ -121,14 +62,5 @@ public class CTBookViewsImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
         }
     }
 
-    /**
-     * Removes the ith "workbookView" element
-     */
-    @Override
-    public void removeWorkbookView(int i) {
-        synchronized (monitor()) {
-            check_orphaned();
-            get_store().remove_element(PROPERTY_QNAME[0], i);
-        }
-    }
+
 }

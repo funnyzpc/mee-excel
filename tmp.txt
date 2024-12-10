@@ -1,11 +1,2 @@
 
-
-
-[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ mee-excel ---
-[INFO] org.example:mee-excel:jar:1.0.0-SNAPSHOT
-[INFO] +- commons-io:commons-io:jar:2.16.1:compile
-[INFO] +- org.apache.commons:commons-compress:jar:1.26.2:compile
-[INFO] |  +- commons-codec:commons-codec:jar:1.17.0:compile
-[INFO] |  \- org.apache.commons:commons-lang3:jar:3.14.0:compile
-[INFO] +- org.apache.xmlbeans:xmlbeans:jar:5.2.1:compile
-[INFO] |  \- xml-apis:xml-apis:jar:1.4.01:compile
+org.apache.xmlbeans.metadata.system.sXMLSCHEMA

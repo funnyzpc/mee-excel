@@ -37,19 +37,14 @@ import org.apache.poi.ooxml.POIXMLDocumentPart;
 import org.apache.poi.openxml4j.opc.PackagePart;
 import org.apache.poi.ss.SpreadsheetVersion;
 import org.apache.poi.ss.usermodel.BuiltinFormats;
-import org.apache.poi.ss.usermodel.Color;
 import org.apache.poi.ss.usermodel.FontFamily;
 import org.apache.poi.ss.usermodel.FontScheme;
-import org.apache.poi.ss.usermodel.TableStyle;
 import org.apache.poi.util.Internal;
 import org.apache.poi.xssf.usermodel.CustomIndexedColorMap;
 import org.apache.poi.xssf.usermodel.DefaultIndexedColorMap;
 import org.apache.poi.xssf.usermodel.IndexedColorMap;
-import org.apache.poi.xssf.usermodel.XSSFBuiltinTableStyle;
 import org.apache.poi.xssf.usermodel.XSSFCellStyle;
 import org.apache.poi.xssf.usermodel.XSSFFont;
-import org.apache.poi.xssf.usermodel.XSSFRelation;
-import org.apache.poi.xssf.usermodel.XSSFTableStyle;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.xssf.usermodel.extensions.XSSFCellBorder;
 import org.apache.poi.xssf.usermodel.extensions.XSSFCellFill;
@@ -67,8 +62,6 @@ import org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFonts;
 import org.openxmlformats.schemas.spreadsheetml.x2006.main.CTNumFmt;
 import org.openxmlformats.schemas.spreadsheetml.x2006.main.CTNumFmts;
 import org.openxmlformats.schemas.spreadsheetml.x2006.main.CTStylesheet;
-import org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableStyle;
-import org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableStyles;
 import org.openxmlformats.schemas.spreadsheetml.x2006.main.CTXf;
 import org.openxmlformats.schemas.spreadsheetml.x2006.main.STPatternType;
 import org.openxmlformats.schemas.spreadsheetml.x2006.main.StyleSheetDocument;
@@ -85,7 +78,7 @@ public class StylesTable extends POIXMLDocumentPart implements Styles {
     private final List<CTXf> xfs = new ArrayList<>();
 
     private final List<CTDxf> dxfs = new ArrayList<>();
-    private final Map<String, TableStyle> tableStyles = new HashMap<>();
+//    private final Map<String, TableStyle> tableStyles = new HashMap<>();
 
     private IndexedColorMap indexedColors = new DefaultIndexedColorMap();
 
@@ -253,17 +246,17 @@ public class StylesTable extends POIXMLDocumentPart implements Styles {
             CTCellStyleXfs cellStyleXfs = styleSheet.getCellStyleXfs();
             if(cellStyleXfs != null) styleXfs.addAll(Arrays.asList(cellStyleXfs.getXfArray()));
 
-            CTDxfs styleDxfs = styleSheet.getDxfs();
-            if(styleDxfs != null) dxfs.addAll(Arrays.asList(styleDxfs.getDxfArray()));
-
-            CTTableStyles ctTableStyles = styleSheet.getTableStyles();
-            if (ctTableStyles != null && styleDxfs != null) {
-                int idx = 0;
-                for (CTTableStyle style : ctTableStyles.getTableStyleArray()) {
-                    tableStyles.put(style.getName(), new XSSFTableStyle(idx, styleDxfs, style, indexedColors));
-                    idx++;
-                }
-            }
+//            CTDxfs styleDxfs = styleSheet.getDxfs();
+//            if(styleDxfs != null) dxfs.addAll(Arrays.asList(styleDxfs.getDxfArray()));
+//
+//            CTTableStyles ctTableStyles = styleSheet.getTableStyles();
+//            if (ctTableStyles != null && styleDxfs != null) {
+//                int idx = 0;
+//                for (CTTableStyle style : ctTableStyles.getTableStyleArray()) {
+//                    tableStyles.put(style.getName(), new XSSFTableStyle(idx, styleDxfs, style, indexedColors));
+//                    idx++;
+//                }
+//            }
 
         } catch (XmlException e) {
             throw new IOException(e.getLocalizedMessage());
@@ -806,39 +799,39 @@ public class StylesTable extends POIXMLDocumentPart implements Styles {
         return this.dxfs.size();
     }
 
-    /**
-     * NOTE: this only returns explicitly defined styles
-     * @param name of the table style
-     * @return defined style, or null if not explicitly defined
-     *
-     * @since 3.17 beta 1
-     */
-    public TableStyle getExplicitTableStyle(String name) {
-        return tableStyles.get(name);
-    }
-
-    /**
-     * @return names of all explicitly defined table styles in the workbook
-     * @since 3.17 beta 1
-     */
-    public Set<String> getExplicitTableStyleNames() {
-        return tableStyles.keySet();
-    }
-
-    /**
-     * @param name of the table style
-     * @return defined style, either explicit or built-in, or null if not found
-     *
-     * @since 3.17 beta 1
-     */
-    public TableStyle getTableStyle(String name) {
-        if (name == null) return null;
-        try {
-            return XSSFBuiltinTableStyle.valueOf(name).getStyle();
-        } catch (IllegalArgumentException e) {
-            return getExplicitTableStyle(name);
-        }
-    }
+//    /**
+//     * NOTE: this only returns explicitly defined styles
+//     * @param name of the table style
+//     * @return defined style, or null if not explicitly defined
+//     *
+//     * @since 3.17 beta 1
+//     */
+//    public TableStyle getExplicitTableStyle(String name) {
+//        return tableStyles.get(name);
+//    }
+//
+//    /**
+//     * @return names of all explicitly defined table styles in the workbook
+//     * @since 3.17 beta 1
+//     */
+//    public Set<String> getExplicitTableStyleNames() {
+//        return tableStyles.keySet();
+//    }
+//
+//    /**
+//     * @param name of the table style
+//     * @return defined style, either explicit or built-in, or null if not found
+//     *
+//     * @since 3.17 beta 1
+//     */
+//    public TableStyle getTableStyle(String name) {
+//        if (name == null) return null;
+//        try {
+//            return XSSFBuiltinTableStyle.valueOf(name).getStyle();
+//        } catch (IllegalArgumentException e) {
+//            return getExplicitTableStyle(name);
+//        }
+//    }
 
     /**
      * Create a cell style in this style table.

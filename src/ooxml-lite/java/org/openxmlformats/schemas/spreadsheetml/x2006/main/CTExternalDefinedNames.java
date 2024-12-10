@@ -21,11 +21,6 @@ public interface CTExternalDefinedNames extends org.apache.xmlbeans.XmlObject {
 
 
     /**
-     * Gets a List of "definedName" elements
-     */
-    java.util.List<CTExternalDefinedName> getDefinedNameList();
-
-    /**
      * Gets array of all "definedName" elements
      */
     CTExternalDefinedName[] getDefinedNameArray();
@@ -41,11 +36,6 @@ public interface CTExternalDefinedNames extends org.apache.xmlbeans.XmlObject {
     int sizeOfDefinedNameArray();
 
     /**
-     * Sets array of all "definedName" element
-     */
-    void setDefinedNameArray(CTExternalDefinedName[] definedNameArray);
-
-    /**
      * Sets ith "definedName" element
      */
     void setDefinedNameArray(int i, CTExternalDefinedName definedName);
@@ -55,10 +45,6 @@ public interface CTExternalDefinedNames extends org.apache.xmlbeans.XmlObject {
      */
     CTExternalDefinedName insertNewDefinedName(int i);
 
-    /**
-     * Appends and returns a new empty value (as xml) as the last "definedName" element
-     */
-    CTExternalDefinedName addNewDefinedName();
 
     /**
      * Removes the ith "definedName" element

@@ -208,9 +208,9 @@ public class XSSFWorkbook extends POIXMLDocument implements Workbook, Date1904Su
         this(XSSFWorkbookType.XLSX);
     }
 
-    public XSSFWorkbook(XSSFFactory factory) {
-        this(XSSFWorkbookType.XLSX, factory);
-    }
+//    public XSSFWorkbook(XSSFFactory factory) {
+//        this(XSSFWorkbookType.XLSX, factory);
+//    }
 
     /**
      * Create a new SpreadsheetML workbook.

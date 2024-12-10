@@ -21,16 +21,6 @@ public interface CTConditionalFormatting extends org.apache.xmlbeans.XmlObject {
 
 
     /**
-     * Gets a List of "cfRule" elements
-     */
-    java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfRule> getCfRuleList();
-
-    /**
-     * Gets array of all "cfRule" elements
-     */
-    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfRule[] getCfRuleArray();
-
-    /**
      * Gets ith "cfRule" element
      */
     org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfRule getCfRuleArray(int i);
@@ -51,24 +41,9 @@ public interface CTConditionalFormatting extends org.apache.xmlbeans.XmlObject {
     void setCfRuleArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfRule cfRule);
 
     /**
-     * Inserts and returns a new empty value (as xml) as the ith "cfRule" element
-     */
-    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfRule insertNewCfRule(int i);
-
-    /**
      * Appends and returns a new empty value (as xml) as the last "cfRule" element
      */
     org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfRule addNewCfRule();
-
-    /**
-     * Removes the ith "cfRule" element
-     */
-    void removeCfRule(int i);
-
-//    /**
-//     * Gets the "extLst" element
-//     */
-//    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExtensionList getExtLst();
 
     /**
      * True if has "extLst" element
@@ -94,59 +69,22 @@ public interface CTConditionalFormatting extends org.apache.xmlbeans.XmlObject {
      * Gets the "pivot" attribute
      */
     boolean getPivot();
-
-    /**
-     * Gets (as xml) the "pivot" attribute
-     */
-    org.apache.xmlbeans.XmlBoolean xgetPivot();
-
-    /**
-     * True if has "pivot" attribute
-     */
-    boolean isSetPivot();
-
     /**
      * Sets the "pivot" attribute
      */
     void setPivot(boolean pivot);
 
-    /**
-     * Sets (as xml) the "pivot" attribute
-     */
-    void xsetPivot(org.apache.xmlbeans.XmlBoolean pivot);
-
-    /**
-     * Unsets the "pivot" attribute
-     */
-    void unsetPivot();
 
     /**
      * Gets the "sqref" attribute
      */
     java.util.List getSqref();
 
-//    /**
-//     * Gets (as xml) the "sqref" attribute
-//     */
-//    org.openxmlformats.schemas.spreadsheetml.x2006.main.STSqref xgetSqref();
-
-    /**
-     * True if has "sqref" attribute
-     */
-    boolean isSetSqref();
 
     /**
      * Sets the "sqref" attribute
      */
     void setSqref(java.util.List sqref);
 
-//    /**
-//     * Sets (as xml) the "sqref" attribute
-//     */
-//    void xsetSqref(org.openxmlformats.schemas.spreadsheetml.x2006.main.STSqref sqref);
-//
-//    /**
-//     * Unsets the "sqref" attribute
-//     */
-//    void unsetSqref();
+
 }

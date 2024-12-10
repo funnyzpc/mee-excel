@@ -291,35 +291,35 @@ public interface TypeStore extends NamespaceManager
 //     */
 //    void copy_to_element(
 //        TypeStore source, QName xsitype, QName name, int i);
-
-    /**
-     * Copies the contents of the given array of XmlObject (including
-     * attributes, elements, mixed content), over all the elements of the
-     * given name under the current typestore.
-     *
-     * The lengths of the two arrays that are passed should be the same.
-     *
-     * If there are n current elements of the given name and m elements
-     * in the source array, there are several cases for individual elements:
-     *
-     * 1. If i &lt; n and i &lt; m, then the contents of the ith source are copied
-     *    underneath the ith element; the ith element is not moved, but its
-     *    TypeStoreUser is disconnected.
-     * 2. if i &gt;= n and i &lt; m, then first enough new elements are appended
-     *    so that there is an element with the name i, then rule #1 is followed.
-     * 3. if i &gt;= m and i &lt; n, then the element #i and all its contents
-     *    are removed.
-     */
-
-    void array_setter ( XmlObject[] sources, QName elementName );
-
-    /**
-     * Visits all the elements immediately, using the given visitor.
-     * A TypeStoreUser calls this when somebody has requested validation.
-     */
-    void visit_elements(TypeStoreVisitor visitor);
-
-    XmlObject[] exec_query ( String queryExpr, XmlOptions options );
+//
+//    /**
+//     * Copies the contents of the given array of XmlObject (including
+//     * attributes, elements, mixed content), over all the elements of the
+//     * given name under the current typestore.
+//     *
+//     * The lengths of the two arrays that are passed should be the same.
+//     *
+//     * If there are n current elements of the given name and m elements
+//     * in the source array, there are several cases for individual elements:
+//     *
+//     * 1. If i &lt; n and i &lt; m, then the contents of the ith source are copied
+//     *    underneath the ith element; the ith element is not moved, but its
+//     *    TypeStoreUser is disconnected.
+//     * 2. if i &gt;= n and i &lt; m, then first enough new elements are appended
+//     *    so that there is an element with the name i, then rule #1 is followed.
+//     * 3. if i &gt;= m and i &lt; n, then the element #i and all its contents
+//     *    are removed.
+//     */
+//
+//    void array_setter ( XmlObject[] sources, QName elementName );
+//
+//    /**
+//     * Visits all the elements immediately, using the given visitor.
+//     * A TypeStoreUser calls this when somebody has requested validation.
+//     */
+//    void visit_elements(TypeStoreVisitor visitor);
+//
+//    XmlObject[] exec_query ( String queryExpr, XmlOptions options );
 
     /**
      * Returns the monitor object, used for synchronizing access to the doc.

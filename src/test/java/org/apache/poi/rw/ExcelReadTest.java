@@ -11,8 +11,8 @@ public class ExcelReadTest {
 
     public static void main(String[] args) {
         ExcelReadTest excelReadTest = new ExcelReadTest();
-        excelReadTest.readXls();
-//        excelReadTest.readXlsx();
+//        excelReadTest.readXls();
+        excelReadTest.readXlsx();
     }
     /**
      * read data by xlsx

@@ -15,10 +15,21 @@
 
 package org.apache.xmlbeans.impl.schema;
 
+import org.apache.xmlbeans.Filer;
+import org.apache.xmlbeans.ResourceLoader;
 import org.apache.xmlbeans.SchemaAnnotation;
+import org.apache.xmlbeans.SchemaAttributeGroup;
 import org.apache.xmlbeans.SchemaComponent;
+import org.apache.xmlbeans.SchemaGlobalAttribute;
+import org.apache.xmlbeans.SchemaGlobalElement;
+import org.apache.xmlbeans.SchemaIdentityConstraint;
+import org.apache.xmlbeans.SchemaModelGroup;
+import org.apache.xmlbeans.SchemaParticle;
 import org.apache.xmlbeans.SchemaType;
+import org.apache.xmlbeans.SchemaTypeLoader;
+import org.apache.xmlbeans.SchemaTypeLoaderException;
 import org.apache.xmlbeans.SchemaTypeSystem;
+import org.apache.xmlbeans.SystemProperties;
 import org.apache.xmlbeans.impl.common.DefaultClassLoaderResourceLoader;
 import org.apache.xmlbeans.impl.common.QNameHelper;
 import org.apache.xmlbeans.impl.common.XBeanDebug;

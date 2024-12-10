@@ -25,24 +25,6 @@ public class CTExternalDefinedNamesImpl extends org.apache.xmlbeans.impl.values.
         new QName("http://schemas.openxmlformats.org/spreadsheetml/2006/main", "definedName"),
     };
 
-
-    /**
-     * Gets a List of "definedName" elements
-     */
-    @Override
-    public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalDefinedName> getDefinedNameList() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
-                this::getDefinedNameArray,
-                this::setDefinedNameArray,
-                this::insertNewDefinedName,
-                this::removeDefinedName,
-                this::sizeOfDefinedNameArray
-            );
-        }
-    }
-
     /**
      * Gets array of all "definedName" elements
      */
@@ -79,15 +61,6 @@ public class CTExternalDefinedNamesImpl extends org.apache.xmlbeans.impl.values.
     }
 
     /**
-     * Sets array of all "definedName" element  WARNING: This method is not atomicaly synchronized.
-     */
-    @Override
-    public void setDefinedNameArray(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalDefinedName[] definedNameArray) {
-        check_orphaned();
-        arraySetterHelper(definedNameArray, PROPERTY_QNAME[0]);
-    }
-
-    /**
      * Sets ith "definedName" element
      */
     @Override
@@ -108,18 +81,6 @@ public class CTExternalDefinedNamesImpl extends org.apache.xmlbeans.impl.values.
         }
     }
 
-    /**
-     * Appends and returns a new empty value (as xml) as the last "definedName" element
-     */
-    @Override
-    public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalDefinedName addNewDefinedName() {
-        synchronized (monitor()) {
-            check_orphaned();
-            org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalDefinedName target = null;
-            target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalDefinedName)get_store().add_element_user(PROPERTY_QNAME[0]);
-            return target;
-        }
-    }
 
     /**
      * Removes the ith "definedName" element

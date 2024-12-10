@@ -15,10 +15,10 @@
 
 package org.apache.xmlbeans;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+import java.util.List;
+import java.util.ArrayList;
 
 /**
  * The base class for code-generated string enumeration value classes.
@@ -28,7 +28,7 @@ import java.util.Map;
  * it returns via {@link #toString}, and an int value for the purpose
  * of switching in case statements, returned via {@link #intValue}.
  * <p>
- * Each subclass manages an instance of {@link Table},
+ * Each subclass manages an instance of {@link StringEnumAbstractBase.Table},
  * which holds all the singleton instances for the subclass. A Table
  * can return a singleton instance given a String or an integer code.
  */ 

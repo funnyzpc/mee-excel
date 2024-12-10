@@ -187,166 +187,166 @@ public interface XmlObject extends XmlTokenSource {
      */
     boolean validate(XmlOptions options);
 
-    /**
-     * Selects a path.  Path can be a string or precompiled path String.
-     * <p>
-     * The path must be a relative path, where "." represents the
-     * element or attribute containing this XmlObject, and it must select
-     * only other elements or attributes.  If a non-element or non-attribute
-     * is selected, an unchecked exception is thrown.
-     * <p>
-     * The array that is returned contains all the selected
-     * XmlObjects, within the same document, listed in document
-     * order.  The actual array type of the result is inferred
-     * from the closest common base type of selected results.
-     * <p>
-     * Here is an example of usage.  Suppose we have a global
-     * element definition for "owner" whose type is "person":
-     *
-     * <pre>{@code
-     *   <schema targetNamespace="http://openuri.org/sample">
-     *      <element name="owner" type="person"/>
-     *      <complexType name="person">
-     *         [...]
-     *      </complexType>
-     *   </schema>
-     * }</pre>
-     * <p>
-     * and suppose "owner" tags can be scattered throughout the
-     * document.  Then we can write the following code to find
-     * them all:
-     *
-     * <pre>
-     * import org.openuri.sample.Person;
-     * import org.apache.xmlbeans.*;
-     * [...]
-     *   XmlObject xobj = XmlObject.Factory.parse(myFile);
-     *   Person[] results;
-     *   results = (Person[])xobj.selectPath(
-     *      "declare namespace s='http://www.openuri.org/sample' " +
-     *      ".//s:owner");
-     * </pre>
-     * <p>
-     * Notice the way in which namespace declarations are done in XPath 2.0.
-     * Since XPath can only navigate within an XML document - it cannot
-     * construct new XML - the resulting XmlObjects all reside in
-     * the same XML document as this XmlObject itself.
-     *
-     * @param path the xpath
-     * @return an array of all selected XmlObjects
-     */
-    XmlObject[] selectPath(String path);
-
-    /**
-     * Selects a path, applying options.
-     *
-     * @param path    the xpath
-     * @param options the options used to execute the xpath
-     * @return an array of all selected XmlObjects
-     * @see #selectPath(String)
-     */
-    XmlObject[] selectPath(String path, XmlOptions options);
-
-
-    /**
-     * Executes a query.  Query can be a string or precompiled query String.
-     * <p>
-     * An XQuery is very similar to an XPath, except that it also permits
-     * construction of new XML.  As a result, the XmlObjects that are
-     * returned from execQuery are in newly created documents, separate
-     * from the XmlObject on which the query is executed.
-     * <p>
-     * Syntax and usage is otherwise similar to selectPath.
-     * <p>
-     *
-     * @param query The XQuery expression
-     * @return an array of all selected XmlObjects
-     * @see #selectPath(String)
-     */
-    XmlObject[] execQuery(String query);
-
-    /**
-     * Executes a query with options.
-     * <p>
-     * Use the <em>options</em> parameter to specify the following:</p>
-     *
-     * <table>
-     * <caption>Method overview</caption>
-     * <tr><th>To specify this</th><th>Use this method</th></tr>
-     * <tr>
-     *  <td>The document type for the root element.</td>
-     *  <td>{@link XmlOptions#setDocumentType}</td>
-     * </tr>
-     * <tr>
-     *  <td>To replace the document element with the specified QName when constructing the
-     *  resulting document.</td>
-     *  <td>{@link XmlOptions#setLoadReplaceDocumentElement}</td>
-     * </tr>
-     * <tr>
-     *  <td>To strip all insignificant whitespace when constructing a document.</td>
-     *  <td>{@link XmlOptions#setLoadStripWhitespace}</td>
-     * </tr>
-     * <tr>
-     *  <td>To strip all comments when constructing a document.</td>
-     *  <td>{@link XmlOptions#setLoadStripComments}</td>
-     * </tr>
-     * <tr>
-     *  <td>To strip all processing instructions when constructing a document.</td>
-     *  <td>{@link XmlOptions#setLoadStripProcinsts}</td>
-     * </tr>
-     * <tr>
-     *  <td>A map of namespace URI substitutions to use when constructing a document.</td>
-     *  <td>{@link XmlOptions#setLoadSubstituteNamespaces}</td>
-     * </tr>
-     * <tr>
-     *  <td>Additional namespace mappings to be added when constructing a document.</td>
-     *  <td>{@link XmlOptions#setLoadAdditionalNamespaces}</td>
-     * </tr>
-     * <tr>
-     *  <td>To trim the underlying XML text buffer immediately after constructing
-     *  a document, resulting in a smaller memory footprint.</td>
-     *  <td>{@link XmlOptions#setLoadTrimTextBuffer}</td>
-     * </tr>
-     * <tr>
-     *  <td>Whether value facets should be checked as they are set.</td>
-     *  <td>{@link XmlOptions#setValidateOnSet}</td>
-     * </tr>
-     * </table>
-     *
-     * @param query   The XQuery expression.
-     * @param options Options as described.
-     * @return an array of all selected XmlObjects
-     * @see #execQuery(String)
-     */
-    XmlObject[] execQuery(String query, XmlOptions options);
+//    /**
+//     * Selects a path.  Path can be a string or precompiled path String.
+//     * <p>
+//     * The path must be a relative path, where "." represents the
+//     * element or attribute containing this XmlObject, and it must select
+//     * only other elements or attributes.  If a non-element or non-attribute
+//     * is selected, an unchecked exception is thrown.
+//     * <p>
+//     * The array that is returned contains all the selected
+//     * XmlObjects, within the same document, listed in document
+//     * order.  The actual array type of the result is inferred
+//     * from the closest common base type of selected results.
+//     * <p>
+//     * Here is an example of usage.  Suppose we have a global
+//     * element definition for "owner" whose type is "person":
+//     *
+//     * <pre>{@code
+//     *   <schema targetNamespace="http://openuri.org/sample">
+//     *      <element name="owner" type="person"/>
+//     *      <complexType name="person">
+//     *         [...]
+//     *      </complexType>
+//     *   </schema>
+//     * }</pre>
+//     * <p>
+//     * and suppose "owner" tags can be scattered throughout the
+//     * document.  Then we can write the following code to find
+//     * them all:
+//     *
+//     * <pre>
+//     * import org.openuri.sample.Person;
+//     * import org.apache.xmlbeans.*;
+//     * [...]
+//     *   XmlObject xobj = XmlObject.Factory.parse(myFile);
+//     *   Person[] results;
+//     *   results = (Person[])xobj.selectPath(
+//     *      "declare namespace s='http://www.openuri.org/sample' " +
+//     *      ".//s:owner");
+//     * </pre>
+//     * <p>
+//     * Notice the way in which namespace declarations are done in XPath 2.0.
+//     * Since XPath can only navigate within an XML document - it cannot
+//     * construct new XML - the resulting XmlObjects all reside in
+//     * the same XML document as this XmlObject itself.
+//     *
+//     * @param path the xpath
+//     * @return an array of all selected XmlObjects
+//     */
+//    XmlObject[] selectPath(String path);
+//
+//    /**
+//     * Selects a path, applying options.
+//     *
+//     * @param path    the xpath
+//     * @param options the options used to execute the xpath
+//     * @return an array of all selected XmlObjects
+//     * @see #selectPath(String)
+//     */
+//    XmlObject[] selectPath(String path, XmlOptions options);
 
 
-    /**
-     * Changes the schema type associated with this data and
-     * returns a new XmlObject instance whose schemaType is the
-     * new type.
-     * <p>
-     * Returns the new XmlObject if the type change was successful,
-     * the old XmlObject if no changes could be made. <p>
-     * Certain type changes may be prohibited in the interior of an xml
-     * tree due to schema type system constraints (that is, due
-     * to a parent container within which the newly specified
-     * type is not permissible), but there are no constraints
-     * at the roottype changes are never
-     * prohibited at the root of an xml tree.
-     * <p>
-     * If the type change is allowed, then the new XmlObject should
-     * be used rather than the old one. The old XmlObject instance and
-     * any other XmlObject instances in the subtree are permanently
-     * invalidated and should not be used. (They will return
-     * XmlValueDisconnectedException if you try to use them.)
-     * <p>
-     * If a type change is done on the interior of an Xml
-     * tree, then xsi:type attributes are updated as needed.
-     *
-     * @return a new XmlObject instance whose schemaType is the new type
-     */
-    XmlObject changeType(SchemaType newType);
+//    /**
+//     * Executes a query.  Query can be a string or precompiled query String.
+//     * <p>
+//     * An XQuery is very similar to an XPath, except that it also permits
+//     * construction of new XML.  As a result, the XmlObjects that are
+//     * returned from execQuery are in newly created documents, separate
+//     * from the XmlObject on which the query is executed.
+//     * <p>
+//     * Syntax and usage is otherwise similar to selectPath.
+//     * <p>
+//     *
+//     * @param query The XQuery expression
+//     * @return an array of all selected XmlObjects
+//     * @see #selectPath(String)
+//     */
+//    XmlObject[] execQuery(String query);
+//
+//    /**
+//     * Executes a query with options.
+//     * <p>
+//     * Use the <em>options</em> parameter to specify the following:</p>
+//     *
+//     * <table>
+//     * <caption>Method overview</caption>
+//     * <tr><th>To specify this</th><th>Use this method</th></tr>
+//     * <tr>
+//     *  <td>The document type for the root element.</td>
+//     *  <td>{@link XmlOptions#setDocumentType}</td>
+//     * </tr>
+//     * <tr>
+//     *  <td>To replace the document element with the specified QName when constructing the
+//     *  resulting document.</td>
+//     *  <td>{@link XmlOptions#setLoadReplaceDocumentElement}</td>
+//     * </tr>
+//     * <tr>
+//     *  <td>To strip all insignificant whitespace when constructing a document.</td>
+//     *  <td>{@link XmlOptions#setLoadStripWhitespace}</td>
+//     * </tr>
+//     * <tr>
+//     *  <td>To strip all comments when constructing a document.</td>
+//     *  <td>{@link XmlOptions#setLoadStripComments}</td>
+//     * </tr>
+//     * <tr>
+//     *  <td>To strip all processing instructions when constructing a document.</td>
+//     *  <td>{@link XmlOptions#setLoadStripProcinsts}</td>
+//     * </tr>
+//     * <tr>
+//     *  <td>A map of namespace URI substitutions to use when constructing a document.</td>
+//     *  <td>{@link XmlOptions#setLoadSubstituteNamespaces}</td>
+//     * </tr>
+//     * <tr>
+//     *  <td>Additional namespace mappings to be added when constructing a document.</td>
+//     *  <td>{@link XmlOptions#setLoadAdditionalNamespaces}</td>
+//     * </tr>
+//     * <tr>
+//     *  <td>To trim the underlying XML text buffer immediately after constructing
+//     *  a document, resulting in a smaller memory footprint.</td>
+//     *  <td>{@link XmlOptions#setLoadTrimTextBuffer}</td>
+//     * </tr>
+//     * <tr>
+//     *  <td>Whether value facets should be checked as they are set.</td>
+//     *  <td>{@link XmlOptions#setValidateOnSet}</td>
+//     * </tr>
+//     * </table>
+//     *
+//     * @param query   The XQuery expression.
+//     * @param options Options as described.
+//     * @return an array of all selected XmlObjects
+//     * @see #execQuery(String)
+//     */
+//    XmlObject[] execQuery(String query, XmlOptions options);
+//
+//
+//    /**
+//     * Changes the schema type associated with this data and
+//     * returns a new XmlObject instance whose schemaType is the
+//     * new type.
+//     * <p>
+//     * Returns the new XmlObject if the type change was successful,
+//     * the old XmlObject if no changes could be made. <p>
+//     * Certain type changes may be prohibited in the interior of an xml
+//     * tree due to schema type system constraints (that is, due
+//     * to a parent container within which the newly specified
+//     * type is not permissible), but there are no constraints
+//     * at the roottype changes are never
+//     * prohibited at the root of an xml tree.
+//     * <p>
+//     * If the type change is allowed, then the new XmlObject should
+//     * be used rather than the old one. The old XmlObject instance and
+//     * any other XmlObject instances in the subtree are permanently
+//     * invalidated and should not be used. (They will return
+//     * XmlValueDisconnectedException if you try to use them.)
+//     * <p>
+//     * If a type change is done on the interior of an Xml
+//     * tree, then xsi:type attributes are updated as needed.
+//     *
+//     * @return a new XmlObject instance whose schemaType is the new type
+//     */
+//    XmlObject changeType(SchemaType newType);
 
     /**
      * Changes the schema type associated with this data using substitution
@@ -539,24 +539,24 @@ public interface XmlObject extends XmlTokenSource {
      */
     XmlObject[] selectChildren(QName elementName);
 
-    /**
-     * Selects the contents of the children elements with the given name.
-     *
-     * @param elementUri       The URI of the elements to be selected.
-     * @param elementLocalName The local name of the elements to be selected.
-     * @return Returns the contents of the selected elements.
-     */
-    XmlObject[] selectChildren(String elementUri, String elementLocalName);
-
-    /**
-     * Selects the contents of the children elements that are contained in the elementNameSet.
-     *
-     * @param elementNameSet Set of element names to be selected.
-     * @return Returns the contents of the selected elements.
-     * @see SchemaType#qnameSetForWildcardElements()
-     * @see QNameSetBuilder for creating sets of qnames
-     */
-    XmlObject[] selectChildren(QNameSet elementNameSet);
+//    /**
+//     * Selects the contents of the children elements with the given name.
+//     *
+//     * @param elementUri       The URI of the elements to be selected.
+//     * @param elementLocalName The local name of the elements to be selected.
+//     * @return Returns the contents of the selected elements.
+//     */
+//    XmlObject[] selectChildren(String elementUri, String elementLocalName);
+//
+//    /**
+//     * Selects the contents of the children elements that are contained in the elementNameSet.
+//     *
+//     * @param elementNameSet Set of element names to be selected.
+//     * @return Returns the contents of the selected elements.
+//     * @see SchemaType#qnameSetForWildcardElements()
+//     * @see QNameSetBuilder for creating sets of qnames
+//     */
+//    XmlObject[] selectChildren(QNameSet elementNameSet);
 
     /**
      * Selects the content of the attribute with the given name.
@@ -566,22 +566,22 @@ public interface XmlObject extends XmlTokenSource {
      */
     XmlObject selectAttribute(QName attributeName);
 
-    /**
-     * Selects the content of the attribute with the given name.
-     *
-     * @param attributeUri       The URI of the attribute to be selected.
-     * @param attributeLocalName The local name of the attribute to be selected.
-     * @return Returns the content of the selected attribute.
-     */
-    XmlObject selectAttribute(String attributeUri, String attributeLocalName);
-
-    /**
-     * Selects the contents of the attributes that are contained in the elementNameSet.
-     *
-     * @param attributeNameSet Set of attribute names to be selected.
-     * @return Returns the contents of the selected attributes.
-     * @see SchemaType#qnameSetForWildcardAttributes()
-     * @see QNameSetBuilder for creating sets of qnames
-     */
-    XmlObject[] selectAttributes(QNameSet attributeNameSet);
+//    /**
+//     * Selects the content of the attribute with the given name.
+//     *
+//     * @param attributeUri       The URI of the attribute to be selected.
+//     * @param attributeLocalName The local name of the attribute to be selected.
+//     * @return Returns the content of the selected attribute.
+//     */
+//    XmlObject selectAttribute(String attributeUri, String attributeLocalName);
+//
+//    /**
+//     * Selects the contents of the attributes that are contained in the elementNameSet.
+//     *
+//     * @param attributeNameSet Set of attribute names to be selected.
+//     * @return Returns the contents of the selected attributes.
+//     * @see SchemaType#qnameSetForWildcardAttributes()
+//     * @see QNameSetBuilder for creating sets of qnames
+//     */
+//    XmlObject[] selectAttributes(QNameSet attributeNameSet);
 }

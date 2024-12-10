@@ -189,21 +189,21 @@ public interface CTStylesheet extends org.apache.xmlbeans.XmlObject {
 //     * Appends and returns a new empty "cellStyles" element
 //     */
 //    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCellStyles addNewCellStyles();
-
-    /**
-     * Unsets the "cellStyles" element
-     */
-    void unsetCellStyles();
+//
+//    /**
+//     * Unsets the "cellStyles" element
+//     */
+//    void unsetCellStyles();
 
     /**
      * Gets the "dxfs" element
      */
     org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxfs getDxfs();
-
-    /**
-     * True if has "dxfs" element
-     */
-    boolean isSetDxfs();
+//
+//    /**
+//     * True if has "dxfs" element
+//     */
+//    boolean isSetDxfs();
 
     /**
      * Sets the "dxfs" element
@@ -220,10 +220,10 @@ public interface CTStylesheet extends org.apache.xmlbeans.XmlObject {
      */
     void unsetDxfs();
 
-    /**
-     * Gets the "tableStyles" element
-     */
-    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableStyles getTableStyles();
+//    /**
+//     * Gets the "tableStyles" element
+//     */
+//    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableStyles getTableStyles();
 
     /**
      * True if has "tableStyles" element

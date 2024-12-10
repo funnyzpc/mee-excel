@@ -50,8 +50,8 @@ public interface TableStyleInfo {
      */
     String getName();
     
-    /**
-     * @return style definition
-     */
-    TableStyle getStyle();
+//    /**
+//     * @return style definition
+//     */
+//    TableStyle getStyle();
 }

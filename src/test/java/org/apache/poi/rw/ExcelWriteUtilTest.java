@@ -137,8 +137,8 @@ public class ExcelWriteUtilTest {
 
     public static void main(String[] args) {
         ExcelWriteUtilTest excelWriteUtilTest = new ExcelWriteUtilTest();
-        excelWriteUtilTest.expByObj();
-//        excelWriteUtilTest.expByMap();
+//        excelWriteUtilTest.expByObj();
+        excelWriteUtilTest.expByMap();
     }
 
 }

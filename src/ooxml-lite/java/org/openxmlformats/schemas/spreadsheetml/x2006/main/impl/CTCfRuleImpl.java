@@ -42,32 +42,6 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
         new QName("", "equalAverage"),
     };
 
-
-    /**
-     * Gets a List of "formula" elements
-     */
-    @Override
-    public java.util.List<String> getFormulaList() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListObject<>(
-                this::getFormulaArray,
-                this::setFormulaArray,
-                this::insertFormula,
-                this::removeFormula,
-                this::sizeOfFormulaArray
-            );
-        }
-    }
-
-    /**
-     * Gets array of all "formula" elements
-     */
-    @Override
-    public String[] getFormulaArray() {
-        return getObjectArray(PROPERTY_QNAME[0], org.apache.xmlbeans.SimpleValue::getStringValue, String[]::new);
-    }
-
     /**
      * Gets ith "formula" element
      */
@@ -82,31 +56,6 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
             }
             return target.getStringValue();
         }
-    }
-
-    /**
-     * Gets (as xml) a List of "formula" elements
-     */
-    @Override
-    public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.STFormula> xgetFormulaList() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
-                this::xgetFormulaArray,
-                this::xsetFormulaArray,
-                this::insertNewFormula,
-                this::removeFormula,
-                this::sizeOfFormulaArray
-            );
-        }
-    }
-
-    /**
-     * Gets (as xml) array of all "formula" elements
-     */
-    @Override
-    public org.openxmlformats.schemas.spreadsheetml.x2006.main.STFormula[] xgetFormulaArray() {
-        return xgetArray(PROPERTY_QNAME[0], org.openxmlformats.schemas.spreadsheetml.x2006.main.STFormula[]::new);
     }
 
     /**

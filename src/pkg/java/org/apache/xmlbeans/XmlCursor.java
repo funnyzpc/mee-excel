@@ -388,106 +388,91 @@ public interface XmlCursor extends XmlTokenSource, AutoCloseable {
 
     boolean pop();
 
-    /**
-     * Executes the specified XPath expression against the XML that this
-     * cursor is in.  The cursor's position does not change.  To navigate to the
-     * selections, use {@link #hasNextSelection} and {@link #toNextSelection} (similar to
-     * {@link java.util.Iterator}).
-     * <p>
-     * The root referred to by the expression should be given as
-     * a dot. The following is an example path expression:
-     * <pre>
-     * cursor.selectPath("./purchase-order/line-item");
-     * </pre>
-     * <p>
-     * Note that this method does not support top-level XPath functions.
-     *
-     * @param path The path expression to execute.
-     * @throws XmlRuntimeException If the query expression is invalid.
-     */
-    void selectPath(String path);
+//    /**
+//     * Executes the specified XPath expression against the XML that this
+//     * cursor is in.  The cursor's position does not change.  To navigate to the
+//     * selections, use {@link #hasNextSelection} and {@link #toNextSelection} (similar to
+//     * {@link java.util.Iterator}).
+//     * <p>
+//     * The root referred to by the expression should be given as
+//     * a dot. The following is an example path expression:
+//     * <pre>
+//     * cursor.selectPath("./purchase-order/line-item");
+//     * </pre>
+//     * <p>
+//     * Note that this method does not support top-level XPath functions.
+//     *
+//     * @param path The path expression to execute.
+//     * @throws XmlRuntimeException If the query expression is invalid.
+//     */
+//    void selectPath(String path);
 
-    /**
-     * Executes the specified XPath expression against the XML that this
-     * cursor is in. The cursor's position does not change.  To navigate to the
-     * selections, use hasNextSelection and toNextSelection (similar to
-     * java.util.Iterator).
-     * <p>
-     * The root referred to by the expression should be given as
-     * a dot. The following is an example path expression:
-     * <pre>
-     * cursor.selectPath("./purchase-order/line-item");
-     * </pre>
-     * <p>
-     * Note that this method does not support top-level XPath functions.
-     *
-     * @param path    The path expression to execute.
-     * @param options Options for the query. For example, you can call
-     *                the {@link XmlOptions#setXqueryCurrentNodeVar(String) XmlOptions.setXqueryCurrentNodeVar(String)}
-     *                method to specify a particular name for the query expression
-     *                variable that indicates the context node.
-     * @throws XmlRuntimeException If the query expression is invalid.
-     */
-    void selectPath(String path, XmlOptions options);
+//    /**
+//     * Executes the specified XPath expression against the XML that this
+//     * cursor is in. The cursor's position does not change.  To navigate to the
+//     * selections, use hasNextSelection and toNextSelection (similar to
+//     * java.util.Iterator).
+//     * <p>
+//     * The root referred to by the expression should be given as
+//     * a dot. The following is an example path expression:
+//     * <pre>
+//     * cursor.selectPath("./purchase-order/line-item");
+//     * </pre>
+//     * <p>
+//     * Note that this method does not support top-level XPath functions.
+//     *
+//     * @param path    The path expression to execute.
+//     * @param options Options for the query. For example, you can call
+//     *                the {@link XmlOptions#setXqueryCurrentNodeVar(String) XmlOptions.setXqueryCurrentNodeVar(String)}
+//     *                method to specify a particular name for the query expression
+//     *                variable that indicates the context node.
+//     * @throws XmlRuntimeException If the query expression is invalid.
+//     */
+//    void selectPath(String path, XmlOptions options);
+//
+//    /**
+//     * Returns whether or not there is a next selection.
+//     *
+//     * @return true if there is a next selection; otherwise, false.
+//     */
+//
+//    boolean hasNextSelection();
+//
+//    /**
+//     * Moves this cursor to the next location in the selection,
+//     * if any. See the {@link #selectPath} and {@link #addToSelection} methods.
+//     *
+//     * @return true if the cursor moved; otherwise, false.
+//     */
+//
+//    boolean toNextSelection();
 
-    /**
-     * Returns whether or not there is a next selection.
-     *
-     * @return true if there is a next selection; otherwise, false.
-     */
-
-    boolean hasNextSelection();
-
-    /**
-     * Moves this cursor to the next location in the selection,
-     * if any. See the {@link #selectPath} and {@link #addToSelection} methods.
-     *
-     * @return true if the cursor moved; otherwise, false.
-     */
-
-    boolean toNextSelection();
-
-    /**
-     * Moves this cursor to the specified location in the selection.
-     * If i is less than zero or greater than or equal to the selection
-     * count, this method returns false.
-     * <p>
-     * See also the selectPath() and addToSelection() methods.
-     *
-     * @param i The index of the desired location.
-     * @return true if the cursor was moved; otherwise, false.
-     */
-
-    boolean toSelection(int i);
-
-    /**
-     * Returns the count of the current selection. See also the selectPath()
-     * and addToSelection() methods.
-     * <p>
-     * You may experience better performance if you use the iteration
-     * model using the toNextSelection method, rather than
-     * the indexing model using the getSelectionCount and
-     * toSelection methods.
-     *
-     * @return A number indicating the size of the current selection.
-     */
-
-    int getSelectionCount();
-
-
-    /**
-     * Appends the current location of the cursor to the selection.
-     * See also the selectPath() method. You can use this as an
-     * alternative to calling the selectPath method when you want
-     * to define your own selection.
-     */
-
-    void addToSelection();
-
-    /**
-     * Clears this cursor's selection, but does not modify the document.
-     */
-    void clearSelections();
+//    /**
+//     * Moves this cursor to the specified location in the selection.
+//     * If i is less than zero or greater than or equal to the selection
+//     * count, this method returns false.
+//     * <p>
+//     * See also the selectPath() and addToSelection() methods.
+//     *
+//     * @param i The index of the desired location.
+//     * @return true if the cursor was moved; otherwise, false.
+//     */
+//
+//    boolean toSelection(int i);
+//
+//    /**
+//     * Returns the count of the current selection. See also the selectPath()
+//     * and addToSelection() methods.
+//     * <p>
+//     * You may experience better performance if you use the iteration
+//     * model using the toNextSelection method, rather than
+//     * the indexing model using the getSelectionCount and
+//     * toSelection methods.
+//     *
+//     * @return A number indicating the size of the current selection.
+//     */
+//
+//    int getSelectionCount();
 
     /**
      * Moves this cursor to the same position as the bookmark.  If the
@@ -762,26 +747,26 @@ public interface XmlCursor extends XmlTokenSource, AutoCloseable {
 
     boolean isFinish();
 
-    /**
-     * True if this token is any attribute. This includes an ATTR token type and
-     * the NAMESPACE token type attribute.
-     *
-     * @return true if the current cursor is at any attribute; otherwise, false.
-     */
-
-    boolean isAnyAttr();
-
-    /**
-     * Returns the type of the previous token. By definition, the previous
-     * token is the token immediately to the left of the cursor.
-     * <p>
-     * If you're in the middle of text, after a character, you get TEXT.
-     *
-     * @return The TokenType instance for the token immediately before the
-     * token at the cursor's current location.
-     */
-
-    TokenType prevTokenType();
+//    /**
+//     * True if this token is any attribute. This includes an ATTR token type and
+//     * the NAMESPACE token type attribute.
+//     *
+//     * @return true if the current cursor is at any attribute; otherwise, false.
+//     */
+//
+//    boolean isAnyAttr();
+//
+//    /**
+//     * Returns the type of the previous token. By definition, the previous
+//     * token is the token immediately to the left of the cursor.
+//     * <p>
+//     * If you're in the middle of text, after a character, you get TEXT.
+//     *
+//     * @return The TokenType instance for the token immediately before the
+//     * token at the cursor's current location.
+//     */
+//
+//    TokenType prevTokenType();
 
     /**
      * True if there is a next token. When this is false, as when the cursor is
@@ -939,14 +924,14 @@ public interface XmlCursor extends XmlTokenSource, AutoCloseable {
 
     boolean toFirstChild();
 
-    /**
-     * Moves the cursor to the last element child, or returns false and
-     * does not move the cursor if there are no element children.
-     *
-     * @return true if the cursor was moved; otherwise, false.
-     */
-
-    boolean toLastChild();
+//    /**
+//     * Moves the cursor to the last element child, or returns false and
+//     * does not move the cursor if there are no element children.
+//     *
+//     * @return true if the cursor was moved; otherwise, false.
+//     */
+//
+//    boolean toLastChild();
 
     /**
      * Moves the cursor to the first child element of the specified name in
@@ -979,37 +964,37 @@ public interface XmlCursor extends XmlTokenSource, AutoCloseable {
 
     boolean toChild(QName name);
 
-    /**
-     * Moves the cursor to the child element specified by <em>index</em>.
-     *
-     * @param index The position of the element in the sequence of child
-     *              elements.
-     * @return true if the cursor was moved; otherwise, false.
-     */
-
-    boolean toChild(int index);
-
-    /**
-     * Moves the cursor to the specified <em>index</em> child element of the
-     * specified name, where that element is the .
-     *
-     * @param name  The name of the child element to move the cursor to.
-     * @param index The position of the element in the sequence of child
-     *              elements.
-     * @return true if the cursor was moved; otherwise, false.
-     */
-
-    boolean toChild(QName name, int index);
-
-    /**
-     * Moves the cursor to the next sibling element of the specified name in no
-     * namespace.
-     *
-     * @param name The name of the element to move the cursor to.
-     * @return true if the cursor was moved; otherwise, false.
-     */
-
-    boolean toNextSibling(String name);
+//    /**
+//     * Moves the cursor to the child element specified by <em>index</em>.
+//     *
+//     * @param index The position of the element in the sequence of child
+//     *              elements.
+//     * @return true if the cursor was moved; otherwise, false.
+//     */
+//
+//    boolean toChild(int index);
+//
+//    /**
+//     * Moves the cursor to the specified <em>index</em> child element of the
+//     * specified name, where that element is the .
+//     *
+//     * @param name  The name of the child element to move the cursor to.
+//     * @param index The position of the element in the sequence of child
+//     *              elements.
+//     * @return true if the cursor was moved; otherwise, false.
+//     */
+//
+//    boolean toChild(QName name, int index);
+//
+//    /**
+//     * Moves the cursor to the next sibling element of the specified name in no
+//     * namespace.
+//     *
+//     * @param name The name of the element to move the cursor to.
+//     * @return true if the cursor was moved; otherwise, false.
+//     */
+//
+//    boolean toNextSibling(String name);
 
     /**
      * Moves the cursor to the next sibling element of the specified name
@@ -1127,17 +1112,17 @@ public interface XmlCursor extends XmlTokenSource, AutoCloseable {
 
     String getAttributeText(QName attrName);
 
-    /**
-     * When at a START or STARTDOC, sets the attribute text for the given
-     * attribute. When not at a START or STARTDOC returns false.
-     * If the attribute does not exist, one is created.
-     *
-     * @param attrName The name of the attribute whose value is being set.
-     * @param value    The new value for the attribute.
-     * @return true if the new value was set; otherwise, false.
-     */
-
-    boolean setAttributeText(QName attrName, String value);
+//    /**
+//     * When at a START or STARTDOC, sets the attribute text for the given
+//     * attribute. When not at a START or STARTDOC returns false.
+//     * If the attribute does not exist, one is created.
+//     *
+//     * @param attrName The name of the attribute whose value is being set.
+//     * @param value    The new value for the attribute.
+//     * @return true if the new value was set; otherwise, false.
+//     */
+//
+//    boolean setAttributeText(QName attrName, String value);
 
     /**
      * When at a START or STARTDOC, removes the attribute with the given name.
@@ -1176,53 +1161,53 @@ public interface XmlCursor extends XmlTokenSource, AutoCloseable {
 
     String getTextValue();
 
-    /**
-     * Copies the text value of the current document, element, attribute,
-     * comment, processing instruction or text token, counting right from
-     * this cursor's location up to <em>maxCharacterCount</em>,
-     * and copies the returned text into <em>returnedChars</em>.
-     * <p>
-     * When getting the text value of an element, non-text content such
-     * as comments and processing instructions are ignored and text is concatenated.
-     * For elements that have nested element children, this
-     * returns the concatenated text of all mixed content and the
-     * text of all the element children, recursing in first-to-last
-     * depthfirst order.
-     * <p>
-     * For attributes, including namespaces, this returns the attribute value.
-     * <p>
-     * For comments and processing instructions, this returns the text contents
-     * of the comment or PI, not including the delimiting sequences &lt;!-- --&gt;, &lt;? ?&gt;. For
-     * a PI, the text will not include the name of the PI.
-     * <p>
-     * If the current token is END or ENDDOC, this throws an {@link IllegalStateException}.
-     * <p>
-     * The value of an empty tag is the empty string.
-     *
-     * @param returnedChars     A character array to hold the returned characters.
-     * @param offset            The position within returnedChars to which the first of the
-     *                          returned characters should be copied.
-     * @param maxCharacterCount The maximum number of characters after this cursor's
-     *                          location to copy. A negative value specifies that all characters should be copied.
-     * @return The actual number of characters copied; 0 if no characters
-     * were copied.
-     */
-
-    int getTextValue(char[] returnedChars, int offset, int maxCharacterCount);
-
-    /**
-     * Sets the text value of the XML at this cursor's location if that XML's
-     * token type is START, STARTDOC, ATTR, COMMENT or PROCINST.
-     * <p>
-     * For elements that have nested children this first removes all
-     * the content of the element and replaces it with the given text.
-     *
-     * @param text The text to use as a new value.
-     * @throws IllegalStateException If the token type at this
-     *                                         cursor's location is not START, STARTDOC, ATTR, COMMENT or
-     *                                         PROCINST.
-     */
-    void setTextValue(String text);
+//    /**
+//     * Copies the text value of the current document, element, attribute,
+//     * comment, processing instruction or text token, counting right from
+//     * this cursor's location up to <em>maxCharacterCount</em>,
+//     * and copies the returned text into <em>returnedChars</em>.
+//     * <p>
+//     * When getting the text value of an element, non-text content such
+//     * as comments and processing instructions are ignored and text is concatenated.
+//     * For elements that have nested element children, this
+//     * returns the concatenated text of all mixed content and the
+//     * text of all the element children, recursing in first-to-last
+//     * depthfirst order.
+//     * <p>
+//     * For attributes, including namespaces, this returns the attribute value.
+//     * <p>
+//     * For comments and processing instructions, this returns the text contents
+//     * of the comment or PI, not including the delimiting sequences &lt;!-- --&gt;, &lt;? ?&gt;. For
+//     * a PI, the text will not include the name of the PI.
+//     * <p>
+//     * If the current token is END or ENDDOC, this throws an {@link IllegalStateException}.
+//     * <p>
+//     * The value of an empty tag is the empty string.
+//     *
+//     * @param returnedChars     A character array to hold the returned characters.
+//     * @param offset            The position within returnedChars to which the first of the
+//     *                          returned characters should be copied.
+//     * @param maxCharacterCount The maximum number of characters after this cursor's
+//     *                          location to copy. A negative value specifies that all characters should be copied.
+//     * @return The actual number of characters copied; 0 if no characters
+//     * were copied.
+//     */
+//
+//    int getTextValue(char[] returnedChars, int offset, int maxCharacterCount);
+//
+//    /**
+//     * Sets the text value of the XML at this cursor's location if that XML's
+//     * token type is START, STARTDOC, ATTR, COMMENT or PROCINST.
+//     * <p>
+//     * For elements that have nested children this first removes all
+//     * the content of the element and replaces it with the given text.
+//     *
+//     * @param text The text to use as a new value.
+//     * @throws IllegalStateException If the token type at this
+//     *                                         cursor's location is not START, STARTDOC, ATTR, COMMENT or
+//     *                                         PROCINST.
+//     */
+//    void setTextValue(String text);
 
     /**
      * Sets the text value of the XML at this cursor's location (if that XML's
@@ -1276,62 +1261,62 @@ public interface XmlCursor extends XmlTokenSource, AutoCloseable {
 
     void toStartDoc();
 
-    /**
-     * Moves the cursor to the ENDDOC token, which is the end
-     * of the document.
-     */
-
-    void toEndDoc();
-
-    /**
-     * Determines if the specified cursor is in the same document as
-     * this cursor.
-     *
-     * @param cursor The cursor that may be in the same document
-     *               as this cursor.
-     * @return true if the specified cursor is in the same document;
-     * otherwise, false.
-     */
-
-    boolean isInSameDocument(XmlCursor cursor);
-
-    /**
-     * Returns an integer indicating whether this cursor is before,
-     * after, or at the same position as the specified cursor.
-     *
-     * {@code a.comparePosition(b) < 0} means a is to the left of b.<br>
-     * {@code a.comparePosition(b) == 0} means a is at the same position as b.<br>
-     * {@code a.comparePosition(b) > 0} means a is to the right of b.
-     * <p>
-     * The sort order of cursors in the document is the token order.
-     * For example, if cursor "a" is at a START token and the cursor "b"
-     * is at a token within the contents of the same element, then
-     * a.comparePosition(b) will return -1, meaning that the position
-     * of a is before b.
-     *
-     * @param cursor The cursor whose position should be compared
-     *               with this cursor.
-     * @return 1 if this cursor is after the specified cursor; 0 if
-     * this cursor is at the same position as the specified cursor;
-     * -1 if this cursor is before the specified cursor.
-     * @throws IllegalArgumentException If the specified
-     *                                            cursor is not in the same document as this cursor.
-     */
-
-    int comparePosition(XmlCursor cursor);
-
-    /**
-     * Determines if this cursor is to the left of (or before)
-     * the specified cursor. Note that this is the same as
-     * {@code a.comparePosition(b) &lt; 0 }
-     *
-     * @param cursor The cursor whose position should be compared
-     *               with this cursor.
-     * @return true if this cursor is to the left of the specified
-     * cursor; otherwise, false.
-     */
-
-    boolean isLeftOf(XmlCursor cursor);
+//    /**
+//     * Moves the cursor to the ENDDOC token, which is the end
+//     * of the document.
+//     */
+//
+//    void toEndDoc();
+//
+//    /**
+//     * Determines if the specified cursor is in the same document as
+//     * this cursor.
+//     *
+//     * @param cursor The cursor that may be in the same document
+//     *               as this cursor.
+//     * @return true if the specified cursor is in the same document;
+//     * otherwise, false.
+//     */
+//
+//    boolean isInSameDocument(XmlCursor cursor);
+//
+//    /**
+//     * Returns an integer indicating whether this cursor is before,
+//     * after, or at the same position as the specified cursor.
+//     *
+//     * {@code a.comparePosition(b) < 0} means a is to the left of b.<br>
+//     * {@code a.comparePosition(b) == 0} means a is at the same position as b.<br>
+//     * {@code a.comparePosition(b) > 0} means a is to the right of b.
+//     * <p>
+//     * The sort order of cursors in the document is the token order.
+//     * For example, if cursor "a" is at a START token and the cursor "b"
+//     * is at a token within the contents of the same element, then
+//     * a.comparePosition(b) will return -1, meaning that the position
+//     * of a is before b.
+//     *
+//     * @param cursor The cursor whose position should be compared
+//     *               with this cursor.
+//     * @return 1 if this cursor is after the specified cursor; 0 if
+//     * this cursor is at the same position as the specified cursor;
+//     * -1 if this cursor is before the specified cursor.
+//     * @throws IllegalArgumentException If the specified
+//     *                                            cursor is not in the same document as this cursor.
+//     */
+//
+//    int comparePosition(XmlCursor cursor);
+//
+//    /**
+//     * Determines if this cursor is to the left of (or before)
+//     * the specified cursor. Note that this is the same as
+//     * {@code a.comparePosition(b) &lt; 0 }
+//     *
+//     * @param cursor The cursor whose position should be compared
+//     *               with this cursor.
+//     * @return true if this cursor is to the left of the specified
+//     * cursor; otherwise, false.
+//     */
+//
+//    boolean isLeftOf(XmlCursor cursor);
 
     /**
      * Determines if this cursor is at the same position as
@@ -1359,39 +1344,39 @@ public interface XmlCursor extends XmlTokenSource, AutoCloseable {
 
     boolean isRightOf(XmlCursor cursor);
 
-    /**
-     * Executes the specified XQuery expression against the XML this
-     * cursor is in.
-     * <p>
-     * The query may be a String or a compiled query. You can precompile
-     * an XQuery expression using the XmlBeans.compileQuery method.
-     * <p>
-     * The root referred to by the expression should be given as
-     * a dot. The following is an example path expression:
-     * <pre>
-     * XmlCursor results = cursor.execQuery("purchase-order/line-item[price &lt;= 20.00]");
-     * </pre>
-     *
-     * @param query The XQuery expression to execute.
-     * @return A cursor containing the results of the query.
-     * @throws XmlRuntimeException If the query expression is invalid.
-     */
-
-    XmlCursor execQuery(String query);
-
-    /**
-     * Executes the specified XQuery expression against the XML this
-     * cursor is in, and using the specified options.
-     *
-     * @param query   The XQuery expression to execute.
-     * @param options Options for the query. For example, you can call
-     *                the {@link XmlOptions#setXqueryCurrentNodeVar(String) XmlOptions.setXqueryCurrentNodeVar(String)}
-     *                method to specify a particular name for the query expression
-     *                variable that indicates the context node.
-     * @throws XmlRuntimeException If the query expression is invalid.
-     */
-
-    XmlCursor execQuery(String query, XmlOptions options);
+//    /**
+//     * Executes the specified XQuery expression against the XML this
+//     * cursor is in.
+//     * <p>
+//     * The query may be a String or a compiled query. You can precompile
+//     * an XQuery expression using the XmlBeans.compileQuery method.
+//     * <p>
+//     * The root referred to by the expression should be given as
+//     * a dot. The following is an example path expression:
+//     * <pre>
+//     * XmlCursor results = cursor.execQuery("purchase-order/line-item[price &lt;= 20.00]");
+//     * </pre>
+//     *
+//     * @param query The XQuery expression to execute.
+//     * @return A cursor containing the results of the query.
+//     * @throws XmlRuntimeException If the query expression is invalid.
+//     */
+//
+//    XmlCursor execQuery(String query);
+//
+//    /**
+//     * Executes the specified XQuery expression against the XML this
+//     * cursor is in, and using the specified options.
+//     *
+//     * @param query   The XQuery expression to execute.
+//     * @param options Options for the query. For example, you can call
+//     *                the {@link XmlOptions#setXqueryCurrentNodeVar(String) XmlOptions.setXqueryCurrentNodeVar(String)}
+//     *                method to specify a particular name for the query expression
+//     *                variable that indicates the context node.
+//     * @throws XmlRuntimeException If the query expression is invalid.
+//     */
+//
+//    XmlCursor execQuery(String query, XmlOptions options);
 
     /**
      * Represents the state of a dcoument at a particular point

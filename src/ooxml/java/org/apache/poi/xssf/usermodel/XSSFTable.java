@@ -852,14 +852,14 @@ public class XSSFTable extends POIXMLDocumentPart implements Table {
         return getEndCellReference().getRow();
     }
 
-    /**
-     * @since 3.17 beta 1
-     */
-    @Override
-    public TableStyleInfo getStyle() {
-        if (! ctTable.isSetTableStyleInfo()) return null;
-        return new XSSFTableStyleInfo(((XSSFSheet) getParent()).getWorkbook().getStylesSource(), ctTable.getTableStyleInfo());
-    }
+//    /**
+//     * @since 3.17 beta 1
+//     */
+//    @Override
+//    public TableStyleInfo getStyle() {
+//        if (! ctTable.isSetTableStyleInfo()) return null;
+//        return new XSSFTableStyleInfo(((XSSFSheet) getParent()).getWorkbook().getStylesSource(), ctTable.getTableStyleInfo());
+//    }
 
     /**
      * @see org.apache.poi.ss.usermodel.Table#contains(org.apache.poi.ss.usermodel.Cell)

@@ -26,57 +26,12 @@ public class CTDxfsImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
         new QName("", "count"),
     };
 
-
-    /**
-     * Gets a List of "dxf" elements
-     */
-    @Override
-    public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxf> getDxfList() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
-                this::getDxfArray,
-                this::setDxfArray,
-                this::insertNewDxf,
-                this::removeDxf,
-                this::sizeOfDxfArray
-            );
-        }
-    }
-
     /**
      * Gets array of all "dxf" elements
      */
     @Override
     public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxf[] getDxfArray() {
         return getXmlObjectArray(PROPERTY_QNAME[0], new org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxf[0]);
-    }
-
-    /**
-     * Gets ith "dxf" element
-     */
-    @Override
-    public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxf getDxfArray(int i) {
-        synchronized (monitor()) {
-            check_orphaned();
-            org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxf target = null;
-            target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxf)get_store().find_element_user(PROPERTY_QNAME[0], i);
-            if (target == null) {
-                throw new IndexOutOfBoundsException();
-            }
-            return target;
-        }
-    }
-
-    /**
-     * Returns number of "dxf" element
-     */
-    @Override
-    public int sizeOfDxfArray() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return get_store().count_elements(PROPERTY_QNAME[0]);
-        }
     }
 
     /**
@@ -88,50 +43,6 @@ public class CTDxfsImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
         arraySetterHelper(dxfArray, PROPERTY_QNAME[0]);
     }
 
-    /**
-     * Sets ith "dxf" element
-     */
-    @Override
-    public void setDxfArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxf dxf) {
-        generatedSetterHelperImpl(dxf, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
-    }
-
-    /**
-     * Inserts and returns a new empty value (as xml) as the ith "dxf" element
-     */
-    @Override
-    public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxf insertNewDxf(int i) {
-        synchronized (monitor()) {
-            check_orphaned();
-            org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxf target = null;
-            target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxf)get_store().insert_element_user(PROPERTY_QNAME[0], i);
-            return target;
-        }
-    }
-
-    /**
-     * Appends and returns a new empty value (as xml) as the last "dxf" element
-     */
-    @Override
-    public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxf addNewDxf() {
-        synchronized (monitor()) {
-            check_orphaned();
-            org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxf target = null;
-            target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxf)get_store().add_element_user(PROPERTY_QNAME[0]);
-            return target;
-        }
-    }
-
-    /**
-     * Removes the ith "dxf" element
-     */
-    @Override
-    public void removeDxf(int i) {
-        synchronized (monitor()) {
-            check_orphaned();
-            get_store().remove_element(PROPERTY_QNAME[0], i);
-        }
-    }
 
     /**
      * Gets the "count" attribute

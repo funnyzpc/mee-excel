@@ -15,13 +15,7 @@
 
 package org.apache.xmlbeans.impl.schema;
 
-import org.apache.xmlbeans.SchemaType;
-import org.apache.xmlbeans.SchemaTypeSystem;
-import org.apache.xmlbeans.XmlBeans;
-import org.apache.xmlbeans.XmlException;
-import org.apache.xmlbeans.XmlObject;
-import org.apache.xmlbeans.XmlOptions;
-import org.apache.xmlbeans.XmlSaxHandler;
+import org.apache.xmlbeans.*;
 import org.w3c.dom.DOMImplementation;
 import org.w3c.dom.Node;
 
@@ -176,14 +170,14 @@ public class XmlObjectFactory<T> extends DocumentFactory<T> {
      */
     @Override
     public T parse(File file, XmlOptions options) throws XmlException, IOException {
-        return (T) XmlBeans.getContextTypeLoader().parse(file, getInnerType(), options);
+        return (T)XmlBeans.getContextTypeLoader().parse(file, getInnerType(), options);
     }
 
     /**
      * Downloads the given {@link java.net.URL} as XML.
      */
     @Override
-    public T parse(java.net.URL u) throws org.apache.xmlbeans.XmlException, IOException {
+    public T parse(java.net.URL u) throws org.apache.xmlbeans.XmlException, java.io.IOException {
         return (T)XmlBeans.getContextTypeLoader().parse(u, getInnerType(), null);
     }
 
@@ -191,7 +185,7 @@ public class XmlObjectFactory<T> extends DocumentFactory<T> {
      * Downloads the given {@link java.net.URL} as XML.
      */
     @Override
-    public T parse(java.net.URL u, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException, IOException {
+    public T parse(java.net.URL u, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException, java.io.IOException {
         return (T)XmlBeans.getContextTypeLoader().parse(u, getInnerType(), options);
     }
 

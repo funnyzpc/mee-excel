@@ -15,19 +15,8 @@
 
 package org.apache.xmlbeans.impl.values;
 
-import com.sun.org.apache.xerces.internal.impl.dv.ValidationContext;
-import org.apache.xmlbeans.GDate;
-import org.apache.xmlbeans.QNameSet;
-import org.apache.xmlbeans.SchemaAttributeModel;
-import org.apache.xmlbeans.SchemaField;
-import org.apache.xmlbeans.SchemaLocalAttribute;
-import org.apache.xmlbeans.SchemaProperty;
-import org.apache.xmlbeans.SchemaType;
-import org.apache.xmlbeans.SimpleValue;
-import org.apache.xmlbeans.XmlAnySimpleType;
-import org.apache.xmlbeans.XmlCursor;
-import org.apache.xmlbeans.XmlObject;
-import org.apache.xmlbeans.XmlOptions;
+import org.apache.xmlbeans.*;
+import org.apache.xmlbeans.impl.common.*;
 import org.apache.xmlbeans.impl.schema.SchemaTypeImpl;
 import org.apache.xmlbeans.impl.schema.SchemaTypeVisitorImpl;
 import org.apache.xmlbeans.impl.util.LongUTFDataInputStream;
@@ -39,28 +28,11 @@ import org.xml.sax.ext.LexicalHandler;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLStreamReader;
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamException;
-import java.io.OutputStream;
-import java.io.Reader;
-import java.io.Serializable;
-import java.io.Writer;
+import java.io.*;
 import java.lang.reflect.Array;
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Collection;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.function.Function;
 import java.util.function.IntFunction;
 
@@ -188,16 +160,6 @@ public abstract class XmlObjectBase implements TypeStoreUser, Serializable, XmlO
     public Node getDomNode() {
         try (XmlCursor cur = newCursorForce()) {
             return cur.getDomNode();
-        }
-    }
-
-    public Node newDomNode() {
-        return newDomNode(null);
-    }
-
-    public Node newDomNode(XmlOptions options) {
-        try (XmlCursor cur = newCursorForce()) {
-            return cur.newDomNode(makeInnerOptions(options));
         }
     }
 
@@ -470,78 +432,6 @@ public abstract class XmlObjectBase implements TypeStoreUser, Serializable, XmlO
         XmlObject[] result = (XmlObject[]) Array.newInstance(desiredClass, input.length);
         System.arraycopy(input, 0, result, 0, input.length);
         return result;
-    }
-
-    public XmlObject[] selectPath(String path) {
-        return selectPath(path, null);
-    }
-
-    public XmlObject[] selectPath(String path, XmlOptions options) {
-        XmlObject[] selections;
-
-        // all user-level code; doesn't need to be synchronized
-
-
-        try (XmlCursor c = newCursor()) {
-            if (c == null) {
-                throw new XmlValueDisconnectedException();
-            }
-
-            c.selectPath(path, options);
-
-            if (!c.hasNextSelection()) {
-                selections = EMPTY_RESULT;
-            } else {
-                selections = new XmlObject[c.getSelectionCount()];
-
-                for (int i = 0; c.toNextSelection(); i++) {
-                    if ((selections[i] = c.getObject()) == null) {
-                        if (!c.toParent() || (selections[i] = c.getObject()) == null) {
-                            throw
-                                new XmlRuntimeException(
-                                    "Path must select only elements " +
-                                    "and attributes");
-                        }
-                    }
-                }
-            }
-        }
-
-        return _typedArray(selections);
-    }
-
-    public XmlObject[] execQuery(String path) {
-        return execQuery(path, null);
-    }
-
-    public XmlObject[] execQuery(String queryExpr, XmlOptions options) {
-        synchronized (monitor()) {
-            TypeStore typeStore = get_store();
-
-            if (typeStore == null) {
-                throw
-                    new XmlRuntimeException(
-                        "Cannot do XQuery on XML Value Objects");
-            }
-            return _typedArray(typeStore.exec_query(queryExpr, options));
-        }
-    }
-
-    public XmlObject changeType(SchemaType type) {
-        if (type == null) {
-            throw new IllegalArgumentException("Invalid type (null)");
-        }
-
-        if ((_flags & FLAG_STORE) == 0) {
-            throw
-                new IllegalStateException(
-                    "XML Value Objects cannot have thier type changed");
-        }
-
-        synchronized (monitor()) {
-            check_orphaned();
-            return (XmlObject) get_store().change_type(type);
-        }
     }
 
     public XmlObject substitute(QName name, SchemaType type) {
@@ -3128,14 +3018,14 @@ public abstract class XmlObjectBase implements TypeStoreUser, Serializable, XmlO
 
     private List<XmlObjectBase> getBaseArray(QName elementName) {
         check_orphaned();
-        List<XmlObjectBase> targetList = new ArrayList<>();
+        List<XmlObjectBase> targetList = new java.util.ArrayList<>();
         get_store().find_all_element_users(elementName, targetList);
         return targetList;
     }
 
     private List<XmlObjectBase> getBaseArray(QNameSet elementSet) {
         check_orphaned();
-        List<XmlObjectBase> targetList = new ArrayList<>();
+        List<XmlObjectBase> targetList = new java.util.ArrayList<>();
         get_store().find_all_element_users(elementSet, targetList);
         return targetList;
     }
@@ -3327,7 +3217,7 @@ public abstract class XmlObjectBase implements TypeStoreUser, Serializable, XmlO
     protected <T extends XmlObject> T[] xgetArray(QName elementName, IntFunction<T[]> arrayCon) {
         synchronized (monitor()) {
             check_orphaned();
-            List<T> targetList = new ArrayList<>();
+            java.util.List<T> targetList = new java.util.ArrayList<>();
             get_store().find_all_element_users(elementName, targetList);
             return targetList.stream().toArray(arrayCon);
         }
@@ -3336,7 +3226,7 @@ public abstract class XmlObjectBase implements TypeStoreUser, Serializable, XmlO
     protected <T extends XmlObject> T[] xgetArray(QNameSet elementSet, IntFunction<T[]> arrayCon) {
         synchronized (monitor()) {
             check_orphaned();
-            List<T> targetList = new ArrayList<>();
+            java.util.List<T> targetList = new java.util.ArrayList<>();
             get_store().find_all_element_users(elementSet, targetList);
             return targetList.stream().toArray(arrayCon);
         }

@@ -15,18 +15,55 @@
 
 package org.apache.xmlbeans.impl.validator;
 
+import org.apache.xmlbeans.GDate;
+import org.apache.xmlbeans.GDuration;
 import org.apache.xmlbeans.QNameSet;
+import org.apache.xmlbeans.SchemaAttributeModel;
 import org.apache.xmlbeans.SchemaField;
+import org.apache.xmlbeans.SchemaGlobalElement;
+import org.apache.xmlbeans.SchemaLocalAttribute;
+import org.apache.xmlbeans.SchemaLocalElement;
 import org.apache.xmlbeans.SchemaParticle;
 import org.apache.xmlbeans.SchemaProperty;
 import org.apache.xmlbeans.SchemaType;
+import org.apache.xmlbeans.SchemaTypeLoader;
+import org.apache.xmlbeans.SimpleValue;
 import org.apache.xmlbeans.XmlCursor;
+import org.apache.xmlbeans.XmlError;
+import org.apache.xmlbeans.XmlErrorCodes;
 import org.apache.xmlbeans.XmlObject;
+import org.apache.xmlbeans.XmlOptions;
+import org.apache.xmlbeans.XmlQName;
 import org.apache.xmlbeans.XmlString;
+import org.apache.xmlbeans.XmlValidationError;
+import org.apache.xmlbeans.impl.common.IdentityConstraint;
+import org.apache.xmlbeans.impl.common.InvalidLexicalValueException;
+import org.apache.xmlbeans.impl.common.QNameHelper;
+import org.apache.xmlbeans.impl.common.ValidationContext;
+import org.apache.xmlbeans.impl.common.ValidatorListener;
+import org.apache.xmlbeans.impl.common.XmlWhitespace;
 import org.apache.xmlbeans.impl.schema.SchemaTypeImpl;
 import org.apache.xmlbeans.impl.schema.SchemaTypeVisitorImpl;
 import org.apache.xmlbeans.impl.util.ExceptionUtil;
 import org.apache.xmlbeans.impl.util.XsTypeConverter;
+import org.apache.xmlbeans.impl.values.JavaBase64HolderEx;
+import org.apache.xmlbeans.impl.values.JavaBooleanHolder;
+import org.apache.xmlbeans.impl.values.JavaBooleanHolderEx;
+import org.apache.xmlbeans.impl.values.JavaDecimalHolderEx;
+import org.apache.xmlbeans.impl.values.JavaDoubleHolderEx;
+import org.apache.xmlbeans.impl.values.JavaFloatHolderEx;
+import org.apache.xmlbeans.impl.values.JavaHexBinaryHolderEx;
+import org.apache.xmlbeans.impl.values.JavaNotationHolderEx;
+import org.apache.xmlbeans.impl.values.JavaQNameHolderEx;
+import org.apache.xmlbeans.impl.values.JavaStringEnumerationHolderEx;
+import org.apache.xmlbeans.impl.values.JavaUriHolderEx;
+import org.apache.xmlbeans.impl.values.NamespaceContext;
+import org.apache.xmlbeans.impl.values.TypeStoreVisitor;
+import org.apache.xmlbeans.impl.values.XmlDateImpl;
+import org.apache.xmlbeans.impl.values.XmlDurationImpl;
+import org.apache.xmlbeans.impl.values.XmlListImpl;
+import org.apache.xmlbeans.impl.values.XmlQNameImpl;
+import org.apache.xmlbeans.impl.values.XmlValueOutOfRangeException;
 
 import javax.xml.namespace.QName;
 import java.math.BigDecimal;
@@ -41,8 +78,8 @@ import java.util.stream.Collectors;
 public final class Validator
     implements ValidatorListener {
     public Validator(
-        SchemaType type, SchemaField field, SchemaTypeLoader globalLoader,
-        XmlOptions options, Collection<XmlError> defaultErrorListener) {
+            SchemaType type, SchemaField field, SchemaTypeLoader globalLoader,
+            XmlOptions options, Collection<XmlError> defaultErrorListener) {
         options = XmlOptions.maskNull(options);
         _errorListener = options.getErrorListener();
         _treatLaxAsSkip = options.isValidateTreatLaxAsSkip();

@@ -265,19 +265,6 @@ public class CTStylesheetImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setCellXfs(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCellXfs cellXfs) {
         generatedSetterHelperImpl(cellXfs, PROPERTY_QNAME[5], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-
-
-    /**
-     * Unsets the "cellStyles" element
-     */
-    @Override
-    public void unsetCellStyles() {
-        synchronized (monitor()) {
-            check_orphaned();
-            get_store().remove_element(PROPERTY_QNAME[6], 0);
-        }
-    }
-
     /**
      * Gets the "dxfs" element
      */
@@ -290,18 +277,6 @@ public class CTStylesheetImpl extends org.apache.xmlbeans.impl.values.XmlComplex
             return (target == null) ? null : target;
         }
     }
-
-    /**
-     * True if has "dxfs" element
-     */
-    @Override
-    public boolean isSetDxfs() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return get_store().count_elements(PROPERTY_QNAME[7]) != 0;
-        }
-    }
-
     /**
      * Sets the "dxfs" element
      */
@@ -331,19 +306,6 @@ public class CTStylesheetImpl extends org.apache.xmlbeans.impl.values.XmlComplex
         synchronized (monitor()) {
             check_orphaned();
             get_store().remove_element(PROPERTY_QNAME[7], 0);
-        }
-    }
-
-    /**
-     * Gets the "tableStyles" element
-     */
-    @Override
-    public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableStyles getTableStyles() {
-        synchronized (monitor()) {
-            check_orphaned();
-            org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableStyles target = null;
-            target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableStyles)get_store().find_element_user(PROPERTY_QNAME[8], 0);
-            return (target == null) ? null : target;
         }
     }
 

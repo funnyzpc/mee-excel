@@ -30,31 +30,6 @@ public class CTConditionalFormattingImpl extends org.apache.xmlbeans.impl.values
 
 
     /**
-     * Gets a List of "cfRule" elements
-     */
-    @Override
-    public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfRule> getCfRuleList() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
-                this::getCfRuleArray,
-                this::setCfRuleArray,
-                this::insertNewCfRule,
-                this::removeCfRule,
-                this::sizeOfCfRuleArray
-            );
-        }
-    }
-
-    /**
-     * Gets array of all "cfRule" elements
-     */
-    @Override
-    public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfRule[] getCfRuleArray() {
-        return getXmlObjectArray(PROPERTY_QNAME[0], new org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfRule[0]);
-    }
-
-    /**
      * Gets ith "cfRule" element
      */
     @Override
@@ -98,18 +73,6 @@ public class CTConditionalFormattingImpl extends org.apache.xmlbeans.impl.values
         generatedSetterHelperImpl(cfRule, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
-    /**
-     * Inserts and returns a new empty value (as xml) as the ith "cfRule" element
-     */
-    @Override
-    public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfRule insertNewCfRule(int i) {
-        synchronized (monitor()) {
-            check_orphaned();
-            org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfRule target = null;
-            target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfRule)get_store().insert_element_user(PROPERTY_QNAME[0], i);
-            return target;
-        }
-    }
 
     /**
      * Appends and returns a new empty value (as xml) as the last "cfRule" element
@@ -124,16 +87,6 @@ public class CTConditionalFormattingImpl extends org.apache.xmlbeans.impl.values
         }
     }
 
-    /**
-     * Removes the ith "cfRule" element
-     */
-    @Override
-    public void removeCfRule(int i) {
-        synchronized (monitor()) {
-            check_orphaned();
-            get_store().remove_element(PROPERTY_QNAME[0], i);
-        }
-    }
 
     /**
      * True if has "extLst" element
@@ -174,34 +127,6 @@ public class CTConditionalFormattingImpl extends org.apache.xmlbeans.impl.values
             return (target == null) ? false : target.getBooleanValue();
         }
     }
-
-    /**
-     * Gets (as xml) the "pivot" attribute
-     */
-    @Override
-    public org.apache.xmlbeans.XmlBoolean xgetPivot() {
-        synchronized (monitor()) {
-            check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[2]);
-            if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[2]);
-            }
-            return target;
-        }
-    }
-
-    /**
-     * True if has "pivot" attribute
-     */
-    @Override
-    public boolean isSetPivot() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return get_store().find_attribute_user(PROPERTY_QNAME[2]) != null;
-        }
-    }
-
     /**
      * Sets the "pivot" attribute
      */
@@ -219,33 +144,6 @@ public class CTConditionalFormattingImpl extends org.apache.xmlbeans.impl.values
     }
 
     /**
-     * Sets (as xml) the "pivot" attribute
-     */
-    @Override
-    public void xsetPivot(org.apache.xmlbeans.XmlBoolean pivot) {
-        synchronized (monitor()) {
-            check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[2]);
-            if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[2]);
-            }
-            target.set(pivot);
-        }
-    }
-
-    /**
-     * Unsets the "pivot" attribute
-     */
-    @Override
-    public void unsetPivot() {
-        synchronized (monitor()) {
-            check_orphaned();
-            get_store().remove_attribute(PROPERTY_QNAME[2]);
-        }
-    }
-
-    /**
      * Gets the "sqref" attribute
      */
     @Override
@@ -258,17 +156,6 @@ public class CTConditionalFormattingImpl extends org.apache.xmlbeans.impl.values
         }
     }
 
-
-    /**
-     * True if has "sqref" attribute
-     */
-    @Override
-    public boolean isSetSqref() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return get_store().find_attribute_user(PROPERTY_QNAME[3]) != null;
-        }
-    }
 
     /**
      * Sets the "sqref" attribute
