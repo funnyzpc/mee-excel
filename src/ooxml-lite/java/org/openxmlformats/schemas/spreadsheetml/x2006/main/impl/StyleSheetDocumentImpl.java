@@ -23,7 +23,7 @@ public class StyleSheetDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
     }
 
     private static final QName[] PROPERTY_QNAME = {
-        new QName("http://schemas.openxmlformats.org/spreadsheetml/2006/main", "styleSheet"),
+            new QName("http://schemas.openxmlformats.org/spreadsheetml/2006/main", "styleSheet"),
     };
 
 

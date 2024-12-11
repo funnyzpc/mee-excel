@@ -196,41 +196,6 @@ class SchemaTypePool {
         return _handlesToRefs.get(handle);
     }
 
-    void startWriteMode() {
-        _started = true;
-        _componentsToHandles.clear();
-        for (String handle : _handlesToRefs.keySet()) {
-            SchemaComponent comp = _handlesToRefs.get(handle).getComponent();
-            _componentsToHandles.put(comp, handle);
-        }
-    }
-
-    void writeHandlePool(XsbReader reader) {
-        reader.writeShort(_componentsToHandles.size());
-        _componentsToHandles.forEach((comp, handle) -> {
-            reader.writeString(handle);
-            reader.writeShort(fileTypeFromComponentType(comp.getComponentType()));
-        });
-    }
-
-    int fileTypeFromComponentType(int componentType) {
-        switch (componentType) {
-            case SchemaComponent.TYPE:
-                return SchemaTypeSystemImpl.FILETYPE_SCHEMATYPE;
-            case SchemaComponent.ELEMENT:
-                return SchemaTypeSystemImpl.FILETYPE_SCHEMAELEMENT;
-            case SchemaComponent.ATTRIBUTE:
-                return SchemaTypeSystemImpl.FILETYPE_SCHEMAATTRIBUTE;
-            case SchemaComponent.MODEL_GROUP:
-                return SchemaTypeSystemImpl.FILETYPE_SCHEMAMODELGROUP;
-            case SchemaComponent.ATTRIBUTE_GROUP:
-                return SchemaTypeSystemImpl.FILETYPE_SCHEMAATTRIBUTEGROUP;
-            case SchemaComponent.IDENTITY_CONSTRAINT:
-                return SchemaTypeSystemImpl.FILETYPE_SCHEMAIDENTITYCONSTRAINT;
-            default:
-                throw new IllegalStateException("Unexpected component type");
-        }
-    }
 
     void readHandlePool(XsbReader reader) {
         if (_handlesToRefs.size() != 0 || _started) {

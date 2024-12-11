@@ -159,6 +159,41 @@ public class XSSFReader {
             throw new InvalidFormatException("Failed to parse SharedStringsTable", se);
         }
     }
+
+    /**
+     * Opens up the Styles Table, parses it, and
+     * returns a handy object for working with cell styles
+     *
+     * @return {@link StylesTable}
+     * @throws InvalidFormatException if the styles data format is invalid
+     * @throws IOException if there is an I/O issue reading the data
+     */
+    public StylesTable getStylesTable() throws IOException, InvalidFormatException {
+        ArrayList<PackagePart> parts = pkg.getPartsByContentType(XSSFRelation.STYLES.getContentType());
+        if (parts.isEmpty()) return null;
+
+        // Create the Styles Table, and associate the Themes if present
+        StylesTable styles = new StylesTable(parts.get(0));
+//        parts = pkg.getPartsByContentType(XSSFRelation.THEME.getContentType());
+//        if (parts.size() != 0) {
+//            styles.setTheme(new ThemesTable(parts.get(0)));
+//        }
+        return styles;
+    }
+
+
+    /**
+     * Returns an InputStream to read the contents of the
+     * shared strings table.
+     *
+     * @return input stream
+     * @throws InvalidFormatException if the shared string data format is invalid
+     * @throws IOException if there is an I/O issue reading the data
+     */
+    public InputStream getSharedStringsData() throws IOException, InvalidFormatException {
+        return XSSFRelation.SHARED_STRINGS.getContents(workbookPart);
+    }
+
     /**
      * Returns an InputStream to read the contents of the
      * specified Sheet.

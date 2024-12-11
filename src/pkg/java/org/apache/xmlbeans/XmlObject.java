@@ -137,55 +137,55 @@ public interface XmlObject extends XmlTokenSource {
      */
     SchemaType schemaType();
 
-    /**
-     * Does a deep validation of the entire subtree under the
-     * object, but does not validate the parents or siblings
-     * of the object if the object is in the interior of an xml
-     * tree.
-     *
-     * @return true if the contents of this object are valid
-     * according to schemaType().
-     */
-    boolean validate();
-
-    /**
-     * <p>Just like validate(), but with options.</p>
-     * <p>If you wish to collect error messages and locations while validating,
-     * use the {@link XmlOptions#setErrorListener} method. With that method,
-     * you can specify an object in which to store messages related to validation.
-     * The following is a simple example.</p>
-     *
-     * <pre>
-     * // Create an XmlOptions instance and set the error listener.
-     * XmlOptions validateOptions = new XmlOptions();
-     * ArrayList&lt;XmlError&gt; errorList = new ArrayList&lt;&gt;();
-     * validateOptions.setErrorListener(errorList);
-     *
-     * // Validate the XML.
-     * boolean isValid = newEmp.validate(validateOptions);
-     *
-     * // If the XML isn't valid, loop through the listener's contents,
-     * // printing contained messages.
-     * if (!isValid)
-     * {
-     *      for (int i = 0; i &lt; errorList.size(); i++)
-     *      {
-     *          XmlError error = (XmlError)errorList.get(i);
-     *
-     *          System.out.println("\n");
-     *          System.out.println("Message: " + error.getMessage() + "\n");
-     *          System.out.println("Location of invalid XML: " +
-     *              error.getCursorLocation().xmlText() + "\n");
-     *      }
-     * }
-     * </pre>
-     *
-     * @param options An object that implements the {@link java.util.Collection
-     *                Collection} interface.
-     * @return true if the contents of this object are valid
-     * according to schemaType().
-     */
-    boolean validate(XmlOptions options);
+//    /**
+//     * Does a deep validation of the entire subtree under the
+//     * object, but does not validate the parents or siblings
+//     * of the object if the object is in the interior of an xml
+//     * tree.
+//     *
+//     * @return true if the contents of this object are valid
+//     * according to schemaType().
+//     */
+//    boolean validate();
+//
+//    /**
+//     * <p>Just like validate(), but with options.</p>
+//     * <p>If you wish to collect error messages and locations while validating,
+//     * use the {@link XmlOptions#setErrorListener} method. With that method,
+//     * you can specify an object in which to store messages related to validation.
+//     * The following is a simple example.</p>
+//     *
+//     * <pre>
+//     * // Create an XmlOptions instance and set the error listener.
+//     * XmlOptions validateOptions = new XmlOptions();
+//     * ArrayList&lt;XmlError&gt; errorList = new ArrayList&lt;&gt;();
+//     * validateOptions.setErrorListener(errorList);
+//     *
+//     * // Validate the XML.
+//     * boolean isValid = newEmp.validate(validateOptions);
+//     *
+//     * // If the XML isn't valid, loop through the listener's contents,
+//     * // printing contained messages.
+//     * if (!isValid)
+//     * {
+//     *      for (int i = 0; i &lt; errorList.size(); i++)
+//     *      {
+//     *          XmlError error = (XmlError)errorList.get(i);
+//     *
+//     *          System.out.println("\n");
+//     *          System.out.println("Message: " + error.getMessage() + "\n");
+//     *          System.out.println("Location of invalid XML: " +
+//     *              error.getCursorLocation().xmlText() + "\n");
+//     *      }
+//     * }
+//     * </pre>
+//     *
+//     * @param options An object that implements the {@link java.util.Collection
+//     *                Collection} interface.
+//     * @return true if the contents of this object are valid
+//     * according to schemaType().
+//     */
+//    boolean validate(XmlOptions options);
 
 //    /**
 //     * Selects a path.  Path can be a string or precompiled path String.

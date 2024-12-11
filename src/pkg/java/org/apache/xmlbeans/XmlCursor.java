@@ -1317,32 +1317,32 @@ public interface XmlCursor extends XmlTokenSource, AutoCloseable {
 //     */
 //
 //    boolean isLeftOf(XmlCursor cursor);
-
-    /**
-     * Determines if this cursor is at the same position as
-     * the specified cursor. Note that this is the same as
-     * {@code a.comparePosition(b) == 0 }
-     *
-     * @param cursor The cursor whose position should be compared
-     *               with this cursor.
-     * @return true if this cursor is at the same position as
-     * the specified cursor; otherwise, false.
-     */
-
-    boolean isAtSamePositionAs(XmlCursor cursor);
-
-    /**
-     * Determines if this cursor is to the right of (or after)
-     * the specified cursor. Note that this is the same as
-     * {@code a.comparePosition(b) &gt; 0 }
-     *
-     * @param cursor The cursor whose position should be compared
-     *               with this cursor.
-     * @return true if this cursor is to the right of the specified
-     * cursor; otherwise, false.
-     */
-
-    boolean isRightOf(XmlCursor cursor);
+//
+//    /**
+//     * Determines if this cursor is at the same position as
+//     * the specified cursor. Note that this is the same as
+//     * {@code a.comparePosition(b) == 0 }
+//     *
+//     * @param cursor The cursor whose position should be compared
+//     *               with this cursor.
+//     * @return true if this cursor is at the same position as
+//     * the specified cursor; otherwise, false.
+//     */
+//
+//    boolean isAtSamePositionAs(XmlCursor cursor);
+//
+//    /**
+//     * Determines if this cursor is to the right of (or after)
+//     * the specified cursor. Note that this is the same as
+//     * {@code a.comparePosition(b) &gt; 0 }
+//     *
+//     * @param cursor The cursor whose position should be compared
+//     *               with this cursor.
+//     * @return true if this cursor is to the right of the specified
+//     * cursor; otherwise, false.
+//     */
+//
+//    boolean isRightOf(XmlCursor cursor);
 
 //    /**
 //     * Executes the specified XQuery expression against the XML this
@@ -1391,14 +1391,14 @@ public interface XmlCursor extends XmlTokenSource, AutoCloseable {
         public boolean hasChanged();
     }
 
-    /**
-     * Returns the current change stamp for the document the current cursor is in.
-     * This change stamp can be queried at a later point in time to find out
-     * if the document has changed.
-     *
-     * @return The change stamp for the document the current cursor is in.
-     */
-    ChangeStamp getDocChangeStamp();
+//    /**
+//     * Returns the current change stamp for the document the current cursor is in.
+//     * This change stamp can be queried at a later point in time to find out
+//     * if the document has changed.
+//     *
+//     * @return The change stamp for the document the current cursor is in.
+//     */
+//    ChangeStamp getDocChangeStamp();
 
     /**
      * Subclasses of XmlBookmark can be used to annotate an XML document.
@@ -1519,168 +1519,168 @@ public interface XmlCursor extends XmlTokenSource, AutoCloseable {
 
     XmlBookmark getBookmark(Object key);
 
-    /**
-     * Clears the bookmark whose key is specified, if the bookmark
-     * exists at this cursor's location.
-     *
-     * @param key The for the bookmark to clear.
-     */
-
-    void clearBookmark(Object key);
-
-    /**
-     * Retrieves all the bookmarks at this location, adding them to
-     * the specified collection. Bookmarks held by weak references are
-     * added to this collection as Weak referenced objects pointing to the
-     * bookmark.
-     *
-     * @param listToFill The collection that will contain bookmarks
-     *                   returned by this method.
-     */
-
-    void getAllBookmarkRefs(Collection<Object> listToFill);
-
-    /**
-     * Removes the XML that is immediately after this cursor.
-     * <p>
-     * For the TEXT, ATTR, NAMESPACE, COMMENT and PROCINST tokens, a single
-     * token is removed. For a START token, the corresponding element and all
-     * of its contents are removed. For all other tokens, this is a no-op.
-     * You cannot remove a STARTDOC.
-     * <p>
-     * The cursors located in the XML that was removed all collapse to the
-     * same location. All bookmarks in this XML will be orphaned.
-     *
-     * @return true if anything was removed; false only if the cursor is
-     * just before END or ENDDOC token.
-     * @throws IllegalArgumentException If the cursor is at a
-     *                                            STARTDOC token.
-     */
-
-    boolean removeXml();
-
-    /**
-     * Moves the XML immediately after this cursor to the location
-     * specified by the <em>toHere</em> cursor, shifting XML at that location
-     * to the right to make room. For the TEXT, ATTR, NAMESPACE,
-     * COMMENT and PROCINST tokens, a single token is moved. For a start token, the
-     * element and all of its contents are moved. For all other tokens, this
-     * is a no-op.
-     * <p>
-     * The bookmarks located in the XML that was moved also move to the
-     * new location; the cursors don't move with the content.
-     *
-     * @param toHere The cursor at the location to which the XML should
-     *               be moved.
-     * @return true if anything was moved.  This only happens when the XML to be
-     * moved contains the target of the move.
-     * @throws IllegalArgumentException If the operation is not allowed
-     *                                            at the cursor's location.  This includes attempting to move an end token or the
-     *                                            document as a whole.  Also, moving to a location before the start document or moving
-     *                                            an attribute to a location other than after another attribute or start token
-     *                                            will throw.
-     */
-
-    boolean moveXml(XmlCursor toHere);
-
-    /**
-     * Copies the XML immediately after this cursor to the location
-     * specified by the <em>toHere</em> cursor. For the TEXT, ATTR, NAMESPACE,
-     * COMMENT and PROCINST tokens, a single token is copied.  For a start token,
-     * the element and all of its contents are copied. For all other tokens, this
-     * is a no-op.
-     * <p>
-     * The cursors and bookmarks located in the XML that was copied are also copied
-     * to the new location.
-     *
-     * @param toHere The cursor at the location to which the XML should
-     *               be copied.
-     * @return true if anything was copied; false if the token supports the operation,
-     * but nothing was copied.
-     * @throws IllegalArgumentException If the operation is not allowed
-     *                                            at the cursor's location.
-     */
-
-    boolean copyXml(XmlCursor toHere);
-
-    /**
-     * Removes the contents of the container (STARTDOC OR START) immediately after
-     * this cursor. For all other situations, returns false. Does
-     * not remove attributes or namspaces.
-     *
-     * @return true if anything was copied; otherwise, false.
-     */
-
-    boolean removeXmlContents();
-
-    /**
-     * Moves the contents of the container (STARTDOC OR START) immediately after
-     * this cursor to the location specified by the <em>toHere</em> cursor.
-     * For all other situations, returns false. Does not move attributes or
-     * namespaces.
-     *
-     * @param toHere The cursor at the location to which the XML should be moved.
-     * @return true if anything was moved; otherwise, false.
-     */
-    boolean moveXmlContents(XmlCursor toHere);
-
-    /**
-     * Copies the contents of the container (STARTDOC OR START) immediately to
-     * the right of the cursor to the location specified by the <em>toHere</em> cursor.
-     * For all other situations, returns false.  Does not copy attributes or
-     * namespaces.
-     *
-     * @param toHere The cursor at the location to which the XML should
-     *               be copied.
-     * @return true if anything was copied; otherwise, false.
-     */
-    boolean copyXmlContents(XmlCursor toHere);
-
-    /**
-     * Removes characters up to the specified maximum number, counting right from
-     * this cursor's location to the character at <em>maxCharacterCount</em>. The
-     * space remaining from removing the characters collapses up to this cursor.
-     *
-     * @param maxCharacterCount The maximum number of characters after this cursor's
-     *                          location to remove.
-     * @return The actual number of characters removed.
-     * @throws IllegalArgumentException If the operation is not allowed
-     *                                            at the cursor's location.
-     */
-
-    int removeChars(int maxCharacterCount);
-
-    /**
-     * Moves characters immediately after this cursor to the position immediately
-     * after the specified cursor. Characters are counted to the right up to the
-     * specified maximum number. XML after the destination cursor is
-     * shifted to the right to make room. The space remaining from moving the
-     * characters collapses up to this cursor.
-     *
-     * @param maxCharacterCount The maximum number of characters after this cursor's
-     *                          location to move.
-     * @param toHere            The cursor to which the characters should be moved.
-     * @return The actual number of characters moved.
-     * @throws IllegalArgumentException If the operation is not allowed
-     *                                            at the cursor's location.
-     */
-
-    int moveChars(int maxCharacterCount, XmlCursor toHere);
-
-    /**
-     * Copies characters to the position immediately after the specified cursor.
-     * Characters are counted to the right up to the specified maximum number.
-     * XML after the destination cursor is shifted to the right to make room.
-     *
-     * @param maxCharacterCount The maximum number of characters after this cursor's
-     *                          location to copy.
-     * @param toHere            The cursor to which the characters should be copied.
-     * @return The actual number of characters copied.
-     * @throws IllegalArgumentException If the operation is not allowed
-     *                                            at the cursor's location.
-     */
-
-    int copyChars(int maxCharacterCount, XmlCursor toHere);
+//    /**
+//     * Clears the bookmark whose key is specified, if the bookmark
+//     * exists at this cursor's location.
+//     *
+//     * @param key The for the bookmark to clear.
+//     */
+//
+//    void clearBookmark(Object key);
+//
+//    /**
+//     * Retrieves all the bookmarks at this location, adding them to
+//     * the specified collection. Bookmarks held by weak references are
+//     * added to this collection as Weak referenced objects pointing to the
+//     * bookmark.
+//     *
+//     * @param listToFill The collection that will contain bookmarks
+//     *                   returned by this method.
+//     */
+//
+//    void getAllBookmarkRefs(Collection<Object> listToFill);
+//
+//    /**
+//     * Removes the XML that is immediately after this cursor.
+//     * <p>
+//     * For the TEXT, ATTR, NAMESPACE, COMMENT and PROCINST tokens, a single
+//     * token is removed. For a START token, the corresponding element and all
+//     * of its contents are removed. For all other tokens, this is a no-op.
+//     * You cannot remove a STARTDOC.
+//     * <p>
+//     * The cursors located in the XML that was removed all collapse to the
+//     * same location. All bookmarks in this XML will be orphaned.
+//     *
+//     * @return true if anything was removed; false only if the cursor is
+//     * just before END or ENDDOC token.
+//     * @throws IllegalArgumentException If the cursor is at a
+//     *                                            STARTDOC token.
+//     */
+//
+//    boolean removeXml();
+//
+//    /**
+//     * Moves the XML immediately after this cursor to the location
+//     * specified by the <em>toHere</em> cursor, shifting XML at that location
+//     * to the right to make room. For the TEXT, ATTR, NAMESPACE,
+//     * COMMENT and PROCINST tokens, a single token is moved. For a start token, the
+//     * element and all of its contents are moved. For all other tokens, this
+//     * is a no-op.
+//     * <p>
+//     * The bookmarks located in the XML that was moved also move to the
+//     * new location; the cursors don't move with the content.
+//     *
+//     * @param toHere The cursor at the location to which the XML should
+//     *               be moved.
+//     * @return true if anything was moved.  This only happens when the XML to be
+//     * moved contains the target of the move.
+//     * @throws IllegalArgumentException If the operation is not allowed
+//     *                                            at the cursor's location.  This includes attempting to move an end token or the
+//     *                                            document as a whole.  Also, moving to a location before the start document or moving
+//     *                                            an attribute to a location other than after another attribute or start token
+//     *                                            will throw.
+//     */
+//
+//    boolean moveXml(XmlCursor toHere);
+//
+//    /**
+//     * Copies the XML immediately after this cursor to the location
+//     * specified by the <em>toHere</em> cursor. For the TEXT, ATTR, NAMESPACE,
+//     * COMMENT and PROCINST tokens, a single token is copied.  For a start token,
+//     * the element and all of its contents are copied. For all other tokens, this
+//     * is a no-op.
+//     * <p>
+//     * The cursors and bookmarks located in the XML that was copied are also copied
+//     * to the new location.
+//     *
+//     * @param toHere The cursor at the location to which the XML should
+//     *               be copied.
+//     * @return true if anything was copied; false if the token supports the operation,
+//     * but nothing was copied.
+//     * @throws IllegalArgumentException If the operation is not allowed
+//     *                                            at the cursor's location.
+//     */
+//
+//    boolean copyXml(XmlCursor toHere);
+//
+//    /**
+//     * Removes the contents of the container (STARTDOC OR START) immediately after
+//     * this cursor. For all other situations, returns false. Does
+//     * not remove attributes or namspaces.
+//     *
+//     * @return true if anything was copied; otherwise, false.
+//     */
+//
+//    boolean removeXmlContents();
+//
+//    /**
+//     * Moves the contents of the container (STARTDOC OR START) immediately after
+//     * this cursor to the location specified by the <em>toHere</em> cursor.
+//     * For all other situations, returns false. Does not move attributes or
+//     * namespaces.
+//     *
+//     * @param toHere The cursor at the location to which the XML should be moved.
+//     * @return true if anything was moved; otherwise, false.
+//     */
+//    boolean moveXmlContents(XmlCursor toHere);
+//
+//    /**
+//     * Copies the contents of the container (STARTDOC OR START) immediately to
+//     * the right of the cursor to the location specified by the <em>toHere</em> cursor.
+//     * For all other situations, returns false.  Does not copy attributes or
+//     * namespaces.
+//     *
+//     * @param toHere The cursor at the location to which the XML should
+//     *               be copied.
+//     * @return true if anything was copied; otherwise, false.
+//     */
+//    boolean copyXmlContents(XmlCursor toHere);
+//
+//    /**
+//     * Removes characters up to the specified maximum number, counting right from
+//     * this cursor's location to the character at <em>maxCharacterCount</em>. The
+//     * space remaining from removing the characters collapses up to this cursor.
+//     *
+//     * @param maxCharacterCount The maximum number of characters after this cursor's
+//     *                          location to remove.
+//     * @return The actual number of characters removed.
+//     * @throws IllegalArgumentException If the operation is not allowed
+//     *                                            at the cursor's location.
+//     */
+//
+//    int removeChars(int maxCharacterCount);
+//
+//    /**
+//     * Moves characters immediately after this cursor to the position immediately
+//     * after the specified cursor. Characters are counted to the right up to the
+//     * specified maximum number. XML after the destination cursor is
+//     * shifted to the right to make room. The space remaining from moving the
+//     * characters collapses up to this cursor.
+//     *
+//     * @param maxCharacterCount The maximum number of characters after this cursor's
+//     *                          location to move.
+//     * @param toHere            The cursor to which the characters should be moved.
+//     * @return The actual number of characters moved.
+//     * @throws IllegalArgumentException If the operation is not allowed
+//     *                                            at the cursor's location.
+//     */
+//
+//    int moveChars(int maxCharacterCount, XmlCursor toHere);
+//
+//    /**
+//     * Copies characters to the position immediately after the specified cursor.
+//     * Characters are counted to the right up to the specified maximum number.
+//     * XML after the destination cursor is shifted to the right to make room.
+//     *
+//     * @param maxCharacterCount The maximum number of characters after this cursor's
+//     *                          location to copy.
+//     * @param toHere            The cursor to which the characters should be copied.
+//     * @return The actual number of characters copied.
+//     * @throws IllegalArgumentException If the operation is not allowed
+//     *                                            at the cursor's location.
+//     */
+//
+//    int copyChars(int maxCharacterCount, XmlCursor toHere);
 
     /**
      * Inserts the specified text immediately before this cursor's location.

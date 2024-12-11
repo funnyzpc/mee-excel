@@ -315,12 +315,12 @@ public final class XSSFRelation extends POIXMLRelation {
         "/xl/dialogSheets/sheet#.bin"
     );
 
-    public static final XSSFRelation THEME = new XSSFRelation(
-        "application/vnd.openxmlformats-officedocument.theme+xml",
-        "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
-        "/xl/theme/theme#.xml",
-        ThemesTable::new, ThemesTable::new
-    );
+//    public static final XSSFRelation THEME = new XSSFRelation(
+//        "application/vnd.openxmlformats-officedocument.theme+xml",
+//        "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+//        "/xl/theme/theme#.xml",
+//        ThemesTable::new, ThemesTable::new
+//    );
 
 //    public static final XSSFRelation CALC_CHAIN = new XSSFRelation(
 //        "application/vnd.openxmlformats-officedocument.spreadsheetml.calcChain+xml",

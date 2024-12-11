@@ -121,22 +121,6 @@ public final class SchemaTypeCodePrinter implements SchemaCodePrinter {
     }
 
     @Override
-    public void printType(Writer writer, SchemaType sType, XmlOptions opt) throws IOException {
-        this.opt = opt;
-        _writer = writer;
-        printTopComment(sType);
-        printPackage(sType, true);
-        emit("");
-        emit("import "+ElementFactory.class.getName()+";");
-        emit("import " + AbstractDocumentFactory.class.getName() + ";");
-        emit("import " + DocumentFactory.class.getName() + ";");
-        emit("import " + SimpleTypeFactory.class.getName() + ";");
-        emit("");
-        printInnerType(sType, sType.getTypeSystem());
-        _writer.flush();
-    }
-
-    @Override
     public void printTypeImpl(Writer writer, SchemaType sType, XmlOptions opt) throws IOException {
         this.opt = opt;
         _writer = writer;

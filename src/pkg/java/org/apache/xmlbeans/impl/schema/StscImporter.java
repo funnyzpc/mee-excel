@@ -16,7 +16,6 @@
 package org.apache.xmlbeans.impl.schema;
 
 import org.apache.xmlbeans.*;
-import org.apache.xmlbeans.impl.xb.xsdschema.RedefineDocument.Redefine;
 import org.apache.xmlbeans.impl.xb.xsdschema.SchemaDocument.Schema;
 
 import java.io.*;
@@ -33,7 +32,6 @@ public class StscImporter {
         // list of SchemaToProcess objects directly redefined by this
         private List<SchemaToProcess> redefines;
         // list of Redefine objects associated to each redefinition
-        private List<Redefine> redefineObjects;
         // set of SchemaToProcess  objects directly/indirectly included by this
         private Set<SchemaToProcess> indirectIncludes;
         // set of SchemaToProcess objects that include this directly/indirectly
@@ -67,86 +65,6 @@ public class StscImporter {
             return chameleonNamespace;
         }
 
-        /**
-         * This method and the remaining methods are used to represent a
-         * directed graph of includes/redefines. This is required in order
-         * to establish identity component by component, as required in
-         * xmlschema-1, chapter 4.2.2
-         */
-        public List<SchemaToProcess> getRedefines() {
-            return redefines;
-        }
-
-        public List<Redefine> getRedefineObjects() {
-            return redefineObjects;
-        }
-
-        private void addInclude(SchemaToProcess include) {
-            if (includes == null) {
-                includes = new ArrayList<>();
-            }
-            includes.add(include);
-        }
-
-        private void addRedefine(SchemaToProcess redefine, Redefine object) {
-            if (redefines == null || redefineObjects == null) {
-                redefines = new ArrayList<>();
-                redefineObjects = new ArrayList<>();
-            }
-            redefines.add(redefine);
-            redefineObjects.add(object);
-        }
-
-        private void buildIndirectReferences() {
-            if (includes != null) {
-                for (SchemaToProcess schemaToProcess : includes) {
-                    /* We have a this-schemaToProcess vertex
-                     * This means that all nodes accessible from schemaToProcess are
-                     * also accessible from this and all nodes that have access to
-                     * this also have access to schemaToProcess */
-                    this.addIndirectIncludes(schemaToProcess);
-                }
-            }
-            // Repeat the same algorithm for redefines, since redefines are also includes
-            if (redefines != null) {
-                for (SchemaToProcess schemaToProcess : redefines) {
-                    this.addIndirectIncludes(schemaToProcess);
-                }
-            }
-        }
-
-        private void addIndirectIncludes(SchemaToProcess schemaToProcess) {
-            if (indirectIncludes == null) {
-                indirectIncludes = new HashSet<>();
-            }
-            indirectIncludes.add(schemaToProcess);
-            if (schemaToProcess.indirectIncludedBy == null) {
-                schemaToProcess.indirectIncludedBy = new HashSet<>();
-            }
-            schemaToProcess.indirectIncludedBy.add(this);
-            addIndirectIncludesHelper(this, schemaToProcess);
-            if (indirectIncludedBy != null) {
-                for (SchemaToProcess stp : indirectIncludedBy) {
-                    stp.indirectIncludes.add(schemaToProcess);
-                    schemaToProcess.indirectIncludedBy.add(stp);
-                    addIndirectIncludesHelper(stp, schemaToProcess);
-                }
-            }
-        }
-
-        private static void addIndirectIncludesHelper(SchemaToProcess including,
-                                                      SchemaToProcess schemaToProcess) {
-            if (schemaToProcess.indirectIncludes != null) {
-                for (SchemaToProcess stp : schemaToProcess.indirectIncludes) {
-                    including.indirectIncludes.add(stp);
-                    stp.indirectIncludedBy.add(including);
-                }
-            }
-        }
-
-        public boolean indirectIncludes(SchemaToProcess schemaToProcess) {
-            return indirectIncludes != null && indirectIncludes.contains(schemaToProcess);
-        }
 
         public boolean equals(Object o) {
             if (this == o) {

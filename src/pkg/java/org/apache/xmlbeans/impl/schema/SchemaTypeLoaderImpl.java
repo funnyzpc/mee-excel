@@ -127,10 +127,6 @@ public class SchemaTypeLoaderImpl extends SchemaTypeLoaderBase {
         return result;
     }
 
-    public static SchemaTypeLoader build(SchemaTypeLoader[] searchPath, ResourceLoader resourceLoader, ClassLoader classLoader) {
-        return build(searchPath, resourceLoader, classLoader, null);
-    }
-
     /**
      * Initialize a SchemaTypeLoader via the given loaders and paths
      *

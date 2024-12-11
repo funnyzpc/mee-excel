@@ -57,6 +57,7 @@ import static org.apache.commons.io.IOUtils.EOF;
  *
  * @since 2.7
  */
+@SuppressWarnings("unused")
 public abstract class AbstractByteArrayOutputStream extends OutputStream {
 
     /**

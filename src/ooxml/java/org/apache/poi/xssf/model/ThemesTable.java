@@ -16,20 +16,12 @@
 ==================================================================== */
 package org.apache.poi.xssf.model;
 
-import static org.apache.poi.ooxml.POIXMLTypeLoader.DEFAULT_XML_OPTIONS;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 
 import org.apache.poi.ooxml.POIXMLDocumentPart;
-import org.apache.poi.openxml4j.opc.PackagePart;
 import org.apache.poi.xssf.usermodel.IndexedColorMap;
 import org.apache.poi.xssf.usermodel.XSSFColor;
-import org.apache.xmlbeans.XmlException;
-import org.openxmlformats.schemas.drawingml.x2006.main.CTColor;
-import org.openxmlformats.schemas.drawingml.x2006.main.CTColorScheme;
-import org.openxmlformats.schemas.drawingml.x2006.main.ThemeDocument;
 
 /**
  * Class that represents theme of XLSX document. The theme includes specific
@@ -64,63 +56,63 @@ public class ThemesTable extends POIXMLDocumentPart implements Themes {
    }
 
     private IndexedColorMap colorMap;
-    private ThemeDocument theme;
-
-    /**
-     * Create a new, empty ThemesTable
-     */
-    public ThemesTable() {
-        super();
-        theme = ThemeDocument.Factory.newInstance();
-        theme.addNewTheme().addNewThemeElements();
-    }
-
-    /**
-     * Construct a ThemesTable.
-     * @param part A PackagePart.
-     *
-     * @since POI 3.14-Beta1
-     */
-    public ThemesTable(PackagePart part) throws IOException {
-        super(part);
-        try (InputStream stream = part.getInputStream()) {
-            readFrom(stream);
-        }
-    }
-
-    /**
-     * Construct a ThemesTable.
-     * @param stream input stream.
-     *
-     * @since POI 5.2.0
-     */
-    public ThemesTable(InputStream stream) throws IOException {
-        super();
-        readFrom(stream);
-    }
-
-    /**
-     * Construct a ThemesTable from an existing ThemeDocument.
-     * @param theme A ThemeDocument.
-     */
-    public ThemesTable(ThemeDocument theme) {
-        this.theme = theme;
-    }
-
-    /**
-     * Read this themes table from an XML file.
-     *
-     * @param is The input stream containing the XML document.
-     * @throws IOException if an error occurs while reading.
-     * @since POI 5.2.0
-     */
-    public void readFrom(InputStream is) throws IOException {
-        try {
-            theme = ThemeDocument.Factory.parse(is, DEFAULT_XML_OPTIONS);
-        } catch(XmlException e) {
-            throw new IOException(e.getLocalizedMessage(), e);
-        }
-    }
+//    private ThemeDocument theme;
+//
+//    /**
+//     * Create a new, empty ThemesTable
+//     */
+//    public ThemesTable() {
+//        super();
+//        theme = ThemeDocument.Factory.newInstance();
+//        theme.addNewTheme().addNewThemeElements();
+//    }
+//
+//    /**
+//     * Construct a ThemesTable.
+//     * @param part A PackagePart.
+//     *
+//     * @since POI 3.14-Beta1
+//     */
+//    public ThemesTable(PackagePart part) throws IOException {
+//        super(part);
+//        try (InputStream stream = part.getInputStream()) {
+//            readFrom(stream);
+//        }
+//    }
+//
+//    /**
+//     * Construct a ThemesTable.
+//     * @param stream input stream.
+//     *
+//     * @since POI 5.2.0
+//     */
+//    public ThemesTable(InputStream stream) throws IOException {
+//        super();
+//        readFrom(stream);
+//    }
+//
+//    /**
+//     * Construct a ThemesTable from an existing ThemeDocument.
+//     * @param theme A ThemeDocument.
+//     */
+//    public ThemesTable(ThemeDocument theme) {
+//        this.theme = theme;
+//    }
+//
+//    /**
+//     * Read this themes table from an XML file.
+//     *
+//     * @param is The input stream containing the XML document.
+//     * @throws IOException if an error occurs while reading.
+//     * @since POI 5.2.0
+//     */
+//    public void readFrom(InputStream is) throws IOException {
+//        try {
+//            theme = ThemeDocument.Factory.parse(is, DEFAULT_XML_OPTIONS);
+//        } catch(XmlException e) {
+//            throw new IOException(e.getLocalizedMessage(), e);
+//        }
+//    }
 
     /**
      * called from {@link StylesTable} when setting theme, used to adjust colors if a custom indexed mapping is defined
@@ -136,38 +128,39 @@ public class ThemesTable extends POIXMLDocumentPart implements Themes {
      */
     @Override
     public XSSFColor getThemeColor(int idx) {
-        // Theme color references are NOT positional indices into the color scheme,
-        // i.e. these keys are NOT the same as the order in which theme colors appear
-        // in theme1.xml. They are keys to a mapped color.
-        CTColorScheme colorScheme = theme.getTheme().getThemeElements().getClrScheme();
-        CTColor ctColor;
-        switch (ThemeElement.byId(idx)) {
-            case LT1: ctColor = colorScheme.getLt1(); break;
-            case DK1: ctColor = colorScheme.getDk1(); break;
-            case LT2: ctColor = colorScheme.getLt2(); break;
-            case DK2: ctColor = colorScheme.getDk2(); break;
-            case ACCENT1: ctColor = colorScheme.getAccent1(); break;
-            case ACCENT2: ctColor = colorScheme.getAccent2(); break;
-            case ACCENT3: ctColor = colorScheme.getAccent3(); break;
-            case ACCENT4: ctColor = colorScheme.getAccent4(); break;
-            case ACCENT5: ctColor = colorScheme.getAccent5(); break;
-            case ACCENT6: ctColor = colorScheme.getAccent6(); break;
-            case HLINK:   ctColor = colorScheme.getHlink();   break;
-            case FOLHLINK:ctColor = colorScheme.getFolHlink();break;
-            default: return null;
-        }
-
-        byte[] rgb;
-        if (ctColor.isSetSrgbClr()) {
-            // Color is a regular one
-            rgb = ctColor.getSrgbClr().getVal();
-        } else if (ctColor.isSetSysClr()) {
-            // Color is a tint of white or black
-            rgb = ctColor.getSysClr().getLastClr();
-        } else {
-            return null;
-        }
-        return new XSSFColor(rgb, colorMap);
+//        // Theme color references are NOT positional indices into the color scheme,
+//        // i.e. these keys are NOT the same as the order in which theme colors appear
+//        // in theme1.xml. They are keys to a mapped color.
+//        CTColorScheme colorScheme = theme.getTheme().getThemeElements().getClrScheme();
+//        CTColor ctColor;
+//        switch (ThemeElement.byId(idx)) {
+//            case LT1: ctColor = colorScheme.getLt1(); break;
+//            case DK1: ctColor = colorScheme.getDk1(); break;
+//            case LT2: ctColor = colorScheme.getLt2(); break;
+//            case DK2: ctColor = colorScheme.getDk2(); break;
+//            case ACCENT1: ctColor = colorScheme.getAccent1(); break;
+//            case ACCENT2: ctColor = colorScheme.getAccent2(); break;
+//            case ACCENT3: ctColor = colorScheme.getAccent3(); break;
+//            case ACCENT4: ctColor = colorScheme.getAccent4(); break;
+//            case ACCENT5: ctColor = colorScheme.getAccent5(); break;
+//            case ACCENT6: ctColor = colorScheme.getAccent6(); break;
+//            case HLINK:   ctColor = colorScheme.getHlink();   break;
+//            case FOLHLINK:ctColor = colorScheme.getFolHlink();break;
+//            default: return null;
+//        }
+//
+//        byte[] rgb;
+//        if (ctColor.isSetSrgbClr()) {
+//            // Color is a regular one
+//            rgb = ctColor.getSrgbClr().getVal();
+//        } else if (ctColor.isSetSysClr()) {
+//            // Color is a tint of white or black
+//            rgb = ctColor.getSysClr().getLastClr();
+//        } else {
+//            return null;
+//        }
+//        return new XSSFColor(rgb, colorMap);
+        return null;
     }
 
     /**
@@ -195,21 +188,21 @@ public class ThemesTable extends POIXMLDocumentPart implements Themes {
        // All done
     }
 
-    /**
-     * Write this table out as XML.
-     *
-     * @param out The stream to write to.
-     * @throws IOException if an error occurs while writing.
-     */
-    public void writeTo(OutputStream out) throws IOException {
-        theme.save(out, DEFAULT_XML_OPTIONS);
-    }
+//    /**
+//     * Write this table out as XML.
+//     *
+//     * @param out The stream to write to.
+//     * @throws IOException if an error occurs while writing.
+//     */
+//    public void writeTo(OutputStream out) throws IOException {
+//        theme.save(out, DEFAULT_XML_OPTIONS);
+//    }
 
     @Override
     protected void commit() throws IOException {
-        PackagePart part = getPackagePart();
-        try (OutputStream out = part.getOutputStream()) {
-            writeTo(out);
-        }
+//        PackagePart part = getPackagePart();
+//        try (OutputStream out = part.getOutputStream()) {
+//            writeTo(out);
+//        }
     }
 }

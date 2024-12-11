@@ -141,33 +141,6 @@ class XsbReader {
         return _actualfiletype;
     }
 
-    void writeRealHeader(String handle, int filetype) {
-        // hackeroo: if handle contains a "/" it's not relative.
-        String resourcename;
-
-        if (handle.indexOf('/') >= 0) {
-            resourcename = handle + ".xsb";
-        } else {
-            resourcename = typeSystem.getBasePackage() + handle + ".xsb";
-        }
-
-        OutputStream rawoutput = typeSystem.getSaverStream(resourcename, _handle);
-        if (rawoutput == null) {
-            throw new SchemaTypeLoaderException("Could not write compiled schema resource " + resourcename, typeSystem.getName(), handle, SchemaTypeLoaderException.NOT_WRITEABLE);
-        }
-
-        _output = new LongUTFDataOutputStream(rawoutput);
-        _handle = handle;
-
-        writeInt(DATA_BABE);
-        writeShort(MAJOR_VERSION);
-        writeShort(MINOR_VERSION);
-        writeShort(RELEASE_NUMBER);
-        writeShort(filetype);
-
-        _stringPool.writeTo(_output);
-    }
-
     void readEnd() {
         try {
             if (_input != null) {
@@ -193,47 +166,6 @@ class XsbReader {
         _output = null;
         _stringPool = null;
         _handle = null;
-    }
-
-    void writeIndexData() {
-        // has a handle pool (count, handle/type, handle/type...)
-        typeSystem.getTypePool().writeHandlePool(this);
-
-        // then a qname map of global elements (count, qname/handle, qname/handle...)
-        writeQNameMap(typeSystem.globalElements());
-
-        // qname map of global attributes
-        writeQNameMap(typeSystem.globalAttributes());
-
-        // qname map of model groups
-        writeQNameMap(typeSystem.modelGroups());
-
-        // qname map of attribute groups
-        writeQNameMap(typeSystem.attributeGroups());
-
-        // qname map of identity constraints
-        writeQNameMap(typeSystem.identityConstraints());
-
-        // qname map of global types
-        writeQNameMap(typeSystem.globalTypes());
-
-        // qname map of document types, by the qname of the contained element
-        writeDocumentTypeMap(typeSystem.documentTypes());
-
-        // qname map of attribute types, by the qname of the contained attribute
-        writeAttributeTypeMap(typeSystem.attributeTypes());
-
-        // all the types by classname
-        writeClassnameMap(typeSystem.getTypeRefsByClassname());
-
-        // all the namespaces
-        writeNamespaces(typeSystem.getNamespaces());
-
-        // VERSION 2.15 and newer below
-        writeQNameMap(typeSystem.redefinedGlobalTypes());
-        writeQNameMap(typeSystem.redefinedModelGroups());
-        writeQNameMap(typeSystem.redefinedAttributeGroups());
-        writeAnnotations(typeSystem.annotations());
     }
 
     int readShort() {

@@ -456,19 +456,6 @@ public class XQuerySchemaTypeSystem extends SchemaTypeLoaderBase implements
         return BuiltinSchemaTypeSystem.class.getClassLoader();
     }
 
-    /**
-     * Saves this type to a directory.
-     */
-    public void saveToDirectory(File classDir) {
-        throw new UnsupportedOperationException("The builtin schema type system cannot be saved.");
-    }
-
-    /**
-     * Saves this type system using a Filer
-     */
-    public void save(Filer filer) {
-        throw new UnsupportedOperationException("The builtin schema type system cannot be saved.");
-    }
 
     private int arrayIndexForBtc(int btc) {
         return btc > SchemaType.BTC_LAST_BUILTIN ?

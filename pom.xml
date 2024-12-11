@@ -33,18 +33,18 @@
             <artifactId>xmlbeans</artifactId>
             <version>5.2.1</version>
         </dependency>-->
-        <dependency>
+<!--        <dependency>
             <groupId>xml-apis</groupId>
             <artifactId>xml-apis</artifactId>
             <version>1.4.01</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
             <version>2.23.1</version>
         </dependency>
 
-        <!--        <dependency>
+                <dependency>
                     <groupId>org.junit.jupiter</groupId>
                     <artifactId>junit-jupiter-api</artifactId>
                     <version>5.11.3</version>
@@ -66,26 +66,35 @@
                         </exclusion>
                     </exclusions>
                 </dependency>
-                &lt;!&ndash; https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 &ndash;&gt;
+                <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
                 <dependency>
                     <groupId>org.apache.commons</groupId>
                     <artifactId>commons-collections4</artifactId>
                     <version>4.4</version>
                     <scope>test</scope>
-                </dependency>-->
+                </dependency>
 
 
     </dependencies>
 
     <build>
         <resources>
-            <!-- 必须处理resources目录的下字体文件，否则打包会损坏字体文件 -->
+            <!-- 必须处理资源文件，否则打包会丢失 -->
             <resource>
                 <directory>src/xml/resources</directory>
                 <filtering>false</filtering>
                 <includes>
                     <include>org/apache/poi/xssf/usermodel/*.xml</include>
                     <include>org/apache/poi/schemas/ooxml/system/ooxml/*.xsb</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/pkg/java</directory>
+                <filtering>false</filtering>
+                <includes>
+                    <include>org/apache/xmlbeans/impl/regex/*.properties</include>
+                    <include>org/apache/xmlbeans/metadata/system/sXMLLANG/*.xsb</include>
+                    <include>org/apache/xmlbeans/metadata/system/sXMLSCHEMA/*.xsb</include>
                 </includes>
             </resource>
         </resources>

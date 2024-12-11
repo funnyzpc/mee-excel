@@ -56,21 +56,6 @@ public final class SummaryInformation extends PropertySet {
         getFirstSection().setFormatID(FORMAT_ID);
     }
 
-    /**
-     * Creates a SummaryInformation from a given {@link
-     * PropertySet}.
-     *
-     * @param ps A property set which should be created from a summary
-     *        information stream.
-     * @throws UnexpectedPropertySetTypeException if {@code ps} does not
-     *         contain a summary information stream.
-     */
-    public SummaryInformation(final PropertySet ps) throws UnexpectedPropertySetTypeException {
-        super(ps);
-        if (!isSummaryInformation()) {
-            throw new UnexpectedPropertySetTypeException("Not a " + getClass().getName());
-        }
-    }
 
     /**
      * Creates a SummaryInformation instance from an {@link

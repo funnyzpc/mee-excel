@@ -457,21 +457,6 @@ public class BuiltinSchemaTypeSystem extends SchemaTypeLoaderBase implements Sch
         return BuiltinSchemaTypeSystem.class.getClassLoader();
     }
 
-    /**
-     * Saves this type to a directory.
-     */
-    public void saveToDirectory(File classDir)
-    {
-        throw new UnsupportedOperationException("The builtin schema type system cannot be saved.");
-    }
-
-    /**
-     * Saves this type system using a Filer
-     */
-    public void save(Filer filer)
-    {
-        throw new UnsupportedOperationException("The builtin schema type system cannot be saved.");
-    }
 
     private static XmlValueRef build_wsstring(int wsr)
     {

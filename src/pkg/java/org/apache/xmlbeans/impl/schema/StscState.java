@@ -110,8 +110,6 @@ public class StscState {
 
     private final Map<String, String> _sourceForUri = new HashMap<>();
     private URI _baseURI = URI.create(PROJECT_URL_PREFIX + "/");
-    private final SchemaTypeLoader _s4sloader = XmlBeans.typeLoaderForClassLoader(SchemaDocument.class.getClassLoader());
-
 
     private static Set<String> buildDefaultMdefNamespaces() {
         // namespaces which are known to appear in WSDLs redundantly
@@ -124,22 +122,6 @@ public class StscState {
      */
     private StscState() {
     }
-
-    /**
-     * Initializer for incremental compilation
-     */
-    public void initFromTypeSystem(SchemaTypeSystemImpl system, Set<String> newNamespaces) {
-//         setGivenTypeSystemName(system.getName().substring(14));
-
-        SchemaContainer[] containers = system.containers();
-        for (SchemaContainer container : containers) {
-            if (!newNamespaces.contains(container.getNamespace())) {
-                // Copy data from the given container
-                addContainer(container);
-            }
-        }
-    }
-
 
     /* CONTAINERS ================================================================*/
 
@@ -1364,41 +1346,5 @@ public class StscState {
         }
     }
 
-    /**
-     * Notes another URI that has been consumed during compilation
-     * (this is the URI that is in the document .NAME property)
-     */
-    public void addSourceUri(String uri, String nameToUse) {
-        if (uri == null) {
-            return;
-        }
 
-        if (nameToUse == null) {
-            nameToUse = computeSavedFilename(uri);
-        }
-
-        _sourceForUri.put(uri, nameToUse);
-    }
-
-    /**
-     * Returns the error listener being filled in during this compilation
-     */
-    public Collection<XmlError> getErrorListener() {
-        return _errorListener;
-    }
-
-    /**
-     * Returns the schema type loader to use for processing s4s
-     */
-    public SchemaTypeLoader getS4SLoader() {
-        return _s4sloader;
-    }
-
-    public File getSchemasDir() {
-        return _schemasDir;
-    }
-
-    public void setSchemasDir(File _schemasDir) {
-        this._schemasDir = _schemasDir;
-    }
 }

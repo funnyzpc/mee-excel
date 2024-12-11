@@ -15,49 +15,19 @@
 
 package org.apache.xmlbeans.impl.schema;
 
-import org.apache.xmlbeans.Filer;
-import org.apache.xmlbeans.ResourceLoader;
-import org.apache.xmlbeans.SchemaAnnotation;
-import org.apache.xmlbeans.SchemaAttributeGroup;
-import org.apache.xmlbeans.SchemaComponent;
-import org.apache.xmlbeans.SchemaGlobalAttribute;
-import org.apache.xmlbeans.SchemaGlobalElement;
-import org.apache.xmlbeans.SchemaIdentityConstraint;
-import org.apache.xmlbeans.SchemaModelGroup;
-import org.apache.xmlbeans.SchemaParticle;
-import org.apache.xmlbeans.SchemaType;
-import org.apache.xmlbeans.SchemaTypeLoader;
-import org.apache.xmlbeans.SchemaTypeLoaderException;
-import org.apache.xmlbeans.SchemaTypeSystem;
-import org.apache.xmlbeans.SystemProperties;
+import org.apache.xmlbeans.*;
 import org.apache.xmlbeans.impl.common.DefaultClassLoaderResourceLoader;
 import org.apache.xmlbeans.impl.common.QNameHelper;
 import org.apache.xmlbeans.impl.common.XBeanDebug;
 import org.apache.xmlbeans.impl.util.ExceptionUtil;
-import org.apache.xmlbeans.impl.util.FilerImpl;
 import org.apache.xmlbeans.impl.util.HexBin;
 import org.apache.xmlbeans.impl.util.LongUTFDataInputStream;
 import org.apache.xmlbeans.impl.util.LongUTFDataOutputStream;
 
 import javax.xml.namespace.QName;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 import java.util.function.BiConsumer;
 import java.util.function.Function;
 import java.util.function.IntFunction;
@@ -167,7 +137,6 @@ public class SchemaTypeSystemImpl extends SchemaTypeLoaderBase implements Schema
     SchemaTypeLoader _linker;
 
     private SchemaTypePool _localHandles;
-    private Filer _filer;
 
     // top-level annotations
     private List<SchemaAnnotation> _annotations;
@@ -321,54 +290,6 @@ public class SchemaTypeSystemImpl extends SchemaTypeLoaderBase implements Schema
         }
     }
 
-    void saveIndex() {
-        String handle = "index";
-        XsbReader saver = new XsbReader(getTypeSystem(), handle);
-        saver.writeIndexData();
-        saver.writeRealHeader(handle, FILETYPE_SCHEMAINDEX);
-        saver.writeIndexData();
-        saver.writeEnd();
-    }
-
-    void savePointers() {
-        savePointersForComponents(globalElements(), getMetadataPath() + "/element/");
-        savePointersForComponents(globalAttributes(), getMetadataPath() + "/attribute/");
-        savePointersForComponents(modelGroups(), getMetadataPath() + "/modelgroup/");
-        savePointersForComponents(attributeGroups(), getMetadataPath() + "/attributegroup/");
-        savePointersForComponents(globalTypes(), getMetadataPath() + "/type/");
-        savePointersForComponents(identityConstraints(), getMetadataPath() + "/identityconstraint/");
-        savePointersForNamespaces(_namespaces, getMetadataPath() + "/namespace/");
-        savePointersForClassnames(_typeRefsByClassname.keySet(), getMetadataPath() + "/javaname/");
-        savePointersForComponents(redefinedModelGroups(), getMetadataPath() + "/redefinedmodelgroup/");
-        savePointersForComponents(redefinedAttributeGroups(), getMetadataPath() + "/redefinedattributegroup/");
-        savePointersForComponents(redefinedGlobalTypes(), getMetadataPath() + "/redefinedtype/");
-    }
-
-    void savePointersForComponents(SchemaComponent[] components, String dir) {
-        for (SchemaComponent component : components) {
-            savePointerFile(dir + QNameHelper.hexsafedir(component.getName()), _name);
-        }
-    }
-
-    void savePointersForClassnames(Set<String> classnames, String dir) {
-        for (String classname : classnames) {
-            savePointerFile(dir + classname.replace('.', '/'), _name);
-        }
-    }
-
-    void savePointersForNamespaces(Set<String> namespaces, String dir) {
-        for (String ns : namespaces) {
-            savePointerFile(dir + QNameHelper.hexsafedir(new QName(ns, "xmlns")), _name);
-        }
-    }
-
-    void savePointerFile(String filename, String name) {
-        XsbReader saver = new XsbReader(getTypeSystem(), filename);
-        saver.writeString(name);
-        saver.writeRealHeader(filename, FILETYPE_SCHEMAPOINTER);
-        saver.writeString(name);
-        saver.writeEnd();
-    }
 
     private Map<String, SchemaComponent.Ref> buildTypeRefsByClassname(Map<String, SchemaType> typesByClassname) {
         Map<String, SchemaComponent.Ref> result = new LinkedHashMap<>();
@@ -631,30 +552,6 @@ public class SchemaTypeSystemImpl extends SchemaTypeLoaderBase implements Schema
         _classloader = null;
     }
 
-    public void loadFromStscState(StscState state) {
-        assert (_classloader == null);
-        _localHandles = new SchemaTypePool(getTypeSystem());
-        _globalElements = buildComponentRefMap(state.globalElements());
-        _globalAttributes = buildComponentRefMap(state.globalAttributes());
-        _modelGroups = buildComponentRefMap(state.modelGroups());
-        _redefinedModelGroups = buildComponentRefList(state.redefinedModelGroups());
-        _attributeGroups = buildComponentRefMap(state.attributeGroups());
-        _redefinedAttributeGroups = buildComponentRefList(state.redefinedAttributeGroups());
-        _globalTypes = buildComponentRefMap(state.globalTypes());
-        _redefinedGlobalTypes = buildComponentRefList(state.redefinedGlobalTypes());
-        _documentTypes = buildDocumentMap(state.documentTypes());
-        _attributeTypes = buildAttributeTypeMap(state.attributeTypes());
-        _typeRefsByClassname = buildTypeRefsByClassname(state.typesByClassname());
-        _identityConstraints = buildComponentRefMap(state.idConstraints());
-        _annotations = state.annotations();
-        _namespaces = new HashSet<>(Arrays.asList(state.getNamespaces()));
-        _containers = state.getContainerMap();
-        fixupContainers();
-        // Checks that data in the containers matches the lookup maps
-        assertContainersSynchronized();
-        setDependencies(state.getDependencies());
-    }
-
     final SchemaTypeSystemImpl getTypeSystem() {
         return this;
     }
@@ -743,166 +640,6 @@ public class SchemaTypeSystemImpl extends SchemaTypeLoaderBase implements Schema
                 throw new SchemaTypeLoaderException(e.getMessage() == null ? e.getMessage() : "IO Exception", _name, _handle, SchemaTypeLoaderException.IO_EXCEPTION, e);
             }
         }
-    }
-
-    public void saveToDirectory(File classDir) {
-        save(new FilerImpl(classDir, null, null, false, false));
-    }
-
-    public void save(Filer filer) {
-        if (_incomplete) {
-            throw new IllegalStateException("Incomplete SchemaTypeSystems cannot be saved.");
-        }
-
-        if (filer == null) {
-            throw new IllegalArgumentException("filer must not be null");
-        }
-        _filer = filer;
-
-        _localHandles.startWriteMode();
-        saveTypesRecursively(globalTypes());
-        saveTypesRecursively(documentTypes());
-        saveTypesRecursively(attributeTypes());
-        saveGlobalElements(globalElements());
-        saveGlobalAttributes(globalAttributes());
-        saveModelGroups(modelGroups());
-        saveAttributeGroups(attributeGroups());
-        saveIdentityConstraints(identityConstraints());
-
-        saveTypesRecursively(redefinedGlobalTypes());
-        saveModelGroups(redefinedModelGroups());
-        saveAttributeGroups(redefinedAttributeGroups());
-
-        saveIndex();
-        savePointers();
-    }
-
-    void saveTypesRecursively(SchemaType[] types) {
-        for (SchemaType type : types) {
-            if (type.getTypeSystem() != getTypeSystem()) {
-                continue;
-            }
-            saveType(type);
-            saveTypesRecursively(type.getAnonymousTypes());
-        }
-    }
-
-    public void saveGlobalElements(SchemaGlobalElement[] elts) {
-        if (_incomplete) {
-            throw new IllegalStateException("This SchemaTypeSystem cannot be saved.");
-        }
-        for (SchemaGlobalElement elt : elts) {
-            saveGlobalElement(elt);
-        }
-    }
-
-    public void saveGlobalAttributes(SchemaGlobalAttribute[] attrs) {
-        if (_incomplete) {
-            throw new IllegalStateException("This SchemaTypeSystem cannot be saved.");
-        }
-        for (SchemaGlobalAttribute attr : attrs) {
-            saveGlobalAttribute(attr);
-        }
-    }
-
-    public void saveModelGroups(SchemaModelGroup[] groups) {
-        if (_incomplete) {
-            throw new IllegalStateException("This SchemaTypeSystem cannot be saved.");
-        }
-        for (SchemaModelGroup group : groups) {
-            saveModelGroup(group);
-        }
-    }
-
-    public void saveAttributeGroups(SchemaAttributeGroup[] groups) {
-        if (_incomplete) {
-            throw new IllegalStateException("This SchemaTypeSystem cannot be saved.");
-        }
-        for (SchemaAttributeGroup group : groups) {
-            saveAttributeGroup(group);
-        }
-    }
-
-    public void saveIdentityConstraints(SchemaIdentityConstraint[] idcs) {
-        if (_incomplete) {
-            throw new IllegalStateException("This SchemaTypeSystem cannot be saved.");
-        }
-        for (SchemaIdentityConstraint idc : idcs) {
-            saveIdentityConstraint(idc);
-        }
-    }
-
-    public void saveGlobalElement(SchemaGlobalElement elt) {
-        if (_incomplete) {
-            throw new IllegalStateException("This SchemaTypeSystem cannot be saved.");
-        }
-        String handle = _localHandles.handleForElement(elt);
-        XsbReader saver = new XsbReader(getTypeSystem(), handle);
-        saver.writeParticleData((SchemaParticle) elt);
-        saver.writeString(elt.getSourceName());
-        saver.writeRealHeader(handle, FILETYPE_SCHEMAELEMENT);
-        saver.writeParticleData((SchemaParticle) elt);
-        saver.writeString(elt.getSourceName());
-        saver.writeEnd();
-    }
-
-    public void saveGlobalAttribute(SchemaGlobalAttribute attr) {
-        if (_incomplete) {
-            throw new IllegalStateException("This SchemaTypeSystem cannot be saved.");
-        }
-        String handle = _localHandles.handleForAttribute(attr);
-        XsbReader saver = new XsbReader(getTypeSystem(), handle);
-        saver.writeAttributeData(attr);
-        saver.writeString(attr.getSourceName());
-        saver.writeRealHeader(handle, FILETYPE_SCHEMAATTRIBUTE);
-        saver.writeAttributeData(attr);
-        saver.writeString(attr.getSourceName());
-        saver.writeEnd();
-    }
-
-    public void saveModelGroup(SchemaModelGroup grp) {
-        if (_incomplete) {
-            throw new IllegalStateException("This SchemaTypeSystem cannot be saved.");
-        }
-        String handle = _localHandles.handleForModelGroup(grp);
-        XsbReader saver = new XsbReader(getTypeSystem(), handle);
-        saver.writeModelGroupData(grp);
-        saver.writeRealHeader(handle, FILETYPE_SCHEMAMODELGROUP);
-        saver.writeModelGroupData(grp);
-        saver.writeEnd();
-    }
-
-    public void saveAttributeGroup(SchemaAttributeGroup grp) {
-        if (_incomplete) {
-            throw new IllegalStateException("This SchemaTypeSystem cannot be saved.");
-        }
-        String handle = _localHandles.handleForAttributeGroup(grp);
-        XsbReader saver = new XsbReader(getTypeSystem(), handle);
-        saver.writeAttributeGroupData(grp);
-        saver.writeRealHeader(handle, FILETYPE_SCHEMAATTRIBUTEGROUP);
-        saver.writeAttributeGroupData(grp);
-        saver.writeEnd();
-    }
-
-    public void saveIdentityConstraint(SchemaIdentityConstraint idc) {
-        if (_incomplete) {
-            throw new IllegalStateException("This SchemaTypeSystem cannot be saved.");
-        }
-        String handle = _localHandles.handleForIdentityConstraint(idc);
-        XsbReader saver = new XsbReader(getTypeSystem(), handle);
-        saver.writeIdConstraintData(idc);
-        saver.writeRealHeader(handle, FILETYPE_SCHEMAIDENTITYCONSTRAINT);
-        saver.writeIdConstraintData(idc);
-        saver.writeEnd();
-    }
-
-    void saveType(SchemaType type) {
-        String handle = _localHandles.handleForType(type);
-        XsbReader saver = new XsbReader(getTypeSystem(), handle);
-        saver.writeTypeData(type);
-        saver.writeRealHeader(handle, FILETYPE_SCHEMATYPE);
-        saver.writeTypeData(type);
-        saver.writeEnd();
     }
 
     public static String crackPointer(InputStream stream) {
@@ -1186,13 +923,6 @@ public class SchemaTypeSystemImpl extends SchemaTypeLoaderBase implements Schema
         return _typeRefsByClassname;
     }
 
-    OutputStream getSaverStream(String name, String handle) {
-        try {
-            return _filer.createBinaryFile(name);
-        } catch (IOException e) {
-            throw new SchemaTypeLoaderException(e.getMessage(), getName(), handle, SchemaTypeLoaderException.IO_EXCEPTION, e);
-        }
-    }
 
     InputStream getLoaderStream(String resourcename) {
         return _resourceLoader.getResourceAsStream(resourcename);

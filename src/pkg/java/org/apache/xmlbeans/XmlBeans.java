@@ -104,21 +104,6 @@ public final class XmlBeans {
         return qnameCache;
     }
 
-    /**
-     * Obtains a name from the thread local QNameCache
-     */
-    public static QName getQName(String localPart) {
-        return getQNameCache().getName("", localPart);
-    }
-
-    /**
-     * Obtains a name from the thread local QNameCache
-     */
-
-    public static QName getQName(String namespaceUri, String localPart) {
-        return getQNameCache().getName(namespaceUri, localPart);
-    }
-
     private static RuntimeException causedException(RuntimeException e, Throwable cause) {
         e.initCause(cause);
 
@@ -145,68 +130,6 @@ public final class XmlBeans {
      */
     public static SchemaTypeSystem getBuiltinTypeSystem() {
         return BuiltinSchemaTypeSystem.get();
-    }
-
-    /**
-     * Returns the union of a list of typeLoaders. The returned
-     * SchemaTypeLoader searches the given list of SchemaTypeLoaders
-     * in order from first to last.
-     */
-    public static SchemaTypeLoader typeLoaderUnion(SchemaTypeLoader... typeLoaders) {
-        return (typeLoaders.length == 1) ? typeLoaders[0] : SchemaTypeLoaderImpl.build(typeLoaders, null, null);
-    }
-
-    /**
-     * Returns a SchemaTypeLoader that searches for compiled schema types
-     * in the given ClassLoader.
-     */
-    public static SchemaTypeLoader typeLoaderForClassLoader(ClassLoader loader) {
-        return SchemaTypeLoaderImpl.build(null, null, loader);
-    }
-
-    /**
-     * Returns a SchemaTypeLoader that searches for compiled schema types
-     * in the given ResourceLoader.
-     *
-     * @see XmlBeans#resourceLoaderForPath(File[])
-     */
-    public static SchemaTypeLoader typeLoaderForResource(ResourceLoader resourceLoader) {
-        return SchemaTypeLoaderImpl.build(null, resourceLoader, null);
-    }
-
-    /**
-     * Returns the SchemaTypeSystem of the given name (as returned by
-     * {@link SchemaTypeSystem#getName}) for the given ClassLoader.
-     * <p>
-     * Note: you will almost always need typeLoaderForClassLoader()
-     * instead (see {@link XmlBeans#typeLoaderForClassLoader}).
-     */
-    public static SchemaTypeSystem typeSystemForClassLoader(ClassLoader loader, String stsName) {
-        try {
-            ClassLoader cl = loader == null ? Thread.currentThread().getContextClassLoader() : loader;
-            Class clazz = cl.loadClass(stsName + "." + HOLDER_CLASS_NAME);
-            SchemaTypeSystem sts = (SchemaTypeSystem)
-                (clazz.getDeclaredField(TYPE_SYSTEM_FIELD).get(null));
-            if (sts == null) {
-                throw new RuntimeException("SchemaTypeSystem is null for field " +
-                                           TYPE_SYSTEM_FIELD + " on class with name " + stsName +
-                                           "." + HOLDER_CLASS_NAME +
-                                           ". Please verify the version of xmlbeans.jar is correct.");
-            }
-            return sts;
-        } catch (ClassNotFoundException e) {
-            throw causedException(new RuntimeException("Cannot load SchemaTypeSystem. " +
-                                                       "Unable to load class with name " + stsName + "." + HOLDER_CLASS_NAME +
-                                                       ". Make sure the generated binary files are on the classpath."), e);
-        } catch (NoSuchFieldException e) {
-            throw causedException(new RuntimeException("Cannot find field " +
-                                                       TYPE_SYSTEM_FIELD + " on class " + stsName + "." + HOLDER_CLASS_NAME +
-                                                       ". Please verify the version of xmlbeans.jar is correct."), e);
-        } catch (IllegalAccessException e) {
-            throw causedException(new RuntimeException("Field " +
-                                                       TYPE_SYSTEM_FIELD + " on class " + stsName + "." + HOLDER_CLASS_NAME +
-                                                       "is not accessible. Please verify the version of xmlbeans.jar is correct."), e);
-        }
     }
 
     /**

@@ -20,7 +20,6 @@ import org.apache.xmlbeans.impl.common.*;
 import org.apache.xmlbeans.impl.schema.SchemaTypeImpl;
 import org.apache.xmlbeans.impl.schema.SchemaTypeVisitorImpl;
 import org.apache.xmlbeans.impl.util.LongUTFDataInputStream;
-import org.apache.xmlbeans.impl.validator.Validator;
 import org.w3c.dom.Node;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.SAXException;
@@ -29,7 +28,6 @@ import org.xml.sax.ext.LexicalHandler;
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLStreamReader;
 import java.io.*;
-import java.lang.reflect.Array;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.*;
@@ -335,104 +333,9 @@ public abstract class XmlObjectBase implements TypeStoreUser, Serializable, XmlO
 
     public static final ValidationContext _voorVc = new ValueOutOfRangeValidationContext();
 
-    public boolean validate() {
-        return validate(null);
-    }
-
-    public boolean validate(XmlOptions options) {
-        if ((_flags & FLAG_STORE) == 0) {
-            if ((_flags & FLAG_IMMUTABLE) != 0) {
-                return validate_immutable(options);
-            }
-
-            throw new IllegalStateException(
-                "XML objects with no underlying store cannot be validated");
-        }
-
-        synchronized (monitor()) {
-            if ((_flags & FLAG_ORPHANED) != 0) {
-                throw new XmlValueDisconnectedException();
-            }
-
-            SchemaField field = schemaField();
-            SchemaType type = schemaType();
-
-            TypeStore typeStore = get_store();
-
-            Validator validator =
-                new Validator(
-                    type, field, typeStore.get_schematypeloader(), options, null);
-
-            typeStore.validate(validator);
-
-            return validator.isValid();
-        }
-    }
-
-    private boolean validate_immutable(XmlOptions options) {
-        Collection<XmlError> errorListener = options == null ? null : options.getErrorListener();
-        XmlErrorWatcher watcher = new XmlErrorWatcher(errorListener);
-        if (!(schemaType().isSimpleType() || options != null &&
-                                             options.isValidateTextOnly())) {
-            // cannot have any required attributes or elements
-            SchemaProperty[] properties = schemaType().getProperties();
-            for (SchemaProperty property : properties) {
-                if (property.getMinOccurs().signum() > 0) {
-                    // KHK: error code?
-                    if (property.isAttribute()) {
-                        watcher.add(XmlError.forObject(XmlErrorCodes.ELEM_COMPLEX_TYPE_LOCALLY_VALID$MISSING_REQUIRED_ATTRIBUTE, new Object[]{QNameHelper.pretty(property.getName()),}, this));
-                    } else {
-                        watcher.add(XmlError.forObject(XmlErrorCodes.ELEM_COMPLEX_TYPE_LOCALLY_VALID$MISSING_ELEMENT, new Object[]{property.getMinOccurs(), QNameHelper.pretty(property.getName()),}, this));
-                    }
-                }
-            }
-
-            if (schemaType().getContentType() != SchemaType.SIMPLE_CONTENT) {
-                return !watcher.hasError(); // don't validate non-simple-content
-            }
-        }
-
-        String text = (String) _textsource;
-        if (text == null) {
-            text = "";
-        }
-        validate_simpleval(text, new ImmutableValueValidationContext(watcher, this));
-        return !watcher.hasError();
-    }
-
     protected void validate_simpleval(String lexical, ValidationContext ctx) {
     }
 
-    private static XmlObject[] _typedArray(XmlObject[] input) {
-        if (input.length == 0) {
-            return input;
-        }
-        SchemaType commonType = input[0].schemaType();
-        if (commonType.equals(XmlObject.type) || commonType.isNoType()) {
-            return input;
-        }
-        for (int i = 1; i < input.length; i++) {
-            if (input[i].schemaType().isNoType()) {
-                return input;
-            }
-            commonType = commonType.getCommonBaseType(input[i].schemaType());
-            if (commonType.equals(XmlObject.type)) {
-                return input;
-            }
-        }
-        Class<? extends XmlObject> desiredClass = commonType.getJavaClass();
-        while (desiredClass == null) {
-            commonType = commonType.getBaseType();
-            if (XmlObject.type.equals(commonType)) {
-                return input;
-            }
-            desiredClass = commonType.getJavaClass();
-        }
-
-        XmlObject[] result = (XmlObject[]) Array.newInstance(desiredClass, input.length);
-        System.arraycopy(input, 0, result, 0, input.length);
-        return result;
-    }
 
     public XmlObject substitute(QName name, SchemaType type) {
         if (name == null) {

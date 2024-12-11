@@ -603,59 +603,6 @@ public final class Cursor implements XmlCursor, ChangeListener {
     public Node _getDomNode() {
         return (Node) _cur.getDom();
     }
-
-    private boolean isDomFragment() {
-        if (!isStartdoc()) {
-            return true;
-        }
-
-        boolean seenElement = false;
-
-        try (XmlCursor c = newCursor()) {
-            int token = c.toNextToken().intValue();
-
-            LOOP:
-            for (; ; ) {
-                switch (token) {
-                    case TokenType.INT_START:
-                        if (seenElement) {
-                            return true;
-                        }
-                        seenElement = true;
-                        token = c.toEndToken().intValue();
-                        break;
-
-                    case TokenType.INT_TEXT:
-                        if (!Locale.isWhiteSpace(c.getChars())) {
-                            return true;
-                        }
-                        token = c.toNextToken().intValue();
-                        break;
-
-                    case TokenType.INT_NONE:
-                    case TokenType.INT_ENDDOC:
-                        break LOOP;
-
-                    case TokenType.INT_ATTR:
-                    case TokenType.INT_NAMESPACE:
-                        return true;
-
-                    case TokenType.INT_END:
-                    case TokenType.INT_COMMENT:
-                    case TokenType.INT_PROCINST:
-                        token = c.toNextToken().intValue();
-                        break;
-
-                    case TokenType.INT_STARTDOC:
-                        assert false;
-                        break LOOP;
-                }
-            }
-        }
-
-        return !seenElement;
-    }
-
     public boolean _toCursor(Cursor other) {
         assert _cur._locale == other._cur._locale;
 
@@ -1739,31 +1686,6 @@ public final class Cursor implements XmlCursor, ChangeListener {
         }
     }
 
-    public boolean moveXml(XmlCursor xTo) {
-        return twoLocaleOp(xTo, MOVE_XML, 0) == 1;
-    }
-
-    public boolean copyXml(XmlCursor xTo) {
-        return twoLocaleOp(xTo, COPY_XML, 0) == 1;
-    }
-
-    public boolean moveXmlContents(XmlCursor xTo) {
-        return twoLocaleOp(xTo, MOVE_XML_CONTENTS, 0) == 1;
-    }
-
-    public boolean copyXmlContents(XmlCursor xTo) {
-        return twoLocaleOp(xTo, COPY_XML_CONTENTS, 0) == 1;
-    }
-
-    public int moveChars(int cch, XmlCursor xTo) {
-        return twoLocaleOp(xTo, MOVE_CHARS, cch);
-    }
-
-    public int copyChars(int cch, XmlCursor xTo) {
-        return twoLocaleOp(xTo, COPY_CHARS, cch);
-    }
-
-
     //
     // Special methods involving multiple cursors which can be in different locales, but do not
     // require sync on both locales.
@@ -1776,44 +1698,6 @@ public final class Cursor implements XmlCursor, ChangeListener {
 
         return _cur._locale == other._cur._locale &&
                syncWrap(() -> _toCursor(other));
-    }
-
-    public boolean isInSameDocument(XmlCursor xOther) {
-        return xOther != null && _cur.isInSameTree(checkCursors(xOther)._cur);
-    }
-
-    //
-    // The following operations have two cursors, but they must be in the same document
-    //
-
-    private Cursor preCheck(XmlCursor xOther) {
-        Cursor other = checkCursors(xOther);
-
-        if (_cur._locale != other._cur._locale) {
-            throw new IllegalArgumentException("Cursors not in same document");
-        }
-
-        return other;
-    }
-
-    public int comparePosition(XmlCursor xOther) {
-        Cursor other = preCheck(xOther);
-        return syncWrap(() -> _comparePosition(other));
-    }
-
-    public boolean isLeftOf(XmlCursor xOther) {
-        Cursor other = preCheck(xOther);
-        return syncWrap(() -> _isLeftOf(other));
-    }
-
-    public boolean isAtSamePositionAs(XmlCursor xOther) {
-        Cursor other = preCheck(xOther);
-        return syncWrap(() -> _isAtSamePositionAs(other));
-    }
-
-    public boolean isRightOf(XmlCursor xOther) {
-        Cursor other = preCheck(xOther);
-        return syncWrap(() -> _isRightOf(other));
     }
 
     //
@@ -1897,22 +1781,6 @@ public final class Cursor implements XmlCursor, ChangeListener {
 
     public Node getDomNode() {
         return syncWrap(this::_getDomNode);
-    }
-
-    public void save(ContentHandler ch, LexicalHandler lh) throws SAXException {
-        syncWrapSAXEx(() -> _save(ch, lh));
-    }
-
-    public void save(File file) throws IOException {
-        syncWrapIOEx(() -> _save(file));
-    }
-
-    public void save(OutputStream os) throws IOException {
-        syncWrapIOEx(() -> _save(os));
-    }
-
-    public void save(Writer w) throws IOException {
-        syncWrapIOEx(() -> _save(w));
     }
 
     public String xmlText(XmlOptions options) {
@@ -2218,27 +2086,6 @@ public final class Cursor implements XmlCursor, ChangeListener {
 
     public XmlBookmark getBookmark(Object key) {
         return syncWrap(() -> _getBookmark(key));
-    }
-
-    public void clearBookmark(Object key) {
-        syncWrap(() -> _clearBookmark(key));
-    }
-
-    @Override
-    public void getAllBookmarkRefs(Collection<Object> listToFill) {
-        syncWrap(() -> _getAllBookmarkRefs(listToFill));
-    }
-
-    public boolean removeXml() {
-        return syncWrap(this::_removeXml);
-    }
-
-    public boolean removeXmlContents() {
-        return syncWrap(this::_removeXmlContents);
-    }
-
-    public int removeChars(int cch) {
-        return syncWrap(() -> _removeChars(cch));
     }
 
     public void insertChars(String text) {

@@ -56,26 +56,6 @@ public class ZipPackagePart extends PackagePart {
      * @throws InvalidFormatException
      *             Throws if the content of this part is invalid.
      */
-    public ZipPackagePart(OPCPackage container, ZipArchiveEntry zipEntry,
-            PackagePartName partName, String contentType)
-            throws InvalidFormatException {
-        this(container, zipEntry, partName, contentType, true);
-    }
-
-    /**
-     * Constructor.
-     *
-     * @param container
-     *            The container package.
-     * @param zipEntry
-     *            The zip entry corresponding to this part.
-     * @param partName
-     *            The part name.
-     * @param contentType
-     *            Content type.
-     * @throws InvalidFormatException
-     *             Throws if the content of this part is invalid.
-     */
     /* package */ ZipPackagePart(OPCPackage container, ZipArchiveEntry zipEntry,
                           PackagePartName partName, String contentType, boolean loadRelationships)
             throws InvalidFormatException {
@@ -83,14 +63,6 @@ public class ZipPackagePart extends PackagePart {
         this.zipEntry = zipEntry;
     }
 
-    /**
-     * Get the zip entry of this part.
-     *
-     * @return The zip entry in the zip structure corresponding to this part.
-     */
-    public ZipArchiveEntry getZipArchive() {
-        return zipEntry;
-    }
 
     /**
      * Implementation of the getInputStream() which return the inputStream of

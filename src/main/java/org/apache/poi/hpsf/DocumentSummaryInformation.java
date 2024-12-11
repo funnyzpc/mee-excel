@@ -66,23 +66,6 @@ public class DocumentSummaryInformation extends PropertySet {
 
 
     /**
-     * Creates a {@link DocumentSummaryInformation} from a given
-     * {@link PropertySet}.
-     *
-     * @param ps A property set which should be created from a
-     * document summary information stream.
-     * @throws UnexpectedPropertySetTypeException if {@code ps}
-     * does not contain a document summary information stream.
-     */
-    public DocumentSummaryInformation(final PropertySet ps)
-    throws UnexpectedPropertySetTypeException {
-        super(ps);
-        if (!isDocumentSummaryInformation()) {
-            throw new UnexpectedPropertySetTypeException("Not a " + getClass().getName());
-        }
-    }
-
-    /**
      * Creates a {@link DocumentSummaryInformation} instance from an {@link
      * InputStream} in the Horrible Property Set Format.<p>
      *

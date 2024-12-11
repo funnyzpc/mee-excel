@@ -152,36 +152,36 @@ public interface XmlTokenSource {
      */
     Node getDomNode();
 
-    /**
-     * Writes the XML represented by this source to the given SAX content and
-     * lexical handlers.
-     * Note that this method does not save the XML declaration, including the encoding information.
-     * To save the XML declaration with the XML, see {@link #save(OutputStream)},
-     * {@link #save(OutputStream, XmlOptions)}, {@link #save(File)} or {@link #save(File, XmlOptions)}.
-     */
-    void save(ContentHandler ch, LexicalHandler lh) throws SAXException;
-
-    /**
-     * Writes the XML represented by this source to the given File.
-     * This method will save the XML declaration, including encoding information,
-     * with the XML.
-     */
-    void save(File file) throws IOException;
-
-    /**
-     * Writes the XML represented by this source to the given output stream.
-     * This method will save the XML declaration, including encoding information,
-     * with the XML.
-     */
-    void save(OutputStream os) throws IOException;
-
-    /**
-     * Writes the XML represented by this source to the given output.
-     * Note that this method does not save the XML declaration, including the encoding information.
-     * To save the XML declaration with the XML, see {@link #save(OutputStream)},
-     * {@link #save(OutputStream, XmlOptions)}, {@link #save(File)} or {@link #save(File, XmlOptions)}.
-     */
-    void save(Writer w) throws IOException;
+//    /**
+//     * Writes the XML represented by this source to the given SAX content and
+//     * lexical handlers.
+//     * Note that this method does not save the XML declaration, including the encoding information.
+//     * To save the XML declaration with the XML, see {@link #save(OutputStream)},
+//     * {@link #save(OutputStream, XmlOptions)}, {@link #save(File)} or {@link #save(File, XmlOptions)}.
+//     */
+//    void save(ContentHandler ch, LexicalHandler lh) throws SAXException;
+//
+//    /**
+//     * Writes the XML represented by this source to the given File.
+//     * This method will save the XML declaration, including encoding information,
+//     * with the XML.
+//     */
+//    void save(File file) throws IOException;
+//
+//    /**
+//     * Writes the XML represented by this source to the given output stream.
+//     * This method will save the XML declaration, including encoding information,
+//     * with the XML.
+//     */
+//    void save(OutputStream os) throws IOException;
+//
+//    /**
+//     * Writes the XML represented by this source to the given output.
+//     * Note that this method does not save the XML declaration, including the encoding information.
+//     * To save the XML declaration with the XML, see {@link #save(OutputStream)},
+//     * {@link #save(OutputStream, XmlOptions)}, {@link #save(File)} or {@link #save(File, XmlOptions)}.
+//     */
+//    void save(Writer w) throws IOException;
 
     /**
      * Returns a new XMLStreamReader.

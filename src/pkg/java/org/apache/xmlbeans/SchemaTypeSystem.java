@@ -140,17 +140,17 @@ public interface SchemaTypeSystem extends SchemaTypeLoader
     /**
      * Returns the global types defined in this loader.
      */
-    SchemaType[] globalTypes();
+    org.apache.xmlbeans.SchemaType[] globalTypes();
 
     /**
      * Returns the document types defined in this loader.
      */
-    SchemaType[] documentTypes();
+    org.apache.xmlbeans.SchemaType[] documentTypes();
 
     /**
      * Returns the attribute types defined in this loader.
      */
-    SchemaType[] attributeTypes();
+    org.apache.xmlbeans.SchemaType[] attributeTypes();
 
     /**
      * Returns the global elements defined in this loader.
@@ -196,13 +196,13 @@ public interface SchemaTypeSystem extends SchemaTypeLoader
      */
     ClassLoader getClassLoader();
 
-    /**
-     * Saves this type system to a directory.
-     */
-    void saveToDirectory(File classDir);
-
-    /**
-     * Saves this type system using a Filer
-     */
-    void save(Filer filer);
+//    /**
+//     * Saves this type system to a directory.
+//     */
+//    void saveToDirectory(File classDir);
+//
+//    /**
+//     * Saves this type system using a Filer
+//     */
+//    void save(Filer filer);
 }

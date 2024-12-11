@@ -2198,48 +2198,6 @@ public final class SchemaTypeImpl implements SchemaType, TypeStoreUserFactory {
     }
 
 
-    public String toString() {
-        if (getName() != null) {
-            return "T=" + QNameHelper.pretty(getName());
-        }
-
-        if (isDocumentType()) {
-            return "D=" + QNameHelper.pretty(getDocumentElementName());
-        }
-
-        if (isAttributeType()) {
-            return "R=" + QNameHelper.pretty(getAttributeTypeAttributeName());
-        }
-
-        String prefix;
-
-        if (getContainerField() != null) {
-            prefix = (getContainerField().getName().getNamespaceURI().length() > 0 ?
-                (getContainerField().isAttribute() ? "Q=" : "E=") :
-                (getContainerField().isAttribute() ? "A=" : "U="))
-                     + getContainerField().getName().getLocalPart();
-            if (getOuterType() == null) {
-                return prefix + "@" + getContainerField().getName().getNamespaceURI();
-            }
-        } else if (isNoType()) {
-            return "N=";
-        } else if (getOuterType() == null) {
-            return "noouter";
-        } else if (getOuterType().getBaseType() == this) {
-            prefix = "B=";
-        } else if (getOuterType().getContentBasedOnType() == this) {
-            prefix = "S=";
-        } else if (getOuterType().getSimpleVariety() == SchemaType.LIST) {
-            prefix = "I=";
-        } else if (getOuterType().getSimpleVariety() == SchemaType.UNION) {
-            prefix = "M=" + getAnonymousUnionMemberOrdinal();
-        } else {
-            prefix = "strange=";
-        }
-
-        return prefix + "|" + getOuterType().toString();
-    }
-
     private XmlObject _parseObject;
     private String _parseTNS;
     private String _elemFormDefault;

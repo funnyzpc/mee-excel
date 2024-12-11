@@ -165,7 +165,7 @@ public interface SchemaTypeLoader {
 //     * Compiles an XPath
 //     */
 //    String compilePath(String pathExpr, XmlOptions options) throws XmlException;
-
+//
 //    /**
 //     * Compiles an XQuery
 //     */

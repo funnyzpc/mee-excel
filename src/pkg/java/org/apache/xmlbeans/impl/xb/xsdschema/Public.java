@@ -7,9 +7,6 @@
  */
 package org.apache.xmlbeans.impl.xb.xsdschema;
 
-import org.apache.xmlbeans.impl.schema.ElementFactory;
-import org.apache.xmlbeans.impl.schema.AbstractDocumentFactory;
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
 import org.apache.xmlbeans.impl.schema.SimpleTypeFactory;
 
 
