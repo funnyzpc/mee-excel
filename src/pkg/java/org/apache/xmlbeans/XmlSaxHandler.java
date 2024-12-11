@@ -52,6 +52,5 @@ public interface XmlSaxHandler
      */
     void bookmarkLastAttr ( QName attrName, XmlCursor.XmlBookmark mark );
 
-    /** Returns the loaded XmlObject after all the SAX events have been finished */
-    XmlObject getObject ( ) throws XmlException;
+
 }

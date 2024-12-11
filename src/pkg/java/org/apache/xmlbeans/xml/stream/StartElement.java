@@ -15,7 +15,6 @@
 
 package org.apache.xmlbeans.xml.stream;
 
-import org.apache.xmlbeans.impl.inst2xsd.util.Attribute;
 
 import java.util.Map;
 
@@ -29,25 +28,7 @@ import java.util.Map;
  */
 
 public interface StartElement extends XMLEvent {
-    /**
-     * Returns an AttributeIterator of non-namespace declared attributes
-     */
-    AttributeIterator getAttributes();
 
-    /**
-     * Returns an AttributeIterator of namespaces declared in this element
-     */
-    AttributeIterator getNamespaces();
-
-    /**
-     * Returns the union of declared attributes and namespaces
-     */
-    AttributeIterator getAttributesAndNamespaces();
-
-    /**
-     * Returns the attribute referred to by this name
-     */
-    Attribute getAttributeByName(XMLName name);
 
     /**
      * Gets the value that the prefix is bound to in the

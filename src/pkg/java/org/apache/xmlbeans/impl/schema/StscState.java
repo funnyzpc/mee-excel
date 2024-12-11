@@ -67,7 +67,7 @@ public class StscState {
     private String _givenStsName;
     private Collection<XmlError> _errorListener;
     private SchemaTypeSystemImpl _target;
-    private BindingConfig _config;
+//    private BindingConfig _config;
     private Map<QName, QName> _compatMap;
     private boolean _doingDownloads;
     private byte[] _digest = null;
@@ -536,59 +536,6 @@ public class StscState {
         return subst;
     }
 
-    /**
-     * Initializer for the schema config object.
-     */
-    public void setBindingConfig(BindingConfig config)
-        throws IllegalArgumentException {
-        _config = config;
-    }
-
-    public BindingConfig getBindingConfig()
-        throws IllegalArgumentException {
-        return _config;
-    }
-
-    /**
-     * Looks up package override for a namespace URI
-     */
-    public String getPackageOverride(String namespace) {
-        if (_config == null) {
-            return null;
-        }
-        return _config.lookupPackageForNamespace(namespace);
-    }
-
-    /**
-     * Looks up package override for a namespace URI
-     */
-    public String getJavaPrefix(String namespace) {
-        if (_config == null) {
-            return null;
-        }
-        return _config.lookupPrefixForNamespace(namespace);
-    }
-
-    /**
-     * Looks up package override for a namespace URI
-     */
-    public String getJavaSuffix(String namespace) {
-        if (_config == null) {
-            return null;
-        }
-        return _config.lookupSuffixForNamespace(namespace);
-    }
-
-    /**
-     * Looks up configured java name for the given qname.
-     */
-    public String getJavaname(QName qname, int kind) {
-        if (_config == null) {
-            return null;
-        }
-        return _config.lookupJavanameForQName(qname, kind);
-    }
-
     /* SPELLINGS ======================================================*/
 
     private static String crunchName(QName name) {
@@ -1049,44 +996,7 @@ public class StscState {
 
     /* ANNOTATIONS ===========================================*/
 
-    void addAnnotation(SchemaAnnotationImpl ann, String targetNamespace) {
-        if (ann != null) {
-            SchemaContainer container = getContainer(targetNamespace);
-            assert container != null && container == ann.getContainer();
-            _annotations.add(ann);
-            container.addAnnotation(ann);
-        }
-    }
-
-    List<SchemaAnnotation> annotations() {
-        return _annotations;
-    }
-
-    /* RECURSION AVOIDANCE ============================================*/
-    boolean isProcessing(SchemaComponent obj) {
-        return _processingGroups.contains(obj);
-    }
-
-    void startProcessing(SchemaComponent obj) {
-        assert (!_processingGroups.contains(obj));
-        _processingGroups.add(obj);
-    }
-
-    void finishProcessing(SchemaComponent obj) {
-        assert (_processingGroups.contains(obj));
-        _processingGroups.remove(obj);
-    }
-
-    SchemaComponent[] getCurrentProcessing() {
-        return _processingGroups.toArray(new SchemaComponent[0]);
-    }
-
     /* JAVAIZATION ====================================================*/
-
-    Map<String, SchemaType> typesByClassname() {
-        return Collections.unmodifiableMap(_typesByClassname);
-    }
-
     void addClassname(String classname, SchemaType type) {
         _typesByClassname.put(classname, type);
     }

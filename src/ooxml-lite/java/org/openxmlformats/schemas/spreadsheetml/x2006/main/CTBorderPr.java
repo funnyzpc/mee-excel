@@ -50,28 +50,29 @@ public interface CTBorderPr extends org.apache.xmlbeans.XmlObject {
      */
     org.openxmlformats.schemas.spreadsheetml.x2006.main.STBorderStyle.Enum getStyle();
 
-    /**
-     * Gets (as xml) the "style" attribute
-     */
-    org.openxmlformats.schemas.spreadsheetml.x2006.main.STBorderStyle xgetStyle();
-
-    /**
-     * True if has "style" attribute
-     */
-    boolean isSetStyle();
+//    /**
+//     * Gets (as xml) the "style" attribute
+//     */
+//    org.openxmlformats.schemas.spreadsheetml.x2006.main.STBorderStyle xgetStyle();
+//
+//    /**
+//     * True if has "style" attribute
+//     */
+//    boolean isSetStyle();
 
     /**
      * Sets the "style" attribute
      */
     void setStyle(org.openxmlformats.schemas.spreadsheetml.x2006.main.STBorderStyle.Enum style);
 
-    /**
-     * Sets (as xml) the "style" attribute
-     */
-    void xsetStyle(org.openxmlformats.schemas.spreadsheetml.x2006.main.STBorderStyle style);
+//    /**
+//     * Sets (as xml) the "style" attribute
+//     */
+//    void xsetStyle(org.openxmlformats.schemas.spreadsheetml.x2006.main.STBorderStyle style);
+//
+//    /**
+//     * Unsets the "style" attribute
+//     */
+//    void unsetStyle();
 
-    /**
-     * Unsets the "style" attribute
-     */
-    void unsetStyle();
 }

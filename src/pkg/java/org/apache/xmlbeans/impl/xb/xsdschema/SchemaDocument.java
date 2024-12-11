@@ -35,11 +35,6 @@ public interface SchemaDocument extends org.apache.xmlbeans.XmlObject {
     void setSchema(org.apache.xmlbeans.impl.xb.xsdschema.SchemaDocument.Schema schema);
 
     /**
-     * Appends and returns a new empty "schema" element
-     */
-    org.apache.xmlbeans.impl.xb.xsdschema.SchemaDocument.Schema addNewSchema();
-
-    /**
      * An XML schema(@http://www.w3.org/2001/XMLSchema).
      *
      * This is a complex type.

@@ -641,14 +641,6 @@ public class RegularExpression implements java.io.Serializable {
 
 //Public
 
-    /**
-     * Checks whether the <var>target</var> text <strong>contains</strong> this pattern or not.
-     *
-     * @return true if the target is matched to this regular expression.
-     */
-    public boolean matches(char[]  target) {
-        return this.matches(target, 0,  target .length , (Match)null);
-    }
 
     /**
      * Checks whether the <var>target</var> text <strong>contains</strong> this pattern
@@ -1526,17 +1518,6 @@ public class RegularExpression implements java.io.Serializable {
         if (offset < begin || offset >= end)  return WT_OTHER;
         return getWordType0(target.charAt(offset) , opts);
     }
-
-
-    /**
-     * Checks whether the <var>target</var> text <strong>contains</strong> this pattern or not.
-     *
-     * @return true if the target is matched to this regular expression.
-     */
-    public boolean matches(CharacterIterator target) {
-        return this.matches(target, (Match)null);
-    }
-
 
     /**
      * Checks whether the <var>target</var> text <strong>contains</strong> this pattern or not.

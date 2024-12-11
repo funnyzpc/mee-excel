@@ -55,140 +55,140 @@ public interface CTColorScheme extends org.apache.xmlbeans.XmlObject {
      */
     org.openxmlformats.schemas.drawingml.x2006.main.CTColor getDk2();
 
-    /**
-     * Sets the "dk2" element
-     */
-    void setDk2(org.openxmlformats.schemas.drawingml.x2006.main.CTColor dk2);
-
-    /**
-     * Appends and returns a new empty "dk2" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTColor addNewDk2();
-
-    /**
-     * Gets the "lt2" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTColor getLt2();
-
-    /**
-     * Sets the "lt2" element
-     */
-    void setLt2(org.openxmlformats.schemas.drawingml.x2006.main.CTColor lt2);
-
-    /**
-     * Appends and returns a new empty "lt2" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTColor addNewLt2();
-
-    /**
-     * Gets the "accent1" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTColor getAccent1();
-
-    /**
-     * Sets the "accent1" element
-     */
-    void setAccent1(org.openxmlformats.schemas.drawingml.x2006.main.CTColor accent1);
-
-    /**
-     * Appends and returns a new empty "accent1" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTColor addNewAccent1();
-
-    /**
-     * Gets the "accent2" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTColor getAccent2();
-
-    /**
-     * Sets the "accent2" element
-     */
-    void setAccent2(org.openxmlformats.schemas.drawingml.x2006.main.CTColor accent2);
-
-    /**
-     * Appends and returns a new empty "accent2" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTColor addNewAccent2();
-
-    /**
-     * Gets the "accent3" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTColor getAccent3();
-
-    /**
-     * Sets the "accent3" element
-     */
-    void setAccent3(org.openxmlformats.schemas.drawingml.x2006.main.CTColor accent3);
-
-    /**
-     * Appends and returns a new empty "accent3" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTColor addNewAccent3();
-
-    /**
-     * Gets the "accent4" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTColor getAccent4();
-
-    /**
-     * Sets the "accent4" element
-     */
-    void setAccent4(org.openxmlformats.schemas.drawingml.x2006.main.CTColor accent4);
-
-    /**
-     * Appends and returns a new empty "accent4" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTColor addNewAccent4();
-
-    /**
-     * Gets the "accent5" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTColor getAccent5();
-
-    /**
-     * Sets the "accent5" element
-     */
-    void setAccent5(org.openxmlformats.schemas.drawingml.x2006.main.CTColor accent5);
-
-    /**
-     * Appends and returns a new empty "accent5" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTColor addNewAccent5();
-
-    /**
-     * Gets the "accent6" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTColor getAccent6();
-
-    /**
-     * Sets the "accent6" element
-     */
-    void setAccent6(org.openxmlformats.schemas.drawingml.x2006.main.CTColor accent6);
-
-    /**
-     * Appends and returns a new empty "accent6" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTColor addNewAccent6();
-
-    /**
-     * Gets the "hlink" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTColor getHlink();
-
-    /**
-     * Sets the "hlink" element
-     */
-    void setHlink(org.openxmlformats.schemas.drawingml.x2006.main.CTColor hlink);
-
-    /**
-     * Appends and returns a new empty "hlink" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTColor addNewHlink();
-
-    /**
-     * Gets the "folHlink" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTColor getFolHlink();
+//    /**
+//     * Sets the "dk2" element
+//     */
+//    void setDk2(org.openxmlformats.schemas.drawingml.x2006.main.CTColor dk2);
+//
+//    /**
+//     * Appends and returns a new empty "dk2" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTColor addNewDk2();
+//
+//    /**
+//     * Gets the "lt2" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTColor getLt2();
+//
+//    /**
+//     * Sets the "lt2" element
+//     */
+//    void setLt2(org.openxmlformats.schemas.drawingml.x2006.main.CTColor lt2);
+//
+//    /**
+//     * Appends and returns a new empty "lt2" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTColor addNewLt2();
+//
+//    /**
+//     * Gets the "accent1" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTColor getAccent1();
+//
+//    /**
+//     * Sets the "accent1" element
+//     */
+//    void setAccent1(org.openxmlformats.schemas.drawingml.x2006.main.CTColor accent1);
+//
+//    /**
+//     * Appends and returns a new empty "accent1" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTColor addNewAccent1();
+//
+//    /**
+//     * Gets the "accent2" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTColor getAccent2();
+//
+//    /**
+//     * Sets the "accent2" element
+//     */
+//    void setAccent2(org.openxmlformats.schemas.drawingml.x2006.main.CTColor accent2);
+//
+//    /**
+//     * Appends and returns a new empty "accent2" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTColor addNewAccent2();
+//
+//    /**
+//     * Gets the "accent3" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTColor getAccent3();
+//
+//    /**
+//     * Sets the "accent3" element
+//     */
+//    void setAccent3(org.openxmlformats.schemas.drawingml.x2006.main.CTColor accent3);
+//
+//    /**
+//     * Appends and returns a new empty "accent3" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTColor addNewAccent3();
+//
+//    /**
+//     * Gets the "accent4" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTColor getAccent4();
+//
+//    /**
+//     * Sets the "accent4" element
+//     */
+//    void setAccent4(org.openxmlformats.schemas.drawingml.x2006.main.CTColor accent4);
+//
+//    /**
+//     * Appends and returns a new empty "accent4" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTColor addNewAccent4();
+//
+//    /**
+//     * Gets the "accent5" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTColor getAccent5();
+//
+//    /**
+//     * Sets the "accent5" element
+//     */
+//    void setAccent5(org.openxmlformats.schemas.drawingml.x2006.main.CTColor accent5);
+//
+//    /**
+//     * Appends and returns a new empty "accent5" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTColor addNewAccent5();
+//
+//    /**
+//     * Gets the "accent6" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTColor getAccent6();
+//
+//    /**
+//     * Sets the "accent6" element
+//     */
+//    void setAccent6(org.openxmlformats.schemas.drawingml.x2006.main.CTColor accent6);
+//
+//    /**
+//     * Appends and returns a new empty "accent6" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTColor addNewAccent6();
+//
+//    /**
+//     * Gets the "hlink" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTColor getHlink();
+//
+//    /**
+//     * Sets the "hlink" element
+//     */
+//    void setHlink(org.openxmlformats.schemas.drawingml.x2006.main.CTColor hlink);
+//
+//    /**
+//     * Appends and returns a new empty "hlink" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTColor addNewHlink();
+//
+//    /**
+//     * Gets the "folHlink" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTColor getFolHlink();
 
 //    /**
 //     * Sets the "folHlink" element

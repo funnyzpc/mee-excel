@@ -284,50 +284,6 @@ public class CTStylesheetImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setDxfs(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxfs dxfs) {
         generatedSetterHelperImpl(dxfs, PROPERTY_QNAME[7], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-
-    /**
-     * Appends and returns a new empty "dxfs" element
-     */
-    @Override
-    public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxfs addNewDxfs() {
-        synchronized (monitor()) {
-            check_orphaned();
-            org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxfs target = null;
-            target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxfs)get_store().add_element_user(PROPERTY_QNAME[7]);
-            return target;
-        }
-    }
-
-    /**
-     * Unsets the "dxfs" element
-     */
-    @Override
-    public void unsetDxfs() {
-        synchronized (monitor()) {
-            check_orphaned();
-            get_store().remove_element(PROPERTY_QNAME[7], 0);
-        }
-    }
-
-    /**
-     * True if has "tableStyles" element
-     */
-    @Override
-    public boolean isSetTableStyles() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return get_store().count_elements(PROPERTY_QNAME[8]) != 0;
-        }
-    }
-
-    /**
-     * Sets the "tableStyles" element
-     */
-    @Override
-    public void setTableStyles(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableStyles tableStyles) {
-        generatedSetterHelperImpl(tableStyles, PROPERTY_QNAME[8], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
-    }
-
     /**
      * Gets the "colors" element
      */

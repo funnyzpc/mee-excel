@@ -19,7 +19,7 @@ import java.util.Map;
  * @author: funnyzpc
  * @Description 导出工具类测试
  **/
-public class ExcelWriteUtilTest {
+public class ExcelWriteTest {
     private static final List<BookDTO> objList = new ArrayList<BookDTO>(){
         {
             BookDTO blog = new BookDTO();
@@ -136,7 +136,7 @@ public class ExcelWriteUtilTest {
 
 
     public static void main(String[] args) {
-        ExcelWriteUtilTest excelWriteUtilTest = new ExcelWriteUtilTest();
+        ExcelWriteTest excelWriteUtilTest = new ExcelWriteTest();
 //        excelWriteUtilTest.expByObj();
         excelWriteUtilTest.expByMap();
     }

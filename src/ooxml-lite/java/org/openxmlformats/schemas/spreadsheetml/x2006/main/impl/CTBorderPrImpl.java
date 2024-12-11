@@ -100,33 +100,6 @@ public class CTBorderPrImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     }
 
     /**
-     * Gets (as xml) the "style" attribute
-     */
-    @Override
-    public org.openxmlformats.schemas.spreadsheetml.x2006.main.STBorderStyle xgetStyle() {
-        synchronized (monitor()) {
-            check_orphaned();
-            org.openxmlformats.schemas.spreadsheetml.x2006.main.STBorderStyle target = null;
-            target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.STBorderStyle)get_store().find_attribute_user(PROPERTY_QNAME[1]);
-            if (target == null) {
-                target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.STBorderStyle)get_default_attribute_value(PROPERTY_QNAME[1]);
-            }
-            return target;
-        }
-    }
-
-    /**
-     * True if has "style" attribute
-     */
-    @Override
-    public boolean isSetStyle() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return get_store().find_attribute_user(PROPERTY_QNAME[1]) != null;
-        }
-    }
-
-    /**
      * Sets the "style" attribute
      */
     @Override
@@ -142,30 +115,4 @@ public class CTBorderPrImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
         }
     }
 
-    /**
-     * Sets (as xml) the "style" attribute
-     */
-    @Override
-    public void xsetStyle(org.openxmlformats.schemas.spreadsheetml.x2006.main.STBorderStyle style) {
-        synchronized (monitor()) {
-            check_orphaned();
-            org.openxmlformats.schemas.spreadsheetml.x2006.main.STBorderStyle target = null;
-            target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.STBorderStyle)get_store().find_attribute_user(PROPERTY_QNAME[1]);
-            if (target == null) {
-                target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.STBorderStyle)get_store().add_attribute_user(PROPERTY_QNAME[1]);
-            }
-            target.set(style);
-        }
-    }
-
-    /**
-     * Unsets the "style" attribute
-     */
-    @Override
-    public void unsetStyle() {
-        synchronized (monitor()) {
-            check_orphaned();
-            get_store().remove_attribute(PROPERTY_QNAME[1]);
-        }
-    }
 }

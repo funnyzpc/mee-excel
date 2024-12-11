@@ -30,32 +30,6 @@ public class CTColorImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
         new QName("http://schemas.openxmlformats.org/drawingml/2006/main", "prstClr"),
     };
 
-
-    /**
-     * Gets the "srgbClr" element
-     */
-    @Override
-    public org.openxmlformats.schemas.drawingml.x2006.main.CTSRgbColor getSrgbClr() {
-        synchronized (monitor()) {
-            check_orphaned();
-            org.openxmlformats.schemas.drawingml.x2006.main.CTSRgbColor target = null;
-            target = (org.openxmlformats.schemas.drawingml.x2006.main.CTSRgbColor)get_store().find_element_user(PROPERTY_QNAME[1], 0);
-            return (target == null) ? null : target;
-        }
-    }
-
-    /**
-     * True if has "srgbClr" element
-     */
-    @Override
-    public boolean isSetSrgbClr() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return get_store().count_elements(PROPERTY_QNAME[1]) != 0;
-        }
-    }
-
-
     /**
      * Gets the "sysClr" element
      */

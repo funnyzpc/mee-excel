@@ -44,16 +44,16 @@ public interface CTColor extends org.apache.xmlbeans.XmlObject {
 //     * Unsets the "scrgbClr" element
 //     */
 //    void unsetScrgbClr();
-
-    /**
-     * Gets the "srgbClr" element
-     */
-    org.openxmlformats.schemas.drawingml.x2006.main.CTSRgbColor getSrgbClr();
-
-    /**
-     * True if has "srgbClr" element
-     */
-    boolean isSetSrgbClr();
+//
+//    /**
+//     * Gets the "srgbClr" element
+//     */
+//    org.openxmlformats.schemas.drawingml.x2006.main.CTSRgbColor getSrgbClr();
+//
+//    /**
+//     * True if has "srgbClr" element
+//     */
+//    boolean isSetSrgbClr();
 //
 //    /**
 //     * Sets the "srgbClr" element

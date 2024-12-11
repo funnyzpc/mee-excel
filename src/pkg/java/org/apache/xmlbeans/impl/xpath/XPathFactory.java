@@ -30,7 +30,7 @@ public class XPathFactory {
     private static final int USE_XMLBEANS = 0x01;
     private static final int USE_SAXON = 0x04;
 
-    private static final Map<String, WeakReference<Path>> _xmlbeansPathCache = new WeakHashMap<>();
+//    private static final Map<String, WeakReference<Path>> _xmlbeansPathCache = new WeakHashMap<>();
     private static final ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
 
     static String getCurrentNodeVar(XmlOptions options) {

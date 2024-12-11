@@ -210,30 +210,30 @@ public interface CTStylesheet extends org.apache.xmlbeans.XmlObject {
      */
     void setDxfs(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxfs dxfs);
 
-    /**
-     * Appends and returns a new empty "dxfs" element
-     */
-    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxfs addNewDxfs();
-
-    /**
-     * Unsets the "dxfs" element
-     */
-    void unsetDxfs();
+//    /**
+//     * Appends and returns a new empty "dxfs" element
+//     */
+//    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxfs addNewDxfs();
+//
+//    /**
+//     * Unsets the "dxfs" element
+//     */
+//    void unsetDxfs();
 
 //    /**
 //     * Gets the "tableStyles" element
 //     */
 //    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableStyles getTableStyles();
-
-    /**
-     * True if has "tableStyles" element
-     */
-    boolean isSetTableStyles();
-
-    /**
-     * Sets the "tableStyles" element
-     */
-    void setTableStyles(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableStyles tableStyles);
+//
+//    /**
+//     * True if has "tableStyles" element
+//     */
+//    boolean isSetTableStyles();
+//
+//    /**
+//     * Sets the "tableStyles" element
+//     */
+//    void setTableStyles(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableStyles tableStyles);
 
 //    /**
 //     * Appends and returns a new empty "tableStyles" element

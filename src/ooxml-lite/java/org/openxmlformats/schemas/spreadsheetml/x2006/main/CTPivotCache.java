@@ -19,44 +19,4 @@ public interface CTPivotCache extends org.apache.xmlbeans.XmlObject {
     DocumentFactory<CTPivotCache> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctpivotcache4de9type");
     org.apache.xmlbeans.SchemaType type = Factory.getType();
 
-
-    /**
-     * Gets the "cacheId" attribute
-     */
-    long getCacheId();
-
-    /**
-     * Gets (as xml) the "cacheId" attribute
-     */
-    org.apache.xmlbeans.XmlUnsignedInt xgetCacheId();
-
-    /**
-     * Sets the "cacheId" attribute
-     */
-    void setCacheId(long cacheId);
-
-    /**
-     * Sets (as xml) the "cacheId" attribute
-     */
-    void xsetCacheId(org.apache.xmlbeans.XmlUnsignedInt cacheId);
-
-    /**
-     * Gets the "id" attribute
-     */
-    String getId();
-
-    /**
-     * Gets (as xml) the "id" attribute
-     */
-    org.openxmlformats.schemas.officeDocument.x2006.relationships.STRelationshipId xgetId();
-
-    /**
-     * Sets the "id" attribute
-     */
-    void setId(String id);
-
-    /**
-     * Sets (as xml) the "id" attribute
-     */
-    void xsetId(org.openxmlformats.schemas.officeDocument.x2006.relationships.STRelationshipId id);
 }

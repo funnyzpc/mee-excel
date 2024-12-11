@@ -57,25 +57,6 @@ public interface AnnotationDocument extends org.apache.xmlbeans.XmlObject {
          */
         org.apache.xmlbeans.impl.xb.xsdschema.AppinfoDocument.Appinfo[] getAppinfoArray();
 
-        /**
-         * Gets ith "appinfo" element
-         */
-        org.apache.xmlbeans.impl.xb.xsdschema.AppinfoDocument.Appinfo getAppinfoArray(int i);
-
-        /**
-         * Returns number of "appinfo" element
-         */
-        int sizeOfAppinfoArray();
-
-        /**
-         * Sets array of all "appinfo" element
-         */
-        void setAppinfoArray(org.apache.xmlbeans.impl.xb.xsdschema.AppinfoDocument.Appinfo[] appinfoArray);
-
-        /**
-         * Sets ith "appinfo" element
-         */
-        void setAppinfoArray(int i, org.apache.xmlbeans.impl.xb.xsdschema.AppinfoDocument.Appinfo appinfo);
 
         /**
          * Inserts and returns a new empty value (as xml) as the ith "appinfo" element
