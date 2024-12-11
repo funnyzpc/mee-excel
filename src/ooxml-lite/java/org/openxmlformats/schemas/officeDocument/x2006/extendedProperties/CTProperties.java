@@ -7,7 +7,12 @@
  */
 package org.openxmlformats.schemas.officeDocument.x2006.extendedProperties;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlInt;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlString;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +20,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTProperties extends org.apache.xmlbeans.XmlObject {
+public interface CTProperties extends XmlObject {
     DocumentFactory<CTProperties> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctproperties3f10type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -28,7 +33,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "Template" element
      */
-    org.apache.xmlbeans.XmlString xgetTemplate();
+    XmlString xgetTemplate();
 
     /**
      * True if has "Template" element
@@ -43,7 +48,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "Template" element
      */
-    void xsetTemplate(org.apache.xmlbeans.XmlString template);
+    void xsetTemplate(XmlString template);
 
     /**
      * Unsets the "Template" element
@@ -58,7 +63,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "Manager" element
      */
-    org.apache.xmlbeans.XmlString xgetManager();
+    XmlString xgetManager();
 
     /**
      * True if has "Manager" element
@@ -73,7 +78,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "Manager" element
      */
-    void xsetManager(org.apache.xmlbeans.XmlString manager);
+    void xsetManager(XmlString manager);
 
     /**
      * Unsets the "Manager" element
@@ -88,7 +93,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "Company" element
      */
-    org.apache.xmlbeans.XmlString xgetCompany();
+    XmlString xgetCompany();
 
     /**
      * True if has "Company" element
@@ -103,7 +108,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "Company" element
      */
-    void xsetCompany(org.apache.xmlbeans.XmlString company);
+    void xsetCompany(XmlString company);
 
     /**
      * Unsets the "Company" element
@@ -118,7 +123,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "Pages" element
      */
-    org.apache.xmlbeans.XmlInt xgetPages();
+    XmlInt xgetPages();
 
     /**
      * True if has "Pages" element
@@ -133,7 +138,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "Pages" element
      */
-    void xsetPages(org.apache.xmlbeans.XmlInt pages);
+    void xsetPages(XmlInt pages);
 
     /**
      * Unsets the "Pages" element
@@ -148,7 +153,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "Words" element
      */
-    org.apache.xmlbeans.XmlInt xgetWords();
+    XmlInt xgetWords();
 
     /**
      * True if has "Words" element
@@ -163,7 +168,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "Words" element
      */
-    void xsetWords(org.apache.xmlbeans.XmlInt words);
+    void xsetWords(XmlInt words);
 
     /**
      * Unsets the "Words" element
@@ -178,7 +183,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "Characters" element
      */
-    org.apache.xmlbeans.XmlInt xgetCharacters();
+    XmlInt xgetCharacters();
 
     /**
      * True if has "Characters" element
@@ -193,7 +198,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "Characters" element
      */
-    void xsetCharacters(org.apache.xmlbeans.XmlInt characters);
+    void xsetCharacters(XmlInt characters);
 
     /**
      * Unsets the "Characters" element
@@ -208,7 +213,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "PresentationFormat" element
      */
-    org.apache.xmlbeans.XmlString xgetPresentationFormat();
+    XmlString xgetPresentationFormat();
 
     /**
      * True if has "PresentationFormat" element
@@ -223,7 +228,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "PresentationFormat" element
      */
-    void xsetPresentationFormat(org.apache.xmlbeans.XmlString presentationFormat);
+    void xsetPresentationFormat(XmlString presentationFormat);
 
     /**
      * Unsets the "PresentationFormat" element
@@ -238,7 +243,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "Lines" element
      */
-    org.apache.xmlbeans.XmlInt xgetLines();
+    XmlInt xgetLines();
 
     /**
      * True if has "Lines" element
@@ -253,7 +258,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "Lines" element
      */
-    void xsetLines(org.apache.xmlbeans.XmlInt lines);
+    void xsetLines(XmlInt lines);
 
     /**
      * Unsets the "Lines" element
@@ -268,7 +273,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "Paragraphs" element
      */
-    org.apache.xmlbeans.XmlInt xgetParagraphs();
+    XmlInt xgetParagraphs();
 
     /**
      * True if has "Paragraphs" element
@@ -283,7 +288,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "Paragraphs" element
      */
-    void xsetParagraphs(org.apache.xmlbeans.XmlInt paragraphs);
+    void xsetParagraphs(XmlInt paragraphs);
 
     /**
      * Unsets the "Paragraphs" element
@@ -298,7 +303,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "Slides" element
      */
-    org.apache.xmlbeans.XmlInt xgetSlides();
+    XmlInt xgetSlides();
 
     /**
      * True if has "Slides" element
@@ -313,7 +318,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "Slides" element
      */
-    void xsetSlides(org.apache.xmlbeans.XmlInt slides);
+    void xsetSlides(XmlInt slides);
 
     /**
      * Unsets the "Slides" element
@@ -328,7 +333,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "Notes" element
      */
-    org.apache.xmlbeans.XmlInt xgetNotes();
+    XmlInt xgetNotes();
 
     /**
      * True if has "Notes" element
@@ -343,7 +348,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "Notes" element
      */
-    void xsetNotes(org.apache.xmlbeans.XmlInt notes);
+    void xsetNotes(XmlInt notes);
 
     /**
      * Unsets the "Notes" element
@@ -358,7 +363,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "TotalTime" element
      */
-    org.apache.xmlbeans.XmlInt xgetTotalTime();
+    XmlInt xgetTotalTime();
 
     /**
      * True if has "TotalTime" element
@@ -373,7 +378,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "TotalTime" element
      */
-    void xsetTotalTime(org.apache.xmlbeans.XmlInt totalTime);
+    void xsetTotalTime(XmlInt totalTime);
 
     /**
      * Unsets the "TotalTime" element
@@ -388,7 +393,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "HiddenSlides" element
      */
-    org.apache.xmlbeans.XmlInt xgetHiddenSlides();
+    XmlInt xgetHiddenSlides();
 
     /**
      * True if has "HiddenSlides" element
@@ -403,7 +408,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "HiddenSlides" element
      */
-    void xsetHiddenSlides(org.apache.xmlbeans.XmlInt hiddenSlides);
+    void xsetHiddenSlides(XmlInt hiddenSlides);
 
     /**
      * Unsets the "HiddenSlides" element
@@ -418,7 +423,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "MMClips" element
      */
-    org.apache.xmlbeans.XmlInt xgetMMClips();
+    XmlInt xgetMMClips();
 
     /**
      * True if has "MMClips" element
@@ -528,7 +533,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "LinksUpToDate" element
      */
-    org.apache.xmlbeans.XmlBoolean xgetLinksUpToDate();
+    XmlBoolean xgetLinksUpToDate();
 
     /**
      * True if has "LinksUpToDate" element
@@ -543,7 +548,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "LinksUpToDate" element
      */
-    void xsetLinksUpToDate(org.apache.xmlbeans.XmlBoolean linksUpToDate);
+    void xsetLinksUpToDate(XmlBoolean linksUpToDate);
 
     /**
      * Unsets the "LinksUpToDate" element
@@ -558,7 +563,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "CharactersWithSpaces" element
      */
-    org.apache.xmlbeans.XmlInt xgetCharactersWithSpaces();
+    XmlInt xgetCharactersWithSpaces();
 
     /**
      * True if has "CharactersWithSpaces" element
@@ -573,7 +578,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "CharactersWithSpaces" element
      */
-    void xsetCharactersWithSpaces(org.apache.xmlbeans.XmlInt charactersWithSpaces);
+    void xsetCharactersWithSpaces(XmlInt charactersWithSpaces);
 
     /**
      * Unsets the "CharactersWithSpaces" element
@@ -588,7 +593,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "SharedDoc" element
      */
-    org.apache.xmlbeans.XmlBoolean xgetSharedDoc();
+    XmlBoolean xgetSharedDoc();
 
     /**
      * True if has "SharedDoc" element
@@ -603,7 +608,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "SharedDoc" element
      */
-    void xsetSharedDoc(org.apache.xmlbeans.XmlBoolean sharedDoc);
+    void xsetSharedDoc(XmlBoolean sharedDoc);
 
     /**
      * Unsets the "SharedDoc" element
@@ -618,7 +623,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "HyperlinkBase" element
      */
-    org.apache.xmlbeans.XmlString xgetHyperlinkBase();
+    XmlString xgetHyperlinkBase();
 
     /**
      * True if has "HyperlinkBase" element
@@ -728,7 +733,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "Application" element
      */
-    org.apache.xmlbeans.XmlString xgetApplication();
+    XmlString xgetApplication();
 
     /**
      * True if has "Application" element
@@ -743,7 +748,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "Application" element
      */
-    void xsetApplication(org.apache.xmlbeans.XmlString application);
+    void xsetApplication(XmlString application);
 
     /**
      * Unsets the "Application" element
@@ -758,7 +763,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "AppVersion" element
      */
-    org.apache.xmlbeans.XmlString xgetAppVersion();
+    XmlString xgetAppVersion();
 
     /**
      * True if has "AppVersion" element
@@ -773,7 +778,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "AppVersion" element
      */
-    void xsetAppVersion(org.apache.xmlbeans.XmlString appVersion);
+    void xsetAppVersion(XmlString appVersion);
 
     /**
      * Unsets the "AppVersion" element
@@ -788,7 +793,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "DocSecurity" element
      */
-    org.apache.xmlbeans.XmlInt xgetDocSecurity();
+    XmlInt xgetDocSecurity();
 
     /**
      * True if has "DocSecurity" element
@@ -803,7 +808,7 @@ public interface CTProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "DocSecurity" element
      */
-    void xsetDocSecurity(org.apache.xmlbeans.XmlInt docSecurity);
+    void xsetDocSecurity(XmlInt docSecurity);
 
     /**
      * Unsets the "DocSecurity" element

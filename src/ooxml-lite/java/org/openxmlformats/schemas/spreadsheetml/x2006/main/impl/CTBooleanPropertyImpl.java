@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTBooleanPropertyImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBooleanProperty {
+public class CTBooleanPropertyImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBooleanProperty {
     private static final long serialVersionUID = 1L;
 
-    public CTBooleanPropertyImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTBooleanPropertyImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -33,10 +38,10 @@ public class CTBooleanPropertyImpl extends org.apache.xmlbeans.impl.values.XmlCo
     public boolean getVal() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[0]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -46,13 +51,13 @@ public class CTBooleanPropertyImpl extends org.apache.xmlbeans.impl.values.XmlCo
      * Gets (as xml) the "val" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetVal() {
+    public XmlBoolean xgetVal() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[0]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[0]);
             }
             return target;
         }
@@ -76,10 +81,10 @@ public class CTBooleanPropertyImpl extends org.apache.xmlbeans.impl.values.XmlCo
     public void setVal(boolean val) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.setBooleanValue(val);
         }
@@ -89,13 +94,13 @@ public class CTBooleanPropertyImpl extends org.apache.xmlbeans.impl.values.XmlCo
      * Sets (as xml) the "val" attribute
      */
     @Override
-    public void xsetVal(org.apache.xmlbeans.XmlBoolean val) {
+    public void xsetVal(XmlBoolean val) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.set(val);
         }

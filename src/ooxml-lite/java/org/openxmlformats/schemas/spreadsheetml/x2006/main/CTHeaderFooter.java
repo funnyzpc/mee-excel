@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTHeaderFooter extends org.apache.xmlbeans.XmlObject {
+public interface CTHeaderFooter extends XmlObject {
     DocumentFactory<CTHeaderFooter> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctheaderfooter90d1type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -208,7 +211,7 @@ public interface CTHeaderFooter extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "differentOddEven" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetDifferentOddEven();
+    XmlBoolean xgetDifferentOddEven();
 
     /**
      * True if has "differentOddEven" attribute
@@ -223,7 +226,7 @@ public interface CTHeaderFooter extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "differentOddEven" attribute
      */
-    void xsetDifferentOddEven(org.apache.xmlbeans.XmlBoolean differentOddEven);
+    void xsetDifferentOddEven(XmlBoolean differentOddEven);
 
     /**
      * Unsets the "differentOddEven" attribute
@@ -238,7 +241,7 @@ public interface CTHeaderFooter extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "differentFirst" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetDifferentFirst();
+    XmlBoolean xgetDifferentFirst();
 
     /**
      * True if has "differentFirst" attribute
@@ -253,7 +256,7 @@ public interface CTHeaderFooter extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "differentFirst" attribute
      */
-    void xsetDifferentFirst(org.apache.xmlbeans.XmlBoolean differentFirst);
+    void xsetDifferentFirst(XmlBoolean differentFirst);
 
     /**
      * Unsets the "differentFirst" attribute
@@ -268,7 +271,7 @@ public interface CTHeaderFooter extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "scaleWithDoc" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetScaleWithDoc();
+    XmlBoolean xgetScaleWithDoc();
 
     /**
      * True if has "scaleWithDoc" attribute
@@ -283,7 +286,7 @@ public interface CTHeaderFooter extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "scaleWithDoc" attribute
      */
-    void xsetScaleWithDoc(org.apache.xmlbeans.XmlBoolean scaleWithDoc);
+    void xsetScaleWithDoc(XmlBoolean scaleWithDoc);
 
     /**
      * Unsets the "scaleWithDoc" attribute
@@ -298,7 +301,7 @@ public interface CTHeaderFooter extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "alignWithMargins" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetAlignWithMargins();
+    XmlBoolean xgetAlignWithMargins();
 
     /**
      * True if has "alignWithMargins" attribute
@@ -313,7 +316,7 @@ public interface CTHeaderFooter extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "alignWithMargins" attribute
      */
-    void xsetAlignWithMargins(org.apache.xmlbeans.XmlBoolean alignWithMargins);
+    void xsetAlignWithMargins(XmlBoolean alignWithMargins);
 
     /**
      * Unsets the "alignWithMargins" attribute

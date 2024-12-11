@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTHeaderFooter {
+public class CTHeaderFooterImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTHeaderFooter {
     private static final long serialVersionUID = 1L;
 
-    public CTHeaderFooterImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTHeaderFooterImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -42,8 +47,8 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public String getOddHeader() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[0], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[0], 0);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -79,10 +84,10 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public void setOddHeader(String oddHeader) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[0], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[0], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[0]);
             }
             target.setStringValue(oddHeader);
         }
@@ -122,8 +127,8 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public String getOddFooter() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[1], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[1], 0);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -159,10 +164,10 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public void setOddFooter(String oddFooter) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[1], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[1], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[1]);
             }
             target.setStringValue(oddFooter);
         }
@@ -202,8 +207,8 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public String getEvenHeader() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[2], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[2], 0);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -239,10 +244,10 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public void setEvenHeader(String evenHeader) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[2], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[2], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[2]);
             }
             target.setStringValue(evenHeader);
         }
@@ -282,8 +287,8 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public String getEvenFooter() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[3], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[3], 0);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -319,10 +324,10 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public void setEvenFooter(String evenFooter) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[3], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[3], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[3]);
             }
             target.setStringValue(evenFooter);
         }
@@ -362,8 +367,8 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public String getFirstHeader() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[4], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[4], 0);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -399,10 +404,10 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public void setFirstHeader(String firstHeader) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[4], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[4], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[4]);
             }
             target.setStringValue(firstHeader);
         }
@@ -442,8 +447,8 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public String getFirstFooter() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[5], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[5], 0);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -479,10 +484,10 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public void setFirstFooter(String firstFooter) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[5], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[5], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[5]);
             }
             target.setStringValue(firstFooter);
         }
@@ -522,10 +527,10 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public boolean getDifferentOddEven() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[6]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -535,13 +540,13 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Gets (as xml) the "differentOddEven" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetDifferentOddEven() {
+    public XmlBoolean xgetDifferentOddEven() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[6]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[6]);
             }
             return target;
         }
@@ -565,10 +570,10 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public void setDifferentOddEven(boolean differentOddEven) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.setBooleanValue(differentOddEven);
         }
@@ -578,13 +583,13 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Sets (as xml) the "differentOddEven" attribute
      */
     @Override
-    public void xsetDifferentOddEven(org.apache.xmlbeans.XmlBoolean differentOddEven) {
+    public void xsetDifferentOddEven(XmlBoolean differentOddEven) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.set(differentOddEven);
         }
@@ -608,10 +613,10 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public boolean getDifferentFirst() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[7]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[7]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -621,13 +626,13 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Gets (as xml) the "differentFirst" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetDifferentFirst() {
+    public XmlBoolean xgetDifferentFirst() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[7]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[7]);
             }
             return target;
         }
@@ -651,10 +656,10 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public void setDifferentFirst(boolean differentFirst) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
             }
             target.setBooleanValue(differentFirst);
         }
@@ -664,13 +669,13 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Sets (as xml) the "differentFirst" attribute
      */
     @Override
-    public void xsetDifferentFirst(org.apache.xmlbeans.XmlBoolean differentFirst) {
+    public void xsetDifferentFirst(XmlBoolean differentFirst) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[7]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[7]);
             }
             target.set(differentFirst);
         }
@@ -694,10 +699,10 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public boolean getScaleWithDoc() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[8]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -707,13 +712,13 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Gets (as xml) the "scaleWithDoc" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetScaleWithDoc() {
+    public XmlBoolean xgetScaleWithDoc() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[8]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[8]);
             }
             return target;
         }
@@ -737,10 +742,10 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public void setScaleWithDoc(boolean scaleWithDoc) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.setBooleanValue(scaleWithDoc);
         }
@@ -750,13 +755,13 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Sets (as xml) the "scaleWithDoc" attribute
      */
     @Override
-    public void xsetScaleWithDoc(org.apache.xmlbeans.XmlBoolean scaleWithDoc) {
+    public void xsetScaleWithDoc(XmlBoolean scaleWithDoc) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.set(scaleWithDoc);
         }
@@ -780,10 +785,10 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public boolean getAlignWithMargins() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[9]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[9]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -793,13 +798,13 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Gets (as xml) the "alignWithMargins" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetAlignWithMargins() {
+    public XmlBoolean xgetAlignWithMargins() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[9]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[9]);
             }
             return target;
         }
@@ -823,10 +828,10 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public void setAlignWithMargins(boolean alignWithMargins) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.setBooleanValue(alignWithMargins);
         }
@@ -836,13 +841,13 @@ public class CTHeaderFooterImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Sets (as xml) the "alignWithMargins" attribute
      */
     @Override
-    public void xsetAlignWithMargins(org.apache.xmlbeans.XmlBoolean alignWithMargins) {
+    public void xsetAlignWithMargins(XmlBoolean alignWithMargins) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.set(alignWithMargins);
         }

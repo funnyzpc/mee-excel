@@ -7,6 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +18,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTVerticalAlignFontPropertyImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTVerticalAlignFontProperty {
+public class CTVerticalAlignFontPropertyImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTVerticalAlignFontProperty {
     private static final long serialVersionUID = 1L;
 
-    public CTVerticalAlignFontPropertyImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTVerticalAlignFontPropertyImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -33,8 +37,8 @@ public class CTVerticalAlignFontPropertyImpl extends org.apache.xmlbeans.impl.va
     public org.openxmlformats.schemas.officeDocument.x2006.sharedTypes.STVerticalAlignRun.Enum getVal() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             return (target == null) ? null : (org.openxmlformats.schemas.officeDocument.x2006.sharedTypes.STVerticalAlignRun.Enum)target.getEnumValue();
         }
     }
@@ -59,10 +63,10 @@ public class CTVerticalAlignFontPropertyImpl extends org.apache.xmlbeans.impl.va
     public void setVal(org.openxmlformats.schemas.officeDocument.x2006.sharedTypes.STVerticalAlignRun.Enum val) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.setEnumValue(val);
         }

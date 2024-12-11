@@ -8,6 +8,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -15,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class TableDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.TableDocument {
+public class TableDocumentImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.TableDocument {
     private static final long serialVersionUID = 1L;
 
-    public TableDocumentImpl(org.apache.xmlbeans.SchemaType sType) {
+    public TableDocumentImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -45,7 +49,7 @@ public class TableDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
      */
     @Override
     public void setTable(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTable table) {
-        generatedSetterHelperImpl(table, PROPERTY_QNAME[0], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(table, PROPERTY_QNAME[0], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**

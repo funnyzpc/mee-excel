@@ -7,6 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +18,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTColorImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColor {
+public class CTColorImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColor {
     private static final long serialVersionUID = 1L;
 
-    public CTColorImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTColorImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -37,8 +41,8 @@ public class CTColorImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     public boolean getAuto() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             return (target == null) ? false : target.getBooleanValue();
         }
     }
@@ -50,10 +54,10 @@ public class CTColorImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     public void setAuto(boolean auto) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.setBooleanValue(auto);
         }
@@ -66,8 +70,8 @@ public class CTColorImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     public long getIndexed() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -92,10 +96,10 @@ public class CTColorImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     public void setIndexed(long indexed) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setLongValue(indexed);
         }
@@ -108,8 +112,8 @@ public class CTColorImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     public byte[] getRgb() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return (target == null) ? null : target.getByteArrayValue();
         }
     }
@@ -133,10 +137,10 @@ public class CTColorImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     public void setRgb(byte[] rgb) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.setByteArrayValue(rgb);
         }
@@ -149,8 +153,8 @@ public class CTColorImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     public long getTheme() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -173,10 +177,10 @@ public class CTColorImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     public void setTheme(long theme) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setLongValue(theme);
         }
@@ -190,10 +194,10 @@ public class CTColorImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     public double getTint() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return (target == null) ? 0.0 : target.getDoubleValue();
         }
@@ -218,10 +222,10 @@ public class CTColorImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     public void setTint(double tint) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.setDoubleValue(tint);
         }

@@ -7,6 +7,9 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +17,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTExternalLinkImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalLink {
+public class CTExternalLinkImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalLink {
     private static final long serialVersionUID = 1L;
 
-    public CTExternalLinkImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTExternalLinkImpl(SchemaType sType) {
         super(sType);
     }
 

@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTBorder extends org.apache.xmlbeans.XmlObject {
+public interface CTBorder extends XmlObject {
     DocumentFactory<CTBorder> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctborderf935type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -253,7 +256,7 @@ public interface CTBorder extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "diagonalUp" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetDiagonalUp();
+    XmlBoolean xgetDiagonalUp();
 
     /**
      * True if has "diagonalUp" attribute
@@ -268,7 +271,7 @@ public interface CTBorder extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "diagonalUp" attribute
      */
-    void xsetDiagonalUp(org.apache.xmlbeans.XmlBoolean diagonalUp);
+    void xsetDiagonalUp(XmlBoolean diagonalUp);
 
     /**
      * Unsets the "diagonalUp" attribute
@@ -283,7 +286,7 @@ public interface CTBorder extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "diagonalDown" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetDiagonalDown();
+    XmlBoolean xgetDiagonalDown();
 
     /**
      * True if has "diagonalDown" attribute
@@ -298,7 +301,7 @@ public interface CTBorder extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "diagonalDown" attribute
      */
-    void xsetDiagonalDown(org.apache.xmlbeans.XmlBoolean diagonalDown);
+    void xsetDiagonalDown(XmlBoolean diagonalDown);
 
     /**
      * Unsets the "diagonalDown" attribute
@@ -313,7 +316,7 @@ public interface CTBorder extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "outline" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetOutline();
+    XmlBoolean xgetOutline();
 
     /**
      * True if has "outline" attribute
@@ -328,7 +331,7 @@ public interface CTBorder extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "outline" attribute
      */
-    void xsetOutline(org.apache.xmlbeans.XmlBoolean outline);
+    void xsetOutline(XmlBoolean outline);
 
     /**
      * Unsets the "outline" attribute

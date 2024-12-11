@@ -7,7 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlString;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +19,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTSheetPr extends org.apache.xmlbeans.XmlObject {
+public interface CTSheetPr extends XmlObject {
     DocumentFactory<CTSheetPr> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctsheetpr3ae0type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -98,7 +102,7 @@ public interface CTSheetPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "syncHorizontal" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetSyncHorizontal();
+    XmlBoolean xgetSyncHorizontal();
 
     /**
      * True if has "syncHorizontal" attribute
@@ -113,7 +117,7 @@ public interface CTSheetPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "syncHorizontal" attribute
      */
-    void xsetSyncHorizontal(org.apache.xmlbeans.XmlBoolean syncHorizontal);
+    void xsetSyncHorizontal(XmlBoolean syncHorizontal);
 
     /**
      * Unsets the "syncHorizontal" attribute
@@ -128,7 +132,7 @@ public interface CTSheetPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "syncVertical" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetSyncVertical();
+    XmlBoolean xgetSyncVertical();
 
     /**
      * True if has "syncVertical" attribute
@@ -143,7 +147,7 @@ public interface CTSheetPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "syncVertical" attribute
      */
-    void xsetSyncVertical(org.apache.xmlbeans.XmlBoolean syncVertical);
+    void xsetSyncVertical(XmlBoolean syncVertical);
 
     /**
      * Unsets the "syncVertical" attribute
@@ -188,7 +192,7 @@ public interface CTSheetPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "transitionEvaluation" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetTransitionEvaluation();
+    XmlBoolean xgetTransitionEvaluation();
 
     /**
      * True if has "transitionEvaluation" attribute
@@ -203,7 +207,7 @@ public interface CTSheetPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "transitionEvaluation" attribute
      */
-    void xsetTransitionEvaluation(org.apache.xmlbeans.XmlBoolean transitionEvaluation);
+    void xsetTransitionEvaluation(XmlBoolean transitionEvaluation);
 
     /**
      * Unsets the "transitionEvaluation" attribute
@@ -218,7 +222,7 @@ public interface CTSheetPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "transitionEntry" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetTransitionEntry();
+    XmlBoolean xgetTransitionEntry();
 
     /**
      * True if has "transitionEntry" attribute
@@ -233,7 +237,7 @@ public interface CTSheetPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "transitionEntry" attribute
      */
-    void xsetTransitionEntry(org.apache.xmlbeans.XmlBoolean transitionEntry);
+    void xsetTransitionEntry(XmlBoolean transitionEntry);
 
     /**
      * Unsets the "transitionEntry" attribute
@@ -248,7 +252,7 @@ public interface CTSheetPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "published" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetPublished();
+    XmlBoolean xgetPublished();
 
     /**
      * True if has "published" attribute
@@ -263,7 +267,7 @@ public interface CTSheetPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "published" attribute
      */
-    void xsetPublished(org.apache.xmlbeans.XmlBoolean published);
+    void xsetPublished(XmlBoolean published);
 
     /**
      * Unsets the "published" attribute
@@ -278,7 +282,7 @@ public interface CTSheetPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "codeName" attribute
      */
-    org.apache.xmlbeans.XmlString xgetCodeName();
+    XmlString xgetCodeName();
 
     /**
      * True if has "codeName" attribute
@@ -293,7 +297,7 @@ public interface CTSheetPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "codeName" attribute
      */
-    void xsetCodeName(org.apache.xmlbeans.XmlString codeName);
+    void xsetCodeName(XmlString codeName);
 
     /**
      * Unsets the "codeName" attribute
@@ -308,7 +312,7 @@ public interface CTSheetPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "filterMode" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetFilterMode();
+    XmlBoolean xgetFilterMode();
 
     /**
      * True if has "filterMode" attribute
@@ -323,7 +327,7 @@ public interface CTSheetPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "filterMode" attribute
      */
-    void xsetFilterMode(org.apache.xmlbeans.XmlBoolean filterMode);
+    void xsetFilterMode(XmlBoolean filterMode);
 
     /**
      * Unsets the "filterMode" attribute
@@ -338,7 +342,7 @@ public interface CTSheetPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "enableFormatConditionsCalculation" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetEnableFormatConditionsCalculation();
+    XmlBoolean xgetEnableFormatConditionsCalculation();
 
     /**
      * True if has "enableFormatConditionsCalculation" attribute
@@ -353,7 +357,7 @@ public interface CTSheetPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "enableFormatConditionsCalculation" attribute
      */
-    void xsetEnableFormatConditionsCalculation(org.apache.xmlbeans.XmlBoolean enableFormatConditionsCalculation);
+    void xsetEnableFormatConditionsCalculation(XmlBoolean enableFormatConditionsCalculation);
 
     /**
      * Unsets the "enableFormatConditionsCalculation" attribute

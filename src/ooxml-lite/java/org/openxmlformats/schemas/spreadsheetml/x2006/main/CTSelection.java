@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTSelection extends org.apache.xmlbeans.XmlObject {
+public interface CTSelection extends XmlObject {
     DocumentFactory<CTSelection> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctselectionca2btype");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
 //    /**
@@ -88,7 +91,7 @@ public interface CTSelection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "activeCellId" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetActiveCellId();
+    XmlUnsignedInt xgetActiveCellId();
 
     /**
      * True if has "activeCellId" attribute
@@ -103,7 +106,7 @@ public interface CTSelection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "activeCellId" attribute
      */
-    void xsetActiveCellId(org.apache.xmlbeans.XmlUnsignedInt activeCellId);
+    void xsetActiveCellId(XmlUnsignedInt activeCellId);
 
     /**
      * Unsets the "activeCellId" attribute

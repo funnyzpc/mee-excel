@@ -25,12 +25,12 @@ import java.io.OutputStream;
 
 import javax.xml.namespace.QName;
 
-import org.apache.commons.io.input.UnsynchronizedByteArrayInputStream;
-import org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream;
+import poi.org.apache.commons.io.input.UnsynchronizedByteArrayInputStream;
+import poi.org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream;
 import org.apache.poi.ooxml.POIXMLException;
 import org.apache.poi.openxml4j.opc.PackagePart;
-import org.apache.xmlbeans.XmlException;
-import org.apache.xmlbeans.XmlOptions;
+import poi.org.apache.xmlbeans.XmlException;
+import poi.org.apache.xmlbeans.XmlOptions;
 import org.openxmlformats.schemas.spreadsheetml.x2006.main.CTChartsheet;
 import org.openxmlformats.schemas.spreadsheetml.x2006.main.ChartsheetDocument;
 

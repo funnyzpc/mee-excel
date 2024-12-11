@@ -29,7 +29,7 @@ import org.apache.poi.openxml4j.opc.PackageRelationship;
 import org.apache.poi.openxml4j.opc.PackageRelationshipCollection;
 import org.apache.poi.openxml4j.opc.PackagingURIHelper;
 import org.apache.poi.util.Internal;
-import org.apache.xmlbeans.XmlException;
+import poi.org.apache.xmlbeans.XmlException;
 
 /**
  * Represents a descriptor of a OOXML relation.

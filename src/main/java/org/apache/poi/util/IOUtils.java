@@ -32,8 +32,8 @@ import java.util.Locale;
 import java.util.zip.CRC32;
 import java.util.zip.Checksum;
 
-import org.apache.commons.io.input.BoundedInputStream;
-import org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream;
+import poi.org.apache.commons.io.input.BoundedInputStream;
+import poi.org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.EmptyFileException;

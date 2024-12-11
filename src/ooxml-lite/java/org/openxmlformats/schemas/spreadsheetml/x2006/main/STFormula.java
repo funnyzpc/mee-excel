@@ -7,7 +7,8 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.SimpleTypeFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.schema.SimpleTypeFactory;
 
 
 /**
@@ -17,6 +18,6 @@ import org.apache.xmlbeans.impl.schema.SimpleTypeFactory;
  */
 public interface STFormula extends org.openxmlformats.schemas.officeDocument.x2006.sharedTypes.STXstring {
     SimpleTypeFactory<STFormula> Factory = new SimpleTypeFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "stformula7e35type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 }

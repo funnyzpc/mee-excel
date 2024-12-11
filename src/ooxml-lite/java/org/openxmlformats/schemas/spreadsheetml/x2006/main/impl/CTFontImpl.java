@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.JavaListXmlObject;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTFontImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFont {
+public class CTFontImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFont {
     private static final long serialVersionUID = 1L;
 
-    public CTFontImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTFontImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -427,7 +432,7 @@ public class CTFontImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColor> getColorList() {
         synchronized (monitor()) {
             check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
+            return new JavaListXmlObject<>(
                 this::getColorArray,
                 this::setColorArray,
                 this::insertNewColor,
@@ -478,7 +483,7 @@ public class CTFontImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
      */
     @Override
     public void setColorArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColor color) {
-        generatedSetterHelperImpl(color, PROPERTY_QNAME[10], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(color, PROPERTY_QNAME[10], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**

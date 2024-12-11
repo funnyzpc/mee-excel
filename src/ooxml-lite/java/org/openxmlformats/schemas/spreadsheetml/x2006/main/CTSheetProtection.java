@@ -7,7 +7,12 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBase64Binary;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +20,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
+public interface CTSheetProtection extends XmlObject {
     DocumentFactory<CTSheetProtection> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctsheetprotection22f7type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -88,7 +93,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "hashValue" attribute
      */
-    org.apache.xmlbeans.XmlBase64Binary xgetHashValue();
+    XmlBase64Binary xgetHashValue();
 
     /**
      * True if has "hashValue" attribute
@@ -103,7 +108,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "hashValue" attribute
      */
-    void xsetHashValue(org.apache.xmlbeans.XmlBase64Binary hashValue);
+    void xsetHashValue(XmlBase64Binary hashValue);
 
     /**
      * Unsets the "hashValue" attribute
@@ -118,7 +123,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "saltValue" attribute
      */
-    org.apache.xmlbeans.XmlBase64Binary xgetSaltValue();
+    XmlBase64Binary xgetSaltValue();
 
     /**
      * True if has "saltValue" attribute
@@ -133,7 +138,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "saltValue" attribute
      */
-    void xsetSaltValue(org.apache.xmlbeans.XmlBase64Binary saltValue);
+    void xsetSaltValue(XmlBase64Binary saltValue);
 
     /**
      * Unsets the "saltValue" attribute
@@ -148,7 +153,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "spinCount" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetSpinCount();
+    XmlUnsignedInt xgetSpinCount();
 
     /**
      * True if has "spinCount" attribute
@@ -163,7 +168,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "spinCount" attribute
      */
-    void xsetSpinCount(org.apache.xmlbeans.XmlUnsignedInt spinCount);
+    void xsetSpinCount(XmlUnsignedInt spinCount);
 
     /**
      * Unsets the "spinCount" attribute
@@ -178,7 +183,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "sheet" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetSheet();
+    XmlBoolean xgetSheet();
 
     /**
      * True if has "sheet" attribute
@@ -193,7 +198,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "sheet" attribute
      */
-    void xsetSheet(org.apache.xmlbeans.XmlBoolean sheet);
+    void xsetSheet(XmlBoolean sheet);
 
     /**
      * Unsets the "sheet" attribute
@@ -208,7 +213,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "objects" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetObjects();
+    XmlBoolean xgetObjects();
 
     /**
      * True if has "objects" attribute
@@ -223,7 +228,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "objects" attribute
      */
-    void xsetObjects(org.apache.xmlbeans.XmlBoolean objects);
+    void xsetObjects(XmlBoolean objects);
 
     /**
      * Unsets the "objects" attribute
@@ -238,7 +243,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "scenarios" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetScenarios();
+    XmlBoolean xgetScenarios();
 
     /**
      * True if has "scenarios" attribute
@@ -253,7 +258,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "scenarios" attribute
      */
-    void xsetScenarios(org.apache.xmlbeans.XmlBoolean scenarios);
+    void xsetScenarios(XmlBoolean scenarios);
 
     /**
      * Unsets the "scenarios" attribute
@@ -268,7 +273,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "formatCells" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetFormatCells();
+    XmlBoolean xgetFormatCells();
 
     /**
      * True if has "formatCells" attribute
@@ -283,7 +288,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "formatCells" attribute
      */
-    void xsetFormatCells(org.apache.xmlbeans.XmlBoolean formatCells);
+    void xsetFormatCells(XmlBoolean formatCells);
 
     /**
      * Unsets the "formatCells" attribute
@@ -298,7 +303,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "formatColumns" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetFormatColumns();
+    XmlBoolean xgetFormatColumns();
 
     /**
      * True if has "formatColumns" attribute
@@ -313,7 +318,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "formatColumns" attribute
      */
-    void xsetFormatColumns(org.apache.xmlbeans.XmlBoolean formatColumns);
+    void xsetFormatColumns(XmlBoolean formatColumns);
 
     /**
      * Unsets the "formatColumns" attribute
@@ -328,7 +333,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "formatRows" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetFormatRows();
+    XmlBoolean xgetFormatRows();
 
     /**
      * True if has "formatRows" attribute
@@ -343,7 +348,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "formatRows" attribute
      */
-    void xsetFormatRows(org.apache.xmlbeans.XmlBoolean formatRows);
+    void xsetFormatRows(XmlBoolean formatRows);
 
     /**
      * Unsets the "formatRows" attribute
@@ -358,7 +363,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "insertColumns" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetInsertColumns();
+    XmlBoolean xgetInsertColumns();
 
     /**
      * True if has "insertColumns" attribute
@@ -373,7 +378,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "insertColumns" attribute
      */
-    void xsetInsertColumns(org.apache.xmlbeans.XmlBoolean insertColumns);
+    void xsetInsertColumns(XmlBoolean insertColumns);
 
     /**
      * Unsets the "insertColumns" attribute
@@ -388,7 +393,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "insertRows" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetInsertRows();
+    XmlBoolean xgetInsertRows();
 
     /**
      * True if has "insertRows" attribute
@@ -403,7 +408,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "insertRows" attribute
      */
-    void xsetInsertRows(org.apache.xmlbeans.XmlBoolean insertRows);
+    void xsetInsertRows(XmlBoolean insertRows);
 
     /**
      * Unsets the "insertRows" attribute
@@ -418,7 +423,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "insertHyperlinks" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetInsertHyperlinks();
+    XmlBoolean xgetInsertHyperlinks();
 
     /**
      * True if has "insertHyperlinks" attribute
@@ -433,7 +438,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "insertHyperlinks" attribute
      */
-    void xsetInsertHyperlinks(org.apache.xmlbeans.XmlBoolean insertHyperlinks);
+    void xsetInsertHyperlinks(XmlBoolean insertHyperlinks);
 
     /**
      * Unsets the "insertHyperlinks" attribute
@@ -448,7 +453,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "deleteColumns" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetDeleteColumns();
+    XmlBoolean xgetDeleteColumns();
 
     /**
      * True if has "deleteColumns" attribute
@@ -463,7 +468,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "deleteColumns" attribute
      */
-    void xsetDeleteColumns(org.apache.xmlbeans.XmlBoolean deleteColumns);
+    void xsetDeleteColumns(XmlBoolean deleteColumns);
 
     /**
      * Unsets the "deleteColumns" attribute
@@ -478,7 +483,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "deleteRows" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetDeleteRows();
+    XmlBoolean xgetDeleteRows();
 
     /**
      * True if has "deleteRows" attribute
@@ -493,7 +498,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "deleteRows" attribute
      */
-    void xsetDeleteRows(org.apache.xmlbeans.XmlBoolean deleteRows);
+    void xsetDeleteRows(XmlBoolean deleteRows);
 
     /**
      * Unsets the "deleteRows" attribute
@@ -508,7 +513,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "selectLockedCells" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetSelectLockedCells();
+    XmlBoolean xgetSelectLockedCells();
 
     /**
      * True if has "selectLockedCells" attribute
@@ -523,7 +528,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "selectLockedCells" attribute
      */
-    void xsetSelectLockedCells(org.apache.xmlbeans.XmlBoolean selectLockedCells);
+    void xsetSelectLockedCells(XmlBoolean selectLockedCells);
 
     /**
      * Unsets the "selectLockedCells" attribute
@@ -538,7 +543,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "sort" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetSort();
+    XmlBoolean xgetSort();
 
     /**
      * True if has "sort" attribute
@@ -553,7 +558,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "sort" attribute
      */
-    void xsetSort(org.apache.xmlbeans.XmlBoolean sort);
+    void xsetSort(XmlBoolean sort);
 
     /**
      * Unsets the "sort" attribute
@@ -568,7 +573,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "autoFilter" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetAutoFilter();
+    XmlBoolean xgetAutoFilter();
 
     /**
      * True if has "autoFilter" attribute
@@ -583,7 +588,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "autoFilter" attribute
      */
-    void xsetAutoFilter(org.apache.xmlbeans.XmlBoolean autoFilter);
+    void xsetAutoFilter(XmlBoolean autoFilter);
 
     /**
      * Unsets the "autoFilter" attribute
@@ -598,7 +603,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "pivotTables" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetPivotTables();
+    XmlBoolean xgetPivotTables();
 
     /**
      * True if has "pivotTables" attribute
@@ -613,7 +618,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "pivotTables" attribute
      */
-    void xsetPivotTables(org.apache.xmlbeans.XmlBoolean pivotTables);
+    void xsetPivotTables(XmlBoolean pivotTables);
 
     /**
      * Unsets the "pivotTables" attribute
@@ -628,7 +633,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "selectUnlockedCells" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetSelectUnlockedCells();
+    XmlBoolean xgetSelectUnlockedCells();
 
     /**
      * True if has "selectUnlockedCells" attribute
@@ -643,7 +648,7 @@ public interface CTSheetProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "selectUnlockedCells" attribute
      */
-    void xsetSelectUnlockedCells(org.apache.xmlbeans.XmlBoolean selectUnlockedCells);
+    void xsetSelectUnlockedCells(XmlBoolean selectUnlockedCells);
 
     /**
      * Unsets the "selectUnlockedCells" attribute

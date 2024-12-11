@@ -7,6 +7,9 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +17,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTColorsImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColors {
+public class CTColorsImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColors {
     private static final long serialVersionUID = 1L;
 
-    public CTColorsImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTColorsImpl(SchemaType sType) {
         super(sType);
     }
 

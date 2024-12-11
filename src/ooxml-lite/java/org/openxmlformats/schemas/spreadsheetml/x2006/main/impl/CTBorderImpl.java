@@ -7,6 +7,12 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +20,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBorder {
+public class CTBorderImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBorder {
     private static final long serialVersionUID = 1L;
 
-    public CTBorderImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTBorderImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -66,7 +72,7 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      */
     @Override
     public void setStart(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBorderPr start) {
-        generatedSetterHelperImpl(start, PROPERTY_QNAME[0], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(start, PROPERTY_QNAME[0], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -122,7 +128,7 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      */
     @Override
     public void setEnd(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBorderPr end) {
-        generatedSetterHelperImpl(end, PROPERTY_QNAME[1], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(end, PROPERTY_QNAME[1], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -178,7 +184,7 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      */
     @Override
     public void setLeft(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBorderPr left) {
-        generatedSetterHelperImpl(left, PROPERTY_QNAME[2], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(left, PROPERTY_QNAME[2], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -234,7 +240,7 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      */
     @Override
     public void setRight(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBorderPr right) {
-        generatedSetterHelperImpl(right, PROPERTY_QNAME[3], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(right, PROPERTY_QNAME[3], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -290,7 +296,7 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      */
     @Override
     public void setTop(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBorderPr top) {
-        generatedSetterHelperImpl(top, PROPERTY_QNAME[4], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(top, PROPERTY_QNAME[4], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -346,7 +352,7 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      */
     @Override
     public void setBottom(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBorderPr bottom) {
-        generatedSetterHelperImpl(bottom, PROPERTY_QNAME[5], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(bottom, PROPERTY_QNAME[5], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -402,7 +408,7 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      */
     @Override
     public void setDiagonal(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBorderPr diagonal) {
-        generatedSetterHelperImpl(diagonal, PROPERTY_QNAME[6], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(diagonal, PROPERTY_QNAME[6], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -458,7 +464,7 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      */
     @Override
     public void setVertical(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBorderPr vertical) {
-        generatedSetterHelperImpl(vertical, PROPERTY_QNAME[7], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(vertical, PROPERTY_QNAME[7], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -514,7 +520,7 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      */
     @Override
     public void setHorizontal(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBorderPr horizontal) {
-        generatedSetterHelperImpl(horizontal, PROPERTY_QNAME[8], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(horizontal, PROPERTY_QNAME[8], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -548,8 +554,8 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public boolean getDiagonalUp() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             return (target == null) ? false : target.getBooleanValue();
         }
     }
@@ -558,11 +564,11 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      * Gets (as xml) the "diagonalUp" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetDiagonalUp() {
+    public XmlBoolean xgetDiagonalUp() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             return target;
         }
     }
@@ -585,10 +591,10 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public void setDiagonalUp(boolean diagonalUp) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.setBooleanValue(diagonalUp);
         }
@@ -598,13 +604,13 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      * Sets (as xml) the "diagonalUp" attribute
      */
     @Override
-    public void xsetDiagonalUp(org.apache.xmlbeans.XmlBoolean diagonalUp) {
+    public void xsetDiagonalUp(XmlBoolean diagonalUp) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.set(diagonalUp);
         }
@@ -628,8 +634,8 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public boolean getDiagonalDown() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             return (target == null) ? false : target.getBooleanValue();
         }
     }
@@ -638,11 +644,11 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      * Gets (as xml) the "diagonalDown" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetDiagonalDown() {
+    public XmlBoolean xgetDiagonalDown() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             return target;
         }
     }
@@ -665,10 +671,10 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public void setDiagonalDown(boolean diagonalDown) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
             }
             target.setBooleanValue(diagonalDown);
         }
@@ -678,13 +684,13 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      * Sets (as xml) the "diagonalDown" attribute
      */
     @Override
-    public void xsetDiagonalDown(org.apache.xmlbeans.XmlBoolean diagonalDown) {
+    public void xsetDiagonalDown(XmlBoolean diagonalDown) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[10]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[10]);
             }
             target.set(diagonalDown);
         }
@@ -708,10 +714,10 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public boolean getOutline() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[11]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[11]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -721,13 +727,13 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      * Gets (as xml) the "outline" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetOutline() {
+    public XmlBoolean xgetOutline() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[11]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[11]);
             }
             return target;
         }
@@ -751,10 +757,10 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public void setOutline(boolean outline) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[11]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[11]);
             }
             target.setBooleanValue(outline);
         }
@@ -764,13 +770,13 @@ public class CTBorderImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      * Sets (as xml) the "outline" attribute
      */
     @Override
-    public void xsetOutline(org.apache.xmlbeans.XmlBoolean outline) {
+    public void xsetOutline(XmlBoolean outline) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[11]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[11]);
             }
             target.set(outline);
         }

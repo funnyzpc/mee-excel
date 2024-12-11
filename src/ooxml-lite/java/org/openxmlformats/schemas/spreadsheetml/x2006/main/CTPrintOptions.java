@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTPrintOptions extends org.apache.xmlbeans.XmlObject {
+public interface CTPrintOptions extends XmlObject {
     DocumentFactory<CTPrintOptions> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctprintoptions943atype");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -28,7 +31,7 @@ public interface CTPrintOptions extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "horizontalCentered" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetHorizontalCentered();
+    XmlBoolean xgetHorizontalCentered();
 
     /**
      * True if has "horizontalCentered" attribute
@@ -43,7 +46,7 @@ public interface CTPrintOptions extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "horizontalCentered" attribute
      */
-    void xsetHorizontalCentered(org.apache.xmlbeans.XmlBoolean horizontalCentered);
+    void xsetHorizontalCentered(XmlBoolean horizontalCentered);
 
     /**
      * Unsets the "horizontalCentered" attribute
@@ -58,7 +61,7 @@ public interface CTPrintOptions extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "verticalCentered" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetVerticalCentered();
+    XmlBoolean xgetVerticalCentered();
 
     /**
      * True if has "verticalCentered" attribute
@@ -73,7 +76,7 @@ public interface CTPrintOptions extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "verticalCentered" attribute
      */
-    void xsetVerticalCentered(org.apache.xmlbeans.XmlBoolean verticalCentered);
+    void xsetVerticalCentered(XmlBoolean verticalCentered);
 
     /**
      * Unsets the "verticalCentered" attribute
@@ -88,7 +91,7 @@ public interface CTPrintOptions extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "headings" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetHeadings();
+    XmlBoolean xgetHeadings();
 
     /**
      * True if has "headings" attribute
@@ -103,7 +106,7 @@ public interface CTPrintOptions extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "headings" attribute
      */
-    void xsetHeadings(org.apache.xmlbeans.XmlBoolean headings);
+    void xsetHeadings(XmlBoolean headings);
 
     /**
      * Unsets the "headings" attribute
@@ -118,7 +121,7 @@ public interface CTPrintOptions extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "gridLines" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetGridLines();
+    XmlBoolean xgetGridLines();
 
     /**
      * True if has "gridLines" attribute
@@ -133,7 +136,7 @@ public interface CTPrintOptions extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "gridLines" attribute
      */
-    void xsetGridLines(org.apache.xmlbeans.XmlBoolean gridLines);
+    void xsetGridLines(XmlBoolean gridLines);
 
     /**
      * Unsets the "gridLines" attribute
@@ -148,7 +151,7 @@ public interface CTPrintOptions extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "gridLinesSet" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetGridLinesSet();
+    XmlBoolean xgetGridLinesSet();
 
     /**
      * True if has "gridLinesSet" attribute
@@ -163,7 +166,7 @@ public interface CTPrintOptions extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "gridLinesSet" attribute
      */
-    void xsetGridLinesSet(org.apache.xmlbeans.XmlBoolean gridLinesSet);
+    void xsetGridLinesSet(XmlBoolean gridLinesSet);
 
     /**
      * Unsets the "gridLinesSet" attribute

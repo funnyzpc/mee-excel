@@ -7,6 +7,12 @@
  */
 package org.openxmlformats.schemas.drawingml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlString;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +20,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTColorSchemeImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.drawingml.x2006.main.CTColorScheme {
+public class CTColorSchemeImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.drawingml.x2006.main.CTColorScheme {
     private static final long serialVersionUID = 1L;
 
-    public CTColorSchemeImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTColorSchemeImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -57,7 +63,7 @@ public class CTColorSchemeImpl extends org.apache.xmlbeans.impl.values.XmlComple
      */
     @Override
     public void setDk1(org.openxmlformats.schemas.drawingml.x2006.main.CTColor dk1) {
-        generatedSetterHelperImpl(dk1, PROPERTY_QNAME[0], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(dk1, PROPERTY_QNAME[0], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -91,7 +97,7 @@ public class CTColorSchemeImpl extends org.apache.xmlbeans.impl.values.XmlComple
      */
     @Override
     public void setLt1(org.openxmlformats.schemas.drawingml.x2006.main.CTColor lt1) {
-        generatedSetterHelperImpl(lt1, PROPERTY_QNAME[1], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(lt1, PROPERTY_QNAME[1], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -150,8 +156,8 @@ public class CTColorSchemeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public String getName() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -160,11 +166,11 @@ public class CTColorSchemeImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Gets (as xml) the "name" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlString xgetName() {
+    public XmlString xgetName() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            XmlString target = null;
+            target = (XmlString)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             return target;
         }
     }
@@ -176,10 +182,10 @@ public class CTColorSchemeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setName(String name) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[13]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[13]);
             }
             target.setStringValue(name);
         }
@@ -189,13 +195,13 @@ public class CTColorSchemeImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Sets (as xml) the "name" attribute
      */
     @Override
-    public void xsetName(org.apache.xmlbeans.XmlString name) {
+    public void xsetName(XmlString name) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            XmlString target = null;
+            target = (XmlString)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlString)get_store().add_attribute_user(PROPERTY_QNAME[13]);
+                target = (XmlString)get_store().add_attribute_user(PROPERTY_QNAME[13]);
             }
             target.set(name);
         }

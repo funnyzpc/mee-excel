@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.JavaListXmlObject;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTColsImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCols {
+public class CTColsImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCols {
     private static final long serialVersionUID = 1L;
 
-    public CTColsImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTColsImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -33,7 +38,7 @@ public class CTColsImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCol> getColList() {
         synchronized (monitor()) {
             check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
+            return new JavaListXmlObject<>(
                 this::getColArray,
                 this::setColArray,
                 this::insertNewCol,
@@ -92,7 +97,7 @@ public class CTColsImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
      */
     @Override
     public void setColArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCol col) {
-        generatedSetterHelperImpl(col, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(col, PROPERTY_QNAME[0], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**

@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlDouble;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTFontSizeImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFontSize {
+public class CTFontSizeImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFontSize {
     private static final long serialVersionUID = 1L;
 
-    public CTFontSizeImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTFontSizeImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -33,8 +38,8 @@ public class CTFontSizeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public double getVal() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             return (target == null) ? 0.0 : target.getDoubleValue();
         }
     }
@@ -43,11 +48,11 @@ public class CTFontSizeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Gets (as xml) the "val" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlDouble xgetVal() {
+    public XmlDouble xgetVal() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             return target;
         }
     }
@@ -59,10 +64,10 @@ public class CTFontSizeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public void setVal(double val) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.setDoubleValue(val);
         }
@@ -72,13 +77,13 @@ public class CTFontSizeImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Sets (as xml) the "val" attribute
      */
     @Override
-    public void xsetVal(org.apache.xmlbeans.XmlDouble val) {
+    public void xsetVal(XmlDouble val) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.set(val);
         }

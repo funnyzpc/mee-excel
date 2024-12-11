@@ -7,6 +7,9 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +17,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTChartsheetImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTChartsheet {
+public class CTChartsheetImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTChartsheet {
     private static final long serialVersionUID = 1L;
 
-    public CTChartsheetImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTChartsheetImpl(SchemaType sType) {
         super(sType);
     }
 

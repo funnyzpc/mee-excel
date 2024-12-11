@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTMemberProperties extends org.apache.xmlbeans.XmlObject {
+public interface CTMemberProperties extends XmlObject {
     DocumentFactory<CTMemberProperties> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctmemberpropertiesd2f6type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
 //    /**
@@ -73,7 +76,7 @@ public interface CTMemberProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "count" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetCount();
+    XmlUnsignedInt xgetCount();
 
     /**
      * True if has "count" attribute
@@ -88,7 +91,7 @@ public interface CTMemberProperties extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "count" attribute
      */
-    void xsetCount(org.apache.xmlbeans.XmlUnsignedInt count);
+    void xsetCount(XmlUnsignedInt count);
 
     /**
      * Unsets the "count" attribute

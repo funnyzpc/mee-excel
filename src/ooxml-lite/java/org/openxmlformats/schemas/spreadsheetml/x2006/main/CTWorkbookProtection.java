@@ -7,7 +7,13 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBase64Binary;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlString;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +21,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTWorkbookProtection extends org.apache.xmlbeans.XmlObject {
+public interface CTWorkbookProtection extends XmlObject {
     DocumentFactory<CTWorkbookProtection> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctworkbookprotection56bctype");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
 //    /**
@@ -118,7 +124,7 @@ public interface CTWorkbookProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "revisionsPasswordCharacterSet" attribute
      */
-    org.apache.xmlbeans.XmlString xgetRevisionsPasswordCharacterSet();
+    XmlString xgetRevisionsPasswordCharacterSet();
 
     /**
      * True if has "revisionsPasswordCharacterSet" attribute
@@ -133,7 +139,7 @@ public interface CTWorkbookProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "revisionsPasswordCharacterSet" attribute
      */
-    void xsetRevisionsPasswordCharacterSet(org.apache.xmlbeans.XmlString revisionsPasswordCharacterSet);
+    void xsetRevisionsPasswordCharacterSet(XmlString revisionsPasswordCharacterSet);
 
     /**
      * Unsets the "revisionsPasswordCharacterSet" attribute
@@ -148,7 +154,7 @@ public interface CTWorkbookProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "lockStructure" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetLockStructure();
+    XmlBoolean xgetLockStructure();
 
     /**
      * True if has "lockStructure" attribute
@@ -163,7 +169,7 @@ public interface CTWorkbookProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "lockStructure" attribute
      */
-    void xsetLockStructure(org.apache.xmlbeans.XmlBoolean lockStructure);
+    void xsetLockStructure(XmlBoolean lockStructure);
 
     /**
      * Unsets the "lockStructure" attribute
@@ -178,7 +184,7 @@ public interface CTWorkbookProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "lockWindows" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetLockWindows();
+    XmlBoolean xgetLockWindows();
 
     /**
      * True if has "lockWindows" attribute
@@ -193,7 +199,7 @@ public interface CTWorkbookProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "lockWindows" attribute
      */
-    void xsetLockWindows(org.apache.xmlbeans.XmlBoolean lockWindows);
+    void xsetLockWindows(XmlBoolean lockWindows);
 
     /**
      * Unsets the "lockWindows" attribute
@@ -208,7 +214,7 @@ public interface CTWorkbookProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "lockRevision" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetLockRevision();
+    XmlBoolean xgetLockRevision();
 
     /**
      * True if has "lockRevision" attribute
@@ -223,7 +229,7 @@ public interface CTWorkbookProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "lockRevision" attribute
      */
-    void xsetLockRevision(org.apache.xmlbeans.XmlBoolean lockRevision);
+    void xsetLockRevision(XmlBoolean lockRevision);
 
     /**
      * Unsets the "lockRevision" attribute
@@ -268,7 +274,7 @@ public interface CTWorkbookProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "revisionsHashValue" attribute
      */
-    org.apache.xmlbeans.XmlBase64Binary xgetRevisionsHashValue();
+    XmlBase64Binary xgetRevisionsHashValue();
 
     /**
      * True if has "revisionsHashValue" attribute
@@ -283,7 +289,7 @@ public interface CTWorkbookProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "revisionsHashValue" attribute
      */
-    void xsetRevisionsHashValue(org.apache.xmlbeans.XmlBase64Binary revisionsHashValue);
+    void xsetRevisionsHashValue(XmlBase64Binary revisionsHashValue);
 
     /**
      * Unsets the "revisionsHashValue" attribute
@@ -298,7 +304,7 @@ public interface CTWorkbookProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "revisionsSaltValue" attribute
      */
-    org.apache.xmlbeans.XmlBase64Binary xgetRevisionsSaltValue();
+    XmlBase64Binary xgetRevisionsSaltValue();
 
     /**
      * True if has "revisionsSaltValue" attribute
@@ -313,7 +319,7 @@ public interface CTWorkbookProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "revisionsSaltValue" attribute
      */
-    void xsetRevisionsSaltValue(org.apache.xmlbeans.XmlBase64Binary revisionsSaltValue);
+    void xsetRevisionsSaltValue(XmlBase64Binary revisionsSaltValue);
 
     /**
      * Unsets the "revisionsSaltValue" attribute
@@ -328,7 +334,7 @@ public interface CTWorkbookProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "revisionsSpinCount" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetRevisionsSpinCount();
+    XmlUnsignedInt xgetRevisionsSpinCount();
 
     /**
      * True if has "revisionsSpinCount" attribute
@@ -343,7 +349,7 @@ public interface CTWorkbookProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "revisionsSpinCount" attribute
      */
-    void xsetRevisionsSpinCount(org.apache.xmlbeans.XmlUnsignedInt revisionsSpinCount);
+    void xsetRevisionsSpinCount(XmlUnsignedInt revisionsSpinCount);
 
     /**
      * Unsets the "revisionsSpinCount" attribute

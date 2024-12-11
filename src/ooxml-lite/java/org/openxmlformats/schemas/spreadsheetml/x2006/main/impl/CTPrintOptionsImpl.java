@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTPrintOptions {
+public class CTPrintOptionsImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTPrintOptions {
     private static final long serialVersionUID = 1L;
 
-    public CTPrintOptionsImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTPrintOptionsImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -37,10 +42,10 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public boolean getHorizontalCentered() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[0]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -50,13 +55,13 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Gets (as xml) the "horizontalCentered" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetHorizontalCentered() {
+    public XmlBoolean xgetHorizontalCentered() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[0]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[0]);
             }
             return target;
         }
@@ -80,10 +85,10 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public void setHorizontalCentered(boolean horizontalCentered) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.setBooleanValue(horizontalCentered);
         }
@@ -93,13 +98,13 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Sets (as xml) the "horizontalCentered" attribute
      */
     @Override
-    public void xsetHorizontalCentered(org.apache.xmlbeans.XmlBoolean horizontalCentered) {
+    public void xsetHorizontalCentered(XmlBoolean horizontalCentered) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.set(horizontalCentered);
         }
@@ -123,10 +128,10 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public boolean getVerticalCentered() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[1]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -136,13 +141,13 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Gets (as xml) the "verticalCentered" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetVerticalCentered() {
+    public XmlBoolean xgetVerticalCentered() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[1]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[1]);
             }
             return target;
         }
@@ -166,10 +171,10 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public void setVerticalCentered(boolean verticalCentered) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setBooleanValue(verticalCentered);
         }
@@ -179,13 +184,13 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Sets (as xml) the "verticalCentered" attribute
      */
     @Override
-    public void xsetVerticalCentered(org.apache.xmlbeans.XmlBoolean verticalCentered) {
+    public void xsetVerticalCentered(XmlBoolean verticalCentered) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.set(verticalCentered);
         }
@@ -209,10 +214,10 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public boolean getHeadings() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[2]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -222,13 +227,13 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Gets (as xml) the "headings" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetHeadings() {
+    public XmlBoolean xgetHeadings() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[2]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[2]);
             }
             return target;
         }
@@ -252,10 +257,10 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public void setHeadings(boolean headings) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.setBooleanValue(headings);
         }
@@ -265,13 +270,13 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Sets (as xml) the "headings" attribute
      */
     @Override
-    public void xsetHeadings(org.apache.xmlbeans.XmlBoolean headings) {
+    public void xsetHeadings(XmlBoolean headings) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.set(headings);
         }
@@ -295,10 +300,10 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public boolean getGridLines() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[3]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -308,13 +313,13 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Gets (as xml) the "gridLines" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetGridLines() {
+    public XmlBoolean xgetGridLines() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[3]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[3]);
             }
             return target;
         }
@@ -338,10 +343,10 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public void setGridLines(boolean gridLines) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setBooleanValue(gridLines);
         }
@@ -351,13 +356,13 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Sets (as xml) the "gridLines" attribute
      */
     @Override
-    public void xsetGridLines(org.apache.xmlbeans.XmlBoolean gridLines) {
+    public void xsetGridLines(XmlBoolean gridLines) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.set(gridLines);
         }
@@ -381,10 +386,10 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public boolean getGridLinesSet() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -394,13 +399,13 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Gets (as xml) the "gridLinesSet" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetGridLinesSet() {
+    public XmlBoolean xgetGridLinesSet() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return target;
         }
@@ -424,10 +429,10 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public void setGridLinesSet(boolean gridLinesSet) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.setBooleanValue(gridLinesSet);
         }
@@ -437,13 +442,13 @@ public class CTPrintOptionsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Sets (as xml) the "gridLinesSet" attribute
      */
     @Override
-    public void xsetGridLinesSet(org.apache.xmlbeans.XmlBoolean gridLinesSet) {
+    public void xsetGridLinesSet(XmlBoolean gridLinesSet) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.set(gridLinesSet);
         }

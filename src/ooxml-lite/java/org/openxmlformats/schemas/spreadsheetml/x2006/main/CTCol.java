@@ -7,7 +7,13 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlDouble;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlUnsignedByte;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +21,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTCol extends org.apache.xmlbeans.XmlObject {
+public interface CTCol extends XmlObject {
     DocumentFactory<CTCol> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctcola95ftype");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -28,7 +34,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "min" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetMin();
+    XmlUnsignedInt xgetMin();
 
     /**
      * Sets the "min" attribute
@@ -38,7 +44,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "min" attribute
      */
-    void xsetMin(org.apache.xmlbeans.XmlUnsignedInt min);
+    void xsetMin(XmlUnsignedInt min);
 
     /**
      * Gets the "max" attribute
@@ -48,7 +54,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "max" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetMax();
+    XmlUnsignedInt xgetMax();
 
     /**
      * Sets the "max" attribute
@@ -58,7 +64,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "max" attribute
      */
-    void xsetMax(org.apache.xmlbeans.XmlUnsignedInt max);
+    void xsetMax(XmlUnsignedInt max);
 
     /**
      * Gets the "width" attribute
@@ -68,7 +74,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "width" attribute
      */
-    org.apache.xmlbeans.XmlDouble xgetWidth();
+    XmlDouble xgetWidth();
 
     /**
      * True if has "width" attribute
@@ -83,7 +89,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "width" attribute
      */
-    void xsetWidth(org.apache.xmlbeans.XmlDouble width);
+    void xsetWidth(XmlDouble width);
 
     /**
      * Unsets the "width" attribute
@@ -98,7 +104,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "style" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetStyle();
+    XmlUnsignedInt xgetStyle();
 
     /**
      * True if has "style" attribute
@@ -113,7 +119,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "style" attribute
      */
-    void xsetStyle(org.apache.xmlbeans.XmlUnsignedInt style);
+    void xsetStyle(XmlUnsignedInt style);
 
     /**
      * Unsets the "style" attribute
@@ -128,7 +134,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "hidden" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetHidden();
+    XmlBoolean xgetHidden();
 
     /**
      * True if has "hidden" attribute
@@ -143,7 +149,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "hidden" attribute
      */
-    void xsetHidden(org.apache.xmlbeans.XmlBoolean hidden);
+    void xsetHidden(XmlBoolean hidden);
 
     /**
      * Unsets the "hidden" attribute
@@ -158,7 +164,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "bestFit" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetBestFit();
+    XmlBoolean xgetBestFit();
 
     /**
      * True if has "bestFit" attribute
@@ -173,7 +179,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "bestFit" attribute
      */
-    void xsetBestFit(org.apache.xmlbeans.XmlBoolean bestFit);
+    void xsetBestFit(XmlBoolean bestFit);
 
     /**
      * Unsets the "bestFit" attribute
@@ -188,7 +194,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "customWidth" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetCustomWidth();
+    XmlBoolean xgetCustomWidth();
 
     /**
      * True if has "customWidth" attribute
@@ -203,7 +209,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "customWidth" attribute
      */
-    void xsetCustomWidth(org.apache.xmlbeans.XmlBoolean customWidth);
+    void xsetCustomWidth(XmlBoolean customWidth);
 
     /**
      * Unsets the "customWidth" attribute
@@ -218,7 +224,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "phonetic" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetPhonetic();
+    XmlBoolean xgetPhonetic();
 
     /**
      * True if has "phonetic" attribute
@@ -233,7 +239,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "phonetic" attribute
      */
-    void xsetPhonetic(org.apache.xmlbeans.XmlBoolean phonetic);
+    void xsetPhonetic(XmlBoolean phonetic);
 
     /**
      * Unsets the "phonetic" attribute
@@ -248,7 +254,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "outlineLevel" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedByte xgetOutlineLevel();
+    XmlUnsignedByte xgetOutlineLevel();
 
     /**
      * True if has "outlineLevel" attribute
@@ -263,7 +269,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "outlineLevel" attribute
      */
-    void xsetOutlineLevel(org.apache.xmlbeans.XmlUnsignedByte outlineLevel);
+    void xsetOutlineLevel(XmlUnsignedByte outlineLevel);
 
     /**
      * Unsets the "outlineLevel" attribute
@@ -278,7 +284,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "collapsed" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetCollapsed();
+    XmlBoolean xgetCollapsed();
 
     /**
      * True if has "collapsed" attribute
@@ -293,7 +299,7 @@ public interface CTCol extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "collapsed" attribute
      */
-    void xsetCollapsed(org.apache.xmlbeans.XmlBoolean collapsed);
+    void xsetCollapsed(XmlBoolean collapsed);
 
     /**
      * Unsets the "collapsed" attribute

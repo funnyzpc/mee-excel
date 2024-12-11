@@ -23,8 +23,8 @@ import java.security.GeneralSecurityException;
 
 import javax.crypto.Cipher;
 
-import org.apache.commons.io.input.BoundedInputStream;
-import org.apache.commons.io.output.ByteArrayOutputStream;
+import poi.org.apache.commons.io.input.BoundedInputStream;
+import poi.org.apache.commons.io.output.ByteArrayOutputStream;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.util.Internal;
 

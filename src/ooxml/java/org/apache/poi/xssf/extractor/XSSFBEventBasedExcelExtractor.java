@@ -17,7 +17,6 @@
 package org.apache.poi.xssf.extractor;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.Collections;
 import java.util.List;
 
@@ -25,18 +24,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.apache.poi.openxml4j.opc.OPCPackage;
-import org.apache.poi.ss.usermodel.DataFormatter;
-import org.apache.poi.xssf.binary.XSSFBCommentsTable;
-import org.apache.poi.xssf.binary.XSSFBHyperlinksTable;
-import org.apache.poi.xssf.binary.XSSFBSharedStringsTable;
-import org.apache.poi.xssf.binary.XSSFBSheetHandler;
-import org.apache.poi.xssf.binary.XSSFBStylesTable;
-import org.apache.poi.xssf.eventusermodel.XSSFBReader;
-import org.apache.poi.xssf.eventusermodel.XSSFSheetXMLHandler.SheetContentsHandler;
-import org.apache.poi.xssf.model.SharedStrings;
 import org.apache.poi.xssf.usermodel.XSSFRelation;
-import org.apache.xmlbeans.XmlException;
-import org.xml.sax.SAXException;
+import poi.org.apache.xmlbeans.XmlException;
 
 /**
  * Implementation of a text extractor or xlsb Excel

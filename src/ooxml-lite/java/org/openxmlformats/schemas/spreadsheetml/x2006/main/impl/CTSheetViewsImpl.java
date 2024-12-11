@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.JavaListXmlObject;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTSheetViewsImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTSheetViews {
+public class CTSheetViewsImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTSheetViews {
     private static final long serialVersionUID = 1L;
 
-    public CTSheetViewsImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTSheetViewsImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -34,7 +39,7 @@ public class CTSheetViewsImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTSheetView> getSheetViewList() {
         synchronized (monitor()) {
             check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
+            return new JavaListXmlObject<>(
                 this::getSheetViewArray,
                 this::setSheetViewArray,
                 this::insertNewSheetView,
@@ -93,7 +98,7 @@ public class CTSheetViewsImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      */
     @Override
     public void setSheetViewArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTSheetView sheetView) {
-        generatedSetterHelperImpl(sheetView, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(sheetView, PROPERTY_QNAME[0], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**

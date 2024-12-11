@@ -7,6 +7,9 @@
  */
 package org.openxmlformats.schemas.drawingml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +17,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTBaseStylesImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.drawingml.x2006.main.CTBaseStyles {
+public class CTBaseStylesImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.drawingml.x2006.main.CTBaseStyles {
     private static final long serialVersionUID = 1L;
 
-    public CTBaseStylesImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTBaseStylesImpl(SchemaType sType) {
         super(sType);
     }
 

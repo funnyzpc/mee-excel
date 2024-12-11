@@ -20,8 +20,8 @@ package org.apache.poi.openxml4j.util;
 import java.io.*;
 import java.nio.file.Files;
 
-import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
-import org.apache.commons.io.input.UnsynchronizedByteArrayInputStream;
+import poi.org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
+import poi.org.apache.commons.io.input.UnsynchronizedByteArrayInputStream;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.poifs.crypt.temp.EncryptedTempData;

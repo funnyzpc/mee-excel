@@ -7,6 +7,13 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.values.JavaListXmlObject;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +21,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTSstImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTSst {
+public class CTSstImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTSst {
     private static final long serialVersionUID = 1L;
 
-    public CTSstImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTSstImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -36,7 +43,7 @@ public class CTSstImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTRst> getSiList() {
         synchronized (monitor()) {
             check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
+            return new JavaListXmlObject<>(
                 this::getSiArray,
                 this::setSiArray,
                 this::insertNewSi,
@@ -95,7 +102,7 @@ public class CTSstImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      */
     @Override
     public void setSiArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTRst si) {
-        generatedSetterHelperImpl(si, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(si, PROPERTY_QNAME[0], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**
@@ -153,8 +160,8 @@ public class CTSstImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public long getCount() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -163,11 +170,11 @@ public class CTSstImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "count" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetCount() {
+    public XmlUnsignedInt xgetCount() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return target;
         }
     }
@@ -190,10 +197,10 @@ public class CTSstImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setCount(long count) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.setLongValue(count);
         }
@@ -203,13 +210,13 @@ public class CTSstImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "count" attribute
      */
     @Override
-    public void xsetCount(org.apache.xmlbeans.XmlUnsignedInt count) {
+    public void xsetCount(XmlUnsignedInt count) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.set(count);
         }
@@ -233,8 +240,8 @@ public class CTSstImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public long getUniqueCount() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -243,11 +250,11 @@ public class CTSstImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "uniqueCount" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetUniqueCount() {
+    public XmlUnsignedInt xgetUniqueCount() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             return target;
         }
     }
@@ -270,10 +277,10 @@ public class CTSstImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setUniqueCount(long uniqueCount) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setLongValue(uniqueCount);
         }

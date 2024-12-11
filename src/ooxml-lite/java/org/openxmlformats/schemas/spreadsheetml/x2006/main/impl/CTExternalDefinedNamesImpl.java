@@ -7,6 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +18,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTExternalDefinedNamesImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalDefinedNames {
+public class CTExternalDefinedNamesImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalDefinedNames {
     private static final long serialVersionUID = 1L;
 
-    public CTExternalDefinedNamesImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTExternalDefinedNamesImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -65,7 +69,7 @@ public class CTExternalDefinedNamesImpl extends org.apache.xmlbeans.impl.values.
      */
     @Override
     public void setDefinedNameArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalDefinedName definedName) {
-        generatedSetterHelperImpl(definedName, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(definedName, PROPERTY_QNAME[0], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**

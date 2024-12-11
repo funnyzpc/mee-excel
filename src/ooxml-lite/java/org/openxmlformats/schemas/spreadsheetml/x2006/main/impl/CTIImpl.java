@@ -7,6 +7,13 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.values.JavaListXmlObject;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +21,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTIImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTI {
+public class CTIImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTI {
     private static final long serialVersionUID = 1L;
 
-    public CTIImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTIImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -36,7 +43,7 @@ public class CTIImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentIm
     public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTX> getXList() {
         synchronized (monitor()) {
             check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
+            return new JavaListXmlObject<>(
                 this::getXArray,
                 this::setXArray,
                 this::insertNewX,
@@ -95,7 +102,7 @@ public class CTIImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentIm
      */
     @Override
     public void setXArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTX x) {
-        generatedSetterHelperImpl(x, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(x, PROPERTY_QNAME[0], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**
@@ -142,10 +149,10 @@ public class CTIImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentIm
     public org.openxmlformats.schemas.spreadsheetml.x2006.main.STItemType.Enum getT() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[1]);
             }
             return (target == null) ? null : (org.openxmlformats.schemas.spreadsheetml.x2006.main.STItemType.Enum)target.getEnumValue();
         }
@@ -185,10 +192,10 @@ public class CTIImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentIm
     public void setT(org.openxmlformats.schemas.spreadsheetml.x2006.main.STItemType.Enum t) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setEnumValue(t);
         }
@@ -228,10 +235,10 @@ public class CTIImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentIm
     public long getR() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[2]);
             }
             return (target == null) ? 0L : target.getLongValue();
         }
@@ -241,13 +248,13 @@ public class CTIImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentIm
      * Gets (as xml) the "r" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetR() {
+    public XmlUnsignedInt xgetR() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[2]);
+                target = (XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[2]);
             }
             return target;
         }
@@ -271,10 +278,10 @@ public class CTIImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentIm
     public void setR(long r) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.setLongValue(r);
         }
@@ -284,13 +291,13 @@ public class CTIImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentIm
      * Sets (as xml) the "r" attribute
      */
     @Override
-    public void xsetR(org.apache.xmlbeans.XmlUnsignedInt r) {
+    public void xsetR(XmlUnsignedInt r) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.set(r);
         }
@@ -314,10 +321,10 @@ public class CTIImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentIm
     public long getI() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[3]);
             }
             return (target == null) ? 0L : target.getLongValue();
         }
@@ -327,13 +334,13 @@ public class CTIImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentIm
      * Gets (as xml) the "i" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetI() {
+    public XmlUnsignedInt xgetI() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[3]);
+                target = (XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[3]);
             }
             return target;
         }
@@ -357,10 +364,10 @@ public class CTIImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentIm
     public void setI(long iValue) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setLongValue(iValue);
         }
@@ -370,13 +377,13 @@ public class CTIImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentIm
      * Sets (as xml) the "i" attribute
      */
     @Override
-    public void xsetI(org.apache.xmlbeans.XmlUnsignedInt iValue) {
+    public void xsetI(XmlUnsignedInt iValue) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.set(iValue);
         }

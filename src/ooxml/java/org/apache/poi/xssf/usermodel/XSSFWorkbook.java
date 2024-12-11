@@ -20,7 +20,6 @@ package org.apache.poi.xssf.usermodel;
 import static org.apache.poi.ooxml.POIXMLTypeLoader.DEFAULT_XML_OPTIONS;
 import static org.apache.poi.xssf.usermodel.helpers.XSSFPasswordHelper.setPassword;
 import static org.apache.poi.xssf.usermodel.helpers.XSSFPasswordHelper.validatePassword;
-import static org.openxmlformats.schemas.spreadsheetml.x2006.main.STRefMode.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -43,7 +42,7 @@ import javax.xml.namespace.QName;
 
 import poi.org.apache.commons.collections4.ListValuedMap;
 import poi.org.apache.commons.collections4.multimap.ArrayListValuedHashMap;
-import org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream;
+import poi.org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.hpsf.ClassIDPredefined;
@@ -94,8 +93,8 @@ import org.apache.poi.xssf.model.SharedStringsTable;
 import org.apache.poi.xssf.model.StylesTable;
 import org.apache.poi.xssf.model.ThemesTable;
 import org.apache.poi.xssf.usermodel.helpers.XSSFFormulaUtils;
-import org.apache.xmlbeans.XmlException;
-import org.apache.xmlbeans.XmlOptions;
+import poi.org.apache.xmlbeans.XmlException;
+import poi.org.apache.xmlbeans.XmlOptions;
 import org.openxmlformats.schemas.spreadsheetml.x2006.main.*;
 
 /**

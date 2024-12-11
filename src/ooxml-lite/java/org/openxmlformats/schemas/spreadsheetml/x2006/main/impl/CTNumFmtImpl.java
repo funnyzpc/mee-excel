@@ -7,6 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +18,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTNumFmtImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTNumFmt {
+public class CTNumFmtImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTNumFmt {
     private static final long serialVersionUID = 1L;
 
-    public CTNumFmtImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTNumFmtImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -34,8 +38,8 @@ public class CTNumFmtImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public long getNumFmtId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -47,10 +51,10 @@ public class CTNumFmtImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public void setNumFmtId(long numFmtId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.setLongValue(numFmtId);
         }
@@ -63,8 +67,8 @@ public class CTNumFmtImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public String getFormatCode() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -77,10 +81,10 @@ public class CTNumFmtImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public void setFormatCode(String formatCode) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setStringValue(formatCode);
         }

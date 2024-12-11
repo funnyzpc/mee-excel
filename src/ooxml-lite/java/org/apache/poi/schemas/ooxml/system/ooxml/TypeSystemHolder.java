@@ -1,6 +1,6 @@
 package org.apache.poi.schemas.ooxml.system.ooxml;
 
-import org.apache.xmlbeans.impl.schema.SchemaTypeSystemImpl;
+import poi.org.apache.xmlbeans.impl.schema.SchemaTypeSystemImpl;
 
 public final class TypeSystemHolder extends SchemaTypeSystemImpl {
     public static final TypeSystemHolder typeSystem = new TypeSystemHolder();

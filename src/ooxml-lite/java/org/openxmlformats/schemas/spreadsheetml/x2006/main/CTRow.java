@@ -7,7 +7,13 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlDouble;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlUnsignedByte;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +21,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTRow extends org.apache.xmlbeans.XmlObject {
+public interface CTRow extends XmlObject {
     DocumentFactory<CTRow> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctrowdd39type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -98,7 +104,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "r" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetR();
+    XmlUnsignedInt xgetR();
 
     /**
      * True if has "r" attribute
@@ -113,7 +119,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "r" attribute
      */
-    void xsetR(org.apache.xmlbeans.XmlUnsignedInt r);
+    void xsetR(XmlUnsignedInt r);
 
     /**
      * Unsets the "r" attribute
@@ -158,7 +164,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "s" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetS();
+    XmlUnsignedInt xgetS();
 
     /**
      * True if has "s" attribute
@@ -173,7 +179,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "s" attribute
      */
-    void xsetS(org.apache.xmlbeans.XmlUnsignedInt s);
+    void xsetS(XmlUnsignedInt s);
 
     /**
      * Unsets the "s" attribute
@@ -188,7 +194,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "customFormat" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetCustomFormat();
+    XmlBoolean xgetCustomFormat();
 
     /**
      * True if has "customFormat" attribute
@@ -203,7 +209,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "customFormat" attribute
      */
-    void xsetCustomFormat(org.apache.xmlbeans.XmlBoolean customFormat);
+    void xsetCustomFormat(XmlBoolean customFormat);
 
     /**
      * Unsets the "customFormat" attribute
@@ -218,7 +224,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "ht" attribute
      */
-    org.apache.xmlbeans.XmlDouble xgetHt();
+    XmlDouble xgetHt();
 
     /**
      * True if has "ht" attribute
@@ -233,7 +239,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "ht" attribute
      */
-    void xsetHt(org.apache.xmlbeans.XmlDouble ht);
+    void xsetHt(XmlDouble ht);
 
     /**
      * Unsets the "ht" attribute
@@ -248,7 +254,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "hidden" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetHidden();
+    XmlBoolean xgetHidden();
 
     /**
      * True if has "hidden" attribute
@@ -263,7 +269,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "hidden" attribute
      */
-    void xsetHidden(org.apache.xmlbeans.XmlBoolean hidden);
+    void xsetHidden(XmlBoolean hidden);
 
     /**
      * Unsets the "hidden" attribute
@@ -278,7 +284,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "customHeight" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetCustomHeight();
+    XmlBoolean xgetCustomHeight();
 
     /**
      * True if has "customHeight" attribute
@@ -293,7 +299,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "customHeight" attribute
      */
-    void xsetCustomHeight(org.apache.xmlbeans.XmlBoolean customHeight);
+    void xsetCustomHeight(XmlBoolean customHeight);
 
     /**
      * Unsets the "customHeight" attribute
@@ -308,7 +314,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "outlineLevel" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedByte xgetOutlineLevel();
+    XmlUnsignedByte xgetOutlineLevel();
 
     /**
      * True if has "outlineLevel" attribute
@@ -323,7 +329,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "outlineLevel" attribute
      */
-    void xsetOutlineLevel(org.apache.xmlbeans.XmlUnsignedByte outlineLevel);
+    void xsetOutlineLevel(XmlUnsignedByte outlineLevel);
 
     /**
      * Unsets the "outlineLevel" attribute
@@ -338,7 +344,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "collapsed" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetCollapsed();
+    XmlBoolean xgetCollapsed();
 
     /**
      * True if has "collapsed" attribute
@@ -353,7 +359,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "collapsed" attribute
      */
-    void xsetCollapsed(org.apache.xmlbeans.XmlBoolean collapsed);
+    void xsetCollapsed(XmlBoolean collapsed);
 
     /**
      * Unsets the "collapsed" attribute
@@ -368,7 +374,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "thickTop" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetThickTop();
+    XmlBoolean xgetThickTop();
 
     /**
      * True if has "thickTop" attribute
@@ -383,7 +389,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "thickTop" attribute
      */
-    void xsetThickTop(org.apache.xmlbeans.XmlBoolean thickTop);
+    void xsetThickTop(XmlBoolean thickTop);
 
     /**
      * Unsets the "thickTop" attribute
@@ -398,7 +404,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "thickBot" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetThickBot();
+    XmlBoolean xgetThickBot();
 
     /**
      * True if has "thickBot" attribute
@@ -413,7 +419,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "thickBot" attribute
      */
-    void xsetThickBot(org.apache.xmlbeans.XmlBoolean thickBot);
+    void xsetThickBot(XmlBoolean thickBot);
 
     /**
      * Unsets the "thickBot" attribute
@@ -428,7 +434,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "ph" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetPh();
+    XmlBoolean xgetPh();
 
     /**
      * True if has "ph" attribute
@@ -443,7 +449,7 @@ public interface CTRow extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "ph" attribute
      */
-    void xsetPh(org.apache.xmlbeans.XmlBoolean ph);
+    void xsetPh(XmlBoolean ph);
 
     /**
      * Unsets the "ph" attribute

@@ -7,7 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +19,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTExternalSheetData extends org.apache.xmlbeans.XmlObject {
+public interface CTExternalSheetData extends XmlObject {
     DocumentFactory<CTExternalSheetData> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctexternalsheetdatafd3dtype");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -73,7 +77,7 @@ public interface CTExternalSheetData extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "sheetId" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetSheetId();
+    XmlUnsignedInt xgetSheetId();
 
     /**
      * Sets the "sheetId" attribute
@@ -83,7 +87,7 @@ public interface CTExternalSheetData extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "sheetId" attribute
      */
-    void xsetSheetId(org.apache.xmlbeans.XmlUnsignedInt sheetId);
+    void xsetSheetId(XmlUnsignedInt sheetId);
 
     /**
      * Gets the "refreshError" attribute
@@ -93,7 +97,7 @@ public interface CTExternalSheetData extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "refreshError" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetRefreshError();
+    XmlBoolean xgetRefreshError();
 
     /**
      * True if has "refreshError" attribute
@@ -108,7 +112,7 @@ public interface CTExternalSheetData extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "refreshError" attribute
      */
-    void xsetRefreshError(org.apache.xmlbeans.XmlBoolean refreshError);
+    void xsetRefreshError(XmlBoolean refreshError);
 
     /**
      * Unsets the "refreshError" attribute

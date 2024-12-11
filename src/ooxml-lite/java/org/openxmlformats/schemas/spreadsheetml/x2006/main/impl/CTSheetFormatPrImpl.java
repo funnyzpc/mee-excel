@@ -7,6 +7,14 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlDouble;
+import poi.org.apache.xmlbeans.XmlUnsignedByte;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +22,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTSheetFormatPr {
+public class CTSheetFormatPrImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTSheetFormatPr {
     private static final long serialVersionUID = 1L;
 
-    public CTSheetFormatPrImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTSheetFormatPrImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -41,10 +49,10 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public long getBaseColWidth() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[0]);
             }
             return (target == null) ? 0L : target.getLongValue();
         }
@@ -54,13 +62,13 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Gets (as xml) the "baseColWidth" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetBaseColWidth() {
+    public XmlUnsignedInt xgetBaseColWidth() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[0]);
+                target = (XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[0]);
             }
             return target;
         }
@@ -84,10 +92,10 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public void setBaseColWidth(long baseColWidth) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.setLongValue(baseColWidth);
         }
@@ -97,13 +105,13 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Sets (as xml) the "baseColWidth" attribute
      */
     @Override
-    public void xsetBaseColWidth(org.apache.xmlbeans.XmlUnsignedInt baseColWidth) {
+    public void xsetBaseColWidth(XmlUnsignedInt baseColWidth) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.set(baseColWidth);
         }
@@ -127,8 +135,8 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public double getDefaultColWidth() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return (target == null) ? 0.0 : target.getDoubleValue();
         }
     }
@@ -137,11 +145,11 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Gets (as xml) the "defaultColWidth" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlDouble xgetDefaultColWidth() {
+    public XmlDouble xgetDefaultColWidth() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return target;
         }
     }
@@ -164,10 +172,10 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public void setDefaultColWidth(double defaultColWidth) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setDoubleValue(defaultColWidth);
         }
@@ -177,13 +185,13 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Sets (as xml) the "defaultColWidth" attribute
      */
     @Override
-    public void xsetDefaultColWidth(org.apache.xmlbeans.XmlDouble defaultColWidth) {
+    public void xsetDefaultColWidth(XmlDouble defaultColWidth) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.set(defaultColWidth);
         }
@@ -207,8 +215,8 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public double getDefaultRowHeight() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return (target == null) ? 0.0 : target.getDoubleValue();
         }
     }
@@ -217,11 +225,11 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Gets (as xml) the "defaultRowHeight" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlDouble xgetDefaultRowHeight() {
+    public XmlDouble xgetDefaultRowHeight() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return target;
         }
     }
@@ -233,10 +241,10 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public void setDefaultRowHeight(double defaultRowHeight) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.setDoubleValue(defaultRowHeight);
         }
@@ -246,13 +254,13 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Sets (as xml) the "defaultRowHeight" attribute
      */
     @Override
-    public void xsetDefaultRowHeight(org.apache.xmlbeans.XmlDouble defaultRowHeight) {
+    public void xsetDefaultRowHeight(XmlDouble defaultRowHeight) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.set(defaultRowHeight);
         }
@@ -265,10 +273,10 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public boolean getCustomHeight() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[3]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -278,13 +286,13 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Gets (as xml) the "customHeight" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetCustomHeight() {
+    public XmlBoolean xgetCustomHeight() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[3]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[3]);
             }
             return target;
         }
@@ -308,10 +316,10 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public void setCustomHeight(boolean customHeight) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setBooleanValue(customHeight);
         }
@@ -321,13 +329,13 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Sets (as xml) the "customHeight" attribute
      */
     @Override
-    public void xsetCustomHeight(org.apache.xmlbeans.XmlBoolean customHeight) {
+    public void xsetCustomHeight(XmlBoolean customHeight) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.set(customHeight);
         }
@@ -351,10 +359,10 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public boolean getZeroHeight() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -364,13 +372,13 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Gets (as xml) the "zeroHeight" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetZeroHeight() {
+    public XmlBoolean xgetZeroHeight() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return target;
         }
@@ -394,10 +402,10 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public void setZeroHeight(boolean zeroHeight) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.setBooleanValue(zeroHeight);
         }
@@ -407,13 +415,13 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Sets (as xml) the "zeroHeight" attribute
      */
     @Override
-    public void xsetZeroHeight(org.apache.xmlbeans.XmlBoolean zeroHeight) {
+    public void xsetZeroHeight(XmlBoolean zeroHeight) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.set(zeroHeight);
         }
@@ -437,10 +445,10 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public boolean getThickTop() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[5]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -450,13 +458,13 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Gets (as xml) the "thickTop" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetThickTop() {
+    public XmlBoolean xgetThickTop() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[5]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[5]);
             }
             return target;
         }
@@ -480,10 +488,10 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public void setThickTop(boolean thickTop) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.setBooleanValue(thickTop);
         }
@@ -493,13 +501,13 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Sets (as xml) the "thickTop" attribute
      */
     @Override
-    public void xsetThickTop(org.apache.xmlbeans.XmlBoolean thickTop) {
+    public void xsetThickTop(XmlBoolean thickTop) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.set(thickTop);
         }
@@ -523,10 +531,10 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public boolean getThickBottom() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[6]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -536,13 +544,13 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Gets (as xml) the "thickBottom" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetThickBottom() {
+    public XmlBoolean xgetThickBottom() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[6]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[6]);
             }
             return target;
         }
@@ -566,10 +574,10 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public void setThickBottom(boolean thickBottom) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.setBooleanValue(thickBottom);
         }
@@ -579,13 +587,13 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Sets (as xml) the "thickBottom" attribute
      */
     @Override
-    public void xsetThickBottom(org.apache.xmlbeans.XmlBoolean thickBottom) {
+    public void xsetThickBottom(XmlBoolean thickBottom) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.set(thickBottom);
         }
@@ -609,10 +617,10 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public short getOutlineLevelRow() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[7]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[7]);
             }
             return (target == null) ? 0 : target.getShortValue();
         }
@@ -622,13 +630,13 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Gets (as xml) the "outlineLevelRow" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedByte xgetOutlineLevelRow() {
+    public XmlUnsignedByte xgetOutlineLevelRow() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedByte target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedByte)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            XmlUnsignedByte target = null;
+            target = (XmlUnsignedByte)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedByte)get_default_attribute_value(PROPERTY_QNAME[7]);
+                target = (XmlUnsignedByte)get_default_attribute_value(PROPERTY_QNAME[7]);
             }
             return target;
         }
@@ -652,10 +660,10 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public void setOutlineLevelRow(short outlineLevelRow) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
             }
             target.setShortValue(outlineLevelRow);
         }
@@ -665,13 +673,13 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Sets (as xml) the "outlineLevelRow" attribute
      */
     @Override
-    public void xsetOutlineLevelRow(org.apache.xmlbeans.XmlUnsignedByte outlineLevelRow) {
+    public void xsetOutlineLevelRow(XmlUnsignedByte outlineLevelRow) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedByte target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedByte)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            XmlUnsignedByte target = null;
+            target = (XmlUnsignedByte)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedByte)get_store().add_attribute_user(PROPERTY_QNAME[7]);
+                target = (XmlUnsignedByte)get_store().add_attribute_user(PROPERTY_QNAME[7]);
             }
             target.set(outlineLevelRow);
         }
@@ -695,10 +703,10 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public short getOutlineLevelCol() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[8]);
             }
             return (target == null) ? 0 : target.getShortValue();
         }
@@ -708,13 +716,13 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Gets (as xml) the "outlineLevelCol" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedByte xgetOutlineLevelCol() {
+    public XmlUnsignedByte xgetOutlineLevelCol() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedByte target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedByte)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            XmlUnsignedByte target = null;
+            target = (XmlUnsignedByte)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedByte)get_default_attribute_value(PROPERTY_QNAME[8]);
+                target = (XmlUnsignedByte)get_default_attribute_value(PROPERTY_QNAME[8]);
             }
             return target;
         }
@@ -738,10 +746,10 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public void setOutlineLevelCol(short outlineLevelCol) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.setShortValue(outlineLevelCol);
         }
@@ -751,13 +759,13 @@ public class CTSheetFormatPrImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Sets (as xml) the "outlineLevelCol" attribute
      */
     @Override
-    public void xsetOutlineLevelCol(org.apache.xmlbeans.XmlUnsignedByte outlineLevelCol) {
+    public void xsetOutlineLevelCol(XmlUnsignedByte outlineLevelCol) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedByte target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedByte)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            XmlUnsignedByte target = null;
+            target = (XmlUnsignedByte)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedByte)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (XmlUnsignedByte)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.set(outlineLevelCol);
         }

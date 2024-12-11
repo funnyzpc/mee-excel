@@ -7,7 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +19,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTDataBar extends org.apache.xmlbeans.XmlObject {
+public interface CTDataBar extends XmlObject {
     DocumentFactory<CTDataBar> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctdatabar4128type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -88,7 +92,7 @@ public interface CTDataBar extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "minLength" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetMinLength();
+    XmlUnsignedInt xgetMinLength();
 
     /**
      * True if has "minLength" attribute
@@ -103,7 +107,7 @@ public interface CTDataBar extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "minLength" attribute
      */
-    void xsetMinLength(org.apache.xmlbeans.XmlUnsignedInt minLength);
+    void xsetMinLength(XmlUnsignedInt minLength);
 
     /**
      * Unsets the "minLength" attribute
@@ -118,7 +122,7 @@ public interface CTDataBar extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "maxLength" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetMaxLength();
+    XmlUnsignedInt xgetMaxLength();
 
     /**
      * True if has "maxLength" attribute
@@ -133,7 +137,7 @@ public interface CTDataBar extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "maxLength" attribute
      */
-    void xsetMaxLength(org.apache.xmlbeans.XmlUnsignedInt maxLength);
+    void xsetMaxLength(XmlUnsignedInt maxLength);
 
     /**
      * Unsets the "maxLength" attribute
@@ -148,7 +152,7 @@ public interface CTDataBar extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "showValue" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetShowValue();
+    XmlBoolean xgetShowValue();
 
     /**
      * True if has "showValue" attribute
@@ -163,7 +167,7 @@ public interface CTDataBar extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "showValue" attribute
      */
-    void xsetShowValue(org.apache.xmlbeans.XmlBoolean showValue);
+    void xsetShowValue(XmlBoolean showValue);
 
     /**
      * Unsets the "showValue" attribute

@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlDouble;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTFontSize extends org.apache.xmlbeans.XmlObject {
+public interface CTFontSize extends XmlObject {
     DocumentFactory<CTFontSize> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctfontsizeb3b9type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -28,7 +31,7 @@ public interface CTFontSize extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "val" attribute
      */
-    org.apache.xmlbeans.XmlDouble xgetVal();
+    XmlDouble xgetVal();
 
     /**
      * Sets the "val" attribute
@@ -38,5 +41,5 @@ public interface CTFontSize extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "val" attribute
      */
-    void xsetVal(org.apache.xmlbeans.XmlDouble val);
+    void xsetVal(XmlDouble val);
 }

@@ -25,7 +25,7 @@ import org.apache.poi.ooxml.POIXMLRelation.ParentPartConstructor;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.openxml4j.opc.PackagePart;
 import org.apache.poi.openxml4j.opc.PackageRelationship;
-import org.apache.xmlbeans.XmlException;
+import poi.org.apache.xmlbeans.XmlException;
 
 /**
  * Defines a factory API that enables sub-classes to create instances of <code>POIXMLDocumentPart</code>

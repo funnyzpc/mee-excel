@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTSelectionImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTSelection {
+public class CTSelectionImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTSelection {
     private static final long serialVersionUID = 1L;
 
-    public CTSelectionImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTSelectionImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -57,8 +62,8 @@ public class CTSelectionImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public String getActiveCell() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -83,10 +88,10 @@ public class CTSelectionImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public void setActiveCell(String activeCell) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setStringValue(activeCell);
         }
@@ -110,10 +115,10 @@ public class CTSelectionImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public long getActiveCellId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[2]);
             }
             return (target == null) ? 0L : target.getLongValue();
         }
@@ -123,13 +128,13 @@ public class CTSelectionImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
      * Gets (as xml) the "activeCellId" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetActiveCellId() {
+    public XmlUnsignedInt xgetActiveCellId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[2]);
+                target = (XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[2]);
             }
             return target;
         }
@@ -153,10 +158,10 @@ public class CTSelectionImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public void setActiveCellId(long activeCellId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.setLongValue(activeCellId);
         }
@@ -166,13 +171,13 @@ public class CTSelectionImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
      * Sets (as xml) the "activeCellId" attribute
      */
     @Override
-    public void xsetActiveCellId(org.apache.xmlbeans.XmlUnsignedInt activeCellId) {
+    public void xsetActiveCellId(XmlUnsignedInt activeCellId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.set(activeCellId);
         }
@@ -196,10 +201,10 @@ public class CTSelectionImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public java.util.List getSqref() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[3]);
             }
             return (target == null) ? null : target.getListValue();
         }
@@ -225,10 +230,10 @@ public class CTSelectionImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public void setSqref(java.util.List sqref) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setListValue(sqref);
         }

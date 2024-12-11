@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTSheetViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTSheetView {
+public class CTSheetViewImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTSheetView {
     private static final long serialVersionUID = 1L;
 
-    public CTSheetViewImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTSheetViewImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -82,7 +87,7 @@ public class CTSheetViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
      */
     @Override
     public void setSelectionArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTSelection selection) {
-        generatedSetterHelperImpl(selection, PROPERTY_QNAME[1], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(selection, PROPERTY_QNAME[1], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**
@@ -151,10 +156,10 @@ public class CTSheetViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public boolean getShowFormulas() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[5]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -168,10 +173,10 @@ public class CTSheetViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public void setShowFormulas(boolean showFormulas) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.setBooleanValue(showFormulas);
         }
@@ -184,10 +189,10 @@ public class CTSheetViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public boolean getShowRowColHeaders() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[7]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[7]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -200,10 +205,10 @@ public class CTSheetViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public boolean getShowZeros() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[8]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -217,10 +222,10 @@ public class CTSheetViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public void setShowZeros(boolean showZeros) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.setBooleanValue(showZeros);
         }
@@ -234,10 +239,10 @@ public class CTSheetViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public boolean getRightToLeft() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[9]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[9]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -250,10 +255,10 @@ public class CTSheetViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public void setRightToLeft(boolean rightToLeft) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.setBooleanValue(rightToLeft);
         }
@@ -266,10 +271,10 @@ public class CTSheetViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public boolean getTabSelected() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[10]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[10]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -282,10 +287,10 @@ public class CTSheetViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public void setTabSelected(boolean tabSelected) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
             }
             target.setBooleanValue(tabSelected);
         }
@@ -298,8 +303,8 @@ public class CTSheetViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public String getTopLeftCell() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[16]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[16]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -311,10 +316,10 @@ public class CTSheetViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public void setZoomScale(long zoomScale) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[18]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[18]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[18]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[18]);
             }
             target.setLongValue(zoomScale);
         }
@@ -327,10 +332,10 @@ public class CTSheetViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public void setWorkbookViewId(long workbookViewId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[22]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[22]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[22]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[22]);
             }
             target.setLongValue(workbookViewId);
         }

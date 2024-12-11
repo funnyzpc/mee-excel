@@ -7,6 +7,12 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.values.JavaStringHolderEx;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,14 +20,14 @@ import javax.xml.namespace.QName;
  *
  * This is an atomic type that is a restriction of org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCellFormula.
  */
-public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderEx implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCellFormula {
+public class CTCellFormulaImpl extends JavaStringHolderEx implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCellFormula {
     private static final long serialVersionUID = 1L;
 
-    public CTCellFormulaImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTCellFormulaImpl(SchemaType sType) {
         super(sType, true);
     }
 
-    protected CTCellFormulaImpl(org.apache.xmlbeans.SchemaType sType, boolean b) {
+    protected CTCellFormulaImpl(SchemaType sType, boolean b) {
         super(sType, b);
     }
 
@@ -48,10 +54,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public org.openxmlformats.schemas.spreadsheetml.x2006.main.STCellFormulaType.Enum getT() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[0]);
             }
             return (target == null) ? null : (org.openxmlformats.schemas.spreadsheetml.x2006.main.STCellFormulaType.Enum)target.getEnumValue();
         }
@@ -91,10 +97,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setT(org.openxmlformats.schemas.spreadsheetml.x2006.main.STCellFormulaType.Enum t) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.setEnumValue(t);
         }
@@ -134,10 +140,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public boolean getAca() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[1]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -147,13 +153,13 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Gets (as xml) the "aca" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetAca() {
+    public XmlBoolean xgetAca() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[1]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[1]);
             }
             return target;
         }
@@ -177,10 +183,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setAca(boolean aca) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setBooleanValue(aca);
         }
@@ -190,13 +196,13 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Sets (as xml) the "aca" attribute
      */
     @Override
-    public void xsetAca(org.apache.xmlbeans.XmlBoolean aca) {
+    public void xsetAca(XmlBoolean aca) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.set(aca);
         }
@@ -220,8 +226,8 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public String getRef() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -257,10 +263,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setRef(String ref) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.setStringValue(ref);
         }
@@ -300,10 +306,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public boolean getDt2D() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[3]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -313,13 +319,13 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Gets (as xml) the "dt2D" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetDt2D() {
+    public XmlBoolean xgetDt2D() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[3]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[3]);
             }
             return target;
         }
@@ -343,10 +349,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setDt2D(boolean dt2D) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setBooleanValue(dt2D);
         }
@@ -356,13 +362,13 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Sets (as xml) the "dt2D" attribute
      */
     @Override
-    public void xsetDt2D(org.apache.xmlbeans.XmlBoolean dt2D) {
+    public void xsetDt2D(XmlBoolean dt2D) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.set(dt2D);
         }
@@ -386,10 +392,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public boolean getDtr() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -399,13 +405,13 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Gets (as xml) the "dtr" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetDtr() {
+    public XmlBoolean xgetDtr() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return target;
         }
@@ -429,10 +435,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setDtr(boolean dtr) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.setBooleanValue(dtr);
         }
@@ -442,13 +448,13 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Sets (as xml) the "dtr" attribute
      */
     @Override
-    public void xsetDtr(org.apache.xmlbeans.XmlBoolean dtr) {
+    public void xsetDtr(XmlBoolean dtr) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.set(dtr);
         }
@@ -472,10 +478,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public boolean getDel1() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[5]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -485,13 +491,13 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Gets (as xml) the "del1" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetDel1() {
+    public XmlBoolean xgetDel1() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[5]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[5]);
             }
             return target;
         }
@@ -515,10 +521,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setDel1(boolean del1) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.setBooleanValue(del1);
         }
@@ -528,13 +534,13 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Sets (as xml) the "del1" attribute
      */
     @Override
-    public void xsetDel1(org.apache.xmlbeans.XmlBoolean del1) {
+    public void xsetDel1(XmlBoolean del1) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.set(del1);
         }
@@ -558,10 +564,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public boolean getDel2() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[6]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -571,13 +577,13 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Gets (as xml) the "del2" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetDel2() {
+    public XmlBoolean xgetDel2() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[6]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[6]);
             }
             return target;
         }
@@ -601,10 +607,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setDel2(boolean del2) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.setBooleanValue(del2);
         }
@@ -614,13 +620,13 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Sets (as xml) the "del2" attribute
      */
     @Override
-    public void xsetDel2(org.apache.xmlbeans.XmlBoolean del2) {
+    public void xsetDel2(XmlBoolean del2) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.set(del2);
         }
@@ -644,8 +650,8 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public String getR1() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -670,10 +676,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setR1(String r1) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
             }
             target.setStringValue(r1);
         }
@@ -696,8 +702,8 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public String getR2() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -720,10 +726,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setR2(String r2) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.setStringValue(r2);
         }
@@ -748,10 +754,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public boolean getCa() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[9]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[9]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -761,13 +767,13 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Gets (as xml) the "ca" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetCa() {
+    public XmlBoolean xgetCa() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[9]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[9]);
             }
             return target;
         }
@@ -791,10 +797,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setCa(boolean ca) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.setBooleanValue(ca);
         }
@@ -804,13 +810,13 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Sets (as xml) the "ca" attribute
      */
     @Override
-    public void xsetCa(org.apache.xmlbeans.XmlBoolean ca) {
+    public void xsetCa(XmlBoolean ca) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.set(ca);
         }
@@ -834,8 +840,8 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public long getSi() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -844,11 +850,11 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Gets (as xml) the "si" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetSi() {
+    public XmlUnsignedInt xgetSi() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             return target;
         }
     }
@@ -871,10 +877,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setSi(long si) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
             }
             target.setLongValue(si);
         }
@@ -884,13 +890,13 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Sets (as xml) the "si" attribute
      */
     @Override
-    public void xsetSi(org.apache.xmlbeans.XmlUnsignedInt si) {
+    public void xsetSi(XmlUnsignedInt si) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[10]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[10]);
             }
             target.set(si);
         }
@@ -914,10 +920,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public boolean getBx() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[11]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[11]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -927,13 +933,13 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Gets (as xml) the "bx" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetBx() {
+    public XmlBoolean xgetBx() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[11]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[11]);
             }
             return target;
         }
@@ -957,10 +963,10 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setBx(boolean bx) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[11]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[11]);
             }
             target.setBooleanValue(bx);
         }
@@ -970,13 +976,13 @@ public class CTCellFormulaImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Sets (as xml) the "bx" attribute
      */
     @Override
-    public void xsetBx(org.apache.xmlbeans.XmlBoolean bx) {
+    public void xsetBx(XmlBoolean bx) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[11]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[11]);
             }
             target.set(bx);
         }

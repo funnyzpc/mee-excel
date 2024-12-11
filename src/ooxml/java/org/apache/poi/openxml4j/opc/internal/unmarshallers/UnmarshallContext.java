@@ -17,7 +17,7 @@
 
 package org.apache.poi.openxml4j.opc.internal.unmarshallers;
 
-import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
+import poi.org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
 import org.apache.poi.openxml4j.opc.OPCPackage;
 import org.apache.poi.openxml4j.opc.PackagePartName;
 

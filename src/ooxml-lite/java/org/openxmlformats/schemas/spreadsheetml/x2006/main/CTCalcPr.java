@@ -7,7 +7,12 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlDouble;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +20,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
+public interface CTCalcPr extends XmlObject {
     DocumentFactory<CTCalcPr> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctcalcprd480type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -28,7 +33,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "calcId" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetCalcId();
+    XmlUnsignedInt xgetCalcId();
 
     /**
      * True if has "calcId" attribute
@@ -43,7 +48,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "calcId" attribute
      */
-    void xsetCalcId(org.apache.xmlbeans.XmlUnsignedInt calcId);
+    void xsetCalcId(XmlUnsignedInt calcId);
 
     /**
      * Unsets the "calcId" attribute
@@ -88,7 +93,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "fullCalcOnLoad" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetFullCalcOnLoad();
+    XmlBoolean xgetFullCalcOnLoad();
 
     /**
      * True if has "fullCalcOnLoad" attribute
@@ -103,7 +108,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "fullCalcOnLoad" attribute
      */
-    void xsetFullCalcOnLoad(org.apache.xmlbeans.XmlBoolean fullCalcOnLoad);
+    void xsetFullCalcOnLoad(XmlBoolean fullCalcOnLoad);
 
     /**
      * Unsets the "fullCalcOnLoad" attribute
@@ -148,7 +153,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "iterate" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetIterate();
+    XmlBoolean xgetIterate();
 
     /**
      * True if has "iterate" attribute
@@ -163,7 +168,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "iterate" attribute
      */
-    void xsetIterate(org.apache.xmlbeans.XmlBoolean iterate);
+    void xsetIterate(XmlBoolean iterate);
 
     /**
      * Unsets the "iterate" attribute
@@ -178,7 +183,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "iterateCount" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetIterateCount();
+    XmlUnsignedInt xgetIterateCount();
 
     /**
      * True if has "iterateCount" attribute
@@ -193,7 +198,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "iterateCount" attribute
      */
-    void xsetIterateCount(org.apache.xmlbeans.XmlUnsignedInt iterateCount);
+    void xsetIterateCount(XmlUnsignedInt iterateCount);
 
     /**
      * Unsets the "iterateCount" attribute
@@ -208,7 +213,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "iterateDelta" attribute
      */
-    org.apache.xmlbeans.XmlDouble xgetIterateDelta();
+    XmlDouble xgetIterateDelta();
 
     /**
      * True if has "iterateDelta" attribute
@@ -223,7 +228,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "iterateDelta" attribute
      */
-    void xsetIterateDelta(org.apache.xmlbeans.XmlDouble iterateDelta);
+    void xsetIterateDelta(XmlDouble iterateDelta);
 
     /**
      * Unsets the "iterateDelta" attribute
@@ -238,7 +243,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "fullPrecision" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetFullPrecision();
+    XmlBoolean xgetFullPrecision();
 
     /**
      * True if has "fullPrecision" attribute
@@ -253,7 +258,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "fullPrecision" attribute
      */
-    void xsetFullPrecision(org.apache.xmlbeans.XmlBoolean fullPrecision);
+    void xsetFullPrecision(XmlBoolean fullPrecision);
 
     /**
      * Unsets the "fullPrecision" attribute
@@ -268,7 +273,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "calcCompleted" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetCalcCompleted();
+    XmlBoolean xgetCalcCompleted();
 
     /**
      * True if has "calcCompleted" attribute
@@ -283,7 +288,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "calcCompleted" attribute
      */
-    void xsetCalcCompleted(org.apache.xmlbeans.XmlBoolean calcCompleted);
+    void xsetCalcCompleted(XmlBoolean calcCompleted);
 
     /**
      * Unsets the "calcCompleted" attribute
@@ -298,7 +303,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "calcOnSave" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetCalcOnSave();
+    XmlBoolean xgetCalcOnSave();
 
     /**
      * True if has "calcOnSave" attribute
@@ -313,7 +318,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "calcOnSave" attribute
      */
-    void xsetCalcOnSave(org.apache.xmlbeans.XmlBoolean calcOnSave);
+    void xsetCalcOnSave(XmlBoolean calcOnSave);
 
     /**
      * Unsets the "calcOnSave" attribute
@@ -328,7 +333,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "concurrentCalc" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetConcurrentCalc();
+    XmlBoolean xgetConcurrentCalc();
 
     /**
      * True if has "concurrentCalc" attribute
@@ -343,7 +348,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "concurrentCalc" attribute
      */
-    void xsetConcurrentCalc(org.apache.xmlbeans.XmlBoolean concurrentCalc);
+    void xsetConcurrentCalc(XmlBoolean concurrentCalc);
 
     /**
      * Unsets the "concurrentCalc" attribute
@@ -358,7 +363,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "concurrentManualCount" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetConcurrentManualCount();
+    XmlUnsignedInt xgetConcurrentManualCount();
 
     /**
      * True if has "concurrentManualCount" attribute
@@ -373,7 +378,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "concurrentManualCount" attribute
      */
-    void xsetConcurrentManualCount(org.apache.xmlbeans.XmlUnsignedInt concurrentManualCount);
+    void xsetConcurrentManualCount(XmlUnsignedInt concurrentManualCount);
 
     /**
      * Unsets the "concurrentManualCount" attribute
@@ -388,7 +393,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "forceFullCalc" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetForceFullCalc();
+    XmlBoolean xgetForceFullCalc();
 
     /**
      * True if has "forceFullCalc" attribute
@@ -403,7 +408,7 @@ public interface CTCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "forceFullCalc" attribute
      */
-    void xsetForceFullCalc(org.apache.xmlbeans.XmlBoolean forceFullCalc);
+    void xsetForceFullCalc(XmlBoolean forceFullCalc);
 
     /**
      * Unsets the "forceFullCalc" attribute

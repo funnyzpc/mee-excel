@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.officeDocument.x2006.sharedTypes;
 
-import org.apache.xmlbeans.impl.schema.SimpleTypeFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.StringEnumAbstractBase;
+import poi.org.apache.xmlbeans.XmlString;
+import poi.org.apache.xmlbeans.impl.schema.SimpleTypeFactory;
 
 
 /**
@@ -15,13 +18,13 @@ import org.apache.xmlbeans.impl.schema.SimpleTypeFactory;
  *
  * This is an atomic type that is a restriction of org.openxmlformats.schemas.officeDocument.x2006.sharedTypes.STVerticalAlignRun.
  */
-public interface STVerticalAlignRun extends org.apache.xmlbeans.XmlString {
+public interface STVerticalAlignRun extends XmlString {
     SimpleTypeFactory<STVerticalAlignRun> Factory = new SimpleTypeFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "stverticalalignrunc096type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
-    org.apache.xmlbeans.StringEnumAbstractBase getEnumValue();
-    void setEnumValue(org.apache.xmlbeans.StringEnumAbstractBase e);
+    StringEnumAbstractBase getEnumValue();
+    void setEnumValue(StringEnumAbstractBase e);
     /**
      * Enumeration value class for org.openxmlformats.schemas.officeDocument.x2006.sharedTypes.STVerticalAlignRun.
      * These enum values can be used as follows:
@@ -37,7 +40,7 @@ public interface STVerticalAlignRun extends org.apache.xmlbeans.XmlString {
      * public constructor. See the constants defined within this
      * class for all the valid values.
      */
-    final class Enum extends org.apache.xmlbeans.StringEnumAbstractBase {
+    final class Enum extends StringEnumAbstractBase {
         /**
          * Returns the enum value for a string, or null if none.
          */

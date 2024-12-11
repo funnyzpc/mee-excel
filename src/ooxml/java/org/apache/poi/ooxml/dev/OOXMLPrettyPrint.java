@@ -31,7 +31,7 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
-import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
+import poi.org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
 import org.apache.poi.ooxml.util.DocumentHelper;
 import org.apache.poi.openxml4j.opc.internal.ZipHelper;
 import org.apache.poi.openxml4j.util.ZipSecureFile;

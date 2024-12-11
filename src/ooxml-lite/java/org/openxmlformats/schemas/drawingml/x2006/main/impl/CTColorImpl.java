@@ -7,6 +7,9 @@
  */
 package org.openxmlformats.schemas.drawingml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +17,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTColorImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.drawingml.x2006.main.CTColor {
+public class CTColorImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.drawingml.x2006.main.CTColor {
     private static final long serialVersionUID = 1L;
 
-    public CTColorImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTColorImpl(SchemaType sType) {
         super(sType);
     }
 

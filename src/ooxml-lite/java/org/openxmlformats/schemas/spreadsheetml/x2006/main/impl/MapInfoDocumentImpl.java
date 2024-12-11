@@ -8,6 +8,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -15,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class MapInfoDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.MapInfoDocument {
+public class MapInfoDocumentImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.MapInfoDocument {
     private static final long serialVersionUID = 1L;
 
-    public MapInfoDocumentImpl(org.apache.xmlbeans.SchemaType sType) {
+    public MapInfoDocumentImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -45,7 +49,7 @@ public class MapInfoDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComp
      */
     @Override
     public void setMapInfo(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTMapInfo mapInfo) {
-        generatedSetterHelperImpl(mapInfo, PROPERTY_QNAME[0], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(mapInfo, PROPERTY_QNAME[0], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**

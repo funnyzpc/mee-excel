@@ -21,8 +21,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Locale;
 
-import org.apache.commons.io.input.UnsynchronizedByteArrayInputStream;
-import org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream;
+import poi.org.apache.commons.io.input.UnsynchronizedByteArrayInputStream;
+import poi.org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream;
 
 /**
  * Wrapper of InputStream which provides Run Length Encoding (RLE)

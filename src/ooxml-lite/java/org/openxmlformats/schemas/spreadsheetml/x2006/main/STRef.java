@@ -7,7 +7,9 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.SimpleTypeFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlString;
+import poi.org.apache.xmlbeans.impl.schema.SimpleTypeFactory;
 
 
 /**
@@ -15,8 +17,8 @@ import org.apache.xmlbeans.impl.schema.SimpleTypeFactory;
  *
  * This is an atomic type that is a restriction of org.openxmlformats.schemas.spreadsheetml.x2006.main.STRef.
  */
-public interface STRef extends org.apache.xmlbeans.XmlString {
+public interface STRef extends XmlString {
     SimpleTypeFactory<STRef> Factory = new SimpleTypeFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "stref90a2type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 }

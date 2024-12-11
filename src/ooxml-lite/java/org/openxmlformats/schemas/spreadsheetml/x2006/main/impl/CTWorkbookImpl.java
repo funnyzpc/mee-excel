@@ -7,6 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +18,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTWorkbookImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTWorkbook {
+public class CTWorkbookImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTWorkbook {
     private static final long serialVersionUID = 1L;
 
-    public CTWorkbookImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTWorkbookImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -74,7 +78,7 @@ public class CTWorkbookImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      */
     @Override
     public void setFileVersion(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion fileVersion) {
-        generatedSetterHelperImpl(fileVersion, PROPERTY_QNAME[0], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(fileVersion, PROPERTY_QNAME[0], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -167,7 +171,7 @@ public class CTWorkbookImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      */
     @Override
     public void setWorkbookProtection(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTWorkbookProtection workbookProtection) {
-        generatedSetterHelperImpl(workbookProtection, PROPERTY_QNAME[3], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(workbookProtection, PROPERTY_QNAME[3], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -223,7 +227,7 @@ public class CTWorkbookImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      */
     @Override
     public void setBookViews(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBookViews bookViews) {
-        generatedSetterHelperImpl(bookViews, PROPERTY_QNAME[4], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(bookViews, PROPERTY_QNAME[4], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -268,7 +272,7 @@ public class CTWorkbookImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      */
     @Override
     public void setSheets(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTSheets sheets) {
-        generatedSetterHelperImpl(sheets, PROPERTY_QNAME[5], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(sheets, PROPERTY_QNAME[5], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -324,7 +328,7 @@ public class CTWorkbookImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      */
     @Override
     public void setExternalReferences(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalReferences externalReferences) {
-        generatedSetterHelperImpl(externalReferences, PROPERTY_QNAME[7], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(externalReferences, PROPERTY_QNAME[7], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -380,7 +384,7 @@ public class CTWorkbookImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      */
     @Override
     public void setDefinedNames(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDefinedNames definedNames) {
-        generatedSetterHelperImpl(definedNames, PROPERTY_QNAME[8], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(definedNames, PROPERTY_QNAME[8], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -436,7 +440,7 @@ public class CTWorkbookImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      */
     @Override
     public void setCalcPr(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCalcPr calcPr) {
-        generatedSetterHelperImpl(calcPr, PROPERTY_QNAME[9], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(calcPr, PROPERTY_QNAME[9], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**

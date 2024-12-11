@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTCfvo extends org.apache.xmlbeans.XmlObject {
+public interface CTCfvo extends XmlObject {
     DocumentFactory<CTCfvo> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctcfvo7ca5type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
 //    /**
@@ -103,7 +106,7 @@ public interface CTCfvo extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "gte" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetGte();
+    XmlBoolean xgetGte();
 
     /**
      * True if has "gte" attribute
@@ -118,7 +121,7 @@ public interface CTCfvo extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "gte" attribute
      */
-    void xsetGte(org.apache.xmlbeans.XmlBoolean gte);
+    void xsetGte(XmlBoolean gte);
 
     /**
      * Unsets the "gte" attribute

@@ -7,6 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +18,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTDxfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxf {
+public class CTDxfImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxf {
     private static final long serialVersionUID = 1L;
 
-    public CTDxfImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTDxfImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -61,7 +65,7 @@ public class CTDxfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      */
     @Override
     public void setFont(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFont font) {
-        generatedSetterHelperImpl(font, PROPERTY_QNAME[0], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(font, PROPERTY_QNAME[0], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -117,7 +121,7 @@ public class CTDxfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      */
     @Override
     public void setNumFmt(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTNumFmt numFmt) {
-        generatedSetterHelperImpl(numFmt, PROPERTY_QNAME[1], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(numFmt, PROPERTY_QNAME[1], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -173,7 +177,7 @@ public class CTDxfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      */
     @Override
     public void setFill(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFill fill) {
-        generatedSetterHelperImpl(fill, PROPERTY_QNAME[2], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(fill, PROPERTY_QNAME[2], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -229,7 +233,7 @@ public class CTDxfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      */
     @Override
     public void setAlignment(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCellAlignment alignment) {
-        generatedSetterHelperImpl(alignment, PROPERTY_QNAME[3], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(alignment, PROPERTY_QNAME[3], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -285,7 +289,7 @@ public class CTDxfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      */
     @Override
     public void setBorder(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBorder border) {
-        generatedSetterHelperImpl(border, PROPERTY_QNAME[4], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(border, PROPERTY_QNAME[4], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**

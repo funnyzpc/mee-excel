@@ -31,9 +31,9 @@ import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
 
-import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
-import org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream;
-import org.apache.commons.compress.archivers.zip.ZipFile;
+import poi.org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
+import poi.org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream;
+import poi.org.apache.commons.compress.archivers.zip.ZipFile;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.message.SimpleMessage;

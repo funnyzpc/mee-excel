@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTREltImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTRElt {
+public class CTREltImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTRElt {
     private static final long serialVersionUID = 1L;
 
-    public CTREltImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTREltImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -56,7 +61,7 @@ public class CTREltImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
      */
     @Override
     public void setRPr(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTRPrElt rPr) {
-        generatedSetterHelperImpl(rPr, PROPERTY_QNAME[0], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(rPr, PROPERTY_QNAME[0], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -90,8 +95,8 @@ public class CTREltImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     public String getT() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[1], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[1], 0);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -116,10 +121,10 @@ public class CTREltImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     public void setT(String t) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[1], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[1], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[1]);
             }
             target.setStringValue(t);
         }

@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableColumn {
+public class CTTableColumnImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableColumn {
     private static final long serialVersionUID = 1L;
 
-    public CTTableColumnImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTTableColumnImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -272,8 +277,8 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public long getId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -282,11 +287,11 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Gets (as xml) the "id" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetId() {
+    public XmlUnsignedInt xgetId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             return target;
         }
     }
@@ -298,10 +303,10 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setId(long id) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.setLongValue(id);
         }
@@ -311,13 +316,13 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Sets (as xml) the "id" attribute
      */
     @Override
-    public void xsetId(org.apache.xmlbeans.XmlUnsignedInt id) {
+    public void xsetId(XmlUnsignedInt id) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.set(id);
         }
@@ -330,8 +335,8 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public String getUniqueName() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -367,10 +372,10 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setUniqueName(String uniqueName) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.setStringValue(uniqueName);
         }
@@ -410,8 +415,8 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public String getName() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -436,10 +441,10 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setName(String name) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.setStringValue(name);
         }
@@ -554,8 +559,8 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public String getTotalsRowLabel() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -591,10 +596,10 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setTotalsRowLabel(String totalsRowLabel) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.setStringValue(totalsRowLabel);
         }
@@ -634,8 +639,8 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public long getQueryTableFieldId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -644,11 +649,11 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Gets (as xml) the "queryTableFieldId" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetQueryTableFieldId() {
+    public XmlUnsignedInt xgetQueryTableFieldId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             return target;
         }
     }
@@ -671,10 +676,10 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setQueryTableFieldId(long queryTableFieldId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.setLongValue(queryTableFieldId);
         }
@@ -684,13 +689,13 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Sets (as xml) the "queryTableFieldId" attribute
      */
     @Override
-    public void xsetQueryTableFieldId(org.apache.xmlbeans.XmlUnsignedInt queryTableFieldId) {
+    public void xsetQueryTableFieldId(XmlUnsignedInt queryTableFieldId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.set(queryTableFieldId);
         }
@@ -714,8 +719,8 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public long getHeaderRowDxfId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -751,10 +756,10 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setHeaderRowDxfId(long headerRowDxfId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
             }
             target.setLongValue(headerRowDxfId);
         }
@@ -794,8 +799,8 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public long getDataDxfId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -831,10 +836,10 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setDataDxfId(long dataDxfId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[11]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[11]);
             }
             target.setLongValue(dataDxfId);
         }
@@ -874,8 +879,8 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public long getTotalsRowDxfId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -911,10 +916,10 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setTotalsRowDxfId(long totalsRowDxfId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[12]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[12]);
             }
             target.setLongValue(totalsRowDxfId);
         }
@@ -954,8 +959,8 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public String getHeaderRowCellStyle() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -991,10 +996,10 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setHeaderRowCellStyle(String headerRowCellStyle) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[13]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[13]);
             }
             target.setStringValue(headerRowCellStyle);
         }
@@ -1034,8 +1039,8 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public String getDataCellStyle() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[14]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[14]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -1071,10 +1076,10 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setDataCellStyle(String dataCellStyle) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[14]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[14]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[14]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[14]);
             }
             target.setStringValue(dataCellStyle);
         }
@@ -1114,8 +1119,8 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public String getTotalsRowCellStyle() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[15]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[15]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -1151,10 +1156,10 @@ public class CTTableColumnImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setTotalsRowCellStyle(String totalsRowCellStyle) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[15]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[15]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[15]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[15]);
             }
             target.setStringValue(totalsRowCellStyle);
         }

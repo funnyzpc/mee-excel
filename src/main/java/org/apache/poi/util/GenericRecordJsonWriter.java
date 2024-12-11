@@ -53,7 +53,7 @@ import java.util.function.Supplier;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.commons.io.output.NullOutputStream;
+import poi.org.apache.commons.io.output.NullOutputStream;
 import org.apache.poi.common.usermodel.GenericRecord;
 import org.apache.poi.util.GenericRecordUtil.AnnotatedFlag;
 

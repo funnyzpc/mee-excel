@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Enumeration;
 
-import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
+import poi.org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
 
 /**
  * An Interface to make getting the different bits

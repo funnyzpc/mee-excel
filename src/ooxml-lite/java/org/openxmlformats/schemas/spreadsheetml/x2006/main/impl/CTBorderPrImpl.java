@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTBorderPrImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBorderPr {
+public class CTBorderPrImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBorderPr {
     private static final long serialVersionUID = 1L;
 
-    public CTBorderPrImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTBorderPrImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -56,7 +61,7 @@ public class CTBorderPrImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      */
     @Override
     public void setColor(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColor color) {
-        generatedSetterHelperImpl(color, PROPERTY_QNAME[0], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(color, PROPERTY_QNAME[0], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -90,10 +95,10 @@ public class CTBorderPrImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public org.openxmlformats.schemas.spreadsheetml.x2006.main.STBorderStyle.Enum getStyle() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[1]);
             }
             return (target == null) ? null : (org.openxmlformats.schemas.spreadsheetml.x2006.main.STBorderStyle.Enum)target.getEnumValue();
         }
@@ -106,10 +111,10 @@ public class CTBorderPrImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public void setStyle(org.openxmlformats.schemas.spreadsheetml.x2006.main.STBorderStyle.Enum style) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setEnumValue(style);
         }

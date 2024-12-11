@@ -8,6 +8,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -15,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class StyleSheetDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.StyleSheetDocument {
+public class StyleSheetDocumentImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.StyleSheetDocument {
     private static final long serialVersionUID = 1L;
 
-    public StyleSheetDocumentImpl(org.apache.xmlbeans.SchemaType sType) {
+    public StyleSheetDocumentImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -45,7 +49,7 @@ public class StyleSheetDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
      */
     @Override
     public void setStyleSheet(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTStylesheet styleSheet) {
-        generatedSetterHelperImpl(styleSheet, PROPERTY_QNAME[0], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(styleSheet, PROPERTY_QNAME[0], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**

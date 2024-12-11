@@ -7,6 +7,12 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlInt;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +20,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCalcCell {
+public class CTCalcCellImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCalcCell {
     private static final long serialVersionUID = 1L;
 
-    public CTCalcCellImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTCalcCellImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -39,8 +45,8 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public String getR() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -63,10 +69,10 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public void setR(String r) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.setStringValue(r);
         }
@@ -91,8 +97,8 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public String getRef() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -115,10 +121,10 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public void setRef(String ref) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setStringValue(ref);
         }
@@ -131,10 +137,10 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public int getI() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[2]);
             }
             return (target == null) ? 0 : target.getIntValue();
         }
@@ -144,13 +150,13 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Gets (as xml) the "i" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlInt xgetI() {
+    public XmlInt xgetI() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlInt)get_default_attribute_value(PROPERTY_QNAME[2]);
+                target = (XmlInt)get_default_attribute_value(PROPERTY_QNAME[2]);
             }
             return target;
         }
@@ -174,10 +180,10 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public void setI(int iValue) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.setIntValue(iValue);
         }
@@ -190,10 +196,10 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public boolean getS() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[3]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -206,10 +212,10 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public void setS(boolean s) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setBooleanValue(s);
         }
@@ -219,13 +225,13 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Sets (as xml) the "s" attribute
      */
     @Override
-    public void xsetS(org.apache.xmlbeans.XmlBoolean s) {
+    public void xsetS(XmlBoolean s) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.set(s);
         }
@@ -249,10 +255,10 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public boolean getL() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -262,13 +268,13 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Gets (as xml) the "l" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetL() {
+    public XmlBoolean xgetL() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return target;
         }
@@ -292,10 +298,10 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public void setL(boolean l) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.setBooleanValue(l);
         }
@@ -305,13 +311,13 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Sets (as xml) the "l" attribute
      */
     @Override
-    public void xsetL(org.apache.xmlbeans.XmlBoolean l) {
+    public void xsetL(XmlBoolean l) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.set(l);
         }
@@ -335,10 +341,10 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public boolean getT() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[5]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -348,13 +354,13 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Gets (as xml) the "t" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetT() {
+    public XmlBoolean xgetT() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[5]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[5]);
             }
             return target;
         }
@@ -378,10 +384,10 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public void setT(boolean t) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.setBooleanValue(t);
         }
@@ -391,13 +397,13 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Sets (as xml) the "t" attribute
      */
     @Override
-    public void xsetT(org.apache.xmlbeans.XmlBoolean t) {
+    public void xsetT(XmlBoolean t) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.set(t);
         }
@@ -421,10 +427,10 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public boolean getA() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[6]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -434,13 +440,13 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Gets (as xml) the "a" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetA() {
+    public XmlBoolean xgetA() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[6]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[6]);
             }
             return target;
         }
@@ -464,10 +470,10 @@ public class CTCalcCellImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public void setA(boolean a) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.setBooleanValue(a);
         }

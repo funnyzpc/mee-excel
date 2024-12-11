@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlDouble;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTPageMargins {
+public class CTPageMarginsImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTPageMargins {
     private static final long serialVersionUID = 1L;
 
-    public CTPageMarginsImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTPageMarginsImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -38,8 +43,8 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public double getLeft() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             return (target == null) ? 0.0 : target.getDoubleValue();
         }
     }
@@ -48,11 +53,11 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Gets (as xml) the "left" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlDouble xgetLeft() {
+    public XmlDouble xgetLeft() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             return target;
         }
     }
@@ -64,10 +69,10 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setLeft(double left) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.setDoubleValue(left);
         }
@@ -77,13 +82,13 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Sets (as xml) the "left" attribute
      */
     @Override
-    public void xsetLeft(org.apache.xmlbeans.XmlDouble left) {
+    public void xsetLeft(XmlDouble left) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.set(left);
         }
@@ -96,8 +101,8 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public double getRight() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return (target == null) ? 0.0 : target.getDoubleValue();
         }
     }
@@ -106,11 +111,11 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Gets (as xml) the "right" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlDouble xgetRight() {
+    public XmlDouble xgetRight() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return target;
         }
     }
@@ -122,10 +127,10 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setRight(double right) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setDoubleValue(right);
         }
@@ -135,13 +140,13 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Sets (as xml) the "right" attribute
      */
     @Override
-    public void xsetRight(org.apache.xmlbeans.XmlDouble right) {
+    public void xsetRight(XmlDouble right) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.set(right);
         }
@@ -154,8 +159,8 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public double getTop() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return (target == null) ? 0.0 : target.getDoubleValue();
         }
     }
@@ -164,11 +169,11 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Gets (as xml) the "top" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlDouble xgetTop() {
+    public XmlDouble xgetTop() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return target;
         }
     }
@@ -180,10 +185,10 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setTop(double top) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.setDoubleValue(top);
         }
@@ -193,13 +198,13 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Sets (as xml) the "top" attribute
      */
     @Override
-    public void xsetTop(org.apache.xmlbeans.XmlDouble top) {
+    public void xsetTop(XmlDouble top) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.set(top);
         }
@@ -212,8 +217,8 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public double getBottom() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             return (target == null) ? 0.0 : target.getDoubleValue();
         }
     }
@@ -222,11 +227,11 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Gets (as xml) the "bottom" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlDouble xgetBottom() {
+    public XmlDouble xgetBottom() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             return target;
         }
     }
@@ -238,10 +243,10 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setBottom(double bottom) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setDoubleValue(bottom);
         }
@@ -251,13 +256,13 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Sets (as xml) the "bottom" attribute
      */
     @Override
-    public void xsetBottom(org.apache.xmlbeans.XmlDouble bottom) {
+    public void xsetBottom(XmlDouble bottom) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.set(bottom);
         }
@@ -270,8 +275,8 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public double getHeader() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             return (target == null) ? 0.0 : target.getDoubleValue();
         }
     }
@@ -280,11 +285,11 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Gets (as xml) the "header" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlDouble xgetHeader() {
+    public XmlDouble xgetHeader() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             return target;
         }
     }
@@ -296,10 +301,10 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setHeader(double header) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.setDoubleValue(header);
         }
@@ -309,13 +314,13 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Sets (as xml) the "header" attribute
      */
     @Override
-    public void xsetHeader(org.apache.xmlbeans.XmlDouble header) {
+    public void xsetHeader(XmlDouble header) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.set(header);
         }
@@ -328,8 +333,8 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public double getFooter() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             return (target == null) ? 0.0 : target.getDoubleValue();
         }
     }
@@ -338,11 +343,11 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Gets (as xml) the "footer" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlDouble xgetFooter() {
+    public XmlDouble xgetFooter() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             return target;
         }
     }
@@ -354,10 +359,10 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setFooter(double footer) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.setDoubleValue(footer);
         }
@@ -367,13 +372,13 @@ public class CTPageMarginsImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Sets (as xml) the "footer" attribute
      */
     @Override
-    public void xsetFooter(org.apache.xmlbeans.XmlDouble footer) {
+    public void xsetFooter(XmlDouble footer) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.set(footer);
         }

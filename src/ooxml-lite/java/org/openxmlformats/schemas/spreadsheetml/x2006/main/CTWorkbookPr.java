@@ -7,7 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlString;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +19,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTWorkbookPr extends org.apache.xmlbeans.XmlObject {
+public interface CTWorkbookPr extends XmlObject {
     DocumentFactory<CTWorkbookPr> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctworkbookpr03a5type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -178,7 +182,7 @@ public interface CTWorkbookPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "showInkAnnotation" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetShowInkAnnotation();
+    XmlBoolean xgetShowInkAnnotation();
 
     /**
      * True if has "showInkAnnotation" attribute
@@ -193,7 +197,7 @@ public interface CTWorkbookPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "showInkAnnotation" attribute
      */
-    void xsetShowInkAnnotation(org.apache.xmlbeans.XmlBoolean showInkAnnotation);
+    void xsetShowInkAnnotation(XmlBoolean showInkAnnotation);
 
     /**
      * Unsets the "showInkAnnotation" attribute
@@ -208,7 +212,7 @@ public interface CTWorkbookPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "backupFile" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetBackupFile();
+    XmlBoolean xgetBackupFile();
 
     /**
      * True if has "backupFile" attribute
@@ -223,7 +227,7 @@ public interface CTWorkbookPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "backupFile" attribute
      */
-    void xsetBackupFile(org.apache.xmlbeans.XmlBoolean backupFile);
+    void xsetBackupFile(XmlBoolean backupFile);
 
     /**
      * Unsets the "backupFile" attribute
@@ -238,7 +242,7 @@ public interface CTWorkbookPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "saveExternalLinkValues" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetSaveExternalLinkValues();
+    XmlBoolean xgetSaveExternalLinkValues();
 
 //    /**
 //     * True if has "saveExternalLinkValues" attribute
@@ -298,7 +302,7 @@ public interface CTWorkbookPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "codeName" attribute
      */
-    org.apache.xmlbeans.XmlString xgetCodeName();
+    XmlString xgetCodeName();
 
     /**
      * True if has "codeName" attribute
@@ -313,7 +317,7 @@ public interface CTWorkbookPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "codeName" attribute
      */
-    void xsetCodeName(org.apache.xmlbeans.XmlString codeName);
+    void xsetCodeName(XmlString codeName);
 
     /**
      * Unsets the "codeName" attribute
@@ -328,7 +332,7 @@ public interface CTWorkbookPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "hidePivotFieldList" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetHidePivotFieldList();
+    XmlBoolean xgetHidePivotFieldList();
 
     /**
      * True if has "hidePivotFieldList" attribute
@@ -343,7 +347,7 @@ public interface CTWorkbookPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "hidePivotFieldList" attribute
      */
-    void xsetHidePivotFieldList(org.apache.xmlbeans.XmlBoolean hidePivotFieldList);
+    void xsetHidePivotFieldList(XmlBoolean hidePivotFieldList);
 
     /**
      * Unsets the "hidePivotFieldList" attribute
@@ -358,7 +362,7 @@ public interface CTWorkbookPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "showPivotChartFilter" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetShowPivotChartFilter();
+    XmlBoolean xgetShowPivotChartFilter();
 
     /**
      * True if has "showPivotChartFilter" attribute
@@ -373,7 +377,7 @@ public interface CTWorkbookPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "showPivotChartFilter" attribute
      */
-    void xsetShowPivotChartFilter(org.apache.xmlbeans.XmlBoolean showPivotChartFilter);
+    void xsetShowPivotChartFilter(XmlBoolean showPivotChartFilter);
 
     /**
      * Unsets the "showPivotChartFilter" attribute
@@ -388,7 +392,7 @@ public interface CTWorkbookPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "allowRefreshQuery" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetAllowRefreshQuery();
+    XmlBoolean xgetAllowRefreshQuery();
 
     /**
      * True if has "allowRefreshQuery" attribute
@@ -403,7 +407,7 @@ public interface CTWorkbookPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "allowRefreshQuery" attribute
      */
-    void xsetAllowRefreshQuery(org.apache.xmlbeans.XmlBoolean allowRefreshQuery);
+    void xsetAllowRefreshQuery(XmlBoolean allowRefreshQuery);
 
     /**
      * Unsets the "allowRefreshQuery" attribute
@@ -418,7 +422,7 @@ public interface CTWorkbookPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "publishItems" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetPublishItems();
+    XmlBoolean xgetPublishItems();
 
     /**
      * True if has "publishItems" attribute
@@ -433,7 +437,7 @@ public interface CTWorkbookPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "publishItems" attribute
      */
-    void xsetPublishItems(org.apache.xmlbeans.XmlBoolean publishItems);
+    void xsetPublishItems(XmlBoolean publishItems);
 
     /**
      * Unsets the "publishItems" attribute
@@ -448,7 +452,7 @@ public interface CTWorkbookPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "checkCompatibility" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetCheckCompatibility();
+    XmlBoolean xgetCheckCompatibility();
 
     /**
      * True if has "checkCompatibility" attribute

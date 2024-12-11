@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTBookView extends org.apache.xmlbeans.XmlObject {
+public interface CTBookView extends XmlObject {
     DocumentFactory<CTBookView> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctbookviewf677type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
 //    /**
@@ -353,7 +356,7 @@ public interface CTBookView extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "firstSheet" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetFirstSheet();
+    XmlUnsignedInt xgetFirstSheet();
 
     /**
      * True if has "firstSheet" attribute

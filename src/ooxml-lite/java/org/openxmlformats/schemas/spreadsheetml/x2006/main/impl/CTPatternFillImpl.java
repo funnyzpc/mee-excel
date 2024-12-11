@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTPatternFillImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTPatternFill {
+public class CTPatternFillImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTPatternFill {
     private static final long serialVersionUID = 1L;
 
-    public CTPatternFillImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTPatternFillImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -57,7 +62,7 @@ public class CTPatternFillImpl extends org.apache.xmlbeans.impl.values.XmlComple
      */
     @Override
     public void setFgColor(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColor fgColor) {
-        generatedSetterHelperImpl(fgColor, PROPERTY_QNAME[0], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(fgColor, PROPERTY_QNAME[0], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -113,7 +118,7 @@ public class CTPatternFillImpl extends org.apache.xmlbeans.impl.values.XmlComple
      */
     @Override
     public void setBgColor(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColor bgColor) {
-        generatedSetterHelperImpl(bgColor, PROPERTY_QNAME[1], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(bgColor, PROPERTY_QNAME[1], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -147,8 +152,8 @@ public class CTPatternFillImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public org.openxmlformats.schemas.spreadsheetml.x2006.main.STPatternType.Enum getPatternType() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return (target == null) ? null : (org.openxmlformats.schemas.spreadsheetml.x2006.main.STPatternType.Enum)target.getEnumValue();
         }
     }
@@ -184,10 +189,10 @@ public class CTPatternFillImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setPatternType(org.openxmlformats.schemas.spreadsheetml.x2006.main.STPatternType.Enum patternType) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.setEnumValue(patternType);
         }

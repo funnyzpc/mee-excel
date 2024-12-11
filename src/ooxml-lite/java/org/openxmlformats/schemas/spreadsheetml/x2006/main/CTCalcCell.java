@@ -7,7 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlInt;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +19,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTCalcCell extends org.apache.xmlbeans.XmlObject {
+public interface CTCalcCell extends XmlObject {
     DocumentFactory<CTCalcCell> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctcalccellb960type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -88,7 +92,7 @@ public interface CTCalcCell extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "i" attribute
      */
-    org.apache.xmlbeans.XmlInt xgetI();
+    XmlInt xgetI();
 
     /**
      * True if has "i" attribute
@@ -133,7 +137,7 @@ public interface CTCalcCell extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "s" attribute
      */
-    void xsetS(org.apache.xmlbeans.XmlBoolean s);
+    void xsetS(XmlBoolean s);
 
     /**
      * Unsets the "s" attribute
@@ -148,7 +152,7 @@ public interface CTCalcCell extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "l" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetL();
+    XmlBoolean xgetL();
 
     /**
      * True if has "l" attribute
@@ -163,7 +167,7 @@ public interface CTCalcCell extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "l" attribute
      */
-    void xsetL(org.apache.xmlbeans.XmlBoolean l);
+    void xsetL(XmlBoolean l);
 
     /**
      * Unsets the "l" attribute
@@ -178,7 +182,7 @@ public interface CTCalcCell extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "t" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetT();
+    XmlBoolean xgetT();
 
     /**
      * True if has "t" attribute
@@ -193,7 +197,7 @@ public interface CTCalcCell extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "t" attribute
      */
-    void xsetT(org.apache.xmlbeans.XmlBoolean t);
+    void xsetT(XmlBoolean t);
 
     /**
      * Unsets the "t" attribute
@@ -208,7 +212,7 @@ public interface CTCalcCell extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "a" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetA();
+    XmlBoolean xgetA();
 
     /**
      * True if has "a" attribute

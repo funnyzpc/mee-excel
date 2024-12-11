@@ -36,7 +36,7 @@ import org.apache.poi.openxml4j.opc.PackagingURIHelper;
 import org.apache.poi.openxml4j.opc.StreamHelper;
 import org.apache.poi.openxml4j.opc.TargetMode;
 import org.apache.poi.openxml4j.opc.internal.PackagePropertiesPart;
-import org.apache.xmlbeans.XmlException;
+import poi.org.apache.xmlbeans.XmlException;
 
 /**
  * Wrapper around the three different kinds of OOXML properties

@@ -7,6 +7,13 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.values.JavaListXmlObject;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +21,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTTableColumnsImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableColumns {
+public class CTTableColumnsImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableColumns {
     private static final long serialVersionUID = 1L;
 
-    public CTTableColumnsImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTTableColumnsImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -34,7 +41,7 @@ public class CTTableColumnsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableColumn> getTableColumnList() {
         synchronized (monitor()) {
             check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
+            return new JavaListXmlObject<>(
                 this::getTableColumnArray,
                 this::setTableColumnArray,
                 this::insertNewTableColumn,
@@ -93,7 +100,7 @@ public class CTTableColumnsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      */
     @Override
     public void setTableColumnArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableColumn tableColumn) {
-        generatedSetterHelperImpl(tableColumn, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(tableColumn, PROPERTY_QNAME[0], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**
@@ -140,8 +147,8 @@ public class CTTableColumnsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public long getCount() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -150,11 +157,11 @@ public class CTTableColumnsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Gets (as xml) the "count" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetCount() {
+    public XmlUnsignedInt xgetCount() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return target;
         }
     }
@@ -177,10 +184,10 @@ public class CTTableColumnsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     public void setCount(long count) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setLongValue(count);
         }
@@ -190,13 +197,13 @@ public class CTTableColumnsImpl extends org.apache.xmlbeans.impl.values.XmlCompl
      * Sets (as xml) the "count" attribute
      */
     @Override
-    public void xsetCount(org.apache.xmlbeans.XmlUnsignedInt count) {
+    public void xsetCount(XmlUnsignedInt count) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.set(count);
         }

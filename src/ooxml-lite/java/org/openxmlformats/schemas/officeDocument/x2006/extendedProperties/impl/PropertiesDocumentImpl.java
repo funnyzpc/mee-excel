@@ -8,6 +8,10 @@
  */
 package org.openxmlformats.schemas.officeDocument.x2006.extendedProperties.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -15,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class PropertiesDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.officeDocument.x2006.extendedProperties.PropertiesDocument {
+public class PropertiesDocumentImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.officeDocument.x2006.extendedProperties.PropertiesDocument {
     private static final long serialVersionUID = 1L;
 
-    public PropertiesDocumentImpl(org.apache.xmlbeans.SchemaType sType) {
+    public PropertiesDocumentImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -45,7 +49,7 @@ public class PropertiesDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
      */
     @Override
     public void setProperties(org.openxmlformats.schemas.officeDocument.x2006.extendedProperties.CTProperties properties) {
-        generatedSetterHelperImpl(properties, PROPERTY_QNAME[0], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(properties, PROPERTY_QNAME[0], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**

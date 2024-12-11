@@ -28,7 +28,7 @@ import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.apache.commons.io.input.BoundedInputStream;
+import poi.org.apache.commons.io.input.BoundedInputStream;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.poifs.crypt.ChunkedCipherInputStream;
 import org.apache.poi.poifs.crypt.CryptoFunctions;

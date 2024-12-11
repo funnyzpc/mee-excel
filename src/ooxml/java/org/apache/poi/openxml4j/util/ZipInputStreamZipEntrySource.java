@@ -23,7 +23,7 @@ import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
+import poi.org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
 
 /**
  * Provides a way to get at all the ZipEntries

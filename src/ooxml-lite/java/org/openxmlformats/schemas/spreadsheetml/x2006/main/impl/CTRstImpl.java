@@ -7,6 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +18,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTRstImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTRst {
+public class CTRstImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTRst {
     private static final long serialVersionUID = 1L;
 
-    public CTRstImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTRstImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -36,8 +40,8 @@ public class CTRstImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public String getT() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[0], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[0], 0);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -73,10 +77,10 @@ public class CTRstImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setT(String t) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[0], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[0], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[0]);
             }
             target.setStringValue(t);
         }

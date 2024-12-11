@@ -7,6 +7,12 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.values.JavaStringHolderEx;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,14 +20,14 @@ import javax.xml.namespace.QName;
  *
  * This is an atomic type that is a restriction of org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDefinedName.
  */
-public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderEx implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDefinedName {
+public class CTDefinedNameImpl extends JavaStringHolderEx implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDefinedName {
     private static final long serialVersionUID = 1L;
 
-    public CTDefinedNameImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTDefinedNameImpl(SchemaType sType) {
         super(sType, true);
     }
 
-    protected CTDefinedNameImpl(org.apache.xmlbeans.SchemaType sType, boolean b) {
+    protected CTDefinedNameImpl(SchemaType sType, boolean b) {
         super(sType, b);
     }
 
@@ -51,8 +57,8 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public String getName() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -77,10 +83,10 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setName(String name) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.setStringValue(name);
         }
@@ -109,8 +115,8 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public String getComment() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -146,10 +152,10 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setComment(String comment) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setStringValue(comment);
         }
@@ -162,8 +168,8 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public String getDescription() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -199,10 +205,10 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setDescription(String description) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setStringValue(description);
         }
@@ -242,8 +248,8 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public String getHelp() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -279,10 +285,10 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setHelp(String help) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.setStringValue(help);
         }
@@ -295,8 +301,8 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public long getLocalSheetId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -305,11 +311,11 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Gets (as xml) the "localSheetId" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetLocalSheetId() {
+    public XmlUnsignedInt xgetLocalSheetId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             return target;
         }
     }
@@ -332,10 +338,10 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setLocalSheetId(long localSheetId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.setLongValue(localSheetId);
         }
@@ -345,13 +351,13 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Sets (as xml) the "localSheetId" attribute
      */
     @Override
-    public void xsetLocalSheetId(org.apache.xmlbeans.XmlUnsignedInt localSheetId) {
+    public void xsetLocalSheetId(XmlUnsignedInt localSheetId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.set(localSheetId);
         }
@@ -375,10 +381,10 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public boolean getHidden() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[7]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[7]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -388,13 +394,13 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Gets (as xml) the "hidden" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetHidden() {
+    public XmlBoolean xgetHidden() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[7]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[7]);
             }
             return target;
         }
@@ -418,10 +424,10 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setHidden(boolean hidden) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
             }
             target.setBooleanValue(hidden);
         }
@@ -431,13 +437,13 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Sets (as xml) the "hidden" attribute
      */
     @Override
-    public void xsetHidden(org.apache.xmlbeans.XmlBoolean hidden) {
+    public void xsetHidden(XmlBoolean hidden) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[7]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[7]);
             }
             target.set(hidden);
         }
@@ -461,10 +467,10 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public boolean getFunction() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[8]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -474,13 +480,13 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Gets (as xml) the "function" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetFunction() {
+    public XmlBoolean xgetFunction() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[8]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[8]);
             }
             return target;
         }
@@ -504,10 +510,10 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setFunction(boolean function) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.setBooleanValue(function);
         }
@@ -520,10 +526,10 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setXlm(boolean xlm) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
             }
             target.setBooleanValue(xlm);
         }
@@ -533,13 +539,13 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Sets (as xml) the "xlm" attribute
      */
     @Override
-    public void xsetXlm(org.apache.xmlbeans.XmlBoolean xlm) {
+    public void xsetXlm(XmlBoolean xlm) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[10]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[10]);
             }
             target.set(xlm);
         }
@@ -563,8 +569,8 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public long getFunctionGroupId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -573,11 +579,11 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
      * Gets (as xml) the "functionGroupId" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetFunctionGroupId() {
+    public XmlUnsignedInt xgetFunctionGroupId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             return target;
         }
     }
@@ -600,10 +606,10 @@ public class CTDefinedNameImpl extends org.apache.xmlbeans.impl.values.JavaStrin
     public void setFunctionGroupId(long functionGroupId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[11]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[11]);
             }
             target.setLongValue(functionGroupId);
         }

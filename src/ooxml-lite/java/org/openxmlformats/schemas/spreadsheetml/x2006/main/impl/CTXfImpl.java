@@ -7,6 +7,12 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +20,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTXf {
+public class CTXfImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTXf {
     private static final long serialVersionUID = 1L;
 
-    public CTXfImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTXfImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -70,7 +76,7 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
      */
     @Override
     public void setAlignment(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCellAlignment alignment) {
-        generatedSetterHelperImpl(alignment, PROPERTY_QNAME[0], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(alignment, PROPERTY_QNAME[0], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -126,7 +132,7 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
      */
     @Override
     public void setProtection(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCellProtection protection) {
-        generatedSetterHelperImpl(protection, PROPERTY_QNAME[1], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(protection, PROPERTY_QNAME[1], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -171,8 +177,8 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public long getNumFmtId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -195,10 +201,10 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public void setNumFmtId(long numFmtId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setLongValue(numFmtId);
         }
@@ -222,8 +228,8 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public long getFontId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -246,10 +252,10 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public void setFontId(long fontId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.setLongValue(fontId);
         }
@@ -263,8 +269,8 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public long getFillId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -287,10 +293,10 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public void setFillId(long fillId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.setLongValue(fillId);
         }
@@ -302,8 +308,8 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public long getBorderId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -317,10 +323,10 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public void setBorderId(long borderId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.setLongValue(borderId);
         }
@@ -333,8 +339,8 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public long getXfId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -346,10 +352,10 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public void setXfId(long xfId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
             }
             target.setLongValue(xfId);
         }
@@ -362,10 +368,10 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public boolean getQuotePrefix() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[8]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -375,13 +381,13 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
      * Gets (as xml) the "quotePrefix" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetQuotePrefix() {
+    public XmlBoolean xgetQuotePrefix() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[8]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[8]);
             }
             return target;
         }
@@ -405,10 +411,10 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public void setQuotePrefix(boolean quotePrefix) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.setBooleanValue(quotePrefix);
         }
@@ -421,10 +427,10 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public void setApplyNumberFormat(boolean applyNumberFormat) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
             }
             target.setBooleanValue(applyNumberFormat);
         }
@@ -434,13 +440,13 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
      * Sets (as xml) the "applyNumberFormat" attribute
      */
     @Override
-    public void xsetApplyNumberFormat(org.apache.xmlbeans.XmlBoolean applyNumberFormat) {
+    public void xsetApplyNumberFormat(XmlBoolean applyNumberFormat) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[10]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[10]);
             }
             target.set(applyNumberFormat);
         }
@@ -464,8 +470,8 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public boolean getApplyFont() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             return (target == null) ? false : target.getBooleanValue();
         }
     }
@@ -474,11 +480,11 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
      * Gets (as xml) the "applyFont" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetApplyFont() {
+    public XmlBoolean xgetApplyFont() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             return target;
         }
     }
@@ -501,10 +507,10 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public void setApplyFont(boolean applyFont) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[11]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[11]);
             }
             target.setBooleanValue(applyFont);
         }
@@ -514,13 +520,13 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
      * Sets (as xml) the "applyFont" attribute
      */
     @Override
-    public void xsetApplyFont(org.apache.xmlbeans.XmlBoolean applyFont) {
+    public void xsetApplyFont(XmlBoolean applyFont) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[11]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[11]);
             }
             target.set(applyFont);
         }
@@ -544,8 +550,8 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public boolean getApplyFill() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
             return (target == null) ? false : target.getBooleanValue();
         }
     }
@@ -554,11 +560,11 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
      * Gets (as xml) the "applyFill" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetApplyFill() {
+    public XmlBoolean xgetApplyFill() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[12]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[12]);
             return target;
         }
     }
@@ -581,10 +587,10 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public void setApplyFill(boolean applyFill) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[12]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[12]);
             }
             target.setBooleanValue(applyFill);
         }
@@ -594,13 +600,13 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
      * Sets (as xml) the "applyFill" attribute
      */
     @Override
-    public void xsetApplyFill(org.apache.xmlbeans.XmlBoolean applyFill) {
+    public void xsetApplyFill(XmlBoolean applyFill) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[12]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[12]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[12]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[12]);
             }
             target.set(applyFill);
         }
@@ -624,8 +630,8 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public boolean getApplyBorder() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             return (target == null) ? false : target.getBooleanValue();
         }
     }
@@ -634,11 +640,11 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
      * Gets (as xml) the "applyBorder" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetApplyBorder() {
+    public XmlBoolean xgetApplyBorder() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             return target;
         }
     }
@@ -661,10 +667,10 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public void setApplyBorder(boolean applyBorder) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[13]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[13]);
             }
             target.setBooleanValue(applyBorder);
         }
@@ -674,13 +680,13 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
      * Sets (as xml) the "applyBorder" attribute
      */
     @Override
-    public void xsetApplyBorder(org.apache.xmlbeans.XmlBoolean applyBorder) {
+    public void xsetApplyBorder(XmlBoolean applyBorder) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[13]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[13]);
             }
             target.set(applyBorder);
         }
@@ -704,8 +710,8 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public boolean getApplyAlignment() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[14]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[14]);
             return (target == null) ? false : target.getBooleanValue();
         }
     }
@@ -714,11 +720,11 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
      * Gets (as xml) the "applyAlignment" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetApplyAlignment() {
+    public XmlBoolean xgetApplyAlignment() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[14]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[14]);
             return target;
         }
     }
@@ -741,10 +747,10 @@ public class CTXfImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentI
     public void setApplyAlignment(boolean applyAlignment) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[14]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[14]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[14]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[14]);
             }
             target.setBooleanValue(applyAlignment);
         }

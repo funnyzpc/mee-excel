@@ -92,39 +92,14 @@
                 <directory>src/pkg/java</directory>
                 <filtering>false</filtering>
                 <includes>
-                    <include>org/apache/xmlbeans/impl/regex/*.properties</include>
-                    <include>org/apache/xmlbeans/metadata/system/sXMLLANG/*.xsb</include>
-                    <include>org/apache/xmlbeans/metadata/system/sXMLSCHEMA/*.xsb</include>
+                    <include>poi/org/apache/xmlbeans/impl/regex/*.properties</include>
+                    <include>poi/org/apache/xmlbeans/metadata/system/sXMLLANG/*.xsb</include>
+                    <include>poi/org/apache/xmlbeans/metadata/system/sXMLSCHEMA/*.xsb</include>
                 </includes>
             </resource>
         </resources>
 
         <plugins>
-         <!--   &lt;!&ndash;maven插件, 将项目打包成Jar&ndash;&gt;
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <includeSystemScope>true</includeSystemScope>
-                </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                    <encoding>${project.build.sourceEncoding}</encoding>
-                    <showDeprecation>true</showDeprecation>
-                    <showWarnings>true</showWarnings>
-                    <compilerArguments>
-                        <extdirs>${basedir}/src/xml/resources</extdirs>
-                        <extdirs>${basedir}/src/xml/java</extdirs>
-                    </compilerArguments>
-                </configuration>
-            </plugin>-->
-
             <plugin>
                 <!-- 包含必要的第三方模块散装代码 -->
                 <groupId>org.codehaus.mojo</groupId>

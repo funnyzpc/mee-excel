@@ -7,6 +7,14 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlInt;
+import poi.org.apache.xmlbeans.XmlString;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +22,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfRule {
+public class CTCfRuleImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfRule {
     private static final long serialVersionUID = 1L;
 
-    public CTCfRuleImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTCfRuleImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -49,8 +57,8 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public String getFormulaArray(int i) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[0], i);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[0], i);
             if (target == null) {
                 throw new IndexOutOfBoundsException();
             }
@@ -103,8 +111,8 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public void setFormulaArray(int i, String formula) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[0], i);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[0], i);
             if (target == null) {
                 throw new IndexOutOfBoundsException();
             }
@@ -146,8 +154,8 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public void insertFormula(int i, String formula) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target =
-                (org.apache.xmlbeans.SimpleValue)get_store().insert_element_user(PROPERTY_QNAME[0], i);
+            SimpleValue target =
+                (SimpleValue)get_store().insert_element_user(PROPERTY_QNAME[0], i);
             target.setStringValue(formula);
         }
     }
@@ -159,8 +167,8 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public void addFormula(String formula) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[0]);
             target.setStringValue(formula);
         }
     }
@@ -231,7 +239,7 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      */
     @Override
     public void setColorScale(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColorScale colorScale) {
-        generatedSetterHelperImpl(colorScale, PROPERTY_QNAME[1], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(colorScale, PROPERTY_QNAME[1], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -287,7 +295,7 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      */
     @Override
     public void setDataBar(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDataBar dataBar) {
-        generatedSetterHelperImpl(dataBar, PROPERTY_QNAME[2], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(dataBar, PROPERTY_QNAME[2], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -343,7 +351,7 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      */
     @Override
     public void setIconSet(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTIconSet iconSet) {
-        generatedSetterHelperImpl(iconSet, PROPERTY_QNAME[3], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(iconSet, PROPERTY_QNAME[3], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -388,8 +396,8 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public org.openxmlformats.schemas.spreadsheetml.x2006.main.STCfType.Enum getType() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             return (target == null) ? null : (org.openxmlformats.schemas.spreadsheetml.x2006.main.STCfType.Enum)target.getEnumValue();
         }
     }
@@ -425,10 +433,10 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public void setType(org.openxmlformats.schemas.spreadsheetml.x2006.main.STCfType.Enum type) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.setEnumValue(type);
         }
@@ -441,8 +449,8 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public long getDxfId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -465,10 +473,10 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public void setDxfId(long dxfId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.setLongValue(dxfId);
         }
@@ -482,8 +490,8 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public int getPriority() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             return (target == null) ? 0 : target.getIntValue();
         }
     }
@@ -492,11 +500,11 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      * Gets (as xml) the "priority" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlInt xgetPriority() {
+    public XmlInt xgetPriority() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             return target;
         }
     }
@@ -508,10 +516,10 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public void setPriority(int priority) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
             }
             target.setIntValue(priority);
         }
@@ -521,13 +529,13 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      * Sets (as xml) the "priority" attribute
      */
     @Override
-    public void xsetPriority(org.apache.xmlbeans.XmlInt priority) {
+    public void xsetPriority(XmlInt priority) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlInt)get_store().add_attribute_user(PROPERTY_QNAME[7]);
+                target = (XmlInt)get_store().add_attribute_user(PROPERTY_QNAME[7]);
             }
             target.set(priority);
         }
@@ -540,10 +548,10 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public boolean getStopIfTrue() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[8]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -553,13 +561,13 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      * Gets (as xml) the "stopIfTrue" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetStopIfTrue() {
+    public XmlBoolean xgetStopIfTrue() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[8]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[8]);
             }
             return target;
         }
@@ -583,10 +591,10 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public void setStopIfTrue(boolean stopIfTrue) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.setBooleanValue(stopIfTrue);
         }
@@ -596,13 +604,13 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      * Sets (as xml) the "stopIfTrue" attribute
      */
     @Override
-    public void xsetStopIfTrue(org.apache.xmlbeans.XmlBoolean stopIfTrue) {
+    public void xsetStopIfTrue(XmlBoolean stopIfTrue) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.set(stopIfTrue);
         }
@@ -626,10 +634,10 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public boolean getAboveAverage() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[9]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[9]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -639,13 +647,13 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      * Gets (as xml) the "aboveAverage" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetAboveAverage() {
+    public XmlBoolean xgetAboveAverage() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[9]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[9]);
             }
             return target;
         }
@@ -669,10 +677,10 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public void setAboveAverage(boolean aboveAverage) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.setBooleanValue(aboveAverage);
         }
@@ -682,13 +690,13 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      * Sets (as xml) the "aboveAverage" attribute
      */
     @Override
-    public void xsetAboveAverage(org.apache.xmlbeans.XmlBoolean aboveAverage) {
+    public void xsetAboveAverage(XmlBoolean aboveAverage) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.set(aboveAverage);
         }
@@ -712,10 +720,10 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public boolean getPercent() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[10]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[10]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -725,13 +733,13 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      * Gets (as xml) the "percent" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetPercent() {
+    public XmlBoolean xgetPercent() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[10]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[10]);
             }
             return target;
         }
@@ -755,10 +763,10 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public void setPercent(boolean percent) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
             }
             target.setBooleanValue(percent);
         }
@@ -768,13 +776,13 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      * Sets (as xml) the "percent" attribute
      */
     @Override
-    public void xsetPercent(org.apache.xmlbeans.XmlBoolean percent) {
+    public void xsetPercent(XmlBoolean percent) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[10]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[10]);
             }
             target.set(percent);
         }
@@ -798,10 +806,10 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public boolean getBottom() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[11]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[11]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -811,13 +819,13 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      * Gets (as xml) the "bottom" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetBottom() {
+    public XmlBoolean xgetBottom() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[11]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[11]);
             }
             return target;
         }
@@ -841,10 +849,10 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public void setBottom(boolean bottom) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[11]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[11]);
             }
             target.setBooleanValue(bottom);
         }
@@ -858,8 +866,8 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public org.openxmlformats.schemas.spreadsheetml.x2006.main.STConditionalFormattingOperator.Enum getOperator() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
             return (target == null) ? null : (org.openxmlformats.schemas.spreadsheetml.x2006.main.STConditionalFormattingOperator.Enum)target.getEnumValue();
         }
     }
@@ -895,10 +903,10 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public void setOperator(org.openxmlformats.schemas.spreadsheetml.x2006.main.STConditionalFormattingOperator.Enum operator) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[12]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[12]);
             }
             target.setEnumValue(operator);
         }
@@ -938,8 +946,8 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public String getText() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -948,11 +956,11 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      * Gets (as xml) the "text" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlString xgetText() {
+    public XmlString xgetText() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            XmlString target = null;
+            target = (XmlString)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             return target;
         }
     }
@@ -975,10 +983,10 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public void setText(String text) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[13]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[13]);
             }
             target.setStringValue(text);
         }
@@ -988,13 +996,13 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
      * Sets (as xml) the "text" attribute
      */
     @Override
-    public void xsetText(org.apache.xmlbeans.XmlString text) {
+    public void xsetText(XmlString text) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            XmlString target = null;
+            target = (XmlString)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlString)get_store().add_attribute_user(PROPERTY_QNAME[13]);
+                target = (XmlString)get_store().add_attribute_user(PROPERTY_QNAME[13]);
             }
             target.set(text);
         }
@@ -1007,8 +1015,8 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public long getRank() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[15]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[15]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -1021,8 +1029,8 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public int getStdDev() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[16]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[16]);
             return (target == null) ? 0 : target.getIntValue();
         }
     }
@@ -1035,10 +1043,10 @@ public class CTCfRuleImpl extends org.apache.xmlbeans.impl.values.XmlComplexCont
     public boolean getEqualAverage() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[17]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[17]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[17]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[17]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }

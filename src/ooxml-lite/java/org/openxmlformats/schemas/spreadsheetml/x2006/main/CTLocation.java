@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTLocation extends org.apache.xmlbeans.XmlObject {
+public interface CTLocation extends XmlObject {
     DocumentFactory<CTLocation> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctlocationc23etype");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -48,7 +51,7 @@ public interface CTLocation extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "firstHeaderRow" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetFirstHeaderRow();
+    XmlUnsignedInt xgetFirstHeaderRow();
 
     /**
      * Sets the "firstHeaderRow" attribute
@@ -58,7 +61,7 @@ public interface CTLocation extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "firstHeaderRow" attribute
      */
-    void xsetFirstHeaderRow(org.apache.xmlbeans.XmlUnsignedInt firstHeaderRow);
+    void xsetFirstHeaderRow(XmlUnsignedInt firstHeaderRow);
 
     /**
      * Gets the "firstDataRow" attribute
@@ -68,7 +71,7 @@ public interface CTLocation extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "firstDataRow" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetFirstDataRow();
+    XmlUnsignedInt xgetFirstDataRow();
 
     /**
      * Sets the "firstDataRow" attribute
@@ -78,7 +81,7 @@ public interface CTLocation extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "firstDataRow" attribute
      */
-    void xsetFirstDataRow(org.apache.xmlbeans.XmlUnsignedInt firstDataRow);
+    void xsetFirstDataRow(XmlUnsignedInt firstDataRow);
 
     /**
      * Gets the "firstDataCol" attribute
@@ -88,7 +91,7 @@ public interface CTLocation extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "firstDataCol" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetFirstDataCol();
+    XmlUnsignedInt xgetFirstDataCol();
 
     /**
      * Sets the "firstDataCol" attribute
@@ -98,7 +101,7 @@ public interface CTLocation extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "firstDataCol" attribute
      */
-    void xsetFirstDataCol(org.apache.xmlbeans.XmlUnsignedInt firstDataCol);
+    void xsetFirstDataCol(XmlUnsignedInt firstDataCol);
 
     /**
      * Gets the "rowPageCount" attribute
@@ -108,7 +111,7 @@ public interface CTLocation extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "rowPageCount" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetRowPageCount();
+    XmlUnsignedInt xgetRowPageCount();
 
     /**
      * True if has "rowPageCount" attribute
@@ -123,7 +126,7 @@ public interface CTLocation extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "rowPageCount" attribute
      */
-    void xsetRowPageCount(org.apache.xmlbeans.XmlUnsignedInt rowPageCount);
+    void xsetRowPageCount(XmlUnsignedInt rowPageCount);
 
     /**
      * Unsets the "rowPageCount" attribute
@@ -138,7 +141,7 @@ public interface CTLocation extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "colPageCount" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetColPageCount();
+    XmlUnsignedInt xgetColPageCount();
 
     /**
      * True if has "colPageCount" attribute
@@ -153,7 +156,7 @@ public interface CTLocation extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "colPageCount" attribute
      */
-    void xsetColPageCount(org.apache.xmlbeans.XmlUnsignedInt colPageCount);
+    void xsetColPageCount(XmlUnsignedInt colPageCount);
 
     /**
      * Unsets the "colPageCount" attribute

@@ -7,6 +7,13 @@
  */
 package org.openxmlformats.schemas.officeDocument.x2006.extendedProperties.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlInt;
+import poi.org.apache.xmlbeans.XmlString;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +21,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.officeDocument.x2006.extendedProperties.CTProperties {
+public class CTPropertiesImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.officeDocument.x2006.extendedProperties.CTProperties {
     private static final long serialVersionUID = 1L;
 
-    public CTPropertiesImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTPropertiesImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -59,8 +66,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public String getTemplate() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[0], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[0], 0);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -69,11 +76,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "Template" element
      */
     @Override
-    public org.apache.xmlbeans.XmlString xgetTemplate() {
+    public XmlString xgetTemplate() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_element_user(PROPERTY_QNAME[0], 0);
+            XmlString target = null;
+            target = (XmlString)get_store().find_element_user(PROPERTY_QNAME[0], 0);
             return target;
         }
     }
@@ -96,10 +103,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setTemplate(String template) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[0], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[0], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[0]);
             }
             target.setStringValue(template);
         }
@@ -109,13 +116,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "Template" element
      */
     @Override
-    public void xsetTemplate(org.apache.xmlbeans.XmlString template) {
+    public void xsetTemplate(XmlString template) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_element_user(PROPERTY_QNAME[0], 0);
+            XmlString target = null;
+            target = (XmlString)get_store().find_element_user(PROPERTY_QNAME[0], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlString)get_store().add_element_user(PROPERTY_QNAME[0]);
+                target = (XmlString)get_store().add_element_user(PROPERTY_QNAME[0]);
             }
             target.set(template);
         }
@@ -139,8 +146,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public String getManager() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[1], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[1], 0);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -149,11 +156,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "Manager" element
      */
     @Override
-    public org.apache.xmlbeans.XmlString xgetManager() {
+    public XmlString xgetManager() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_element_user(PROPERTY_QNAME[1], 0);
+            XmlString target = null;
+            target = (XmlString)get_store().find_element_user(PROPERTY_QNAME[1], 0);
             return target;
         }
     }
@@ -176,10 +183,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setManager(String manager) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[1], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[1], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[1]);
             }
             target.setStringValue(manager);
         }
@@ -189,13 +196,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "Manager" element
      */
     @Override
-    public void xsetManager(org.apache.xmlbeans.XmlString manager) {
+    public void xsetManager(XmlString manager) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_element_user(PROPERTY_QNAME[1], 0);
+            XmlString target = null;
+            target = (XmlString)get_store().find_element_user(PROPERTY_QNAME[1], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlString)get_store().add_element_user(PROPERTY_QNAME[1]);
+                target = (XmlString)get_store().add_element_user(PROPERTY_QNAME[1]);
             }
             target.set(manager);
         }
@@ -219,8 +226,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public String getCompany() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[2], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[2], 0);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -229,11 +236,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "Company" element
      */
     @Override
-    public org.apache.xmlbeans.XmlString xgetCompany() {
+    public XmlString xgetCompany() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_element_user(PROPERTY_QNAME[2], 0);
+            XmlString target = null;
+            target = (XmlString)get_store().find_element_user(PROPERTY_QNAME[2], 0);
             return target;
         }
     }
@@ -256,10 +263,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setCompany(String company) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[2], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[2], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[2]);
             }
             target.setStringValue(company);
         }
@@ -269,13 +276,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "Company" element
      */
     @Override
-    public void xsetCompany(org.apache.xmlbeans.XmlString company) {
+    public void xsetCompany(XmlString company) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_element_user(PROPERTY_QNAME[2], 0);
+            XmlString target = null;
+            target = (XmlString)get_store().find_element_user(PROPERTY_QNAME[2], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlString)get_store().add_element_user(PROPERTY_QNAME[2]);
+                target = (XmlString)get_store().add_element_user(PROPERTY_QNAME[2]);
             }
             target.set(company);
         }
@@ -299,8 +306,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public int getPages() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[3], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[3], 0);
             return (target == null) ? 0 : target.getIntValue();
         }
     }
@@ -309,11 +316,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "Pages" element
      */
     @Override
-    public org.apache.xmlbeans.XmlInt xgetPages() {
+    public XmlInt xgetPages() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[3], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[3], 0);
             return target;
         }
     }
@@ -336,10 +343,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setPages(int pages) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[3], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[3], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[3]);
             }
             target.setIntValue(pages);
         }
@@ -349,13 +356,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "Pages" element
      */
     @Override
-    public void xsetPages(org.apache.xmlbeans.XmlInt pages) {
+    public void xsetPages(XmlInt pages) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[3], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[3], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlInt)get_store().add_element_user(PROPERTY_QNAME[3]);
+                target = (XmlInt)get_store().add_element_user(PROPERTY_QNAME[3]);
             }
             target.set(pages);
         }
@@ -379,8 +386,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public int getWords() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[4], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[4], 0);
             return (target == null) ? 0 : target.getIntValue();
         }
     }
@@ -389,11 +396,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "Words" element
      */
     @Override
-    public org.apache.xmlbeans.XmlInt xgetWords() {
+    public XmlInt xgetWords() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[4], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[4], 0);
             return target;
         }
     }
@@ -416,10 +423,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setWords(int words) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[4], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[4], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[4]);
             }
             target.setIntValue(words);
         }
@@ -429,13 +436,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "Words" element
      */
     @Override
-    public void xsetWords(org.apache.xmlbeans.XmlInt words) {
+    public void xsetWords(XmlInt words) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[4], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[4], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlInt)get_store().add_element_user(PROPERTY_QNAME[4]);
+                target = (XmlInt)get_store().add_element_user(PROPERTY_QNAME[4]);
             }
             target.set(words);
         }
@@ -459,8 +466,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public int getCharacters() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[5], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[5], 0);
             return (target == null) ? 0 : target.getIntValue();
         }
     }
@@ -469,11 +476,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "Characters" element
      */
     @Override
-    public org.apache.xmlbeans.XmlInt xgetCharacters() {
+    public XmlInt xgetCharacters() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[5], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[5], 0);
             return target;
         }
     }
@@ -496,10 +503,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setCharacters(int characters) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[5], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[5], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[5]);
             }
             target.setIntValue(characters);
         }
@@ -509,13 +516,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "Characters" element
      */
     @Override
-    public void xsetCharacters(org.apache.xmlbeans.XmlInt characters) {
+    public void xsetCharacters(XmlInt characters) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[5], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[5], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlInt)get_store().add_element_user(PROPERTY_QNAME[5]);
+                target = (XmlInt)get_store().add_element_user(PROPERTY_QNAME[5]);
             }
             target.set(characters);
         }
@@ -539,8 +546,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public String getPresentationFormat() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[6], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[6], 0);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -549,11 +556,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "PresentationFormat" element
      */
     @Override
-    public org.apache.xmlbeans.XmlString xgetPresentationFormat() {
+    public XmlString xgetPresentationFormat() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_element_user(PROPERTY_QNAME[6], 0);
+            XmlString target = null;
+            target = (XmlString)get_store().find_element_user(PROPERTY_QNAME[6], 0);
             return target;
         }
     }
@@ -576,10 +583,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setPresentationFormat(String presentationFormat) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[6], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[6], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[6]);
             }
             target.setStringValue(presentationFormat);
         }
@@ -589,13 +596,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "PresentationFormat" element
      */
     @Override
-    public void xsetPresentationFormat(org.apache.xmlbeans.XmlString presentationFormat) {
+    public void xsetPresentationFormat(XmlString presentationFormat) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_element_user(PROPERTY_QNAME[6], 0);
+            XmlString target = null;
+            target = (XmlString)get_store().find_element_user(PROPERTY_QNAME[6], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlString)get_store().add_element_user(PROPERTY_QNAME[6]);
+                target = (XmlString)get_store().add_element_user(PROPERTY_QNAME[6]);
             }
             target.set(presentationFormat);
         }
@@ -619,8 +626,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public int getLines() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[7], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[7], 0);
             return (target == null) ? 0 : target.getIntValue();
         }
     }
@@ -629,11 +636,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "Lines" element
      */
     @Override
-    public org.apache.xmlbeans.XmlInt xgetLines() {
+    public XmlInt xgetLines() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[7], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[7], 0);
             return target;
         }
     }
@@ -656,10 +663,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setLines(int lines) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[7], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[7], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[7]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[7]);
             }
             target.setIntValue(lines);
         }
@@ -669,13 +676,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "Lines" element
      */
     @Override
-    public void xsetLines(org.apache.xmlbeans.XmlInt lines) {
+    public void xsetLines(XmlInt lines) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[7], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[7], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlInt)get_store().add_element_user(PROPERTY_QNAME[7]);
+                target = (XmlInt)get_store().add_element_user(PROPERTY_QNAME[7]);
             }
             target.set(lines);
         }
@@ -699,8 +706,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public int getParagraphs() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[8], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[8], 0);
             return (target == null) ? 0 : target.getIntValue();
         }
     }
@@ -709,11 +716,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "Paragraphs" element
      */
     @Override
-    public org.apache.xmlbeans.XmlInt xgetParagraphs() {
+    public XmlInt xgetParagraphs() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[8], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[8], 0);
             return target;
         }
     }
@@ -736,10 +743,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setParagraphs(int paragraphs) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[8], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[8], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[8]);
             }
             target.setIntValue(paragraphs);
         }
@@ -749,13 +756,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "Paragraphs" element
      */
     @Override
-    public void xsetParagraphs(org.apache.xmlbeans.XmlInt paragraphs) {
+    public void xsetParagraphs(XmlInt paragraphs) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[8], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[8], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlInt)get_store().add_element_user(PROPERTY_QNAME[8]);
+                target = (XmlInt)get_store().add_element_user(PROPERTY_QNAME[8]);
             }
             target.set(paragraphs);
         }
@@ -779,8 +786,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public int getSlides() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[9], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[9], 0);
             return (target == null) ? 0 : target.getIntValue();
         }
     }
@@ -789,11 +796,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "Slides" element
      */
     @Override
-    public org.apache.xmlbeans.XmlInt xgetSlides() {
+    public XmlInt xgetSlides() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[9], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[9], 0);
             return target;
         }
     }
@@ -816,10 +823,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setSlides(int slides) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[9], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[9], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[9]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[9]);
             }
             target.setIntValue(slides);
         }
@@ -829,13 +836,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "Slides" element
      */
     @Override
-    public void xsetSlides(org.apache.xmlbeans.XmlInt slides) {
+    public void xsetSlides(XmlInt slides) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[9], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[9], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlInt)get_store().add_element_user(PROPERTY_QNAME[9]);
+                target = (XmlInt)get_store().add_element_user(PROPERTY_QNAME[9]);
             }
             target.set(slides);
         }
@@ -859,8 +866,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public int getNotes() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[10], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[10], 0);
             return (target == null) ? 0 : target.getIntValue();
         }
     }
@@ -869,11 +876,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "Notes" element
      */
     @Override
-    public org.apache.xmlbeans.XmlInt xgetNotes() {
+    public XmlInt xgetNotes() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[10], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[10], 0);
             return target;
         }
     }
@@ -896,10 +903,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setNotes(int notes) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[10], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[10], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[10]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[10]);
             }
             target.setIntValue(notes);
         }
@@ -909,13 +916,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "Notes" element
      */
     @Override
-    public void xsetNotes(org.apache.xmlbeans.XmlInt notes) {
+    public void xsetNotes(XmlInt notes) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[10], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[10], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlInt)get_store().add_element_user(PROPERTY_QNAME[10]);
+                target = (XmlInt)get_store().add_element_user(PROPERTY_QNAME[10]);
             }
             target.set(notes);
         }
@@ -939,8 +946,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public int getTotalTime() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[11], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[11], 0);
             return (target == null) ? 0 : target.getIntValue();
         }
     }
@@ -949,11 +956,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "TotalTime" element
      */
     @Override
-    public org.apache.xmlbeans.XmlInt xgetTotalTime() {
+    public XmlInt xgetTotalTime() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[11], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[11], 0);
             return target;
         }
     }
@@ -976,10 +983,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setTotalTime(int totalTime) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[11], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[11], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[11]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[11]);
             }
             target.setIntValue(totalTime);
         }
@@ -989,13 +996,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "TotalTime" element
      */
     @Override
-    public void xsetTotalTime(org.apache.xmlbeans.XmlInt totalTime) {
+    public void xsetTotalTime(XmlInt totalTime) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[11], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[11], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlInt)get_store().add_element_user(PROPERTY_QNAME[11]);
+                target = (XmlInt)get_store().add_element_user(PROPERTY_QNAME[11]);
             }
             target.set(totalTime);
         }
@@ -1019,8 +1026,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public int getHiddenSlides() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[12], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[12], 0);
             return (target == null) ? 0 : target.getIntValue();
         }
     }
@@ -1029,11 +1036,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "HiddenSlides" element
      */
     @Override
-    public org.apache.xmlbeans.XmlInt xgetHiddenSlides() {
+    public XmlInt xgetHiddenSlides() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[12], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[12], 0);
             return target;
         }
     }
@@ -1056,10 +1063,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setHiddenSlides(int hiddenSlides) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[12], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[12], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[12]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[12]);
             }
             target.setIntValue(hiddenSlides);
         }
@@ -1069,13 +1076,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "HiddenSlides" element
      */
     @Override
-    public void xsetHiddenSlides(org.apache.xmlbeans.XmlInt hiddenSlides) {
+    public void xsetHiddenSlides(XmlInt hiddenSlides) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[12], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[12], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlInt)get_store().add_element_user(PROPERTY_QNAME[12]);
+                target = (XmlInt)get_store().add_element_user(PROPERTY_QNAME[12]);
             }
             target.set(hiddenSlides);
         }
@@ -1099,8 +1106,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public int getMMClips() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[13], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[13], 0);
             return (target == null) ? 0 : target.getIntValue();
         }
     }
@@ -1109,11 +1116,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "MMClips" element
      */
     @Override
-    public org.apache.xmlbeans.XmlInt xgetMMClips() {
+    public XmlInt xgetMMClips() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[13], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[13], 0);
             return target;
         }
     }
@@ -1136,10 +1143,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setMMClips(int mmClips) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[13], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[13], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[13]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[13]);
             }
             target.setIntValue(mmClips);
         }
@@ -1151,11 +1158,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "LinksUpToDate" element
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetLinksUpToDate() {
+    public XmlBoolean xgetLinksUpToDate() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_element_user(PROPERTY_QNAME[17], 0);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_element_user(PROPERTY_QNAME[17], 0);
             return target;
         }
     }
@@ -1178,10 +1185,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setLinksUpToDate(boolean linksUpToDate) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[17], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[17], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[17]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[17]);
             }
             target.setBooleanValue(linksUpToDate);
         }
@@ -1191,13 +1198,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "LinksUpToDate" element
      */
     @Override
-    public void xsetLinksUpToDate(org.apache.xmlbeans.XmlBoolean linksUpToDate) {
+    public void xsetLinksUpToDate(XmlBoolean linksUpToDate) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_element_user(PROPERTY_QNAME[17], 0);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_element_user(PROPERTY_QNAME[17], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_element_user(PROPERTY_QNAME[17]);
+                target = (XmlBoolean)get_store().add_element_user(PROPERTY_QNAME[17]);
             }
             target.set(linksUpToDate);
         }
@@ -1221,8 +1228,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public int getCharactersWithSpaces() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[18], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[18], 0);
             return (target == null) ? 0 : target.getIntValue();
         }
     }
@@ -1231,11 +1238,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "CharactersWithSpaces" element
      */
     @Override
-    public org.apache.xmlbeans.XmlInt xgetCharactersWithSpaces() {
+    public XmlInt xgetCharactersWithSpaces() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[18], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[18], 0);
             return target;
         }
     }
@@ -1258,10 +1265,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setCharactersWithSpaces(int charactersWithSpaces) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[18], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[18], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[18]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[18]);
             }
             target.setIntValue(charactersWithSpaces);
         }
@@ -1271,13 +1278,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "CharactersWithSpaces" element
      */
     @Override
-    public void xsetCharactersWithSpaces(org.apache.xmlbeans.XmlInt charactersWithSpaces) {
+    public void xsetCharactersWithSpaces(XmlInt charactersWithSpaces) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[18], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[18], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlInt)get_store().add_element_user(PROPERTY_QNAME[18]);
+                target = (XmlInt)get_store().add_element_user(PROPERTY_QNAME[18]);
             }
             target.set(charactersWithSpaces);
         }
@@ -1301,8 +1308,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public boolean getSharedDoc() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[19], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[19], 0);
             return (target == null) ? false : target.getBooleanValue();
         }
     }
@@ -1311,11 +1318,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "SharedDoc" element
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetSharedDoc() {
+    public XmlBoolean xgetSharedDoc() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_element_user(PROPERTY_QNAME[19], 0);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_element_user(PROPERTY_QNAME[19], 0);
             return target;
         }
     }
@@ -1338,10 +1345,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setSharedDoc(boolean sharedDoc) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[19], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[19], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[19]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[19]);
             }
             target.setBooleanValue(sharedDoc);
         }
@@ -1351,13 +1358,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "SharedDoc" element
      */
     @Override
-    public void xsetSharedDoc(org.apache.xmlbeans.XmlBoolean sharedDoc) {
+    public void xsetSharedDoc(XmlBoolean sharedDoc) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_element_user(PROPERTY_QNAME[19], 0);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_element_user(PROPERTY_QNAME[19], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_element_user(PROPERTY_QNAME[19]);
+                target = (XmlBoolean)get_store().add_element_user(PROPERTY_QNAME[19]);
             }
             target.set(sharedDoc);
         }
@@ -1381,8 +1388,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public String getHyperlinkBase() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[20], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[20], 0);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -1391,11 +1398,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "HyperlinkBase" element
      */
     @Override
-    public org.apache.xmlbeans.XmlString xgetHyperlinkBase() {
+    public XmlString xgetHyperlinkBase() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_element_user(PROPERTY_QNAME[20], 0);
+            XmlString target = null;
+            target = (XmlString)get_store().find_element_user(PROPERTY_QNAME[20], 0);
             return target;
         }
     }
@@ -1418,10 +1425,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setHyperlinkBase(String hyperlinkBase) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[20], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[20], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[20]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[20]);
             }
             target.setStringValue(hyperlinkBase);
         }
@@ -1435,8 +1442,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public String getApplication() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[24], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[24], 0);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -1445,11 +1452,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "Application" element
      */
     @Override
-    public org.apache.xmlbeans.XmlString xgetApplication() {
+    public XmlString xgetApplication() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_element_user(PROPERTY_QNAME[24], 0);
+            XmlString target = null;
+            target = (XmlString)get_store().find_element_user(PROPERTY_QNAME[24], 0);
             return target;
         }
     }
@@ -1472,10 +1479,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setApplication(String application) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[24], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[24], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[24]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[24]);
             }
             target.setStringValue(application);
         }
@@ -1485,13 +1492,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "Application" element
      */
     @Override
-    public void xsetApplication(org.apache.xmlbeans.XmlString application) {
+    public void xsetApplication(XmlString application) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_element_user(PROPERTY_QNAME[24], 0);
+            XmlString target = null;
+            target = (XmlString)get_store().find_element_user(PROPERTY_QNAME[24], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlString)get_store().add_element_user(PROPERTY_QNAME[24]);
+                target = (XmlString)get_store().add_element_user(PROPERTY_QNAME[24]);
             }
             target.set(application);
         }
@@ -1515,8 +1522,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public String getAppVersion() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[25], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[25], 0);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -1525,11 +1532,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "AppVersion" element
      */
     @Override
-    public org.apache.xmlbeans.XmlString xgetAppVersion() {
+    public XmlString xgetAppVersion() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_element_user(PROPERTY_QNAME[25], 0);
+            XmlString target = null;
+            target = (XmlString)get_store().find_element_user(PROPERTY_QNAME[25], 0);
             return target;
         }
     }
@@ -1552,10 +1559,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setAppVersion(String appVersion) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[25], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[25], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[25]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[25]);
             }
             target.setStringValue(appVersion);
         }
@@ -1565,13 +1572,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "AppVersion" element
      */
     @Override
-    public void xsetAppVersion(org.apache.xmlbeans.XmlString appVersion) {
+    public void xsetAppVersion(XmlString appVersion) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_element_user(PROPERTY_QNAME[25], 0);
+            XmlString target = null;
+            target = (XmlString)get_store().find_element_user(PROPERTY_QNAME[25], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlString)get_store().add_element_user(PROPERTY_QNAME[25]);
+                target = (XmlString)get_store().add_element_user(PROPERTY_QNAME[25]);
             }
             target.set(appVersion);
         }
@@ -1595,8 +1602,8 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public int getDocSecurity() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[26], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[26], 0);
             return (target == null) ? 0 : target.getIntValue();
         }
     }
@@ -1605,11 +1612,11 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "DocSecurity" element
      */
     @Override
-    public org.apache.xmlbeans.XmlInt xgetDocSecurity() {
+    public XmlInt xgetDocSecurity() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[26], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[26], 0);
             return target;
         }
     }
@@ -1632,10 +1639,10 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setDocSecurity(int docSecurity) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(PROPERTY_QNAME[26], 0);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_element_user(PROPERTY_QNAME[26], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(PROPERTY_QNAME[26]);
+                target = (SimpleValue)get_store().add_element_user(PROPERTY_QNAME[26]);
             }
             target.setIntValue(docSecurity);
         }
@@ -1645,13 +1652,13 @@ public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "DocSecurity" element
      */
     @Override
-    public void xsetDocSecurity(org.apache.xmlbeans.XmlInt docSecurity) {
+    public void xsetDocSecurity(XmlInt docSecurity) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(PROPERTY_QNAME[26], 0);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_element_user(PROPERTY_QNAME[26], 0);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlInt)get_store().add_element_user(PROPERTY_QNAME[26]);
+                target = (XmlInt)get_store().add_element_user(PROPERTY_QNAME[26]);
             }
             target.set(docSecurity);
         }

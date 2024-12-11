@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableStyleInfo {
+public class CTTableStyleInfoImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableStyleInfo {
     private static final long serialVersionUID = 1L;
 
-    public CTTableStyleInfoImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTTableStyleInfoImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -37,8 +42,8 @@ public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public String getName() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -74,10 +79,10 @@ public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public void setName(String name) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.setStringValue(name);
         }
@@ -117,8 +122,8 @@ public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public boolean getShowFirstColumn() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return (target == null) ? false : target.getBooleanValue();
         }
     }
@@ -127,11 +132,11 @@ public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlCom
      * Gets (as xml) the "showFirstColumn" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetShowFirstColumn() {
+    public XmlBoolean xgetShowFirstColumn() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return target;
         }
     }
@@ -154,10 +159,10 @@ public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public void setShowFirstColumn(boolean showFirstColumn) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setBooleanValue(showFirstColumn);
         }
@@ -167,13 +172,13 @@ public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlCom
      * Sets (as xml) the "showFirstColumn" attribute
      */
     @Override
-    public void xsetShowFirstColumn(org.apache.xmlbeans.XmlBoolean showFirstColumn) {
+    public void xsetShowFirstColumn(XmlBoolean showFirstColumn) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.set(showFirstColumn);
         }
@@ -197,8 +202,8 @@ public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public boolean getShowLastColumn() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return (target == null) ? false : target.getBooleanValue();
         }
     }
@@ -207,11 +212,11 @@ public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlCom
      * Gets (as xml) the "showLastColumn" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetShowLastColumn() {
+    public XmlBoolean xgetShowLastColumn() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return target;
         }
     }
@@ -234,10 +239,10 @@ public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public void setShowLastColumn(boolean showLastColumn) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.setBooleanValue(showLastColumn);
         }
@@ -247,13 +252,13 @@ public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlCom
      * Sets (as xml) the "showLastColumn" attribute
      */
     @Override
-    public void xsetShowLastColumn(org.apache.xmlbeans.XmlBoolean showLastColumn) {
+    public void xsetShowLastColumn(XmlBoolean showLastColumn) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.set(showLastColumn);
         }
@@ -277,8 +282,8 @@ public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public boolean getShowRowStripes() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             return (target == null) ? false : target.getBooleanValue();
         }
     }
@@ -287,11 +292,11 @@ public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlCom
      * Gets (as xml) the "showRowStripes" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetShowRowStripes() {
+    public XmlBoolean xgetShowRowStripes() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             return target;
         }
     }
@@ -314,10 +319,10 @@ public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public void setShowRowStripes(boolean showRowStripes) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setBooleanValue(showRowStripes);
         }
@@ -327,13 +332,13 @@ public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlCom
      * Sets (as xml) the "showRowStripes" attribute
      */
     @Override
-    public void xsetShowRowStripes(org.apache.xmlbeans.XmlBoolean showRowStripes) {
+    public void xsetShowRowStripes(XmlBoolean showRowStripes) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.set(showRowStripes);
         }
@@ -357,8 +362,8 @@ public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public boolean getShowColumnStripes() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             return (target == null) ? false : target.getBooleanValue();
         }
     }
@@ -367,11 +372,11 @@ public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlCom
      * Gets (as xml) the "showColumnStripes" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetShowColumnStripes() {
+    public XmlBoolean xgetShowColumnStripes() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             return target;
         }
     }
@@ -394,10 +399,10 @@ public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public void setShowColumnStripes(boolean showColumnStripes) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.setBooleanValue(showColumnStripes);
         }
@@ -407,13 +412,13 @@ public class CTTableStyleInfoImpl extends org.apache.xmlbeans.impl.values.XmlCom
      * Sets (as xml) the "showColumnStripes" attribute
      */
     @Override
-    public void xsetShowColumnStripes(org.apache.xmlbeans.XmlBoolean showColumnStripes) {
+    public void xsetShowColumnStripes(XmlBoolean showColumnStripes) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.set(showColumnStripes);
         }

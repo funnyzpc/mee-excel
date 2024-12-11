@@ -34,7 +34,7 @@ import org.apache.poi.openxml4j.opc.PackageAccess;
 import org.apache.poi.openxml4j.opc.PackagePart;
 import org.apache.poi.openxml4j.opc.PackageRelationship;
 import org.apache.poi.openxml4j.opc.PackageRelationshipCollection;
-import org.apache.xmlbeans.impl.common.SystemCache;
+import poi.org.apache.xmlbeans.impl.common.SystemCache;
 
 /**
  * This holds the common functionality for all POI OOXML Document classes.

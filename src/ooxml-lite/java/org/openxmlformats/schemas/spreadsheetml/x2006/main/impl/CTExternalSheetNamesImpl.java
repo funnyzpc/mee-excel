@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.JavaListXmlObject;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTExternalSheetNamesImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetNames {
+public class CTExternalSheetNamesImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetNames {
     private static final long serialVersionUID = 1L;
 
-    public CTExternalSheetNamesImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTExternalSheetNamesImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -33,7 +38,7 @@ public class CTExternalSheetNamesImpl extends org.apache.xmlbeans.impl.values.Xm
     public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetName> getSheetNameList() {
         synchronized (monitor()) {
             check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
+            return new JavaListXmlObject<>(
                 this::getSheetNameArray,
                 this::setSheetNameArray,
                 this::insertNewSheetName,
@@ -92,7 +97,7 @@ public class CTExternalSheetNamesImpl extends org.apache.xmlbeans.impl.values.Xm
      */
     @Override
     public void setSheetNameArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetName sheetName) {
-        generatedSetterHelperImpl(sheetName, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(sheetName, PROPERTY_QNAME[0], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**

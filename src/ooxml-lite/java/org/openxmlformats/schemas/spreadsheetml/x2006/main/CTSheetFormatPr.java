@@ -7,7 +7,13 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlDouble;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlUnsignedByte;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +21,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
+public interface CTSheetFormatPr extends XmlObject {
     DocumentFactory<CTSheetFormatPr> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctsheetformatprdef7type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -28,7 +34,7 @@ public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "baseColWidth" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetBaseColWidth();
+    XmlUnsignedInt xgetBaseColWidth();
 
     /**
      * True if has "baseColWidth" attribute
@@ -43,7 +49,7 @@ public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "baseColWidth" attribute
      */
-    void xsetBaseColWidth(org.apache.xmlbeans.XmlUnsignedInt baseColWidth);
+    void xsetBaseColWidth(XmlUnsignedInt baseColWidth);
 
     /**
      * Unsets the "baseColWidth" attribute
@@ -58,7 +64,7 @@ public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "defaultColWidth" attribute
      */
-    org.apache.xmlbeans.XmlDouble xgetDefaultColWidth();
+    XmlDouble xgetDefaultColWidth();
 
     /**
      * True if has "defaultColWidth" attribute
@@ -73,7 +79,7 @@ public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "defaultColWidth" attribute
      */
-    void xsetDefaultColWidth(org.apache.xmlbeans.XmlDouble defaultColWidth);
+    void xsetDefaultColWidth(XmlDouble defaultColWidth);
 
     /**
      * Unsets the "defaultColWidth" attribute
@@ -88,7 +94,7 @@ public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "defaultRowHeight" attribute
      */
-    org.apache.xmlbeans.XmlDouble xgetDefaultRowHeight();
+    XmlDouble xgetDefaultRowHeight();
 
     /**
      * Sets the "defaultRowHeight" attribute
@@ -98,7 +104,7 @@ public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "defaultRowHeight" attribute
      */
-    void xsetDefaultRowHeight(org.apache.xmlbeans.XmlDouble defaultRowHeight);
+    void xsetDefaultRowHeight(XmlDouble defaultRowHeight);
 
     /**
      * Gets the "customHeight" attribute
@@ -108,7 +114,7 @@ public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "customHeight" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetCustomHeight();
+    XmlBoolean xgetCustomHeight();
 
     /**
      * True if has "customHeight" attribute
@@ -123,7 +129,7 @@ public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "customHeight" attribute
      */
-    void xsetCustomHeight(org.apache.xmlbeans.XmlBoolean customHeight);
+    void xsetCustomHeight(XmlBoolean customHeight);
 
     /**
      * Unsets the "customHeight" attribute
@@ -138,7 +144,7 @@ public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "zeroHeight" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetZeroHeight();
+    XmlBoolean xgetZeroHeight();
 
     /**
      * True if has "zeroHeight" attribute
@@ -153,7 +159,7 @@ public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "zeroHeight" attribute
      */
-    void xsetZeroHeight(org.apache.xmlbeans.XmlBoolean zeroHeight);
+    void xsetZeroHeight(XmlBoolean zeroHeight);
 
     /**
      * Unsets the "zeroHeight" attribute
@@ -168,7 +174,7 @@ public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "thickTop" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetThickTop();
+    XmlBoolean xgetThickTop();
 
     /**
      * True if has "thickTop" attribute
@@ -183,7 +189,7 @@ public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "thickTop" attribute
      */
-    void xsetThickTop(org.apache.xmlbeans.XmlBoolean thickTop);
+    void xsetThickTop(XmlBoolean thickTop);
 
     /**
      * Unsets the "thickTop" attribute
@@ -198,7 +204,7 @@ public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "thickBottom" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetThickBottom();
+    XmlBoolean xgetThickBottom();
 
     /**
      * True if has "thickBottom" attribute
@@ -213,7 +219,7 @@ public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "thickBottom" attribute
      */
-    void xsetThickBottom(org.apache.xmlbeans.XmlBoolean thickBottom);
+    void xsetThickBottom(XmlBoolean thickBottom);
 
     /**
      * Unsets the "thickBottom" attribute
@@ -228,7 +234,7 @@ public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "outlineLevelRow" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedByte xgetOutlineLevelRow();
+    XmlUnsignedByte xgetOutlineLevelRow();
 
     /**
      * True if has "outlineLevelRow" attribute
@@ -243,7 +249,7 @@ public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "outlineLevelRow" attribute
      */
-    void xsetOutlineLevelRow(org.apache.xmlbeans.XmlUnsignedByte outlineLevelRow);
+    void xsetOutlineLevelRow(XmlUnsignedByte outlineLevelRow);
 
     /**
      * Unsets the "outlineLevelRow" attribute
@@ -258,7 +264,7 @@ public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "outlineLevelCol" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedByte xgetOutlineLevelCol();
+    XmlUnsignedByte xgetOutlineLevelCol();
 
     /**
      * True if has "outlineLevelCol" attribute
@@ -273,7 +279,7 @@ public interface CTSheetFormatPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "outlineLevelCol" attribute
      */
-    void xsetOutlineLevelCol(org.apache.xmlbeans.XmlUnsignedByte outlineLevelCol);
+    void xsetOutlineLevelCol(XmlUnsignedByte outlineLevelCol);
 
     /**
      * Unsets the "outlineLevelCol" attribute

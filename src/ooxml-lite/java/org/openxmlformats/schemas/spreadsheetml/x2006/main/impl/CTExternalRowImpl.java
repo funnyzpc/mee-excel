@@ -7,6 +7,13 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.values.JavaListXmlObject;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +21,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTExternalRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalRow {
+public class CTExternalRowImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalRow {
     private static final long serialVersionUID = 1L;
 
-    public CTExternalRowImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTExternalRowImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -34,7 +41,7 @@ public class CTExternalRowImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalCell> getCellList() {
         synchronized (monitor()) {
             check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
+            return new JavaListXmlObject<>(
                 this::getCellArray,
                 this::setCellArray,
                 this::insertNewCell,
@@ -93,7 +100,7 @@ public class CTExternalRowImpl extends org.apache.xmlbeans.impl.values.XmlComple
      */
     @Override
     public void setCellArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalCell cell) {
-        generatedSetterHelperImpl(cell, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(cell, PROPERTY_QNAME[0], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**
@@ -140,8 +147,8 @@ public class CTExternalRowImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public long getR() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -150,11 +157,11 @@ public class CTExternalRowImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Gets (as xml) the "r" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetR() {
+    public XmlUnsignedInt xgetR() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return target;
         }
     }
@@ -166,10 +173,10 @@ public class CTExternalRowImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setR(long r) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setLongValue(r);
         }
@@ -179,13 +186,13 @@ public class CTExternalRowImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Sets (as xml) the "r" attribute
      */
     @Override
-    public void xsetR(org.apache.xmlbeans.XmlUnsignedInt r) {
+    public void xsetR(XmlUnsignedInt r) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.set(r);
         }

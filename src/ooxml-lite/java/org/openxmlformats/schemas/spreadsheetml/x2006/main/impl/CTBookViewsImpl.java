@@ -7,6 +7,9 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +17,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTBookViewsImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBookViews {
+public class CTBookViewsImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBookViews {
     private static final long serialVersionUID = 1L;
 
-    public CTBookViewsImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTBookViewsImpl(SchemaType sType) {
         super(sType);
     }
 

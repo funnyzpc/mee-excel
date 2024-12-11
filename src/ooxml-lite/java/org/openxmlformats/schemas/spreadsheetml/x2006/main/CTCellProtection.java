@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTCellProtection extends org.apache.xmlbeans.XmlObject {
+public interface CTCellProtection extends XmlObject {
     DocumentFactory<CTCellProtection> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctcellprotectionf524type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -28,7 +31,7 @@ public interface CTCellProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "locked" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetLocked();
+    XmlBoolean xgetLocked();
 
     /**
      * True if has "locked" attribute
@@ -43,7 +46,7 @@ public interface CTCellProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "locked" attribute
      */
-    void xsetLocked(org.apache.xmlbeans.XmlBoolean locked);
+    void xsetLocked(XmlBoolean locked);
 
     /**
      * Unsets the "locked" attribute
@@ -58,7 +61,7 @@ public interface CTCellProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "hidden" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetHidden();
+    XmlBoolean xgetHidden();
 
     /**
      * True if has "hidden" attribute
@@ -73,7 +76,7 @@ public interface CTCellProtection extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "hidden" attribute
      */
-    void xsetHidden(org.apache.xmlbeans.XmlBoolean hidden);
+    void xsetHidden(XmlBoolean hidden);
 
     /**
      * Unsets the "hidden" attribute

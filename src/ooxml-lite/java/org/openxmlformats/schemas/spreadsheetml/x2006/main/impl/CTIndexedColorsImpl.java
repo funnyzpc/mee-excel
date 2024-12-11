@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.JavaListXmlObject;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTIndexedColorsImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTIndexedColors {
+public class CTIndexedColorsImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTIndexedColors {
     private static final long serialVersionUID = 1L;
 
-    public CTIndexedColorsImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTIndexedColorsImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -33,7 +38,7 @@ public class CTIndexedColorsImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTRgbColor> getRgbColorList() {
         synchronized (monitor()) {
             check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
+            return new JavaListXmlObject<>(
                 this::getRgbColorArray,
                 this::setRgbColorArray,
                 this::insertNewRgbColor,
@@ -47,7 +52,7 @@ public class CTIndexedColorsImpl extends org.apache.xmlbeans.impl.values.XmlComp
      */
     @Override
     public void setRgbColorArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTRgbColor rgbColor) {
-        generatedSetterHelperImpl(rgbColor, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(rgbColor, PROPERTY_QNAME[0], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**

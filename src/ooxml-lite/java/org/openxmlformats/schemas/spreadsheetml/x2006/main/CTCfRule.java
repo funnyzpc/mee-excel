@@ -7,7 +7,12 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlInt;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlString;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +20,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTCfRule extends org.apache.xmlbeans.XmlObject {
+public interface CTCfRule extends XmlObject {
     DocumentFactory<CTCfRule> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctcfrule3548type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
     /**
      * Gets ith "formula" element
@@ -247,7 +252,7 @@ public interface CTCfRule extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "priority" attribute
      */
-    org.apache.xmlbeans.XmlInt xgetPriority();
+    XmlInt xgetPriority();
 
     /**
      * Sets the "priority" attribute
@@ -257,7 +262,7 @@ public interface CTCfRule extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "priority" attribute
      */
-    void xsetPriority(org.apache.xmlbeans.XmlInt priority);
+    void xsetPriority(XmlInt priority);
 
     /**
      * Gets the "stopIfTrue" attribute
@@ -267,7 +272,7 @@ public interface CTCfRule extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "stopIfTrue" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetStopIfTrue();
+    XmlBoolean xgetStopIfTrue();
 
     /**
      * True if has "stopIfTrue" attribute
@@ -282,7 +287,7 @@ public interface CTCfRule extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "stopIfTrue" attribute
      */
-    void xsetStopIfTrue(org.apache.xmlbeans.XmlBoolean stopIfTrue);
+    void xsetStopIfTrue(XmlBoolean stopIfTrue);
 
     /**
      * Unsets the "stopIfTrue" attribute
@@ -297,7 +302,7 @@ public interface CTCfRule extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "aboveAverage" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetAboveAverage();
+    XmlBoolean xgetAboveAverage();
 
     /**
      * True if has "aboveAverage" attribute
@@ -312,7 +317,7 @@ public interface CTCfRule extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "aboveAverage" attribute
      */
-    void xsetAboveAverage(org.apache.xmlbeans.XmlBoolean aboveAverage);
+    void xsetAboveAverage(XmlBoolean aboveAverage);
 
     /**
      * Unsets the "aboveAverage" attribute
@@ -327,7 +332,7 @@ public interface CTCfRule extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "percent" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetPercent();
+    XmlBoolean xgetPercent();
 
     /**
      * True if has "percent" attribute
@@ -342,7 +347,7 @@ public interface CTCfRule extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "percent" attribute
      */
-    void xsetPercent(org.apache.xmlbeans.XmlBoolean percent);
+    void xsetPercent(XmlBoolean percent);
 
     /**
      * Unsets the "percent" attribute
@@ -357,7 +362,7 @@ public interface CTCfRule extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "bottom" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetBottom();
+    XmlBoolean xgetBottom();
 
     /**
      * True if has "bottom" attribute
@@ -417,7 +422,7 @@ public interface CTCfRule extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "text" attribute
      */
-    org.apache.xmlbeans.XmlString xgetText();
+    XmlString xgetText();
 
     /**
      * True if has "text" attribute
@@ -432,7 +437,7 @@ public interface CTCfRule extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "text" attribute
      */
-    void xsetText(org.apache.xmlbeans.XmlString text);
+    void xsetText(XmlString text);
 
 //    /**
 //     * Unsets the "text" attribute

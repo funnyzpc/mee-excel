@@ -7,6 +7,14 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBase64Binary;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlString;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +22,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTWorkbookProtection {
+public class CTWorkbookProtectionImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTWorkbookProtection {
     private static final long serialVersionUID = 1L;
 
-    public CTWorkbookProtectionImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTWorkbookProtectionImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -57,8 +65,8 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
     public String getRevisionsPasswordCharacterSet() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -67,11 +75,11 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
      * Gets (as xml) the "revisionsPasswordCharacterSet" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlString xgetRevisionsPasswordCharacterSet() {
+    public XmlString xgetRevisionsPasswordCharacterSet() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlString target = null;
+            target = (XmlString)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             return target;
         }
     }
@@ -94,10 +102,10 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
     public void setRevisionsPasswordCharacterSet(String revisionsPasswordCharacterSet) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setStringValue(revisionsPasswordCharacterSet);
         }
@@ -107,13 +115,13 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
      * Sets (as xml) the "revisionsPasswordCharacterSet" attribute
      */
     @Override
-    public void xsetRevisionsPasswordCharacterSet(org.apache.xmlbeans.XmlString revisionsPasswordCharacterSet) {
+    public void xsetRevisionsPasswordCharacterSet(XmlString revisionsPasswordCharacterSet) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlString target = null;
+            target = (XmlString)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlString)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (XmlString)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.set(revisionsPasswordCharacterSet);
         }
@@ -137,10 +145,10 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
     public boolean getLockStructure() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -150,13 +158,13 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
      * Gets (as xml) the "lockStructure" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetLockStructure() {
+    public XmlBoolean xgetLockStructure() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return target;
         }
@@ -180,10 +188,10 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
     public void setLockStructure(boolean lockStructure) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.setBooleanValue(lockStructure);
         }
@@ -193,13 +201,13 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
      * Sets (as xml) the "lockStructure" attribute
      */
     @Override
-    public void xsetLockStructure(org.apache.xmlbeans.XmlBoolean lockStructure) {
+    public void xsetLockStructure(XmlBoolean lockStructure) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.set(lockStructure);
         }
@@ -223,10 +231,10 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
     public boolean getLockWindows() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[5]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -236,13 +244,13 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
      * Gets (as xml) the "lockWindows" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetLockWindows() {
+    public XmlBoolean xgetLockWindows() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[5]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[5]);
             }
             return target;
         }
@@ -266,10 +274,10 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
     public void setLockWindows(boolean lockWindows) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.setBooleanValue(lockWindows);
         }
@@ -279,13 +287,13 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
      * Sets (as xml) the "lockWindows" attribute
      */
     @Override
-    public void xsetLockWindows(org.apache.xmlbeans.XmlBoolean lockWindows) {
+    public void xsetLockWindows(XmlBoolean lockWindows) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.set(lockWindows);
         }
@@ -309,10 +317,10 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
     public boolean getLockRevision() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[6]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -322,13 +330,13 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
      * Gets (as xml) the "lockRevision" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetLockRevision() {
+    public XmlBoolean xgetLockRevision() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[6]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[6]);
             }
             return target;
         }
@@ -352,10 +360,10 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
     public void setLockRevision(boolean lockRevision) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.setBooleanValue(lockRevision);
         }
@@ -365,13 +373,13 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
      * Sets (as xml) the "lockRevision" attribute
      */
     @Override
-    public void xsetLockRevision(org.apache.xmlbeans.XmlBoolean lockRevision) {
+    public void xsetLockRevision(XmlBoolean lockRevision) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.set(lockRevision);
         }
@@ -395,8 +403,8 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
     public String getRevisionsAlgorithmName() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -432,10 +440,10 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
     public void setRevisionsAlgorithmName(String revisionsAlgorithmName) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
             }
             target.setStringValue(revisionsAlgorithmName);
         }
@@ -475,8 +483,8 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
     public byte[] getRevisionsHashValue() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             return (target == null) ? null : target.getByteArrayValue();
         }
     }
@@ -485,11 +493,11 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
      * Gets (as xml) the "revisionsHashValue" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBase64Binary xgetRevisionsHashValue() {
+    public XmlBase64Binary xgetRevisionsHashValue() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBase64Binary target = null;
-            target = (org.apache.xmlbeans.XmlBase64Binary)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            XmlBase64Binary target = null;
+            target = (XmlBase64Binary)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             return target;
         }
     }
@@ -512,10 +520,10 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
     public void setRevisionsHashValue(byte[] revisionsHashValue) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.setByteArrayValue(revisionsHashValue);
         }
@@ -525,13 +533,13 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
      * Sets (as xml) the "revisionsHashValue" attribute
      */
     @Override
-    public void xsetRevisionsHashValue(org.apache.xmlbeans.XmlBase64Binary revisionsHashValue) {
+    public void xsetRevisionsHashValue(XmlBase64Binary revisionsHashValue) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBase64Binary target = null;
-            target = (org.apache.xmlbeans.XmlBase64Binary)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            XmlBase64Binary target = null;
+            target = (XmlBase64Binary)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBase64Binary)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (XmlBase64Binary)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.set(revisionsHashValue);
         }
@@ -555,8 +563,8 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
     public byte[] getRevisionsSaltValue() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             return (target == null) ? null : target.getByteArrayValue();
         }
     }
@@ -565,11 +573,11 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
      * Gets (as xml) the "revisionsSaltValue" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBase64Binary xgetRevisionsSaltValue() {
+    public XmlBase64Binary xgetRevisionsSaltValue() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBase64Binary target = null;
-            target = (org.apache.xmlbeans.XmlBase64Binary)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            XmlBase64Binary target = null;
+            target = (XmlBase64Binary)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             return target;
         }
     }
@@ -592,10 +600,10 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
     public void setRevisionsSaltValue(byte[] revisionsSaltValue) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.setByteArrayValue(revisionsSaltValue);
         }
@@ -605,13 +613,13 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
      * Sets (as xml) the "revisionsSaltValue" attribute
      */
     @Override
-    public void xsetRevisionsSaltValue(org.apache.xmlbeans.XmlBase64Binary revisionsSaltValue) {
+    public void xsetRevisionsSaltValue(XmlBase64Binary revisionsSaltValue) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBase64Binary target = null;
-            target = (org.apache.xmlbeans.XmlBase64Binary)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            XmlBase64Binary target = null;
+            target = (XmlBase64Binary)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBase64Binary)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (XmlBase64Binary)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.set(revisionsSaltValue);
         }
@@ -635,8 +643,8 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
     public long getRevisionsSpinCount() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -645,11 +653,11 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
      * Gets (as xml) the "revisionsSpinCount" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetRevisionsSpinCount() {
+    public XmlUnsignedInt xgetRevisionsSpinCount() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             return target;
         }
     }
@@ -672,10 +680,10 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
     public void setRevisionsSpinCount(long revisionsSpinCount) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
             }
             target.setLongValue(revisionsSpinCount);
         }
@@ -685,13 +693,13 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
      * Sets (as xml) the "revisionsSpinCount" attribute
      */
     @Override
-    public void xsetRevisionsSpinCount(org.apache.xmlbeans.XmlUnsignedInt revisionsSpinCount) {
+    public void xsetRevisionsSpinCount(XmlUnsignedInt revisionsSpinCount) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[10]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[10]);
             }
             target.set(revisionsSpinCount);
         }
@@ -715,8 +723,8 @@ public class CTWorkbookProtectionImpl extends org.apache.xmlbeans.impl.values.Xm
     public String getWorkbookAlgorithmName() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             return (target == null) ? null : target.getStringValue();
         }
     }

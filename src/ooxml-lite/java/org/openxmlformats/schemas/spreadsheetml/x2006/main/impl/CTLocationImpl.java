@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTLocation {
+public class CTLocationImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTLocation {
     private static final long serialVersionUID = 1L;
 
-    public CTLocationImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTLocationImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -38,8 +43,8 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public String getRef() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -64,10 +69,10 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public void setRef(String ref) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.setStringValue(ref);
         }
@@ -96,8 +101,8 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public long getFirstHeaderRow() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -106,11 +111,11 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Gets (as xml) the "firstHeaderRow" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetFirstHeaderRow() {
+    public XmlUnsignedInt xgetFirstHeaderRow() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return target;
         }
     }
@@ -122,10 +127,10 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public void setFirstHeaderRow(long firstHeaderRow) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setLongValue(firstHeaderRow);
         }
@@ -135,13 +140,13 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Sets (as xml) the "firstHeaderRow" attribute
      */
     @Override
-    public void xsetFirstHeaderRow(org.apache.xmlbeans.XmlUnsignedInt firstHeaderRow) {
+    public void xsetFirstHeaderRow(XmlUnsignedInt firstHeaderRow) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.set(firstHeaderRow);
         }
@@ -154,8 +159,8 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public long getFirstDataRow() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -164,11 +169,11 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Gets (as xml) the "firstDataRow" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetFirstDataRow() {
+    public XmlUnsignedInt xgetFirstDataRow() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return target;
         }
     }
@@ -180,10 +185,10 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public void setFirstDataRow(long firstDataRow) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.setLongValue(firstDataRow);
         }
@@ -193,13 +198,13 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Sets (as xml) the "firstDataRow" attribute
      */
     @Override
-    public void xsetFirstDataRow(org.apache.xmlbeans.XmlUnsignedInt firstDataRow) {
+    public void xsetFirstDataRow(XmlUnsignedInt firstDataRow) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.set(firstDataRow);
         }
@@ -212,8 +217,8 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public long getFirstDataCol() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -222,11 +227,11 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Gets (as xml) the "firstDataCol" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetFirstDataCol() {
+    public XmlUnsignedInt xgetFirstDataCol() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             return target;
         }
     }
@@ -238,10 +243,10 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public void setFirstDataCol(long firstDataCol) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setLongValue(firstDataCol);
         }
@@ -251,13 +256,13 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Sets (as xml) the "firstDataCol" attribute
      */
     @Override
-    public void xsetFirstDataCol(org.apache.xmlbeans.XmlUnsignedInt firstDataCol) {
+    public void xsetFirstDataCol(XmlUnsignedInt firstDataCol) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.set(firstDataCol);
         }
@@ -270,10 +275,10 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public long getRowPageCount() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return (target == null) ? 0L : target.getLongValue();
         }
@@ -283,13 +288,13 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Gets (as xml) the "rowPageCount" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetRowPageCount() {
+    public XmlUnsignedInt xgetRowPageCount() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return target;
         }
@@ -313,10 +318,10 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public void setRowPageCount(long rowPageCount) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.setLongValue(rowPageCount);
         }
@@ -326,13 +331,13 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Sets (as xml) the "rowPageCount" attribute
      */
     @Override
-    public void xsetRowPageCount(org.apache.xmlbeans.XmlUnsignedInt rowPageCount) {
+    public void xsetRowPageCount(XmlUnsignedInt rowPageCount) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.set(rowPageCount);
         }
@@ -356,10 +361,10 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public long getColPageCount() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[5]);
             }
             return (target == null) ? 0L : target.getLongValue();
         }
@@ -369,13 +374,13 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Gets (as xml) the "colPageCount" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetColPageCount() {
+    public XmlUnsignedInt xgetColPageCount() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[5]);
+                target = (XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[5]);
             }
             return target;
         }
@@ -399,10 +404,10 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public void setColPageCount(long colPageCount) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.setLongValue(colPageCount);
         }
@@ -412,13 +417,13 @@ public class CTLocationImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Sets (as xml) the "colPageCount" attribute
      */
     @Override
-    public void xsetColPageCount(org.apache.xmlbeans.XmlUnsignedInt colPageCount) {
+    public void xsetColPageCount(XmlUnsignedInt colPageCount) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.set(colPageCount);
         }

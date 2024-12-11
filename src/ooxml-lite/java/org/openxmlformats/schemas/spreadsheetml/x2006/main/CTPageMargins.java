@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlDouble;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTPageMargins extends org.apache.xmlbeans.XmlObject {
+public interface CTPageMargins extends XmlObject {
     DocumentFactory<CTPageMargins> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctpagemargins5455type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -28,7 +31,7 @@ public interface CTPageMargins extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "left" attribute
      */
-    org.apache.xmlbeans.XmlDouble xgetLeft();
+    XmlDouble xgetLeft();
 
     /**
      * Sets the "left" attribute
@@ -38,7 +41,7 @@ public interface CTPageMargins extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "left" attribute
      */
-    void xsetLeft(org.apache.xmlbeans.XmlDouble left);
+    void xsetLeft(XmlDouble left);
 
     /**
      * Gets the "right" attribute
@@ -48,7 +51,7 @@ public interface CTPageMargins extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "right" attribute
      */
-    org.apache.xmlbeans.XmlDouble xgetRight();
+    XmlDouble xgetRight();
 
     /**
      * Sets the "right" attribute
@@ -58,7 +61,7 @@ public interface CTPageMargins extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "right" attribute
      */
-    void xsetRight(org.apache.xmlbeans.XmlDouble right);
+    void xsetRight(XmlDouble right);
 
     /**
      * Gets the "top" attribute
@@ -68,7 +71,7 @@ public interface CTPageMargins extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "top" attribute
      */
-    org.apache.xmlbeans.XmlDouble xgetTop();
+    XmlDouble xgetTop();
 
     /**
      * Sets the "top" attribute
@@ -78,7 +81,7 @@ public interface CTPageMargins extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "top" attribute
      */
-    void xsetTop(org.apache.xmlbeans.XmlDouble top);
+    void xsetTop(XmlDouble top);
 
     /**
      * Gets the "bottom" attribute
@@ -88,7 +91,7 @@ public interface CTPageMargins extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "bottom" attribute
      */
-    org.apache.xmlbeans.XmlDouble xgetBottom();
+    XmlDouble xgetBottom();
 
     /**
      * Sets the "bottom" attribute
@@ -98,7 +101,7 @@ public interface CTPageMargins extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "bottom" attribute
      */
-    void xsetBottom(org.apache.xmlbeans.XmlDouble bottom);
+    void xsetBottom(XmlDouble bottom);
 
     /**
      * Gets the "header" attribute
@@ -108,7 +111,7 @@ public interface CTPageMargins extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "header" attribute
      */
-    org.apache.xmlbeans.XmlDouble xgetHeader();
+    XmlDouble xgetHeader();
 
     /**
      * Sets the "header" attribute
@@ -118,7 +121,7 @@ public interface CTPageMargins extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "header" attribute
      */
-    void xsetHeader(org.apache.xmlbeans.XmlDouble header);
+    void xsetHeader(XmlDouble header);
 
     /**
      * Gets the "footer" attribute
@@ -128,7 +131,7 @@ public interface CTPageMargins extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "footer" attribute
      */
-    org.apache.xmlbeans.XmlDouble xgetFooter();
+    XmlDouble xgetFooter();
 
     /**
      * Sets the "footer" attribute
@@ -138,5 +141,5 @@ public interface CTPageMargins extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "footer" attribute
      */
-    void xsetFooter(org.apache.xmlbeans.XmlDouble footer);
+    void xsetFooter(XmlDouble footer);
 }

@@ -7,6 +7,14 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.values.JavaListXmlObject;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +22,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTExternalSheetDataImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetData {
+public class CTExternalSheetDataImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetData {
     private static final long serialVersionUID = 1L;
 
-    public CTExternalSheetDataImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTExternalSheetDataImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -35,7 +43,7 @@ public class CTExternalSheetDataImpl extends org.apache.xmlbeans.impl.values.Xml
     public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalRow> getRowList() {
         synchronized (monitor()) {
             check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
+            return new JavaListXmlObject<>(
                 this::getRowArray,
                 this::setRowArray,
                 this::insertNewRow,
@@ -94,7 +102,7 @@ public class CTExternalSheetDataImpl extends org.apache.xmlbeans.impl.values.Xml
      */
     @Override
     public void setRowArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalRow row) {
-        generatedSetterHelperImpl(row, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(row, PROPERTY_QNAME[0], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**
@@ -141,8 +149,8 @@ public class CTExternalSheetDataImpl extends org.apache.xmlbeans.impl.values.Xml
     public long getSheetId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -151,11 +159,11 @@ public class CTExternalSheetDataImpl extends org.apache.xmlbeans.impl.values.Xml
      * Gets (as xml) the "sheetId" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetSheetId() {
+    public XmlUnsignedInt xgetSheetId() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return target;
         }
     }
@@ -167,10 +175,10 @@ public class CTExternalSheetDataImpl extends org.apache.xmlbeans.impl.values.Xml
     public void setSheetId(long sheetId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setLongValue(sheetId);
         }
@@ -180,13 +188,13 @@ public class CTExternalSheetDataImpl extends org.apache.xmlbeans.impl.values.Xml
      * Sets (as xml) the "sheetId" attribute
      */
     @Override
-    public void xsetSheetId(org.apache.xmlbeans.XmlUnsignedInt sheetId) {
+    public void xsetSheetId(XmlUnsignedInt sheetId) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.set(sheetId);
         }
@@ -199,10 +207,10 @@ public class CTExternalSheetDataImpl extends org.apache.xmlbeans.impl.values.Xml
     public boolean getRefreshError() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[2]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -212,13 +220,13 @@ public class CTExternalSheetDataImpl extends org.apache.xmlbeans.impl.values.Xml
      * Gets (as xml) the "refreshError" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetRefreshError() {
+    public XmlBoolean xgetRefreshError() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[2]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[2]);
             }
             return target;
         }
@@ -242,10 +250,10 @@ public class CTExternalSheetDataImpl extends org.apache.xmlbeans.impl.values.Xml
     public void setRefreshError(boolean refreshError) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.setBooleanValue(refreshError);
         }
@@ -255,13 +263,13 @@ public class CTExternalSheetDataImpl extends org.apache.xmlbeans.impl.values.Xml
      * Sets (as xml) the "refreshError" attribute
      */
     @Override
-    public void xsetRefreshError(org.apache.xmlbeans.XmlBoolean refreshError) {
+    public void xsetRefreshError(XmlBoolean refreshError) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.set(refreshError);
         }

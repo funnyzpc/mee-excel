@@ -30,7 +30,7 @@ import java.util.Set;
 import java.util.TreeMap;
 
 import poi.org.apache.commons.collections4.bidimap.TreeBidiMap;
-import org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream;
+import poi.org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.hpsf.wellknown.PropertyIDMap;

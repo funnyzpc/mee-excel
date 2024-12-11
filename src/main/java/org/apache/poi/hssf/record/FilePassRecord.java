@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.function.Supplier;
 
-import org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream;
+import poi.org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.poifs.crypt.EncryptionInfo;
 import org.apache.poi.poifs.crypt.EncryptionMode;

@@ -24,9 +24,9 @@ import java.io.InputStream;
 import java.util.Locale;
 import java.util.zip.ZipException;
 
-import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
-import org.apache.commons.compress.archivers.zip.ZipArchiveInputStream;
-import org.apache.commons.compress.utils.InputStreamStatistics;
+import poi.org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
+import poi.org.apache.commons.compress.archivers.zip.ZipArchiveInputStream;
+import poi.org.apache.commons.compress.utils.InputStreamStatistics;
 import org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException;
 import org.apache.poi.util.IOUtils;
 import org.apache.poi.util.Internal;

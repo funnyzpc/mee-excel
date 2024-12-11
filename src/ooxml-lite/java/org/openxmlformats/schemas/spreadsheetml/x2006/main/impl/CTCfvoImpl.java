@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTCfvoImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfvo {
+public class CTCfvoImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfvo {
     private static final long serialVersionUID = 1L;
 
-    public CTCfvoImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTCfvoImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -46,8 +51,8 @@ public class CTCfvoImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     public org.openxmlformats.schemas.spreadsheetml.x2006.main.STCfvoType.Enum getType() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return (target == null) ? null : (org.openxmlformats.schemas.spreadsheetml.x2006.main.STCfvoType.Enum)target.getEnumValue();
         }
     }
@@ -72,10 +77,10 @@ public class CTCfvoImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     public void setType(org.openxmlformats.schemas.spreadsheetml.x2006.main.STCfvoType.Enum type) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setEnumValue(type);
         }
@@ -104,8 +109,8 @@ public class CTCfvoImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     public String getVal() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -141,10 +146,10 @@ public class CTCfvoImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     public void setVal(String val) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.setStringValue(val);
         }
@@ -184,10 +189,10 @@ public class CTCfvoImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     public boolean getGte() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[3]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -197,13 +202,13 @@ public class CTCfvoImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
      * Gets (as xml) the "gte" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetGte() {
+    public XmlBoolean xgetGte() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[3]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[3]);
             }
             return target;
         }
@@ -227,10 +232,10 @@ public class CTCfvoImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     public void setGte(boolean gte) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setBooleanValue(gte);
         }
@@ -240,13 +245,13 @@ public class CTCfvoImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
      * Sets (as xml) the "gte" attribute
      */
     @Override
-    public void xsetGte(org.apache.xmlbeans.XmlBoolean gte) {
+    public void xsetGte(XmlBoolean gte) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.set(gte);
         }

@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTIconSet extends org.apache.xmlbeans.XmlObject {
+public interface CTIconSet extends XmlObject {
     DocumentFactory<CTIconSet> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "cticonset2648type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -56,7 +59,7 @@ public interface CTIconSet extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "showValue" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetShowValue();
+    XmlBoolean xgetShowValue();
 
     /**
      * True if has "showValue" attribute
@@ -76,7 +79,7 @@ public interface CTIconSet extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "percent" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetPercent();
+    XmlBoolean xgetPercent();
 
     /**
      * True if has "percent" attribute

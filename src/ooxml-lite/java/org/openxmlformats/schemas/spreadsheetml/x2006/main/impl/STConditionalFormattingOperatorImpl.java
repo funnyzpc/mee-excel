@@ -7,19 +7,22 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.JavaStringEnumerationHolderEx;
+
 /**
  * An XML ST_ConditionalFormattingOperator(@http://schemas.openxmlformats.org/spreadsheetml/2006/main).
  *
  * This is an atomic type that is a restriction of org.openxmlformats.schemas.spreadsheetml.x2006.main.STConditionalFormattingOperator.
  */
-public class STConditionalFormattingOperatorImpl extends org.apache.xmlbeans.impl.values.JavaStringEnumerationHolderEx implements org.openxmlformats.schemas.spreadsheetml.x2006.main.STConditionalFormattingOperator {
+public class STConditionalFormattingOperatorImpl extends JavaStringEnumerationHolderEx implements org.openxmlformats.schemas.spreadsheetml.x2006.main.STConditionalFormattingOperator {
     private static final long serialVersionUID = 1L;
 
-    public STConditionalFormattingOperatorImpl(org.apache.xmlbeans.SchemaType sType) {
+    public STConditionalFormattingOperatorImpl(SchemaType sType) {
         super(sType, false);
     }
 
-    protected STConditionalFormattingOperatorImpl(org.apache.xmlbeans.SchemaType sType, boolean b) {
+    protected STConditionalFormattingOperatorImpl(SchemaType sType, boolean b) {
         super(sType, b);
     }
 }

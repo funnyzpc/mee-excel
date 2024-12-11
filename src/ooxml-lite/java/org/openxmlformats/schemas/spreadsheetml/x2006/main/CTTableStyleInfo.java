@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTTableStyleInfo extends org.apache.xmlbeans.XmlObject {
+public interface CTTableStyleInfo extends XmlObject {
     DocumentFactory<CTTableStyleInfo> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "cttablestyleinfo499atype");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -58,7 +61,7 @@ public interface CTTableStyleInfo extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "showFirstColumn" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetShowFirstColumn();
+    XmlBoolean xgetShowFirstColumn();
 
     /**
      * True if has "showFirstColumn" attribute
@@ -73,7 +76,7 @@ public interface CTTableStyleInfo extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "showFirstColumn" attribute
      */
-    void xsetShowFirstColumn(org.apache.xmlbeans.XmlBoolean showFirstColumn);
+    void xsetShowFirstColumn(XmlBoolean showFirstColumn);
 
     /**
      * Unsets the "showFirstColumn" attribute
@@ -88,7 +91,7 @@ public interface CTTableStyleInfo extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "showLastColumn" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetShowLastColumn();
+    XmlBoolean xgetShowLastColumn();
 
     /**
      * True if has "showLastColumn" attribute
@@ -103,7 +106,7 @@ public interface CTTableStyleInfo extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "showLastColumn" attribute
      */
-    void xsetShowLastColumn(org.apache.xmlbeans.XmlBoolean showLastColumn);
+    void xsetShowLastColumn(XmlBoolean showLastColumn);
 
     /**
      * Unsets the "showLastColumn" attribute
@@ -118,7 +121,7 @@ public interface CTTableStyleInfo extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "showRowStripes" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetShowRowStripes();
+    XmlBoolean xgetShowRowStripes();
 
     /**
      * True if has "showRowStripes" attribute
@@ -133,7 +136,7 @@ public interface CTTableStyleInfo extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "showRowStripes" attribute
      */
-    void xsetShowRowStripes(org.apache.xmlbeans.XmlBoolean showRowStripes);
+    void xsetShowRowStripes(XmlBoolean showRowStripes);
 
     /**
      * Unsets the "showRowStripes" attribute
@@ -148,7 +151,7 @@ public interface CTTableStyleInfo extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "showColumnStripes" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetShowColumnStripes();
+    XmlBoolean xgetShowColumnStripes();
 
     /**
      * True if has "showColumnStripes" attribute
@@ -163,7 +166,7 @@ public interface CTTableStyleInfo extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "showColumnStripes" attribute
      */
-    void xsetShowColumnStripes(org.apache.xmlbeans.XmlBoolean showColumnStripes);
+    void xsetShowColumnStripes(XmlBoolean showColumnStripes);
 
     /**
      * Unsets the "showColumnStripes" attribute

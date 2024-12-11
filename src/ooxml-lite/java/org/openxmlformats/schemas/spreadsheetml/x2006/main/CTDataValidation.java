@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTDataValidation extends org.apache.xmlbeans.XmlObject {
+public interface CTDataValidation extends XmlObject {
     DocumentFactory<CTDataValidation> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctdatavalidation9d0ctype");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -208,7 +211,7 @@ public interface CTDataValidation extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "allowBlank" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetAllowBlank();
+    XmlBoolean xgetAllowBlank();
 
     /**
      * True if has "allowBlank" attribute
@@ -223,7 +226,7 @@ public interface CTDataValidation extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "allowBlank" attribute
      */
-    void xsetAllowBlank(org.apache.xmlbeans.XmlBoolean allowBlank);
+    void xsetAllowBlank(XmlBoolean allowBlank);
 
     /**
      * Unsets the "allowBlank" attribute
@@ -238,7 +241,7 @@ public interface CTDataValidation extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "showDropDown" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetShowDropDown();
+    XmlBoolean xgetShowDropDown();
 
     /**
      * True if has "showDropDown" attribute
@@ -253,7 +256,7 @@ public interface CTDataValidation extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "showDropDown" attribute
      */
-    void xsetShowDropDown(org.apache.xmlbeans.XmlBoolean showDropDown);
+    void xsetShowDropDown(XmlBoolean showDropDown);
 
     /**
      * Unsets the "showDropDown" attribute
@@ -268,7 +271,7 @@ public interface CTDataValidation extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "showInputMessage" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetShowInputMessage();
+    XmlBoolean xgetShowInputMessage();
 
     /**
      * True if has "showInputMessage" attribute
@@ -283,7 +286,7 @@ public interface CTDataValidation extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "showInputMessage" attribute
      */
-    void xsetShowInputMessage(org.apache.xmlbeans.XmlBoolean showInputMessage);
+    void xsetShowInputMessage(XmlBoolean showInputMessage);
 
     /**
      * Unsets the "showInputMessage" attribute
@@ -298,7 +301,7 @@ public interface CTDataValidation extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "showErrorMessage" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetShowErrorMessage();
+    XmlBoolean xgetShowErrorMessage();
 
     /**
      * True if has "showErrorMessage" attribute
@@ -313,7 +316,7 @@ public interface CTDataValidation extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "showErrorMessage" attribute
      */
-    void xsetShowErrorMessage(org.apache.xmlbeans.XmlBoolean showErrorMessage);
+    void xsetShowErrorMessage(XmlBoolean showErrorMessage);
 
     /**
      * Unsets the "showErrorMessage" attribute

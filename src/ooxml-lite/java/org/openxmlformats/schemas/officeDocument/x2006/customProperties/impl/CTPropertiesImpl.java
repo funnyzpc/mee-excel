@@ -7,6 +7,9 @@
  */
 package org.openxmlformats.schemas.officeDocument.x2006.customProperties.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +17,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTPropertiesImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.officeDocument.x2006.customProperties.CTProperties {
+public class CTPropertiesImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.officeDocument.x2006.customProperties.CTProperties {
     private static final long serialVersionUID = 1L;
 
-    public CTPropertiesImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTPropertiesImpl(SchemaType sType) {
         super(sType);
     }
 

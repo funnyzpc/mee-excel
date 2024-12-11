@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.JavaListXmlObject;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTHyperlinksImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTHyperlinks {
+public class CTHyperlinksImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTHyperlinks {
     private static final long serialVersionUID = 1L;
 
-    public CTHyperlinksImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTHyperlinksImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -33,7 +38,7 @@ public class CTHyperlinksImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTHyperlink> getHyperlinkList() {
         synchronized (monitor()) {
             check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
+            return new JavaListXmlObject<>(
                 this::getHyperlinkArray,
                 this::setHyperlinkArray,
                 this::insertNewHyperlink,
@@ -92,7 +97,7 @@ public class CTHyperlinksImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      */
     @Override
     public void setHyperlinkArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTHyperlink hyperlink) {
-        generatedSetterHelperImpl(hyperlink, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(hyperlink, PROPERTY_QNAME[0], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**

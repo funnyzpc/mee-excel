@@ -7,6 +7,13 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlInt;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +21,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCellAlignment {
+public class CTCellAlignmentImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCellAlignment {
     private static final long serialVersionUID = 1L;
 
-    public CTCellAlignmentImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTCellAlignmentImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -41,8 +48,8 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public org.openxmlformats.schemas.spreadsheetml.x2006.main.STHorizontalAlignment.Enum getHorizontal() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             return (target == null) ? null : (org.openxmlformats.schemas.spreadsheetml.x2006.main.STHorizontalAlignment.Enum)target.getEnumValue();
         }
     }
@@ -78,10 +85,10 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public void setHorizontal(org.openxmlformats.schemas.spreadsheetml.x2006.main.STHorizontalAlignment.Enum horizontal) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.setEnumValue(horizontal);
         }
@@ -120,10 +127,10 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public org.openxmlformats.schemas.spreadsheetml.x2006.main.STVerticalAlignment.Enum getVertical() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[1]);
             }
             return (target == null) ? null : (org.openxmlformats.schemas.spreadsheetml.x2006.main.STVerticalAlignment.Enum)target.getEnumValue();
         }
@@ -146,10 +153,10 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public void setVertical(org.openxmlformats.schemas.spreadsheetml.x2006.main.STVerticalAlignment.Enum vertical) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setEnumValue(vertical);
         }
@@ -173,8 +180,8 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public java.math.BigInteger getTextRotation() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return (target == null) ? null : target.getBigIntegerValue();
         }
     }
@@ -210,10 +217,10 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public void setTextRotation(java.math.BigInteger textRotation) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.setBigIntegerValue(textRotation);
         }
@@ -253,8 +260,8 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public boolean getWrapText() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             return (target == null) ? false : target.getBooleanValue();
         }
     }
@@ -263,11 +270,11 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Gets (as xml) the "wrapText" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetWrapText() {
+    public XmlBoolean xgetWrapText() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             return target;
         }
     }
@@ -290,10 +297,10 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public void setWrapText(boolean wrapText) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setBooleanValue(wrapText);
         }
@@ -303,13 +310,13 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Sets (as xml) the "wrapText" attribute
      */
     @Override
-    public void xsetWrapText(org.apache.xmlbeans.XmlBoolean wrapText) {
+    public void xsetWrapText(XmlBoolean wrapText) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.set(wrapText);
         }
@@ -333,8 +340,8 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public long getIndent() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -343,11 +350,11 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Gets (as xml) the "indent" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetIndent() {
+    public XmlUnsignedInt xgetIndent() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             return target;
         }
     }
@@ -370,10 +377,10 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public void setIndent(long indent) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.setLongValue(indent);
         }
@@ -383,13 +390,13 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Sets (as xml) the "indent" attribute
      */
     @Override
-    public void xsetIndent(org.apache.xmlbeans.XmlUnsignedInt indent) {
+    public void xsetIndent(XmlUnsignedInt indent) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.set(indent);
         }
@@ -413,8 +420,8 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public int getRelativeIndent() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             return (target == null) ? 0 : target.getIntValue();
         }
     }
@@ -423,11 +430,11 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Gets (as xml) the "relativeIndent" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlInt xgetRelativeIndent() {
+    public XmlInt xgetRelativeIndent() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             return target;
         }
     }
@@ -450,10 +457,10 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public void setRelativeIndent(int relativeIndent) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.setIntValue(relativeIndent);
         }
@@ -463,13 +470,13 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Sets (as xml) the "relativeIndent" attribute
      */
     @Override
-    public void xsetRelativeIndent(org.apache.xmlbeans.XmlInt relativeIndent) {
+    public void xsetRelativeIndent(XmlInt relativeIndent) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlInt target = null;
-            target = (org.apache.xmlbeans.XmlInt)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlInt target = null;
+            target = (XmlInt)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlInt)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (XmlInt)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.set(relativeIndent);
         }
@@ -493,8 +500,8 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public boolean getJustifyLastLine() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             return (target == null) ? false : target.getBooleanValue();
         }
     }
@@ -503,11 +510,11 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Gets (as xml) the "justifyLastLine" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetJustifyLastLine() {
+    public XmlBoolean xgetJustifyLastLine() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             return target;
         }
     }
@@ -530,10 +537,10 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public void setJustifyLastLine(boolean justifyLastLine) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.setBooleanValue(justifyLastLine);
         }
@@ -543,13 +550,13 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Sets (as xml) the "justifyLastLine" attribute
      */
     @Override
-    public void xsetJustifyLastLine(org.apache.xmlbeans.XmlBoolean justifyLastLine) {
+    public void xsetJustifyLastLine(XmlBoolean justifyLastLine) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.set(justifyLastLine);
         }
@@ -573,8 +580,8 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public boolean getShrinkToFit() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             return (target == null) ? false : target.getBooleanValue();
         }
     }
@@ -583,11 +590,11 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Gets (as xml) the "shrinkToFit" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetShrinkToFit() {
+    public XmlBoolean xgetShrinkToFit() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             return target;
         }
     }
@@ -610,10 +617,10 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public void setShrinkToFit(boolean shrinkToFit) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
             }
             target.setBooleanValue(shrinkToFit);
         }
@@ -623,13 +630,13 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Sets (as xml) the "shrinkToFit" attribute
      */
     @Override
-    public void xsetShrinkToFit(org.apache.xmlbeans.XmlBoolean shrinkToFit) {
+    public void xsetShrinkToFit(XmlBoolean shrinkToFit) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[7]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[7]);
             }
             target.set(shrinkToFit);
         }
@@ -653,8 +660,8 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public long getReadingOrder() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -663,11 +670,11 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Gets (as xml) the "readingOrder" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetReadingOrder() {
+    public XmlUnsignedInt xgetReadingOrder() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             return target;
         }
     }
@@ -690,10 +697,10 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     public void setReadingOrder(long readingOrder) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.setLongValue(readingOrder);
         }
@@ -703,13 +710,13 @@ public class CTCellAlignmentImpl extends org.apache.xmlbeans.impl.values.XmlComp
      * Sets (as xml) the "readingOrder" attribute
      */
     @Override
-    public void xsetReadingOrder(org.apache.xmlbeans.XmlUnsignedInt readingOrder) {
+    public void xsetReadingOrder(XmlUnsignedInt readingOrder) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.set(readingOrder);
         }

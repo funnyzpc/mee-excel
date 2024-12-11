@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -17,7 +20,7 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  */
 public interface CTCellFormula extends STFormula {
     DocumentFactory<CTCellFormula> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctcellformula3583type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -58,7 +61,7 @@ public interface CTCellFormula extends STFormula {
     /**
      * Gets (as xml) the "aca" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetAca();
+    XmlBoolean xgetAca();
 
     /**
      * True if has "aca" attribute
@@ -73,7 +76,7 @@ public interface CTCellFormula extends STFormula {
     /**
      * Sets (as xml) the "aca" attribute
      */
-    void xsetAca(org.apache.xmlbeans.XmlBoolean aca);
+    void xsetAca(XmlBoolean aca);
 
     /**
      * Unsets the "aca" attribute
@@ -118,7 +121,7 @@ public interface CTCellFormula extends STFormula {
     /**
      * Gets (as xml) the "dt2D" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetDt2D();
+    XmlBoolean xgetDt2D();
 
     /**
      * True if has "dt2D" attribute
@@ -133,7 +136,7 @@ public interface CTCellFormula extends STFormula {
     /**
      * Sets (as xml) the "dt2D" attribute
      */
-    void xsetDt2D(org.apache.xmlbeans.XmlBoolean dt2D);
+    void xsetDt2D(XmlBoolean dt2D);
 
     /**
      * Unsets the "dt2D" attribute
@@ -148,7 +151,7 @@ public interface CTCellFormula extends STFormula {
     /**
      * Gets (as xml) the "dtr" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetDtr();
+    XmlBoolean xgetDtr();
 
     /**
      * True if has "dtr" attribute
@@ -163,7 +166,7 @@ public interface CTCellFormula extends STFormula {
     /**
      * Sets (as xml) the "dtr" attribute
      */
-    void xsetDtr(org.apache.xmlbeans.XmlBoolean dtr);
+    void xsetDtr(XmlBoolean dtr);
 
     /**
      * Unsets the "dtr" attribute
@@ -178,7 +181,7 @@ public interface CTCellFormula extends STFormula {
     /**
      * Gets (as xml) the "del1" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetDel1();
+    XmlBoolean xgetDel1();
 
     /**
      * True if has "del1" attribute
@@ -193,7 +196,7 @@ public interface CTCellFormula extends STFormula {
     /**
      * Sets (as xml) the "del1" attribute
      */
-    void xsetDel1(org.apache.xmlbeans.XmlBoolean del1);
+    void xsetDel1(XmlBoolean del1);
 
     /**
      * Unsets the "del1" attribute
@@ -208,7 +211,7 @@ public interface CTCellFormula extends STFormula {
     /**
      * Gets (as xml) the "del2" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetDel2();
+    XmlBoolean xgetDel2();
 
     /**
      * True if has "del2" attribute
@@ -223,7 +226,7 @@ public interface CTCellFormula extends STFormula {
     /**
      * Sets (as xml) the "del2" attribute
      */
-    void xsetDel2(org.apache.xmlbeans.XmlBoolean del2);
+    void xsetDel2(XmlBoolean del2);
 
     /**
      * Unsets the "del2" attribute
@@ -298,7 +301,7 @@ public interface CTCellFormula extends STFormula {
     /**
      * Gets (as xml) the "ca" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetCa();
+    XmlBoolean xgetCa();
 
     /**
      * True if has "ca" attribute
@@ -313,7 +316,7 @@ public interface CTCellFormula extends STFormula {
     /**
      * Sets (as xml) the "ca" attribute
      */
-    void xsetCa(org.apache.xmlbeans.XmlBoolean ca);
+    void xsetCa(XmlBoolean ca);
 
     /**
      * Unsets the "ca" attribute
@@ -328,7 +331,7 @@ public interface CTCellFormula extends STFormula {
     /**
      * Gets (as xml) the "si" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetSi();
+    XmlUnsignedInt xgetSi();
 
     /**
      * True if has "si" attribute
@@ -343,7 +346,7 @@ public interface CTCellFormula extends STFormula {
     /**
      * Sets (as xml) the "si" attribute
      */
-    void xsetSi(org.apache.xmlbeans.XmlUnsignedInt si);
+    void xsetSi(XmlUnsignedInt si);
 
     /**
      * Unsets the "si" attribute
@@ -358,7 +361,7 @@ public interface CTCellFormula extends STFormula {
     /**
      * Gets (as xml) the "bx" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetBx();
+    XmlBoolean xgetBx();
 
     /**
      * True if has "bx" attribute
@@ -373,7 +376,7 @@ public interface CTCellFormula extends STFormula {
     /**
      * Sets (as xml) the "bx" attribute
      */
-    void xsetBx(org.apache.xmlbeans.XmlBoolean bx);
+    void xsetBx(XmlBoolean bx);
 
     /**
      * Unsets the "bx" attribute

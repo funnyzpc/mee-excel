@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTBooleanProperty extends org.apache.xmlbeans.XmlObject {
+public interface CTBooleanProperty extends XmlObject {
     DocumentFactory<CTBooleanProperty> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctbooleanproperty1f3ctype");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -28,7 +31,7 @@ public interface CTBooleanProperty extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "val" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetVal();
+    XmlBoolean xgetVal();
 
     /**
      * True if has "val" attribute
@@ -43,7 +46,7 @@ public interface CTBooleanProperty extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "val" attribute
      */
-    void xsetVal(org.apache.xmlbeans.XmlBoolean val);
+    void xsetVal(XmlBoolean val);
 
     /**
      * Unsets the "val" attribute

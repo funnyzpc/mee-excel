@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTExternalDefinedName extends org.apache.xmlbeans.XmlObject {
+public interface CTExternalDefinedName extends XmlObject {
     DocumentFactory<CTExternalDefinedName> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctexternaldefinedname9408type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -78,7 +81,7 @@ public interface CTExternalDefinedName extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "sheetId" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetSheetId();
+    XmlUnsignedInt xgetSheetId();
 
     /**
      * True if has "sheetId" attribute
@@ -93,7 +96,7 @@ public interface CTExternalDefinedName extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "sheetId" attribute
      */
-    void xsetSheetId(org.apache.xmlbeans.XmlUnsignedInt sheetId);
+    void xsetSheetId(XmlUnsignedInt sheetId);
 
     /**
      * Unsets the "sheetId" attribute

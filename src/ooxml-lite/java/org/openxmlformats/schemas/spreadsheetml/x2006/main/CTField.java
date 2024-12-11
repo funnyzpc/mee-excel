@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlInt;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTField extends org.apache.xmlbeans.XmlObject {
+public interface CTField extends XmlObject {
     DocumentFactory<CTField> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctfieldc999type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -28,7 +31,7 @@ public interface CTField extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "x" attribute
      */
-    org.apache.xmlbeans.XmlInt xgetX();
+    XmlInt xgetX();
 
     /**
      * Sets the "x" attribute
@@ -38,5 +41,5 @@ public interface CTField extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "x" attribute
      */
-    void xsetX(org.apache.xmlbeans.XmlInt x);
+    void xsetX(XmlInt x);
 }

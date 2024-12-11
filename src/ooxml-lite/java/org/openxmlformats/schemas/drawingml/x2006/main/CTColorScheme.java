@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.drawingml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlString;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTColorScheme extends org.apache.xmlbeans.XmlObject {
+public interface CTColorScheme extends XmlObject {
     DocumentFactory<CTColorScheme> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctcolorscheme0e99type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -233,7 +236,7 @@ public interface CTColorScheme extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "name" attribute
      */
-    org.apache.xmlbeans.XmlString xgetName();
+    XmlString xgetName();
 
     /**
      * Sets the "name" attribute
@@ -243,5 +246,5 @@ public interface CTColorScheme extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "name" attribute
      */
-    void xsetName(org.apache.xmlbeans.XmlString name);
+    void xsetName(XmlString name);
 }

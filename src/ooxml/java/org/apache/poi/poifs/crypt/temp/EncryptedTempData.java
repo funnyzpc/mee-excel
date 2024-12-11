@@ -30,7 +30,7 @@ import javax.crypto.CipherInputStream;
 import javax.crypto.CipherOutputStream;
 import javax.crypto.spec.SecretKeySpec;
 
-import org.apache.commons.io.output.CountingOutputStream;
+import poi.org.apache.commons.io.output.CountingOutputStream;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.poifs.crypt.ChainingMode;

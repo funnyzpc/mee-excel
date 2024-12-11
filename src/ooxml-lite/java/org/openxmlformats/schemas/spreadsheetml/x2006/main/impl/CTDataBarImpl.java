@@ -7,6 +7,14 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.values.JavaListXmlObject;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +22,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTDataBarImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDataBar {
+public class CTDataBarImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDataBar {
     private static final long serialVersionUID = 1L;
 
-    public CTDataBarImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTDataBarImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -37,7 +45,7 @@ public class CTDataBarImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
     public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfvo> getCfvoList() {
         synchronized (monitor()) {
             check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
+            return new JavaListXmlObject<>(
                 this::getCfvoArray,
                 this::setCfvoArray,
                 this::insertNewCfvo,
@@ -96,7 +104,7 @@ public class CTDataBarImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
      */
     @Override
     public void setCfvoArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfvo cfvo) {
-        generatedSetterHelperImpl(cfvo, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(cfvo, PROPERTY_QNAME[0], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**
@@ -154,7 +162,7 @@ public class CTDataBarImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
      */
     @Override
     public void setColor(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColor color) {
-        generatedSetterHelperImpl(color, PROPERTY_QNAME[1], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(color, PROPERTY_QNAME[1], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -177,10 +185,10 @@ public class CTDataBarImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
     public long getMinLength() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[2]);
             }
             return (target == null) ? 0L : target.getLongValue();
         }
@@ -190,13 +198,13 @@ public class CTDataBarImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
      * Gets (as xml) the "minLength" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetMinLength() {
+    public XmlUnsignedInt xgetMinLength() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[2]);
+                target = (XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[2]);
             }
             return target;
         }
@@ -220,10 +228,10 @@ public class CTDataBarImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
     public void setMinLength(long minLength) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.setLongValue(minLength);
         }
@@ -233,13 +241,13 @@ public class CTDataBarImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
      * Sets (as xml) the "minLength" attribute
      */
     @Override
-    public void xsetMinLength(org.apache.xmlbeans.XmlUnsignedInt minLength) {
+    public void xsetMinLength(XmlUnsignedInt minLength) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.set(minLength);
         }
@@ -263,10 +271,10 @@ public class CTDataBarImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
     public long getMaxLength() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[3]);
             }
             return (target == null) ? 0L : target.getLongValue();
         }
@@ -276,13 +284,13 @@ public class CTDataBarImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
      * Gets (as xml) the "maxLength" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetMaxLength() {
+    public XmlUnsignedInt xgetMaxLength() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[3]);
+                target = (XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[3]);
             }
             return target;
         }
@@ -306,10 +314,10 @@ public class CTDataBarImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
     public void setMaxLength(long maxLength) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setLongValue(maxLength);
         }
@@ -319,13 +327,13 @@ public class CTDataBarImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
      * Sets (as xml) the "maxLength" attribute
      */
     @Override
-    public void xsetMaxLength(org.apache.xmlbeans.XmlUnsignedInt maxLength) {
+    public void xsetMaxLength(XmlUnsignedInt maxLength) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.set(maxLength);
         }
@@ -349,10 +357,10 @@ public class CTDataBarImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
     public boolean getShowValue() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -362,13 +370,13 @@ public class CTDataBarImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
      * Gets (as xml) the "showValue" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetShowValue() {
+    public XmlBoolean xgetShowValue() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return target;
         }
@@ -392,10 +400,10 @@ public class CTDataBarImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
     public void setShowValue(boolean showValue) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.setBooleanValue(showValue);
         }
@@ -405,13 +413,13 @@ public class CTDataBarImpl extends org.apache.xmlbeans.impl.values.XmlComplexCon
      * Sets (as xml) the "showValue" attribute
      */
     @Override
-    public void xsetShowValue(org.apache.xmlbeans.XmlBoolean showValue) {
+    public void xsetShowValue(XmlBoolean showValue) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.set(showValue);
         }

@@ -7,6 +7,16 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlDouble;
+import poi.org.apache.xmlbeans.XmlUnsignedByte;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.values.JavaListXmlObject;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +24,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTRow {
+public class CTRowImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTRow {
     private static final long serialVersionUID = 1L;
 
-    public CTRowImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTRowImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -46,7 +56,7 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCell> getCList() {
         synchronized (monitor()) {
             check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
+            return new JavaListXmlObject<>(
                 this::getCArray,
                 this::setCArray,
                 this::insertNewC,
@@ -105,7 +115,7 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      */
     @Override
     public void setCArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCell c) {
-        generatedSetterHelperImpl(c, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(c, PROPERTY_QNAME[0], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**
@@ -175,8 +185,8 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public long getR() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -185,11 +195,11 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "r" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetR() {
+    public XmlUnsignedInt xgetR() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return target;
         }
     }
@@ -212,10 +222,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setR(long r) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.setLongValue(r);
         }
@@ -225,13 +235,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "r" attribute
      */
     @Override
-    public void xsetR(org.apache.xmlbeans.XmlUnsignedInt r) {
+    public void xsetR(XmlUnsignedInt r) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.set(r);
         }
@@ -255,8 +265,8 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public java.util.List getSpans() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             return (target == null) ? null : target.getListValue();
         }
     }
@@ -279,10 +289,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setSpans(java.util.List spans) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setListValue(spans);
         }
@@ -307,10 +317,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public long getS() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return (target == null) ? 0L : target.getLongValue();
         }
@@ -320,13 +330,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "s" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetS() {
+    public XmlUnsignedInt xgetS() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return target;
         }
@@ -350,10 +360,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setS(long s) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.setLongValue(s);
         }
@@ -363,13 +373,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "s" attribute
      */
     @Override
-    public void xsetS(org.apache.xmlbeans.XmlUnsignedInt s) {
+    public void xsetS(XmlUnsignedInt s) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.set(s);
         }
@@ -393,10 +403,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public boolean getCustomFormat() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[5]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -406,13 +416,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "customFormat" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetCustomFormat() {
+    public XmlBoolean xgetCustomFormat() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[5]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[5]);
             }
             return target;
         }
@@ -436,10 +446,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setCustomFormat(boolean customFormat) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.setBooleanValue(customFormat);
         }
@@ -449,13 +459,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "customFormat" attribute
      */
     @Override
-    public void xsetCustomFormat(org.apache.xmlbeans.XmlBoolean customFormat) {
+    public void xsetCustomFormat(XmlBoolean customFormat) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.set(customFormat);
         }
@@ -479,8 +489,8 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public double getHt() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             return (target == null) ? 0.0 : target.getDoubleValue();
         }
     }
@@ -489,11 +499,11 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "ht" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlDouble xgetHt() {
+    public XmlDouble xgetHt() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             return target;
         }
     }
@@ -516,10 +526,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setHt(double ht) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.setDoubleValue(ht);
         }
@@ -529,13 +539,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "ht" attribute
      */
     @Override
-    public void xsetHt(org.apache.xmlbeans.XmlDouble ht) {
+    public void xsetHt(XmlDouble ht) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.set(ht);
         }
@@ -559,10 +569,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public boolean getHidden() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[7]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[7]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -572,13 +582,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "hidden" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetHidden() {
+    public XmlBoolean xgetHidden() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[7]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[7]);
             }
             return target;
         }
@@ -602,10 +612,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setHidden(boolean hidden) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
             }
             target.setBooleanValue(hidden);
         }
@@ -615,13 +625,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "hidden" attribute
      */
     @Override
-    public void xsetHidden(org.apache.xmlbeans.XmlBoolean hidden) {
+    public void xsetHidden(XmlBoolean hidden) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[7]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[7]);
             }
             target.set(hidden);
         }
@@ -645,10 +655,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public boolean getCustomHeight() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[8]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -658,13 +668,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "customHeight" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetCustomHeight() {
+    public XmlBoolean xgetCustomHeight() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[8]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[8]);
             }
             return target;
         }
@@ -688,10 +698,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setCustomHeight(boolean customHeight) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.setBooleanValue(customHeight);
         }
@@ -701,13 +711,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "customHeight" attribute
      */
     @Override
-    public void xsetCustomHeight(org.apache.xmlbeans.XmlBoolean customHeight) {
+    public void xsetCustomHeight(XmlBoolean customHeight) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.set(customHeight);
         }
@@ -731,10 +741,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public short getOutlineLevel() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[9]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[9]);
             }
             return (target == null) ? 0 : target.getShortValue();
         }
@@ -744,13 +754,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "outlineLevel" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedByte xgetOutlineLevel() {
+    public XmlUnsignedByte xgetOutlineLevel() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedByte target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedByte)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            XmlUnsignedByte target = null;
+            target = (XmlUnsignedByte)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedByte)get_default_attribute_value(PROPERTY_QNAME[9]);
+                target = (XmlUnsignedByte)get_default_attribute_value(PROPERTY_QNAME[9]);
             }
             return target;
         }
@@ -774,10 +784,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setOutlineLevel(short outlineLevel) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.setShortValue(outlineLevel);
         }
@@ -787,13 +797,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "outlineLevel" attribute
      */
     @Override
-    public void xsetOutlineLevel(org.apache.xmlbeans.XmlUnsignedByte outlineLevel) {
+    public void xsetOutlineLevel(XmlUnsignedByte outlineLevel) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedByte target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedByte)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            XmlUnsignedByte target = null;
+            target = (XmlUnsignedByte)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedByte)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (XmlUnsignedByte)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.set(outlineLevel);
         }
@@ -817,10 +827,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public boolean getCollapsed() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[10]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[10]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -830,13 +840,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "collapsed" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetCollapsed() {
+    public XmlBoolean xgetCollapsed() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[10]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[10]);
             }
             return target;
         }
@@ -860,10 +870,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setCollapsed(boolean collapsed) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
             }
             target.setBooleanValue(collapsed);
         }
@@ -873,13 +883,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "collapsed" attribute
      */
     @Override
-    public void xsetCollapsed(org.apache.xmlbeans.XmlBoolean collapsed) {
+    public void xsetCollapsed(XmlBoolean collapsed) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[10]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[10]);
             }
             target.set(collapsed);
         }
@@ -903,10 +913,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public boolean getThickTop() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[11]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[11]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -916,13 +926,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "thickTop" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetThickTop() {
+    public XmlBoolean xgetThickTop() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[11]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[11]);
             }
             return target;
         }
@@ -946,10 +956,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setThickTop(boolean thickTop) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[11]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[11]);
             }
             target.setBooleanValue(thickTop);
         }
@@ -959,13 +969,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "thickTop" attribute
      */
     @Override
-    public void xsetThickTop(org.apache.xmlbeans.XmlBoolean thickTop) {
+    public void xsetThickTop(XmlBoolean thickTop) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[11]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[11]);
             }
             target.set(thickTop);
         }
@@ -989,10 +999,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public boolean getThickBot() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[12]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[12]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -1002,13 +1012,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "thickBot" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetThickBot() {
+    public XmlBoolean xgetThickBot() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[12]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[12]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[12]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[12]);
             }
             return target;
         }
@@ -1032,10 +1042,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setThickBot(boolean thickBot) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[12]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[12]);
             }
             target.setBooleanValue(thickBot);
         }
@@ -1045,13 +1055,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "thickBot" attribute
      */
     @Override
-    public void xsetThickBot(org.apache.xmlbeans.XmlBoolean thickBot) {
+    public void xsetThickBot(XmlBoolean thickBot) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[12]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[12]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[12]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[12]);
             }
             target.set(thickBot);
         }
@@ -1075,10 +1085,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public boolean getPh() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[13]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[13]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -1088,13 +1098,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "ph" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetPh() {
+    public XmlBoolean xgetPh() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[13]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[13]);
             }
             return target;
         }
@@ -1118,10 +1128,10 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setPh(boolean ph) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[13]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[13]);
             }
             target.setBooleanValue(ph);
         }
@@ -1131,13 +1141,13 @@ public class CTRowImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "ph" attribute
      */
     @Override
-    public void xsetPh(org.apache.xmlbeans.XmlBoolean ph) {
+    public void xsetPh(XmlBoolean ph) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[13]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[13]);
             }
             target.set(ph);
         }

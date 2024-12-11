@@ -17,8 +17,8 @@
 
 package org.apache.poi.xssf.streaming;
 
-import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
-import org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream;
+import poi.org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
+import poi.org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream;
 
 import java.io.IOException;
 import java.io.OutputStream;

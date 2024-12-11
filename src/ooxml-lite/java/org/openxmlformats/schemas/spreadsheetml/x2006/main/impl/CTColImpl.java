@@ -7,6 +7,14 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlDouble;
+import poi.org.apache.xmlbeans.XmlUnsignedByte;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +22,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCol {
+public class CTColImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCol {
     private static final long serialVersionUID = 1L;
 
-    public CTColImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTColImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -42,8 +50,8 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public long getMin() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -52,11 +60,11 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "min" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetMin() {
+    public XmlUnsignedInt xgetMin() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             return target;
         }
     }
@@ -68,10 +76,10 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setMin(long min) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.setLongValue(min);
         }
@@ -81,13 +89,13 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "min" attribute
      */
     @Override
-    public void xsetMin(org.apache.xmlbeans.XmlUnsignedInt min) {
+    public void xsetMin(XmlUnsignedInt min) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.set(min);
         }
@@ -100,8 +108,8 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public long getMax() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return (target == null) ? 0L : target.getLongValue();
         }
     }
@@ -110,11 +118,11 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "max" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetMax() {
+    public XmlUnsignedInt xgetMax() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return target;
         }
     }
@@ -126,10 +134,10 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setMax(long max) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setLongValue(max);
         }
@@ -139,13 +147,13 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "max" attribute
      */
     @Override
-    public void xsetMax(org.apache.xmlbeans.XmlUnsignedInt max) {
+    public void xsetMax(XmlUnsignedInt max) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.set(max);
         }
@@ -158,8 +166,8 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public double getWidth() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return (target == null) ? 0.0 : target.getDoubleValue();
         }
     }
@@ -168,11 +176,11 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "width" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlDouble xgetWidth() {
+    public XmlDouble xgetWidth() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             return target;
         }
     }
@@ -195,10 +203,10 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setWidth(double width) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.setDoubleValue(width);
         }
@@ -208,13 +216,13 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "width" attribute
      */
     @Override
-    public void xsetWidth(org.apache.xmlbeans.XmlDouble width) {
+    public void xsetWidth(XmlDouble width) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlDouble target = null;
-            target = (org.apache.xmlbeans.XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[2]);
+            XmlDouble target = null;
+            target = (XmlDouble)get_store().find_attribute_user(PROPERTY_QNAME[2]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[2]);
+                target = (XmlDouble)get_store().add_attribute_user(PROPERTY_QNAME[2]);
             }
             target.set(width);
         }
@@ -238,10 +246,10 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public long getStyle() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[3]);
             }
             return (target == null) ? 0L : target.getLongValue();
         }
@@ -251,13 +259,13 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "style" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetStyle() {
+    public XmlUnsignedInt xgetStyle() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[3]);
+                target = (XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[3]);
             }
             return target;
         }
@@ -281,10 +289,10 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setStyle(long style) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.setLongValue(style);
         }
@@ -294,13 +302,13 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "style" attribute
      */
     @Override
-    public void xsetStyle(org.apache.xmlbeans.XmlUnsignedInt style) {
+    public void xsetStyle(XmlUnsignedInt style) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[3]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[3]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[3]);
+                target = (XmlUnsignedInt)get_store().add_attribute_user(PROPERTY_QNAME[3]);
             }
             target.set(style);
         }
@@ -324,10 +332,10 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public boolean getHidden() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -337,13 +345,13 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "hidden" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetHidden() {
+    public XmlBoolean xgetHidden() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[4]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[4]);
             }
             return target;
         }
@@ -367,10 +375,10 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setHidden(boolean hidden) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.setBooleanValue(hidden);
         }
@@ -380,13 +388,13 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "hidden" attribute
      */
     @Override
-    public void xsetHidden(org.apache.xmlbeans.XmlBoolean hidden) {
+    public void xsetHidden(XmlBoolean hidden) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[4]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[4]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[4]);
             }
             target.set(hidden);
         }
@@ -410,10 +418,10 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public boolean getBestFit() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[5]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -423,13 +431,13 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "bestFit" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetBestFit() {
+    public XmlBoolean xgetBestFit() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[5]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[5]);
             }
             return target;
         }
@@ -453,10 +461,10 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setBestFit(boolean bestFit) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.setBooleanValue(bestFit);
         }
@@ -466,13 +474,13 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "bestFit" attribute
      */
     @Override
-    public void xsetBestFit(org.apache.xmlbeans.XmlBoolean bestFit) {
+    public void xsetBestFit(XmlBoolean bestFit) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.set(bestFit);
         }
@@ -496,10 +504,10 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public boolean getCustomWidth() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[6]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -509,13 +517,13 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "customWidth" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetCustomWidth() {
+    public XmlBoolean xgetCustomWidth() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[6]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[6]);
             }
             return target;
         }
@@ -539,10 +547,10 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setCustomWidth(boolean customWidth) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.setBooleanValue(customWidth);
         }
@@ -552,13 +560,13 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "customWidth" attribute
      */
     @Override
-    public void xsetCustomWidth(org.apache.xmlbeans.XmlBoolean customWidth) {
+    public void xsetCustomWidth(XmlBoolean customWidth) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.set(customWidth);
         }
@@ -582,10 +590,10 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public boolean getPhonetic() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[7]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[7]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -595,13 +603,13 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "phonetic" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetPhonetic() {
+    public XmlBoolean xgetPhonetic() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[7]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[7]);
             }
             return target;
         }
@@ -625,10 +633,10 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setPhonetic(boolean phonetic) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[7]);
             }
             target.setBooleanValue(phonetic);
         }
@@ -638,13 +646,13 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "phonetic" attribute
      */
     @Override
-    public void xsetPhonetic(org.apache.xmlbeans.XmlBoolean phonetic) {
+    public void xsetPhonetic(XmlBoolean phonetic) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[7]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[7]);
             }
             target.set(phonetic);
         }
@@ -668,10 +676,10 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public short getOutlineLevel() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[8]);
             }
             return (target == null) ? 0 : target.getShortValue();
         }
@@ -681,13 +689,13 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "outlineLevel" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedByte xgetOutlineLevel() {
+    public XmlUnsignedByte xgetOutlineLevel() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedByte target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedByte)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            XmlUnsignedByte target = null;
+            target = (XmlUnsignedByte)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedByte)get_default_attribute_value(PROPERTY_QNAME[8]);
+                target = (XmlUnsignedByte)get_default_attribute_value(PROPERTY_QNAME[8]);
             }
             return target;
         }
@@ -711,10 +719,10 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setOutlineLevel(short outlineLevel) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.setShortValue(outlineLevel);
         }
@@ -724,13 +732,13 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "outlineLevel" attribute
      */
     @Override
-    public void xsetOutlineLevel(org.apache.xmlbeans.XmlUnsignedByte outlineLevel) {
+    public void xsetOutlineLevel(XmlUnsignedByte outlineLevel) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedByte target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedByte)get_store().find_attribute_user(PROPERTY_QNAME[8]);
+            XmlUnsignedByte target = null;
+            target = (XmlUnsignedByte)get_store().find_attribute_user(PROPERTY_QNAME[8]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedByte)get_store().add_attribute_user(PROPERTY_QNAME[8]);
+                target = (XmlUnsignedByte)get_store().add_attribute_user(PROPERTY_QNAME[8]);
             }
             target.set(outlineLevel);
         }
@@ -754,10 +762,10 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public boolean getCollapsed() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[9]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[9]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -767,13 +775,13 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Gets (as xml) the "collapsed" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetCollapsed() {
+    public XmlBoolean xgetCollapsed() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[9]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[9]);
             }
             return target;
         }
@@ -797,10 +805,10 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     public void setCollapsed(boolean collapsed) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.setBooleanValue(collapsed);
         }
@@ -810,13 +818,13 @@ public class CTColImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
      * Sets (as xml) the "collapsed" attribute
      */
     @Override
-    public void xsetCollapsed(org.apache.xmlbeans.XmlBoolean collapsed) {
+    public void xsetCollapsed(XmlBoolean collapsed) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.set(collapsed);
         }

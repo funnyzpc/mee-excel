@@ -7,7 +7,12 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlInt;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +20,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTCellAlignment extends org.apache.xmlbeans.XmlObject {
+public interface CTCellAlignment extends XmlObject {
     DocumentFactory<CTCellAlignment> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctcellalignmentb580type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -118,7 +123,7 @@ public interface CTCellAlignment extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "wrapText" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetWrapText();
+    XmlBoolean xgetWrapText();
 
     /**
      * True if has "wrapText" attribute
@@ -133,7 +138,7 @@ public interface CTCellAlignment extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "wrapText" attribute
      */
-    void xsetWrapText(org.apache.xmlbeans.XmlBoolean wrapText);
+    void xsetWrapText(XmlBoolean wrapText);
 
     /**
      * Unsets the "wrapText" attribute
@@ -148,7 +153,7 @@ public interface CTCellAlignment extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "indent" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetIndent();
+    XmlUnsignedInt xgetIndent();
 
     /**
      * True if has "indent" attribute
@@ -163,7 +168,7 @@ public interface CTCellAlignment extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "indent" attribute
      */
-    void xsetIndent(org.apache.xmlbeans.XmlUnsignedInt indent);
+    void xsetIndent(XmlUnsignedInt indent);
 
     /**
      * Unsets the "indent" attribute
@@ -178,7 +183,7 @@ public interface CTCellAlignment extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "relativeIndent" attribute
      */
-    org.apache.xmlbeans.XmlInt xgetRelativeIndent();
+    XmlInt xgetRelativeIndent();
 
     /**
      * True if has "relativeIndent" attribute
@@ -193,7 +198,7 @@ public interface CTCellAlignment extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "relativeIndent" attribute
      */
-    void xsetRelativeIndent(org.apache.xmlbeans.XmlInt relativeIndent);
+    void xsetRelativeIndent(XmlInt relativeIndent);
 
     /**
      * Unsets the "relativeIndent" attribute
@@ -208,7 +213,7 @@ public interface CTCellAlignment extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "justifyLastLine" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetJustifyLastLine();
+    XmlBoolean xgetJustifyLastLine();
 
     /**
      * True if has "justifyLastLine" attribute
@@ -223,7 +228,7 @@ public interface CTCellAlignment extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "justifyLastLine" attribute
      */
-    void xsetJustifyLastLine(org.apache.xmlbeans.XmlBoolean justifyLastLine);
+    void xsetJustifyLastLine(XmlBoolean justifyLastLine);
 
     /**
      * Unsets the "justifyLastLine" attribute
@@ -238,7 +243,7 @@ public interface CTCellAlignment extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "shrinkToFit" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetShrinkToFit();
+    XmlBoolean xgetShrinkToFit();
 
     /**
      * True if has "shrinkToFit" attribute
@@ -253,7 +258,7 @@ public interface CTCellAlignment extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "shrinkToFit" attribute
      */
-    void xsetShrinkToFit(org.apache.xmlbeans.XmlBoolean shrinkToFit);
+    void xsetShrinkToFit(XmlBoolean shrinkToFit);
 
     /**
      * Unsets the "shrinkToFit" attribute
@@ -268,7 +273,7 @@ public interface CTCellAlignment extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "readingOrder" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetReadingOrder();
+    XmlUnsignedInt xgetReadingOrder();
 
     /**
      * True if has "readingOrder" attribute
@@ -283,7 +288,7 @@ public interface CTCellAlignment extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "readingOrder" attribute
      */
-    void xsetReadingOrder(org.apache.xmlbeans.XmlUnsignedInt readingOrder);
+    void xsetReadingOrder(XmlUnsignedInt readingOrder);
 
     /**
      * Unsets the "readingOrder" attribute

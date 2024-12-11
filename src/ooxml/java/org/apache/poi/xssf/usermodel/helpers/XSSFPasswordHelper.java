@@ -30,8 +30,8 @@ import org.apache.poi.poifs.crypt.HashAlgorithm;
 import org.apache.poi.util.Internal;
 import org.apache.poi.util.RandomSingleton;
 import org.apache.poi.util.StringUtil;
-import org.apache.xmlbeans.XmlCursor;
-import org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlCursor;
+import poi.org.apache.xmlbeans.XmlObject;
 
 @Internal(since="3.15 beta 3")
 public final class XSSFPasswordHelper {

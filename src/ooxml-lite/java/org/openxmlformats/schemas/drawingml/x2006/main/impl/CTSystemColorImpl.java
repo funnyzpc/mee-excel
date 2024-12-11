@@ -7,6 +7,10 @@
  */
 package org.openxmlformats.schemas.drawingml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +18,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTSystemColorImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.drawingml.x2006.main.CTSystemColor {
+public class CTSystemColorImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.drawingml.x2006.main.CTSystemColor {
     private static final long serialVersionUID = 1L;
 
-    public CTSystemColorImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTSystemColorImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -62,8 +66,8 @@ public class CTSystemColorImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public byte[] getLastClr() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[29]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[29]);
             return (target == null) ? null : target.getByteArrayValue();
         }
     }

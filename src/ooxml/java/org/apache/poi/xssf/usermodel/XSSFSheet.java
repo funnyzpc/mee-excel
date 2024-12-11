@@ -49,8 +49,8 @@ import org.apache.poi.util.Removal;
 import org.apache.poi.util.Units;
 import org.apache.poi.xssf.model.Comments;
 import org.apache.poi.xssf.usermodel.helpers.ColumnHelper;
-import org.apache.xmlbeans.XmlException;
-import org.apache.xmlbeans.XmlOptions;
+import poi.org.apache.xmlbeans.XmlException;
+import poi.org.apache.xmlbeans.XmlOptions;
 import org.openxmlformats.schemas.spreadsheetml.x2006.main.*;
 
 /**

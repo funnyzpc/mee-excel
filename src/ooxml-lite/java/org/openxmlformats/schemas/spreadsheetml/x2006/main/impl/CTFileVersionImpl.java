@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlString;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTFileVersionImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion {
+public class CTFileVersionImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion {
     private static final long serialVersionUID = 1L;
 
-    public CTFileVersionImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTFileVersionImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -37,8 +42,8 @@ public class CTFileVersionImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public String getAppName() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -47,11 +52,11 @@ public class CTFileVersionImpl extends org.apache.xmlbeans.impl.values.XmlComple
      * Gets (as xml) the "appName" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlString xgetAppName() {
+    public XmlString xgetAppName() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            XmlString target = null;
+            target = (XmlString)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             return target;
         }
     }
@@ -74,10 +79,10 @@ public class CTFileVersionImpl extends org.apache.xmlbeans.impl.values.XmlComple
     public void setAppName(String appName) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.setStringValue(appName);
         }

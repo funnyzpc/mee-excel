@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTBookViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBookView {
+public class CTBookViewImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBookView {
     private static final long serialVersionUID = 1L;
 
-    public CTBookViewImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTBookViewImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -47,10 +52,10 @@ public class CTBookViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public long getFirstSheet() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[11]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[11]);
             }
             return (target == null) ? 0L : target.getLongValue();
         }
@@ -60,13 +65,13 @@ public class CTBookViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
      * Gets (as xml) the "firstSheet" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlUnsignedInt xgetFirstSheet() {
+    public XmlUnsignedInt xgetFirstSheet() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlUnsignedInt target = null;
-            target = (org.apache.xmlbeans.XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            XmlUnsignedInt target = null;
+            target = (XmlUnsignedInt)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[11]);
+                target = (XmlUnsignedInt)get_default_attribute_value(PROPERTY_QNAME[11]);
             }
             return target;
         }
@@ -90,10 +95,10 @@ public class CTBookViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public void setFirstSheet(long firstSheet) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[11]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[11]);
             }
             target.setLongValue(firstSheet);
         }
@@ -106,10 +111,10 @@ public class CTBookViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public long getActiveTab() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[12]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[12]);
             }
             return (target == null) ? 0L : target.getLongValue();
         }
@@ -121,10 +126,10 @@ public class CTBookViewImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     public void setActiveTab(long activeTab) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[12]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[12]);
             }
             target.setLongValue(activeTab);
         }

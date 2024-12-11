@@ -7,7 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +19,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTCell extends org.apache.xmlbeans.XmlObject {
+public interface CTCell extends XmlObject {
     DocumentFactory<CTCell> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctcell842btype");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -163,7 +167,7 @@ public interface CTCell extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "s" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetS();
+    XmlUnsignedInt xgetS();
 
     /**
      * True if has "s" attribute
@@ -178,7 +182,7 @@ public interface CTCell extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "s" attribute
      */
-    void xsetS(org.apache.xmlbeans.XmlUnsignedInt s);
+    void xsetS(XmlUnsignedInt s);
 
     /**
      * Unsets the "s" attribute
@@ -223,7 +227,7 @@ public interface CTCell extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "cm" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetCm();
+    XmlUnsignedInt xgetCm();
 
     /**
      * True if has "cm" attribute
@@ -238,7 +242,7 @@ public interface CTCell extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "cm" attribute
      */
-    void xsetCm(org.apache.xmlbeans.XmlUnsignedInt cm);
+    void xsetCm(XmlUnsignedInt cm);
 
     /**
      * Unsets the "cm" attribute
@@ -253,7 +257,7 @@ public interface CTCell extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "vm" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetVm();
+    XmlUnsignedInt xgetVm();
 
     /**
      * True if has "vm" attribute
@@ -268,7 +272,7 @@ public interface CTCell extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "vm" attribute
      */
-    void xsetVm(org.apache.xmlbeans.XmlUnsignedInt vm);
+    void xsetVm(XmlUnsignedInt vm);
 
     /**
      * Unsets the "vm" attribute
@@ -283,7 +287,7 @@ public interface CTCell extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "ph" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetPh();
+    XmlBoolean xgetPh();
 
     /**
      * True if has "ph" attribute
@@ -298,7 +302,7 @@ public interface CTCell extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "ph" attribute
      */
-    void xsetPh(org.apache.xmlbeans.XmlBoolean ph);
+    void xsetPh(XmlBoolean ph);
 
     /**
      * Unsets the "ph" attribute

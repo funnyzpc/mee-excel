@@ -17,9 +17,6 @@
 
 package org.apache.poi.hssf.record;
 
-import java.io.IOException;
-
-import org.apache.commons.io.input.UnsynchronizedByteArrayInputStream;
 import org.apache.poi.common.Duplicatable;
 import org.apache.poi.common.usermodel.GenericRecord;
 import org.apache.poi.util.GenericRecordJsonWriter;

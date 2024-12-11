@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlInt;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTX extends org.apache.xmlbeans.XmlObject {
+public interface CTX extends XmlObject {
     DocumentFactory<CTX> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctx8517type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -28,7 +31,7 @@ public interface CTX extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "v" attribute
      */
-    org.apache.xmlbeans.XmlInt xgetV();
+    XmlInt xgetV();
 
     /**
      * True if has "v" attribute
@@ -43,7 +46,7 @@ public interface CTX extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "v" attribute
      */
-    void xsetV(org.apache.xmlbeans.XmlInt v);
+    void xsetV(XmlInt v);
 
     /**
      * Unsets the "v" attribute

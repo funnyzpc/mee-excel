@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.JavaListXmlObject;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTCalcChainImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCalcChain {
+public class CTCalcChainImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCalcChain {
     private static final long serialVersionUID = 1L;
 
-    public CTCalcChainImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTCalcChainImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -34,7 +39,7 @@ public class CTCalcChainImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCalcCell> getCList() {
         synchronized (monitor()) {
             check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
+            return new JavaListXmlObject<>(
                 this::getCArray,
                 this::setCArray,
                 this::insertNewC,
@@ -93,7 +98,7 @@ public class CTCalcChainImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
      */
     @Override
     public void setCArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCalcCell c) {
-        generatedSetterHelperImpl(c, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(c, PROPERTY_QNAME[0], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**

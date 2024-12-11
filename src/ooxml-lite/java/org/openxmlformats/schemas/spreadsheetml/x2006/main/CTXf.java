@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTXf extends org.apache.xmlbeans.XmlObject {
+public interface CTXf extends XmlObject {
     DocumentFactory<CTXf> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctxf97f7type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -253,7 +256,7 @@ public interface CTXf extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "quotePrefix" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetQuotePrefix();
+    XmlBoolean xgetQuotePrefix();
 
     /**
      * True if has "quotePrefix" attribute
@@ -328,7 +331,7 @@ public interface CTXf extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "applyNumberFormat" attribute
      */
-    void xsetApplyNumberFormat(org.apache.xmlbeans.XmlBoolean applyNumberFormat);
+    void xsetApplyNumberFormat(XmlBoolean applyNumberFormat);
 
     /**
      * Unsets the "applyNumberFormat" attribute
@@ -343,7 +346,7 @@ public interface CTXf extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "applyFont" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetApplyFont();
+    XmlBoolean xgetApplyFont();
 
     /**
      * True if has "applyFont" attribute
@@ -358,7 +361,7 @@ public interface CTXf extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "applyFont" attribute
      */
-    void xsetApplyFont(org.apache.xmlbeans.XmlBoolean applyFont);
+    void xsetApplyFont(XmlBoolean applyFont);
 
     /**
      * Unsets the "applyFont" attribute
@@ -373,7 +376,7 @@ public interface CTXf extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "applyFill" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetApplyFill();
+    XmlBoolean xgetApplyFill();
 
     /**
      * True if has "applyFill" attribute
@@ -388,7 +391,7 @@ public interface CTXf extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "applyFill" attribute
      */
-    void xsetApplyFill(org.apache.xmlbeans.XmlBoolean applyFill);
+    void xsetApplyFill(XmlBoolean applyFill);
 
     /**
      * Unsets the "applyFill" attribute
@@ -403,7 +406,7 @@ public interface CTXf extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "applyBorder" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetApplyBorder();
+    XmlBoolean xgetApplyBorder();
 
     /**
      * True if has "applyBorder" attribute
@@ -418,7 +421,7 @@ public interface CTXf extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "applyBorder" attribute
      */
-    void xsetApplyBorder(org.apache.xmlbeans.XmlBoolean applyBorder);
+    void xsetApplyBorder(XmlBoolean applyBorder);
 
     /**
      * Unsets the "applyBorder" attribute
@@ -433,7 +436,7 @@ public interface CTXf extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "applyAlignment" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetApplyAlignment();
+    XmlBoolean xgetApplyAlignment();
 
     /**
      * True if has "applyAlignment" attribute

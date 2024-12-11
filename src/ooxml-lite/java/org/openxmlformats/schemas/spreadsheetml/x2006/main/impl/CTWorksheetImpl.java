@@ -7,7 +7,9 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
-import org.openxmlformats.schemas.spreadsheetml.x2006.main.CTTableParts;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
 
 import javax.xml.namespace.QName;
 
@@ -16,10 +18,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTWorksheetImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTWorksheet {
+public class CTWorksheetImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTWorksheet {
     private static final long serialVersionUID = 1L;
 
-    public CTWorksheetImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTWorksheetImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -83,7 +85,7 @@ public class CTWorksheetImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
      */
     @Override
     public void setSheetPr(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTSheetPr sheetPr) {
-        generatedSetterHelperImpl(sheetPr, PROPERTY_QNAME[0], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(sheetPr, PROPERTY_QNAME[0], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -259,7 +261,7 @@ public class CTWorksheetImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
      */
     @Override
     public void setColsArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCols cols) {
-        generatedSetterHelperImpl(cols, PROPERTY_QNAME[4], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(cols, PROPERTY_QNAME[4], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**
@@ -659,7 +661,7 @@ public class CTWorksheetImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
      */
     @Override
     public void setHeaderFooter(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTHeaderFooter headerFooter) {
-        generatedSetterHelperImpl(headerFooter, PROPERTY_QNAME[22], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(headerFooter, PROPERTY_QNAME[22], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
 

@@ -7,6 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +18,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTStylesheetImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTStylesheet {
+public class CTStylesheetImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTStylesheet {
     private static final long serialVersionUID = 1L;
 
-    public CTStylesheetImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTStylesheetImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -65,7 +69,7 @@ public class CTStylesheetImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      */
     @Override
     public void setNumFmts(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTNumFmts numFmts) {
-        generatedSetterHelperImpl(numFmts, PROPERTY_QNAME[0], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(numFmts, PROPERTY_QNAME[0], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -121,7 +125,7 @@ public class CTStylesheetImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      */
     @Override
     public void setFonts(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFonts fonts) {
-        generatedSetterHelperImpl(fonts, PROPERTY_QNAME[1], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(fonts, PROPERTY_QNAME[1], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -177,7 +181,7 @@ public class CTStylesheetImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      */
     @Override
     public void setFills(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFills fills) {
-        generatedSetterHelperImpl(fills, PROPERTY_QNAME[2], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(fills, PROPERTY_QNAME[2], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -209,7 +213,7 @@ public class CTStylesheetImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      */
     @Override
     public void setBorders(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTBorders borders) {
-        generatedSetterHelperImpl(borders, PROPERTY_QNAME[3], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(borders, PROPERTY_QNAME[3], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
 
@@ -242,7 +246,7 @@ public class CTStylesheetImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      */
     @Override
     public void setCellStyleXfs(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCellStyleXfs cellStyleXfs) {
-        generatedSetterHelperImpl(cellStyleXfs, PROPERTY_QNAME[4], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(cellStyleXfs, PROPERTY_QNAME[4], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
 
     /**
@@ -263,7 +267,7 @@ public class CTStylesheetImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      */
     @Override
     public void setCellXfs(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCellXfs cellXfs) {
-        generatedSetterHelperImpl(cellXfs, PROPERTY_QNAME[5], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(cellXfs, PROPERTY_QNAME[5], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
     /**
      * Gets the "dxfs" element
@@ -282,7 +286,7 @@ public class CTStylesheetImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      */
     @Override
     public void setDxfs(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxfs dxfs) {
-        generatedSetterHelperImpl(dxfs, PROPERTY_QNAME[7], 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+        generatedSetterHelperImpl(dxfs, PROPERTY_QNAME[7], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
     /**
      * Gets the "colors" element

@@ -20,8 +20,8 @@ package org.apache.poi.poifs.filesystem;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.apache.commons.io.input.UnsynchronizedByteArrayInputStream;
-import org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream;
+import poi.org.apache.commons.io.input.UnsynchronizedByteArrayInputStream;
+import poi.org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream;
 import org.apache.poi.poifs.common.POIFSConstants;
 import org.apache.poi.poifs.property.DocumentProperty;
 

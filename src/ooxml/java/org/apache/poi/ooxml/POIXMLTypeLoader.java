@@ -23,7 +23,7 @@ import java.util.Map;
 
 import org.apache.poi.openxml4j.opc.PackageNamespaces;
 import org.apache.poi.xssf.usermodel.XSSFRelation;
-import org.apache.xmlbeans.XmlOptions;
+import poi.org.apache.xmlbeans.XmlOptions;
 
 public class POIXMLTypeLoader {
 

@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.JavaListXmlObject;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTExternalReferencesImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalReferences {
+public class CTExternalReferencesImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalReferences {
     private static final long serialVersionUID = 1L;
 
-    public CTExternalReferencesImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTExternalReferencesImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -33,7 +38,7 @@ public class CTExternalReferencesImpl extends org.apache.xmlbeans.impl.values.Xm
     public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalReference> getExternalReferenceList() {
         synchronized (monitor()) {
             check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
+            return new JavaListXmlObject<>(
                 this::getExternalReferenceArray,
                 this::setExternalReferenceArray,
                 this::insertNewExternalReference,
@@ -92,7 +97,7 @@ public class CTExternalReferencesImpl extends org.apache.xmlbeans.impl.values.Xm
      */
     @Override
     public void setExternalReferenceArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalReference externalReference) {
-        generatedSetterHelperImpl(externalReference, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(externalReference, PROPERTY_QNAME[0], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**

@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.JavaListXmlObject;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+import poi.org.apache.xmlbeans.impl.values.XmlObjectBase;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTColorScaleImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColorScale {
+public class CTColorScaleImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColorScale {
     private static final long serialVersionUID = 1L;
 
-    public CTColorScaleImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTColorScaleImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -34,7 +39,7 @@ public class CTColorScaleImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfvo> getCfvoList() {
         synchronized (monitor()) {
             check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
+            return new JavaListXmlObject<>(
                 this::getCfvoArray,
                 this::setCfvoArray,
                 this::insertNewCfvo,
@@ -93,7 +98,7 @@ public class CTColorScaleImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      */
     @Override
     public void setCfvoArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCfvo cfvo) {
-        generatedSetterHelperImpl(cfvo, PROPERTY_QNAME[0], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(cfvo, PROPERTY_QNAME[0], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**
@@ -140,7 +145,7 @@ public class CTColorScaleImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColor> getColorList() {
         synchronized (monitor()) {
             check_orphaned();
-            return new org.apache.xmlbeans.impl.values.JavaListXmlObject<>(
+            return new JavaListXmlObject<>(
                 this::getColorArray,
                 this::setColorArray,
                 this::insertNewColor,
@@ -199,7 +204,7 @@ public class CTColorScaleImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      */
     @Override
     public void setColorArray(int i, org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColor color) {
-        generatedSetterHelperImpl(color, PROPERTY_QNAME[1], i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
+        generatedSetterHelperImpl(color, PROPERTY_QNAME[1], i, XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
     }
 
     /**

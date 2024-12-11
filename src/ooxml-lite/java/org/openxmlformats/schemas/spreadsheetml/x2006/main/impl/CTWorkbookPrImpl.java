@@ -7,6 +7,12 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlString;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +20,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTWorkbookPr {
+public class CTWorkbookPrImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTWorkbookPr {
     private static final long serialVersionUID = 1L;
 
-    public CTWorkbookPrImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTWorkbookPrImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -50,10 +56,10 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public boolean getDate1904() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[0]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -66,10 +72,10 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setDate1904(boolean date1904) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.setBooleanValue(date1904);
         }
@@ -81,13 +87,13 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "showInkAnnotation" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetShowInkAnnotation() {
+    public XmlBoolean xgetShowInkAnnotation() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[5]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[5]);
             }
             return target;
         }
@@ -111,10 +117,10 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setShowInkAnnotation(boolean showInkAnnotation) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.setBooleanValue(showInkAnnotation);
         }
@@ -124,13 +130,13 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "showInkAnnotation" attribute
      */
     @Override
-    public void xsetShowInkAnnotation(org.apache.xmlbeans.XmlBoolean showInkAnnotation) {
+    public void xsetShowInkAnnotation(XmlBoolean showInkAnnotation) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[5]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[5]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[5]);
             }
             target.set(showInkAnnotation);
         }
@@ -154,10 +160,10 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public boolean getBackupFile() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[6]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -167,13 +173,13 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "backupFile" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetBackupFile() {
+    public XmlBoolean xgetBackupFile() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[6]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[6]);
             }
             return target;
         }
@@ -197,10 +203,10 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setBackupFile(boolean backupFile) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.setBooleanValue(backupFile);
         }
@@ -210,13 +216,13 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "backupFile" attribute
      */
     @Override
-    public void xsetBackupFile(org.apache.xmlbeans.XmlBoolean backupFile) {
+    public void xsetBackupFile(XmlBoolean backupFile) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[6]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[6]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[6]);
             }
             target.set(backupFile);
         }
@@ -240,10 +246,10 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public boolean getSaveExternalLinkValues() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[7]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[7]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -253,13 +259,13 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "saveExternalLinkValues" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetSaveExternalLinkValues() {
+    public XmlBoolean xgetSaveExternalLinkValues() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[7]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[7]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[7]);
             }
             return target;
         }
@@ -283,8 +289,8 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public String getCodeName() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             return (target == null) ? null : target.getStringValue();
         }
     }
@@ -293,11 +299,11 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "codeName" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlString xgetCodeName() {
+    public XmlString xgetCodeName() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            XmlString target = null;
+            target = (XmlString)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             return target;
         }
     }
@@ -320,10 +326,10 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setCodeName(String codeName) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.setStringValue(codeName);
         }
@@ -333,13 +339,13 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "codeName" attribute
      */
     @Override
-    public void xsetCodeName(org.apache.xmlbeans.XmlString codeName) {
+    public void xsetCodeName(XmlString codeName) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlString target = null;
-            target = (org.apache.xmlbeans.XmlString)get_store().find_attribute_user(PROPERTY_QNAME[9]);
+            XmlString target = null;
+            target = (XmlString)get_store().find_attribute_user(PROPERTY_QNAME[9]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlString)get_store().add_attribute_user(PROPERTY_QNAME[9]);
+                target = (XmlString)get_store().add_attribute_user(PROPERTY_QNAME[9]);
             }
             target.set(codeName);
         }
@@ -363,10 +369,10 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public boolean getHidePivotFieldList() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[10]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[10]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -376,13 +382,13 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "hidePivotFieldList" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetHidePivotFieldList() {
+    public XmlBoolean xgetHidePivotFieldList() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[10]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[10]);
             }
             return target;
         }
@@ -406,10 +412,10 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setHidePivotFieldList(boolean hidePivotFieldList) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[10]);
             }
             target.setBooleanValue(hidePivotFieldList);
         }
@@ -419,13 +425,13 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "hidePivotFieldList" attribute
      */
     @Override
-    public void xsetHidePivotFieldList(org.apache.xmlbeans.XmlBoolean hidePivotFieldList) {
+    public void xsetHidePivotFieldList(XmlBoolean hidePivotFieldList) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[10]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[10]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[10]);
             }
             target.set(hidePivotFieldList);
         }
@@ -449,10 +455,10 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public boolean getShowPivotChartFilter() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[11]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[11]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -462,13 +468,13 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "showPivotChartFilter" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetShowPivotChartFilter() {
+    public XmlBoolean xgetShowPivotChartFilter() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[11]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[11]);
             }
             return target;
         }
@@ -492,10 +498,10 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setShowPivotChartFilter(boolean showPivotChartFilter) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[11]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[11]);
             }
             target.setBooleanValue(showPivotChartFilter);
         }
@@ -505,13 +511,13 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "showPivotChartFilter" attribute
      */
     @Override
-    public void xsetShowPivotChartFilter(org.apache.xmlbeans.XmlBoolean showPivotChartFilter) {
+    public void xsetShowPivotChartFilter(XmlBoolean showPivotChartFilter) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[11]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[11]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[11]);
             }
             target.set(showPivotChartFilter);
         }
@@ -535,10 +541,10 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public boolean getAllowRefreshQuery() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[12]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[12]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -548,13 +554,13 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "allowRefreshQuery" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetAllowRefreshQuery() {
+    public XmlBoolean xgetAllowRefreshQuery() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[12]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[12]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[12]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[12]);
             }
             return target;
         }
@@ -578,10 +584,10 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setAllowRefreshQuery(boolean allowRefreshQuery) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[12]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[12]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[12]);
             }
             target.setBooleanValue(allowRefreshQuery);
         }
@@ -591,13 +597,13 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "allowRefreshQuery" attribute
      */
     @Override
-    public void xsetAllowRefreshQuery(org.apache.xmlbeans.XmlBoolean allowRefreshQuery) {
+    public void xsetAllowRefreshQuery(XmlBoolean allowRefreshQuery) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[12]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[12]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[12]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[12]);
             }
             target.set(allowRefreshQuery);
         }
@@ -621,10 +627,10 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public boolean getPublishItems() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[13]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[13]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -634,13 +640,13 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "publishItems" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetPublishItems() {
+    public XmlBoolean xgetPublishItems() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[13]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[13]);
             }
             return target;
         }
@@ -664,10 +670,10 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setPublishItems(boolean publishItems) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[13]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[13]);
             }
             target.setBooleanValue(publishItems);
         }
@@ -677,13 +683,13 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Sets (as xml) the "publishItems" attribute
      */
     @Override
-    public void xsetPublishItems(org.apache.xmlbeans.XmlBoolean publishItems) {
+    public void xsetPublishItems(XmlBoolean publishItems) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[13]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[13]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[13]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[13]);
             }
             target.set(publishItems);
         }
@@ -707,10 +713,10 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public boolean getCheckCompatibility() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[14]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[14]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_default_attribute_value(PROPERTY_QNAME[14]);
+                target = (SimpleValue)get_default_attribute_value(PROPERTY_QNAME[14]);
             }
             return (target == null) ? false : target.getBooleanValue();
         }
@@ -720,13 +726,13 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
      * Gets (as xml) the "checkCompatibility" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetCheckCompatibility() {
+    public XmlBoolean xgetCheckCompatibility() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[14]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[14]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[14]);
+                target = (XmlBoolean)get_default_attribute_value(PROPERTY_QNAME[14]);
             }
             return target;
         }
@@ -750,10 +756,10 @@ public class CTWorkbookPrImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     public void setCheckCompatibility(boolean checkCompatibility) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[14]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[14]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[14]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[14]);
             }
             target.setBooleanValue(checkCompatibility);
         }

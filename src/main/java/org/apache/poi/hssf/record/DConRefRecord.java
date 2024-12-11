@@ -23,7 +23,7 @@ import java.util.Arrays;
 import java.util.Map;
 import java.util.function.Supplier;
 
-import org.apache.commons.io.input.UnsynchronizedByteArrayInputStream;
+import poi.org.apache.commons.io.input.UnsynchronizedByteArrayInputStream;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.util.GenericRecordUtil;
 import org.apache.poi.util.IOUtils;

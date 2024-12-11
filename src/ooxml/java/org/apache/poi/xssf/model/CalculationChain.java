@@ -19,12 +19,10 @@ package org.apache.poi.xssf.model;
 import static org.apache.poi.ooxml.POIXMLTypeLoader.DEFAULT_XML_OPTIONS;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.OutputStream;
 
 import org.apache.poi.ooxml.POIXMLDocumentPart;
 import org.apache.poi.openxml4j.opc.PackagePart;
-import org.apache.xmlbeans.XmlException;
 import org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCalcCell;
 import org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCalcChain;
 import org.openxmlformats.schemas.spreadsheetml.x2006.main.CalcChainDocument;

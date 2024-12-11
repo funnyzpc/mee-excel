@@ -7,19 +7,22 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.impl.values.JavaStringEnumerationHolderEx;
+
 /**
  * An XML ST_CalcMode(@http://schemas.openxmlformats.org/spreadsheetml/2006/main).
  *
  * This is an atomic type that is a restriction of org.openxmlformats.schemas.spreadsheetml.x2006.main.STCalcMode.
  */
-public class STCalcModeImpl extends org.apache.xmlbeans.impl.values.JavaStringEnumerationHolderEx implements org.openxmlformats.schemas.spreadsheetml.x2006.main.STCalcMode {
+public class STCalcModeImpl extends JavaStringEnumerationHolderEx implements org.openxmlformats.schemas.spreadsheetml.x2006.main.STCalcMode {
     private static final long serialVersionUID = 1L;
 
-    public STCalcModeImpl(org.apache.xmlbeans.SchemaType sType) {
+    public STCalcModeImpl(SchemaType sType) {
         super(sType, false);
     }
 
-    protected STCalcModeImpl(org.apache.xmlbeans.SchemaType sType, boolean b) {
+    protected STCalcModeImpl(SchemaType sType, boolean b) {
         super(sType, b);
     }
 }

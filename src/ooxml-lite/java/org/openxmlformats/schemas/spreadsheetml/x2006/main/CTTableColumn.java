@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTTableColumn extends org.apache.xmlbeans.XmlObject {
+public interface CTTableColumn extends XmlObject {
     DocumentFactory<CTTableColumn> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "cttablecolumn08a3type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 //
 //    /**
@@ -128,7 +131,7 @@ public interface CTTableColumn extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "id" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetId();
+    XmlUnsignedInt xgetId();
 
     /**
      * Sets the "id" attribute
@@ -138,7 +141,7 @@ public interface CTTableColumn extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "id" attribute
      */
-    void xsetId(org.apache.xmlbeans.XmlUnsignedInt id);
+    void xsetId(XmlUnsignedInt id);
 
     /**
      * Gets the "uniqueName" attribute
@@ -258,7 +261,7 @@ public interface CTTableColumn extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "queryTableFieldId" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetQueryTableFieldId();
+    XmlUnsignedInt xgetQueryTableFieldId();
 
     /**
      * True if has "queryTableFieldId" attribute
@@ -273,7 +276,7 @@ public interface CTTableColumn extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "queryTableFieldId" attribute
      */
-    void xsetQueryTableFieldId(org.apache.xmlbeans.XmlUnsignedInt queryTableFieldId);
+    void xsetQueryTableFieldId(XmlUnsignedInt queryTableFieldId);
 
     /**
      * Unsets the "queryTableFieldId" attribute

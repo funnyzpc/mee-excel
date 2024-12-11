@@ -7,7 +7,9 @@
  */
 package org.openxmlformats.schemas.officeDocument.x2006.relationships;
 
-import org.apache.xmlbeans.impl.schema.SimpleTypeFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlString;
+import poi.org.apache.xmlbeans.impl.schema.SimpleTypeFactory;
 
 
 /**
@@ -15,8 +17,8 @@ import org.apache.xmlbeans.impl.schema.SimpleTypeFactory;
  *
  * This is an atomic type that is a restriction of org.openxmlformats.schemas.officeDocument.x2006.relationships.STRelationshipId.
  */
-public interface STRelationshipId extends org.apache.xmlbeans.XmlString {
+public interface STRelationshipId extends XmlString {
     SimpleTypeFactory<STRelationshipId> Factory = new SimpleTypeFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "strelationshipid1e94type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 }

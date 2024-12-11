@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlUnsignedInt;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -17,7 +20,7 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  */
 public interface CTDefinedName extends org.openxmlformats.schemas.spreadsheetml.x2006.main.STFormula {
     DocumentFactory<CTDefinedName> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctdefinedname9413type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -198,7 +201,7 @@ public interface CTDefinedName extends org.openxmlformats.schemas.spreadsheetml.
     /**
      * Gets (as xml) the "localSheetId" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetLocalSheetId();
+    XmlUnsignedInt xgetLocalSheetId();
 
     /**
      * True if has "localSheetId" attribute
@@ -213,7 +216,7 @@ public interface CTDefinedName extends org.openxmlformats.schemas.spreadsheetml.
     /**
      * Sets (as xml) the "localSheetId" attribute
      */
-    void xsetLocalSheetId(org.apache.xmlbeans.XmlUnsignedInt localSheetId);
+    void xsetLocalSheetId(XmlUnsignedInt localSheetId);
 
     /**
      * Unsets the "localSheetId" attribute
@@ -228,7 +231,7 @@ public interface CTDefinedName extends org.openxmlformats.schemas.spreadsheetml.
     /**
      * Gets (as xml) the "hidden" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetHidden();
+    XmlBoolean xgetHidden();
 
     /**
      * True if has "hidden" attribute
@@ -243,7 +246,7 @@ public interface CTDefinedName extends org.openxmlformats.schemas.spreadsheetml.
     /**
      * Sets (as xml) the "hidden" attribute
      */
-    void xsetHidden(org.apache.xmlbeans.XmlBoolean hidden);
+    void xsetHidden(XmlBoolean hidden);
 
     /**
      * Unsets the "hidden" attribute
@@ -258,7 +261,7 @@ public interface CTDefinedName extends org.openxmlformats.schemas.spreadsheetml.
     /**
      * Gets (as xml) the "function" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetFunction();
+    XmlBoolean xgetFunction();
 
     /**
      * True if has "function" attribute
@@ -333,7 +336,7 @@ public interface CTDefinedName extends org.openxmlformats.schemas.spreadsheetml.
     /**
      * Sets (as xml) the "xlm" attribute
      */
-    void xsetXlm(org.apache.xmlbeans.XmlBoolean xlm);
+    void xsetXlm(XmlBoolean xlm);
 
     /**
      * Unsets the "xlm" attribute
@@ -348,7 +351,7 @@ public interface CTDefinedName extends org.openxmlformats.schemas.spreadsheetml.
     /**
      * Gets (as xml) the "functionGroupId" attribute
      */
-    org.apache.xmlbeans.XmlUnsignedInt xgetFunctionGroupId();
+    XmlUnsignedInt xgetFunctionGroupId();
 
     /**
      * True if has "functionGroupId" attribute

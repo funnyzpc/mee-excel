@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.DocumentFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.XmlObject;
+import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
 
 
 /**
@@ -15,9 +18,9 @@ import org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
-public interface CTSheetCalcPr extends org.apache.xmlbeans.XmlObject {
+public interface CTSheetCalcPr extends XmlObject {
     DocumentFactory<CTSheetCalcPr> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctsheetcalcprc6d5type");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
     /**
@@ -28,7 +31,7 @@ public interface CTSheetCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Gets (as xml) the "fullCalcOnLoad" attribute
      */
-    org.apache.xmlbeans.XmlBoolean xgetFullCalcOnLoad();
+    XmlBoolean xgetFullCalcOnLoad();
 
     /**
      * True if has "fullCalcOnLoad" attribute
@@ -43,7 +46,7 @@ public interface CTSheetCalcPr extends org.apache.xmlbeans.XmlObject {
     /**
      * Sets (as xml) the "fullCalcOnLoad" attribute
      */
-    void xsetFullCalcOnLoad(org.apache.xmlbeans.XmlBoolean fullCalcOnLoad);
+    void xsetFullCalcOnLoad(XmlBoolean fullCalcOnLoad);
 
     /**
      * Unsets the "fullCalcOnLoad" attribute

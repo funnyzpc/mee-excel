@@ -7,6 +7,11 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main.impl;
 
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.SimpleValue;
+import poi.org.apache.xmlbeans.XmlBoolean;
+import poi.org.apache.xmlbeans.impl.values.XmlComplexContentImpl;
+
 import javax.xml.namespace.QName;
 
 /**
@@ -14,10 +19,10 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
-public class CTCellProtectionImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCellProtection {
+public class CTCellProtectionImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTCellProtection {
     private static final long serialVersionUID = 1L;
 
-    public CTCellProtectionImpl(org.apache.xmlbeans.SchemaType sType) {
+    public CTCellProtectionImpl(SchemaType sType) {
         super(sType);
     }
 
@@ -34,8 +39,8 @@ public class CTCellProtectionImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public boolean getLocked() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             return (target == null) ? false : target.getBooleanValue();
         }
     }
@@ -44,11 +49,11 @@ public class CTCellProtectionImpl extends org.apache.xmlbeans.impl.values.XmlCom
      * Gets (as xml) the "locked" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetLocked() {
+    public XmlBoolean xgetLocked() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             return target;
         }
     }
@@ -71,10 +76,10 @@ public class CTCellProtectionImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public void setLocked(boolean locked) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.setBooleanValue(locked);
         }
@@ -84,13 +89,13 @@ public class CTCellProtectionImpl extends org.apache.xmlbeans.impl.values.XmlCom
      * Sets (as xml) the "locked" attribute
      */
     @Override
-    public void xsetLocked(org.apache.xmlbeans.XmlBoolean locked) {
+    public void xsetLocked(XmlBoolean locked) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[0]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[0]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[0]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[0]);
             }
             target.set(locked);
         }
@@ -114,8 +119,8 @@ public class CTCellProtectionImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public boolean getHidden() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return (target == null) ? false : target.getBooleanValue();
         }
     }
@@ -124,11 +129,11 @@ public class CTCellProtectionImpl extends org.apache.xmlbeans.impl.values.XmlCom
      * Gets (as xml) the "hidden" attribute
      */
     @Override
-    public org.apache.xmlbeans.XmlBoolean xgetHidden() {
+    public XmlBoolean xgetHidden() {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             return target;
         }
     }
@@ -151,10 +156,10 @@ public class CTCellProtectionImpl extends org.apache.xmlbeans.impl.values.XmlCom
     public void setHidden(boolean hidden) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.SimpleValue target = null;
-            target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            SimpleValue target = null;
+            target = (SimpleValue)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (SimpleValue)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.setBooleanValue(hidden);
         }
@@ -164,13 +169,13 @@ public class CTCellProtectionImpl extends org.apache.xmlbeans.impl.values.XmlCom
      * Sets (as xml) the "hidden" attribute
      */
     @Override
-    public void xsetHidden(org.apache.xmlbeans.XmlBoolean hidden) {
+    public void xsetHidden(XmlBoolean hidden) {
         synchronized (monitor()) {
             check_orphaned();
-            org.apache.xmlbeans.XmlBoolean target = null;
-            target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[1]);
+            XmlBoolean target = null;
+            target = (XmlBoolean)get_store().find_attribute_user(PROPERTY_QNAME[1]);
             if (target == null) {
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[1]);
+                target = (XmlBoolean)get_store().add_attribute_user(PROPERTY_QNAME[1]);
             }
             target.set(hidden);
         }

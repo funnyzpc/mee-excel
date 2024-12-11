@@ -7,7 +7,10 @@
  */
 package org.openxmlformats.schemas.spreadsheetml.x2006.main;
 
-import org.apache.xmlbeans.impl.schema.SimpleTypeFactory;
+import poi.org.apache.xmlbeans.SchemaType;
+import poi.org.apache.xmlbeans.StringEnumAbstractBase;
+import poi.org.apache.xmlbeans.XmlString;
+import poi.org.apache.xmlbeans.impl.schema.SimpleTypeFactory;
 
 
 /**
@@ -15,13 +18,13 @@ import org.apache.xmlbeans.impl.schema.SimpleTypeFactory;
  *
  * This is an atomic type that is a restriction of org.openxmlformats.schemas.spreadsheetml.x2006.main.STVerticalAlignment.
  */
-public interface STVerticalAlignment extends org.apache.xmlbeans.XmlString {
+public interface STVerticalAlignment extends XmlString {
     SimpleTypeFactory<STVerticalAlignment> Factory = new SimpleTypeFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "stverticalalignmentd35ctype");
-    org.apache.xmlbeans.SchemaType type = Factory.getType();
+    SchemaType type = Factory.getType();
 
 
-    org.apache.xmlbeans.StringEnumAbstractBase getEnumValue();
-    void setEnumValue(org.apache.xmlbeans.StringEnumAbstractBase e);
+    StringEnumAbstractBase getEnumValue();
+    void setEnumValue(StringEnumAbstractBase e);
 
     Enum TOP = Enum.forString("top");
     Enum CENTER = Enum.forString("center");
@@ -50,7 +53,7 @@ public interface STVerticalAlignment extends org.apache.xmlbeans.XmlString {
      * public constructor. See the constants defined within this
      * class for all the valid values.
      */
-    final class Enum extends org.apache.xmlbeans.StringEnumAbstractBase {
+    final class Enum extends StringEnumAbstractBase {
         /**
          * Returns the enum value for a string, or null if none.
          */
