@@ -1,12 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>com.mee.excel</groupId>
     <artifactId>mee-excel</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
+    <description>A Simplified Excel Operating Library,use POI library.</description>
+    <url>https://github.com/funnyzpc/mee-excel</url>
+    <scm>
+        <connection>scm:git:git@github.com:funnyzpc/mee-excel.git</connection>
+        <developerConnection>scm:git:git@github.com:funnyzpc/mee-excel.git</developerConnection>
+        <tag/>
+        <url>https://github.com/funnyzpc/mee-excel</url>
+    </scm>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>funnyzpc</name>
+            <email>funnyzpc@gmail.com</email>
+            <timezone>+8</timezone>
+            <url>https://github.com/funnyzpc</url>
+        </developer>
+    </developers>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -100,6 +122,35 @@
         </resources>
 
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.2.1</version>
+                <executions>
+                <execution>
+                    <id>attach-sources</id>
+<!--                    <phase>deploy</phase>-->
+                    <phase>package</phase>
+                    <goals>
+                        <goal>jar-no-fork</goal>
+                    </goals>
+                </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <!-- 包含必要的第三方模块散装代码 -->
                 <groupId>org.codehaus.mojo</groupId>
