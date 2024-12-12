@@ -24,14 +24,14 @@
   `  implementation group: 'io.github.funnyzpc', name: 'mee-excel', version: '1.0.0'`
 
 ### example 
-+ 独立使用
- - [ExcelReadTest.java](src%2Ftest%2Fjava%2Forg%2Fapache%2Fpoi%2Frw%2FExcelReadTest.java)
- - [ExcelWriteTest.java](src%2Ftest%2Fjava%2Forg%2Fapache%2Fpoi%2Frw%2FExcelWriteTest.java)
++ **独立使用**
+   - [ExcelReadTest.java](src%2Ftest%2Fjava%2Forg%2Fapache%2Fpoi%2Frw%2FExcelReadTest.java)
+   - [ExcelWriteTest.java](src%2Ftest%2Fjava%2Forg%2Fapache%2Fpoi%2Frw%2FExcelWriteTest.java)
 
-+ 配合 easyexcel使用
- - [ExcelWriteTest.java](src%2Ftest%2Fjava%2Forg%2Fapache%2Fpoi%2Frw%2FExcelWriteTest.java)
- - [EasyExcelWriteTest.java](src%2Ftest%2Fjava%2Forg%2Fapache%2Fpoi%2Frw%2FEasyExcelWriteTest.java)
- - 需要剔除依赖的poi：
++ **配合 easyexcel使用**
+   - [ExcelWriteTest.java](src%2Ftest%2Fjava%2Forg%2Fapache%2Fpoi%2Frw%2FExcelWriteTest.java)
+   - [EasyExcelWriteTest.java](src%2Ftest%2Fjava%2Forg%2Fapache%2Fpoi%2Frw%2FEasyExcelWriteTest.java)
+   - 需要剔除依赖的poi：
    ```
    <dependency>
    <groupId>com.alibaba</groupId>
@@ -48,7 +48,7 @@
      </exclusion>
    </exclusions>
    </dependency>
-    ```
+  ```
 
 ### 与使用poi打包比较
 
