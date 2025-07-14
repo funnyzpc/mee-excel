@@ -247,10 +247,10 @@ public interface CTStylesheet extends XmlObject {
 //     */
 //    void unsetTableStyles();
 
-    /**
-     * Gets the "colors" element
-     */
-    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColors getColors();
+//    /**
+//     * Gets the "colors" element
+//     */
+//    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColors getColors();
 
 //    /**
 //     * True if has "colors" element

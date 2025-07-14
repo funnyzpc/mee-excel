@@ -47,24 +47,24 @@ public class CTExternalBookImpl extends XmlComplexContentImpl implements org.ope
         }
     }
 
-    /**
-     * True if has "sheetNames" element
-     */
-    @Override
-    public boolean isSetSheetNames() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return get_store().count_elements(PROPERTY_QNAME[0]) != 0;
-        }
-    }
-
-    /**
-     * Sets the "sheetNames" element
-     */
-    @Override
-    public void setSheetNames(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetNames sheetNames) {
-        generatedSetterHelperImpl(sheetNames, PROPERTY_QNAME[0], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
-    }
+//    /**
+//     * True if has "sheetNames" element
+//     */
+//    @Override
+//    public boolean isSetSheetNames() {
+//        synchronized (monitor()) {
+//            check_orphaned();
+//            return get_store().count_elements(PROPERTY_QNAME[0]) != 0;
+//        }
+//    }
+//
+//    /**
+//     * Sets the "sheetNames" element
+//     */
+//    @Override
+//    public void setSheetNames(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetNames sheetNames) {
+//        generatedSetterHelperImpl(sheetNames, PROPERTY_QNAME[0], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+//    }
 
     /**
      * Appends and returns a new empty "sheetNames" element
@@ -159,24 +159,24 @@ public class CTExternalBookImpl extends XmlComplexContentImpl implements org.ope
         }
     }
 
-    /**
-     * True if has "sheetDataSet" element
-     */
-    @Override
-    public boolean isSetSheetDataSet() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return get_store().count_elements(PROPERTY_QNAME[2]) != 0;
-        }
-    }
-
-    /**
-     * Sets the "sheetDataSet" element
-     */
-    @Override
-    public void setSheetDataSet(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetDataSet sheetDataSet) {
-        generatedSetterHelperImpl(sheetDataSet, PROPERTY_QNAME[2], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
-    }
+//    /**
+//     * True if has "sheetDataSet" element
+//     */
+//    @Override
+//    public boolean isSetSheetDataSet() {
+//        synchronized (monitor()) {
+//            check_orphaned();
+//            return get_store().count_elements(PROPERTY_QNAME[2]) != 0;
+//        }
+//    }
+//
+//    /**
+//     * Sets the "sheetDataSet" element
+//     */
+//    @Override
+//    public void setSheetDataSet(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetDataSet sheetDataSet) {
+//        generatedSetterHelperImpl(sheetDataSet, PROPERTY_QNAME[2], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+//    }
 
     /**
      * Appends and returns a new empty "sheetDataSet" element

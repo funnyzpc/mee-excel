@@ -329,12 +329,12 @@ public final class XSSFRelation extends POIXMLRelation {
 //        CalculationChain::new, CalculationChain::new
 //    );
 
-    public static final XSSFRelation EXTERNAL_LINKS = new XSSFRelation(
-        "application/vnd.openxmlformats-officedocument.spreadsheetml.externalLink+xml",
-        "http://schemas.openxmlformats.org/officeDocument/2006/relationships/externalLink",
-        "/xl/externalLinks/externalLink#.xml",
-        ExternalLinksTable::new, ExternalLinksTable::new
-    );
+//    public static final XSSFRelation EXTERNAL_LINKS = new XSSFRelation(
+//        "application/vnd.openxmlformats-officedocument.spreadsheetml.externalLink+xml",
+//        "http://schemas.openxmlformats.org/officeDocument/2006/relationships/externalLink",
+//        "/xl/externalLinks/externalLink#.xml",
+//        ExternalLinksTable::new, ExternalLinksTable::new
+//    );
 
 //    public static final XSSFRelation PRINTER_SETTINGS = new XSSFRelation(
 //        "application/vnd.openxmlformats-officedocument.spreadsheetml.printerSettings",

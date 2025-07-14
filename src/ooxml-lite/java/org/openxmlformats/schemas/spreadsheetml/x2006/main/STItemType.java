@@ -18,6 +18,7 @@ import poi.org.apache.xmlbeans.impl.schema.SimpleTypeFactory;
  *
  * This is an atomic type that is a restriction of org.openxmlformats.schemas.spreadsheetml.x2006.main.STItemType.
  */
+@Deprecated
 public interface STItemType extends XmlString {
     SimpleTypeFactory<STItemType> Factory = new SimpleTypeFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "stitemtype6186type");
     SchemaType type = Factory.getType();

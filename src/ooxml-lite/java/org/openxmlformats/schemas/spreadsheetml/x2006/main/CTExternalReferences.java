@@ -22,48 +22,48 @@ public interface CTExternalReferences extends XmlObject {
     SchemaType type = Factory.getType();
 
 
-    /**
-     * Gets a List of "externalReference" elements
-     */
-    java.util.List<CTExternalReference> getExternalReferenceList();
+//    /**
+//     * Gets a List of "externalReference" elements
+//     */
+//    java.util.List<CTExternalReference> getExternalReferenceList();
 
     /**
      * Gets array of all "externalReference" elements
      */
     CTExternalReference[] getExternalReferenceArray();
 
-    /**
-     * Gets ith "externalReference" element
-     */
-    CTExternalReference getExternalReferenceArray(int i);
-
-    /**
-     * Returns number of "externalReference" element
-     */
-    int sizeOfExternalReferenceArray();
-
-    /**
-     * Sets array of all "externalReference" element
-     */
-    void setExternalReferenceArray(CTExternalReference[] externalReferenceArray);
-
-    /**
-     * Sets ith "externalReference" element
-     */
-    void setExternalReferenceArray(int i, CTExternalReference externalReference);
-
-    /**
-     * Inserts and returns a new empty value (as xml) as the ith "externalReference" element
-     */
-    CTExternalReference insertNewExternalReference(int i);
-
-    /**
-     * Appends and returns a new empty value (as xml) as the last "externalReference" element
-     */
-    CTExternalReference addNewExternalReference();
-
-    /**
-     * Removes the ith "externalReference" element
-     */
-    void removeExternalReference(int i);
+//    /**
+//     * Gets ith "externalReference" element
+//     */
+//    CTExternalReference getExternalReferenceArray(int i);
+//
+//    /**
+//     * Returns number of "externalReference" element
+//     */
+//    int sizeOfExternalReferenceArray();
+//
+//    /**
+//     * Sets array of all "externalReference" element
+//     */
+//    void setExternalReferenceArray(CTExternalReference[] externalReferenceArray);
+//
+//    /**
+//     * Sets ith "externalReference" element
+//     */
+//    void setExternalReferenceArray(int i, CTExternalReference externalReference);
+//
+//    /**
+//     * Inserts and returns a new empty value (as xml) as the ith "externalReference" element
+//     */
+//    CTExternalReference insertNewExternalReference(int i);
+//
+//    /**
+//     * Appends and returns a new empty value (as xml) as the last "externalReference" element
+//     */
+//    CTExternalReference addNewExternalReference();
+//
+//    /**
+//     * Removes the ith "externalReference" element
+//     */
+//    void removeExternalReference(int i);
 }

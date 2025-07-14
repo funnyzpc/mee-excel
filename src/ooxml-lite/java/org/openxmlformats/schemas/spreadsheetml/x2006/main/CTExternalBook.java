@@ -27,15 +27,15 @@ public interface CTExternalBook extends XmlObject {
      */
     org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetNames getSheetNames();
 
-    /**
-     * True if has "sheetNames" element
-     */
-    boolean isSetSheetNames();
-
-    /**
-     * Sets the "sheetNames" element
-     */
-    void setSheetNames(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetNames sheetNames);
+//    /**
+//     * True if has "sheetNames" element
+//     */
+//    boolean isSetSheetNames();
+//
+//    /**
+//     * Sets the "sheetNames" element
+//     */
+//    void setSheetNames(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetNames sheetNames);
 
     /**
      * Appends and returns a new empty "sheetNames" element
@@ -77,15 +77,15 @@ public interface CTExternalBook extends XmlObject {
      */
     org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetDataSet getSheetDataSet();
 
-    /**
-     * True if has "sheetDataSet" element
-     */
-    boolean isSetSheetDataSet();
-
-    /**
-     * Sets the "sheetDataSet" element
-     */
-    void setSheetDataSet(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetDataSet sheetDataSet);
+//    /**
+//     * True if has "sheetDataSet" element
+//     */
+//    boolean isSetSheetDataSet();
+//
+//    /**
+//     * Sets the "sheetDataSet" element
+//     */
+//    void setSheetDataSet(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetDataSet sheetDataSet);
 
     /**
      * Appends and returns a new empty "sheetDataSet" element

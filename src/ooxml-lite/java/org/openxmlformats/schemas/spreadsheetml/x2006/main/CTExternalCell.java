@@ -17,6 +17,7 @@ import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
+@Deprecated
 public interface CTExternalCell extends XmlObject {
     DocumentFactory<CTExternalCell> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctexternalcell5dd6type");
     SchemaType type = Factory.getType();

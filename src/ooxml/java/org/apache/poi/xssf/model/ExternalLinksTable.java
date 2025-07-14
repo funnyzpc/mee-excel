@@ -55,15 +55,15 @@ public class ExternalLinksTable extends POIXMLDocumentPart {
         link.addNewExternalBook();
     }
 
-    /**
-     * @since POI 3.14-Beta1
-     */
-    public ExternalLinksTable(PackagePart part) throws IOException {
-        super(part);
-        try (InputStream stream = part.getInputStream()) {
-            readFrom(stream);
-        }
-    }
+//    /**
+//     * @since POI 3.14-Beta1
+//     */
+//    public ExternalLinksTable(PackagePart part) throws IOException {
+//        super(part);
+//        try (InputStream stream = part.getInputStream()) {
+//            readFrom(stream);
+//        }
+//    }
 
     public void readFrom(InputStream is) throws IOException {
         try {

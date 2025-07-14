@@ -22,30 +22,30 @@ public interface CTWorkbook extends XmlObject {
     SchemaType type = Factory.getType();
 
 
-    /**
-     * Gets the "fileVersion" element
-     */
-    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion getFileVersion();
+//    /**
+//     * Gets the "fileVersion" element
+//     */
+//    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion getFileVersion();
 
-    /**
-     * True if has "fileVersion" element
-     */
-    boolean isSetFileVersion();
+//    /**
+//     * True if has "fileVersion" element
+//     */
+//    boolean isSetFileVersion();
+//
+//    /**
+//     * Sets the "fileVersion" element
+//     */
+//    void setFileVersion(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion fileVersion);
 
-    /**
-     * Sets the "fileVersion" element
-     */
-    void setFileVersion(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion fileVersion);
-
-    /**
-     * Appends and returns a new empty "fileVersion" element
-     */
-    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion addNewFileVersion();
-
-    /**
-     * Unsets the "fileVersion" element
-     */
-    void unsetFileVersion();
+//    /**
+//     * Appends and returns a new empty "fileVersion" element
+//     */
+//    org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion addNewFileVersion();
+//
+//    /**
+//     * Unsets the "fileVersion" element
+//     */
+//    void unsetFileVersion();
 
 
 

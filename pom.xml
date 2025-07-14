@@ -5,7 +5,7 @@
 
     <groupId>com.mee.excel</groupId>
     <artifactId>mee-excel</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <description>A Simplified Excel Operating Library,use POI library.</description>
     <url>https://github.com/funnyzpc/mee-excel</url>
     <scm>
@@ -140,13 +140,33 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.9.1</version>
+<!--                <version>2.9.1</version>-->
+                <configuration>
+<!--                    <additionalparam>-Xdoclint:none</additionalparam>-->
+                    <additionalOptions>
+                        <additionalOption>-Xdoclint:none</additionalOption>
+                    </additionalOptions>
+                </configuration>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
-                        <phase>package</phase>
+<!--                        <phase>deploy</phase>-->
                         <goals>
                             <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
                         </goals>
                     </execution>
                 </executions>

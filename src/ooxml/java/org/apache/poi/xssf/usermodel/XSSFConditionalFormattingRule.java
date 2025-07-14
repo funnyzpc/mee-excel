@@ -262,34 +262,34 @@ public class XSSFConditionalFormattingRule implements ConditionalFormattingRule 
         }
     }
 
-    public XSSFIconMultiStateFormatting createMultiStateFormatting(IconSet iconSet) {
-        // Is it already there?
-        if (_cfRule.isSetIconSet() && _cfRule.getType() == STCfType.ICON_SET)
-            return getMultiStateFormatting();
-
-        // Mark it as being an Icon Set
-        _cfRule.setType(STCfType.ICON_SET);
-
-        // Ensure the right element
-        CTIconSet icons = _cfRule.isSetIconSet() ? _cfRule.getIconSet() : _cfRule.addNewIconSet();
-        // Set the type of the icon set
-        if (iconSet.name != null) {
-            STIconSetType.Enum xIconSet = STIconSetType.Enum.forString(iconSet.name);
-            icons.setIconSet(xIconSet);
-        }
-
-        // Add a default set of thresholds
-        int jump = 100 / iconSet.num;
-        STCfvoType.Enum type = STCfvoType.Enum.forString(RangeType.PERCENT.name);
-        for (int i=0; i<iconSet.num; i++) {
-            CTCfvo cfvo = icons.addNewCfvo();
-            cfvo.setType(type);
-            cfvo.setVal(Integer.toString(i*jump));
-        }
-
-        // Wrap and return
-        return new XSSFIconMultiStateFormatting(icons);
-    }
+//    public XSSFIconMultiStateFormatting createMultiStateFormatting(IconSet iconSet) {
+//        // Is it already there?
+//        if (_cfRule.isSetIconSet() && _cfRule.getType() == STCfType.ICON_SET)
+//            return getMultiStateFormatting();
+//
+//        // Mark it as being an Icon Set
+//        _cfRule.setType(STCfType.ICON_SET);
+//
+//        // Ensure the right element
+//        CTIconSet icons = _cfRule.isSetIconSet() ? _cfRule.getIconSet() : _cfRule.addNewIconSet();
+//        // Set the type of the icon set
+//        if (iconSet.name != null) {
+//            STIconSetType.Enum xIconSet = STIconSetType.Enum.forString(iconSet.name);
+//            icons.setIconSet(xIconSet);
+//        }
+//
+//        // Add a default set of thresholds
+//        int jump = 100 / iconSet.num;
+//        STCfvoType.Enum type = STCfvoType.Enum.forString(RangeType.PERCENT.name);
+//        for (int i=0; i<iconSet.num; i++) {
+//            CTCfvo cfvo = icons.addNewCfvo();
+//            cfvo.setType(type);
+//            cfvo.setVal(Integer.toString(i*jump));
+//        }
+//
+//        // Wrap and return
+//        return new XSSFIconMultiStateFormatting(icons);
+//    }
     @Override
     public XSSFIconMultiStateFormatting getMultiStateFormatting() {
         if (_cfRule.isSetIconSet()) {

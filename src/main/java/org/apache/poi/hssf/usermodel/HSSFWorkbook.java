@@ -1908,19 +1908,19 @@ public final class HSSFWorkbook extends POIDocument implements Workbook {
         return storageId;
     }
 
-    /**
-     * Adds the LinkTable records required to allow formulas referencing
-     * the specified external workbook to be added to this one. Allows
-     * formulas such as "[MyOtherWorkbook]Sheet3!$A$5" to be added to the
-     * file, for workbooks not already referenced.
-     *
-     * @param name     The name the workbook will be referenced as in formulas
-     * @param workbook The open workbook to fetch the link required information from
-     */
-    @Override
-    public int linkExternalWorkbook(String name, Workbook workbook) {
-        return this.workbook.linkExternalWorkbook(name, workbook);
-    }
+//    /**
+//     * Adds the LinkTable records required to allow formulas referencing
+//     * the specified external workbook to be added to this one. Allows
+//     * formulas such as "[MyOtherWorkbook]Sheet3!$A$5" to be added to the
+//     * file, for workbooks not already referenced.
+//     *
+//     * @param name     The name the workbook will be referenced as in formulas
+//     * @param workbook The open workbook to fetch the link required information from
+//     */
+//    @Override
+//    public int linkExternalWorkbook(String name, Workbook workbook) {
+//        return this.workbook.linkExternalWorkbook(name, workbook);
+//    }
 
     /**
      * Is the workbook protected with a password (not encrypted)?

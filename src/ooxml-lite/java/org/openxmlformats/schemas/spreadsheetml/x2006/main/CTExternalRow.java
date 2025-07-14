@@ -23,10 +23,10 @@ public interface CTExternalRow extends XmlObject {
     SchemaType type = Factory.getType();
 
 
-    /**
-     * Gets a List of "cell" elements
-     */
-    java.util.List<CTExternalCell> getCellList();
+//    /**
+//     * Gets a List of "cell" elements
+//     */
+//    java.util.List<CTExternalCell> getCellList();
 
     /**
      * Gets array of all "cell" elements

@@ -203,7 +203,7 @@ public class StylesTable extends POIXMLDocumentPart implements Styles {
             // Grab all the different bits we care about
 
             // keep this first, as some constructors below want it
-            IndexedColorMap customColors = CustomIndexedColorMap.fromColors(styleSheet.getColors());
+            IndexedColorMap customColors = null;//CustomIndexedColorMap.fromColors(styleSheet.getColors());
             if (customColors != null) indexedColors = customColors;
 
             CTNumFmts ctfmts = styleSheet.getNumFmts();

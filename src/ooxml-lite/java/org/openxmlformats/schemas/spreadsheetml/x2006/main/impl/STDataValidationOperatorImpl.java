@@ -15,6 +15,7 @@ import poi.org.apache.xmlbeans.impl.values.JavaStringEnumerationHolderEx;
  *
  * This is an atomic type that is a restriction of org.openxmlformats.schemas.spreadsheetml.x2006.main.STDataValidationOperator.
  */
+@Deprecated
 public class STDataValidationOperatorImpl extends JavaStringEnumerationHolderEx implements org.openxmlformats.schemas.spreadsheetml.x2006.main.STDataValidationOperator {
     private static final long serialVersionUID = 1L;
 

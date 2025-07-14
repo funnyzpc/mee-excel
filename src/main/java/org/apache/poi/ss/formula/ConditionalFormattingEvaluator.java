@@ -221,25 +221,25 @@ public class ConditionalFormattingEvaluator {
         return new CellReference(cell.getSheet().getSheetName(), cell.getRowIndex(), cell.getColumnIndex(), false, false);
     }
 
-    /**
-     * Retrieve all formatting rules for the sheet with the given name.
-     *
-     * @param sheetName The name of the sheet to look at
-     * @return unmodifiable list of all Conditional format rules for the given sheet, if any
-     */
-    public List<EvaluationConditionalFormatRule> getFormatRulesForSheet(String sheetName) {
-        return getFormatRulesForSheet(workbook.getSheet(sheetName));
-    }
+//    /**
+//     * Retrieve all formatting rules for the sheet with the given name.
+//     *
+//     * @param sheetName The name of the sheet to look at
+//     * @return unmodifiable list of all Conditional format rules for the given sheet, if any
+//     */
+//    public List<EvaluationConditionalFormatRule> getFormatRulesForSheet(String sheetName) {
+//        return getFormatRulesForSheet(workbook.getSheet(sheetName));
+//    }
 
-    /**
-     * Retrieve all formatting rules for the given sheet.
-     *
-     * @param sheet The sheet to look at
-     * @return unmodifiable list of all Conditional format rules for the given sheet, if any
-     */
-    public List<EvaluationConditionalFormatRule> getFormatRulesForSheet(Sheet sheet) {
-        return getRules(sheet);
-    }
+//    /**
+//     * Retrieve all formatting rules for the given sheet.
+//     *
+//     * @param sheet The sheet to look at
+//     * @return unmodifiable list of all Conditional format rules for the given sheet, if any
+//     */
+//    public List<EvaluationConditionalFormatRule> getFormatRulesForSheet(Sheet sheet) {
+//        return getRules(sheet);
+//    }
 
     /**
      * Conditional formatting rules can apply only to cells in the sheet to which they are attached.

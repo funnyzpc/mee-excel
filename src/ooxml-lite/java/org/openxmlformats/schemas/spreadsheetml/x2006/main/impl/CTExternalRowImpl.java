@@ -34,22 +34,22 @@ public class CTExternalRowImpl extends XmlComplexContentImpl implements org.open
     };
 
 
-    /**
-     * Gets a List of "cell" elements
-     */
-    @Override
-    public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalCell> getCellList() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return new JavaListXmlObject<>(
-                this::getCellArray,
-                this::setCellArray,
-                this::insertNewCell,
-                this::removeCell,
-                this::sizeOfCellArray
-            );
-        }
-    }
+//    /**
+//     * Gets a List of "cell" elements
+//     */
+//    @Override
+//    public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalCell> getCellList() {
+//        synchronized (monitor()) {
+//            check_orphaned();
+//            return new JavaListXmlObject<>(
+//                this::getCellArray,
+//                this::setCellArray,
+//                this::insertNewCell,
+//                this::removeCell,
+//                this::sizeOfCellArray
+//            );
+//        }
+//    }
 
     /**
      * Gets array of all "cell" elements

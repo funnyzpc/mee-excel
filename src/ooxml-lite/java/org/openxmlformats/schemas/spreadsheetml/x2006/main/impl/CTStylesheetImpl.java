@@ -288,18 +288,18 @@ public class CTStylesheetImpl extends XmlComplexContentImpl implements org.openx
     public void setDxfs(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDxfs dxfs) {
         generatedSetterHelperImpl(dxfs, PROPERTY_QNAME[7], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    /**
-     * Gets the "colors" element
-     */
-    @Override
-    public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColors getColors() {
-        synchronized (monitor()) {
-            check_orphaned();
-            org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColors target = null;
-            target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColors)get_store().find_element_user(PROPERTY_QNAME[9], 0);
-            return (target == null) ? null : target;
-        }
-    }
+//    /**
+//     * Gets the "colors" element
+//     */
+//    @Override
+//    public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColors getColors() {
+//        synchronized (monitor()) {
+//            check_orphaned();
+//            org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColors target = null;
+//            target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.CTColors)get_store().find_element_user(PROPERTY_QNAME[9], 0);
+//            return (target == null) ? null : target;
+//        }
+//    }
 
 
     /**

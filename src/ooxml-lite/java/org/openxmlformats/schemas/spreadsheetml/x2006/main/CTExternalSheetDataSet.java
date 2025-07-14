@@ -17,15 +17,16 @@ import poi.org.apache.xmlbeans.impl.schema.DocumentFactory;
  *
  * This is a complex type.
  */
+@Deprecated
 public interface CTExternalSheetDataSet extends XmlObject {
     DocumentFactory<CTExternalSheetDataSet> Factory = new DocumentFactory<>(org.apache.poi.schemas.ooxml.system.ooxml.TypeSystemHolder.typeSystem, "ctexternalsheetdataset07adtype");
     SchemaType type = Factory.getType();
 
 
-    /**
-     * Gets a List of "sheetData" elements
-     */
-    java.util.List<CTExternalSheetData> getSheetDataList();
+//    /**
+//     * Gets a List of "sheetData" elements
+//     */
+//    java.util.List<CTExternalSheetData> getSheetDataList();
 
     /**
      * Gets array of all "sheetData" elements

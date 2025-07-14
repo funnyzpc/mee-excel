@@ -19,6 +19,7 @@ import javax.xml.namespace.QName;
  *
  * This is a complex type.
  */
+@Deprecated
 public class CTExternalSheetDataSetImpl extends XmlComplexContentImpl implements org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetDataSet {
     private static final long serialVersionUID = 1L;
 
@@ -31,22 +32,22 @@ public class CTExternalSheetDataSetImpl extends XmlComplexContentImpl implements
     };
 
 
-    /**
-     * Gets a List of "sheetData" elements
-     */
-    @Override
-    public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetData> getSheetDataList() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return new JavaListXmlObject<>(
-                this::getSheetDataArray,
-                this::setSheetDataArray,
-                this::insertNewSheetData,
-                this::removeSheetData,
-                this::sizeOfSheetDataArray
-            );
-        }
-    }
+//    /**
+//     * Gets a List of "sheetData" elements
+//     */
+//    @Override
+//    public java.util.List<org.openxmlformats.schemas.spreadsheetml.x2006.main.CTExternalSheetData> getSheetDataList() {
+//        synchronized (monitor()) {
+//            check_orphaned();
+//            return new JavaListXmlObject<>(
+//                this::getSheetDataArray,
+//                this::setSheetDataArray,
+//                this::insertNewSheetData,
+//                this::removeSheetData,
+//                this::sizeOfSheetDataArray
+//            );
+//        }
+//    }
 
     /**
      * Gets array of all "sheetData" elements

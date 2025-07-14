@@ -1808,59 +1808,59 @@ public class XSSFWorkbook extends POIXMLDocument implements Workbook, Date1904Su
         return mapInfo;
     }
 
-    /**
-     * Adds the External Link Table part and relations required to allow formulas
-     *  referencing the specified external workbook to be added to this one. Allows
-     *  formulas such as "[MyOtherWorkbook.xlsx]Sheet3!$A$5" to be added to the
-     *  file, for workbooks not already linked / referenced.
-     * <p>
-     * This support is still regarded as in beta and may change
-     * <p>
-     * see https://bz.apache.org/bugzilla/show_bug.cgi?id=57184
-     *
-     * @param name The name the workbook will be referenced as in formulas
-     * @param workbook The open workbook to fetch the link required information from
-     * @return index position for external workbook
-     * @since POI 5.1.0
-     */
-    @Beta
-    @Override
-    public int linkExternalWorkbook(String name, Workbook workbook) {
-        int externalLinkIdx=-1;
-        if (!getCreationHelper().getReferencedWorkbooks().containsKey(name)){
-             externalLinkIdx = this.getNextPartNumber(XSSFRelation.EXTERNAL_LINKS,
-                    this.getPackagePart().getPackage().getPartsByContentType(XSSFRelation.EXTERNAL_LINKS.getContentType()).size() + 1);
-            POIXMLDocumentPart.RelationPart rp = this.createRelationship(XSSFRelation.EXTERNAL_LINKS, xssfFactory, externalLinkIdx, false);
-            ExternalLinksTable linksTable = rp.getDocumentPart();
-            linksTable.setLinkedFileName(name);
-            this.getExternalLinksTable().add(linksTable);
-
-            CTExternalReference ctExternalReference = this.getCTWorkbook().addNewExternalReferences().addNewExternalReference();
-            ctExternalReference.setId(rp.getRelationship().getId());
-
-        } else {
-            List<RelationPart> relationParts = getRelationParts();
-            for (RelationPart relationPart : relationParts) {
-                if (relationPart.getDocumentPart() instanceof ExternalLinksTable) {
-                    ExternalLinksTable linksTable = relationPart.getDocumentPart();
-                    String linkedFileName = linksTable.getLinkedFileName();
-                    if(linkedFileName.equals(name)){
-                        String s = relationPart.getRelationship().getTargetURI().toString();
-                        String s2 = XSSFRelation.EXTERNAL_LINKS.getDefaultFileName();
-                        String numStr = s.substring(s2.indexOf('#'), s2.indexOf('.'));
-                        externalLinkIdx = Integer.parseInt(numStr);
-                        break;
-                    }
-                }
-            }
-        }
-
-        XSSFCreationHelper creationHelper = getCreationHelper();
-        creationHelper.addExternalWorkbook(name,workbook);
-
-        return externalLinkIdx;
-
-    }
+//    /**
+//     * Adds the External Link Table part and relations required to allow formulas
+//     *  referencing the specified external workbook to be added to this one. Allows
+//     *  formulas such as "[MyOtherWorkbook.xlsx]Sheet3!$A$5" to be added to the
+//     *  file, for workbooks not already linked / referenced.
+//     * <p>
+//     * This support is still regarded as in beta and may change
+//     * <p>
+//     * see https://bz.apache.org/bugzilla/show_bug.cgi?id=57184
+//     *
+//     * @param name The name the workbook will be referenced as in formulas
+//     * @param workbook The open workbook to fetch the link required information from
+//     * @return index position for external workbook
+//     * @since POI 5.1.0
+//     */
+//    @Beta
+//    @Override
+//    public int linkExternalWorkbook(String name, Workbook workbook) {
+//        int externalLinkIdx=-1;
+//        if (!getCreationHelper().getReferencedWorkbooks().containsKey(name)){
+//             externalLinkIdx = this.getNextPartNumber(XSSFRelation.EXTERNAL_LINKS,
+//                    this.getPackagePart().getPackage().getPartsByContentType(XSSFRelation.EXTERNAL_LINKS.getContentType()).size() + 1);
+//            POIXMLDocumentPart.RelationPart rp = this.createRelationship(XSSFRelation.EXTERNAL_LINKS, xssfFactory, externalLinkIdx, false);
+//            ExternalLinksTable linksTable = rp.getDocumentPart();
+//            linksTable.setLinkedFileName(name);
+//            this.getExternalLinksTable().add(linksTable);
+//
+//            CTExternalReference ctExternalReference = this.getCTWorkbook().addNewExternalReferences().addNewExternalReference();
+//            ctExternalReference.setId(rp.getRelationship().getId());
+//
+//        } else {
+//            List<RelationPart> relationParts = getRelationParts();
+//            for (RelationPart relationPart : relationParts) {
+//                if (relationPart.getDocumentPart() instanceof ExternalLinksTable) {
+//                    ExternalLinksTable linksTable = relationPart.getDocumentPart();
+//                    String linkedFileName = linksTable.getLinkedFileName();
+//                    if(linkedFileName.equals(name)){
+//                        String s = relationPart.getRelationship().getTargetURI().toString();
+//                        String s2 = XSSFRelation.EXTERNAL_LINKS.getDefaultFileName();
+//                        String numStr = s.substring(s2.indexOf('#'), s2.indexOf('.'));
+//                        externalLinkIdx = Integer.parseInt(numStr);
+//                        break;
+//                    }
+//                }
+//            }
+//        }
+//
+//        XSSFCreationHelper creationHelper = getCreationHelper();
+//        creationHelper.addExternalWorkbook(name,workbook);
+//
+//        return externalLinkIdx;
+//
+//    }
 
     /**
      * Specifies a boolean value that indicates whether structure of workbook is locked. <br>

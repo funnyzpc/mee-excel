@@ -49,61 +49,61 @@ public class CTWorkbookImpl extends XmlComplexContentImpl implements org.openxml
     };
 
 
-    /**
-     * Gets the "fileVersion" element
-     */
-    @Override
-    public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion getFileVersion() {
-        synchronized (monitor()) {
-            check_orphaned();
-            org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion target = null;
-            target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion)get_store().find_element_user(PROPERTY_QNAME[0], 0);
-            return (target == null) ? null : target;
-        }
-    }
+//    /**
+//     * Gets the "fileVersion" element
+//     */
+//    @Override
+//    public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion getFileVersion() {
+//        synchronized (monitor()) {
+//            check_orphaned();
+//            org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion target = null;
+//            target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion)get_store().find_element_user(PROPERTY_QNAME[0], 0);
+//            return (target == null) ? null : target;
+//        }
+//    }
 
-    /**
-     * True if has "fileVersion" element
-     */
-    @Override
-    public boolean isSetFileVersion() {
-        synchronized (monitor()) {
-            check_orphaned();
-            return get_store().count_elements(PROPERTY_QNAME[0]) != 0;
-        }
-    }
+//    /**
+//     * True if has "fileVersion" element
+//     */
+//    @Override
+//    public boolean isSetFileVersion() {
+//        synchronized (monitor()) {
+//            check_orphaned();
+//            return get_store().count_elements(PROPERTY_QNAME[0]) != 0;
+//        }
+//    }
+//
+//    /**
+//     * Sets the "fileVersion" element
+//     */
+//    @Override
+//    public void setFileVersion(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion fileVersion) {
+//        generatedSetterHelperImpl(fileVersion, PROPERTY_QNAME[0], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
+//    }
 
-    /**
-     * Sets the "fileVersion" element
-     */
-    @Override
-    public void setFileVersion(org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion fileVersion) {
-        generatedSetterHelperImpl(fileVersion, PROPERTY_QNAME[0], 0, XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
-    }
-
-    /**
-     * Appends and returns a new empty "fileVersion" element
-     */
-    @Override
-    public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion addNewFileVersion() {
-        synchronized (monitor()) {
-            check_orphaned();
-            org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion target = null;
-            target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion)get_store().add_element_user(PROPERTY_QNAME[0]);
-            return target;
-        }
-    }
-
-    /**
-     * Unsets the "fileVersion" element
-     */
-    @Override
-    public void unsetFileVersion() {
-        synchronized (monitor()) {
-            check_orphaned();
-            get_store().remove_element(PROPERTY_QNAME[0], 0);
-        }
-    }
+//    /**
+//     * Appends and returns a new empty "fileVersion" element
+//     */
+//    @Override
+//    public org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion addNewFileVersion() {
+//        synchronized (monitor()) {
+//            check_orphaned();
+//            org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion target = null;
+//            target = (org.openxmlformats.schemas.spreadsheetml.x2006.main.CTFileVersion)get_store().add_element_user(PROPERTY_QNAME[0]);
+//            return target;
+//        }
+//    }
+//
+//    /**
+//     * Unsets the "fileVersion" element
+//     */
+//    @Override
+//    public void unsetFileVersion() {
+//        synchronized (monitor()) {
+//            check_orphaned();
+//            get_store().remove_element(PROPERTY_QNAME[0], 0);
+//        }
+//    }
 
     /**
      * Unsets the "fileSharing" element
