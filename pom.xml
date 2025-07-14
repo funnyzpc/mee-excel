@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.mee.excel</groupId>
+    <groupId>io.github.funnyzpc</groupId>
     <artifactId>mee-excel</artifactId>
     <version>1.0.1</version>
     <description>A Simplified Excel Operating Library,use POI library.</description>
@@ -130,9 +130,10 @@
                 <execution>
                     <id>attach-sources</id>
 <!--                    <phase>deploy</phase>-->
-                    <phase>package</phase>
+<!--                    <phase>package</phase>-->
                     <goals>
                         <goal>jar-no-fork</goal>
+                        <goal>jar</goal>
                     </goals>
                 </execution>
                 </executions>
@@ -168,6 +169,10 @@
                         <goals>
                             <goal>sign</goal>
                         </goals>
+                        <configuration>
+                            <keyname>funnyzpc</keyname>
+                            <passphraseServerId>funnyzpc</passphraseServerId>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
@@ -175,7 +180,6 @@
                 <!-- 包含必要的第三方模块散装代码 -->
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
-                <!--                <version>1.9.1</version>-->
                 <version>3.5.0</version>
                 <executions>
                     <execution>
